@@ -1,0 +1,6060 @@
+{
+  "success": true,
+  "data": {
+    "nodes": [
+      {
+        "rect": {
+          "y": 0,
+          "width": 402,
+          "height": 874,
+          "x": 0
+        },
+        "hittable": true,
+        "label": "Paseo Debug",
+        "type": "Application",
+        "index": 0,
+        "enabled": true,
+        "depth": 0,
+        "ref": "e1"
+      },
+      {
+        "depth": 1,
+        "type": "Window",
+        "hittable": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "parentIndex": 0,
+        "index": 1,
+        "enabled": true,
+        "ref": "e2"
+      },
+      {
+        "type": "Other",
+        "parentIndex": 1,
+        "rect": {
+          "width": 402,
+          "height": 874,
+          "y": 0,
+          "x": 0
+        },
+        "depth": 2,
+        "enabled": true,
+        "hittable": false,
+        "index": 2,
+        "ref": "e3"
+      },
+      {
+        "hittable": false,
+        "parentIndex": 2,
+        "depth": 3,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 402,
+          "height": 874
+        },
+        "type": "Other",
+        "index": 3,
+        "enabled": true,
+        "ref": "e4"
+      },
+      {
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "enabled": true,
+        "depth": 4,
+        "index": 4,
+        "hittable": false,
+        "parentIndex": 3,
+        "type": "Other",
+        "ref": "e5"
+      },
+      {
+        "rect": {
+          "width": 402,
+          "y": 0,
+          "x": 0,
+          "height": 874
+        },
+        "depth": 1,
+        "enabled": true,
+        "hittable": false,
+        "index": 5,
+        "parentIndex": 0,
+        "type": "Window",
+        "ref": "e6"
+      },
+      {
+        "rect": {
+          "height": 874,
+          "width": 402,
+          "y": 0,
+          "x": 0
+        },
+        "enabled": true,
+        "index": 6,
+        "type": "Other",
+        "depth": 2,
+        "hittable": false,
+        "parentIndex": 5,
+        "ref": "e7"
+      },
+      {
+        "hittable": false,
+        "enabled": true,
+        "type": "Other",
+        "index": 7,
+        "depth": 3,
+        "parentIndex": 6,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 402,
+          "height": 874
+        },
+        "ref": "e8"
+      },
+      {
+        "index": 8,
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 7,
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "width": 402,
+          "x": 0
+        },
+        "type": "Other",
+        "hittable": false,
+        "ref": "e9"
+      },
+      {
+        "hittable": false,
+        "index": 9,
+        "parentIndex": 8,
+        "depth": 5,
+        "rect": {
+          "width": 402,
+          "x": 0,
+          "height": 874,
+          "y": 0
+        },
+        "type": "Other",
+        "enabled": true,
+        "ref": "e10"
+      },
+      {
+        "type": "Other",
+        "hittable": false,
+        "enabled": true,
+        "index": 10,
+        "parentIndex": 9,
+        "rect": {
+          "width": 402,
+          "height": 874,
+          "x": 0,
+          "y": 0
+        },
+        "depth": 6,
+        "ref": "e11"
+      },
+      {
+        "type": "Other",
+        "hittable": false,
+        "parentIndex": 10,
+        "enabled": true,
+        "depth": 7,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 0,
+          "height": 874
+        },
+        "index": 11,
+        "ref": "e12"
+      },
+      {
+        "rect": {
+          "width": 402,
+          "x": 0,
+          "height": 874,
+          "y": 0
+        },
+        "depth": 8,
+        "hittable": false,
+        "enabled": true,
+        "type": "Other",
+        "parentIndex": 11,
+        "index": 12,
+        "ref": "e13"
+      },
+      {
+        "index": 13,
+        "parentIndex": 12,
+        "rect": {
+          "y": 0,
+          "width": 402,
+          "x": 0,
+          "height": 874
+        },
+        "type": "Other",
+        "depth": 9,
+        "hittable": false,
+        "enabled": true,
+        "ref": "e14"
+      },
+      {
+        "enabled": true,
+        "hittable": false,
+        "index": 14,
+        "depth": 9,
+        "parentIndex": 12,
+        "rect": {
+          "y": 0,
+          "height": 874,
+          "width": 402,
+          "x": 0
+        },
+        "type": "Other",
+        "ref": "e15"
+      },
+      {
+        "parentIndex": 14,
+        "depth": 10,
+        "type": "Other",
+        "index": 15,
+        "hittable": false,
+        "enabled": true,
+        "rect": {
+          "width": 402,
+          "height": 874,
+          "x": 0,
+          "y": 0
+        },
+        "ref": "e16"
+      },
+      {
+        "index": 16,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "x": 0,
+          "y": 0,
+          "width": 402
+        },
+        "hittable": false,
+        "enabled": true,
+        "depth": 10,
+        "parentIndex": 14,
+        "ref": "e17"
+      },
+      {
+        "index": 17,
+        "type": "Other",
+        "hittable": false,
+        "rect": {
+          "height": 874,
+          "width": 402,
+          "x": 0,
+          "y": 0
+        },
+        "enabled": true,
+        "parentIndex": 16,
+        "depth": 11,
+        "ref": "e18"
+      },
+      {
+        "rect": {
+          "width": 402,
+          "x": 0,
+          "height": 874,
+          "y": 0
+        },
+        "enabled": true,
+        "depth": 11,
+        "parentIndex": 16,
+        "hittable": false,
+        "index": 18,
+        "type": "Other",
+        "ref": "e19"
+      },
+      {
+        "hittable": false,
+        "index": 19,
+        "type": "Other",
+        "parentIndex": 18,
+        "rect": {
+          "y": 0,
+          "height": 874,
+          "width": 402,
+          "x": 0
+        },
+        "depth": 12,
+        "enabled": true,
+        "ref": "e20"
+      },
+      {
+        "depth": 13,
+        "type": "Other",
+        "index": 20,
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "parentIndex": 19,
+        "hittable": false,
+        "enabled": true,
+        "ref": "e21"
+      },
+      {
+        "enabled": true,
+        "parentIndex": 20,
+        "type": "Other",
+        "index": 21,
+        "hittable": false,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 0,
+          "height": 874
+        },
+        "depth": 14,
+        "ref": "e22"
+      },
+      {
+        "enabled": true,
+        "index": 22,
+        "type": "Other",
+        "depth": 15,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "hittable": false,
+        "parentIndex": 21,
+        "ref": "e23"
+      },
+      {
+        "depth": 16,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "index": 23,
+        "hittable": false,
+        "parentIndex": 22,
+        "enabled": true,
+        "ref": "e24"
+      },
+      {
+        "hittable": false,
+        "index": 24,
+        "type": "Other",
+        "depth": 17,
+        "parentIndex": 23,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "enabled": true,
+        "ref": "e25"
+      },
+      {
+        "depth": 18,
+        "enabled": true,
+        "parentIndex": 24,
+        "index": 25,
+        "hittable": false,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "type": "Other",
+        "ref": "e26"
+      },
+      {
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "type": "Other",
+        "parentIndex": 25,
+        "depth": 19,
+        "index": 26,
+        "enabled": true,
+        "hittable": false,
+        "ref": "e27"
+      },
+      {
+        "index": 27,
+        "depth": 20,
+        "enabled": true,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "parentIndex": 26,
+        "type": "Other",
+        "hittable": false,
+        "ref": "e28"
+      },
+      {
+        "hittable": false,
+        "index": 28,
+        "enabled": true,
+        "depth": 21,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "parentIndex": 27,
+        "type": "Other",
+        "label": "Switch tabs (1 open)",
+        "ref": "e29"
+      },
+      {
+        "parentIndex": 28,
+        "label": "Open menu",
+        "enabled": true,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "index": 29,
+        "hittable": false,
+        "depth": 22,
+        "ref": "e30"
+      },
+      {
+        "type": "Other",
+        "depth": 23,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "label": "Open menu",
+        "parentIndex": 29,
+        "hittable": false,
+        "enabled": true,
+        "index": 30,
+        "ref": "e31"
+      },
+      {
+        "parentIndex": 30,
+        "type": "Other",
+        "identifier": "workspace-deck-entry-srv_tk5MNmAhneJU:wks_3c1e2389120b500a",
+        "depth": 24,
+        "enabled": true,
+        "hittable": false,
+        "index": 31,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 874,
+          "y": 0
+        },
+        "label": "Open menu",
+        "ref": "e32"
+      },
+      {
+        "label": "Open menu",
+        "identifier": "composer-dock-header",
+        "type": "Other",
+        "index": 32,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 126,
+          "y": 0
+        },
+        "hittable": false,
+        "parentIndex": 31,
+        "enabled": true,
+        "depth": 25,
+        "ref": "e33"
+      },
+      {
+        "hittable": false,
+        "enabled": true,
+        "parentIndex": 32,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "height": 56,
+          "y": 70
+        },
+        "index": 33,
+        "depth": 26,
+        "ref": "e34"
+      },
+      {
+        "type": "Button",
+        "hittable": false,
+        "rect": {
+          "x": 8,
+          "width": 32,
+          "height": 32,
+          "y": 81.6666669845581
+        },
+        "parentIndex": 32,
+        "enabled": true,
+        "label": "Open menu",
+        "identifier": "menu-button",
+        "depth": 26,
+        "index": 34,
+        "ref": "e35"
+      },
+      {
+        "type": "Other",
+        "rect": {
+          "x": 48,
+          "width": 314,
+          "height": 34,
+          "y": 80.6666669845581
+        },
+        "label": "main",
+        "enabled": true,
+        "depth": 26,
+        "hittable": false,
+        "index": 35,
+        "parentIndex": 32,
+        "ref": "e36"
+      },
+      {
+        "enabled": true,
+        "index": 36,
+        "hittable": false,
+        "label": "main",
+        "type": "Other",
+        "rect": {
+          "x": 48,
+          "width": 278,
+          "height": 34,
+          "y": 80.6666669845581
+        },
+        "depth": 27,
+        "parentIndex": 35,
+        "ref": "e37"
+      },
+      {
+        "type": "StaticText",
+        "depth": 28,
+        "parentIndex": 36,
+        "label": "main",
+        "identifier": "workspace-header-title",
+        "index": 37,
+        "rect": {
+          "x": 48,
+          "width": 278,
+          "height": 18,
+          "y": 80.6666669845581
+        },
+        "enabled": true,
+        "hittable": false,
+        "ref": "e38"
+      },
+      {
+        "enabled": true,
+        "type": "StaticText",
+        "rect": {
+          "x": 48,
+          "width": 278,
+          "height": 18,
+          "y": 80.6666669845581
+        },
+        "label": "main",
+        "index": 38,
+        "depth": 29,
+        "hittable": false,
+        "parentIndex": 37,
+        "ref": "e39"
+      },
+      {
+        "identifier": "workspace-header-subtitle",
+        "depth": 28,
+        "enabled": true,
+        "type": "StaticText",
+        "rect": {
+          "x": 48,
+          "width": 163.3333282470703,
+          "height": 15.666671752929688,
+          "y": 98.6666669845581
+        },
+        "index": 39,
+        "parentIndex": 36,
+        "label": "composer-dock-ios-fixture",
+        "hittable": false,
+        "ref": "e40"
+      },
+      {
+        "label": "composer-dock-ios-fixture",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 40,
+        "parentIndex": 39,
+        "depth": 29,
+        "rect": {
+          "x": 48,
+          "width": 163.3333282470703,
+          "height": 15.666671752929688,
+          "y": 98.6666669845581
+        },
+        "enabled": true,
+        "ref": "e41"
+      },
+      {
+        "label": "·",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 41,
+        "parentIndex": 36,
+        "depth": 28,
+        "rect": {
+          "x": 217.3333282470703,
+          "y": 98.6666669845581,
+          "height": 15.666671752929688,
+          "width": 4
+        },
+        "enabled": true,
+        "ref": "e42"
+      },
+      {
+        "label": "·",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 42,
+        "parentIndex": 41,
+        "depth": 29,
+        "rect": {
+          "x": 217.3333282470703,
+          "y": 98.6666669845581,
+          "height": 15.666671752929688,
+          "width": 4
+        },
+        "enabled": true,
+        "ref": "e43"
+      },
+      {
+        "label": "dev-new",
+        "hittable": false,
+        "type": "Other",
+        "index": 43,
+        "identifier": "host-badge-srv_tk5MNmAhneJU",
+        "depth": 28,
+        "rect": {
+          "x": 227.3333282470703,
+          "y": 98.6666669845581,
+          "height": 16,
+          "width": 68.00001525878906
+        },
+        "enabled": true,
+        "parentIndex": 36,
+        "ref": "e44"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 44,
+        "parentIndex": 36,
+        "depth": 28,
+        "rect": {
+          "x": 227.3333282470703,
+          "y": 100.6666669845581,
+          "height": 12,
+          "width": 12
+        },
+        "enabled": true,
+        "ref": "e45"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 45,
+        "parentIndex": 44,
+        "depth": 29,
+        "rect": {
+          "x": 227.8333282470703,
+          "y": 101.1666669845581,
+          "height": 11,
+          "width": 11
+        },
+        "enabled": true,
+        "ref": "e46"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 46,
+        "parentIndex": 45,
+        "depth": 30,
+        "rect": {
+          "x": 227.8333282470703,
+          "y": 101.1666669845581,
+          "height": 5,
+          "width": 11
+        },
+        "enabled": true,
+        "ref": "e47"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 47,
+        "parentIndex": 45,
+        "depth": 30,
+        "rect": {
+          "x": 227.8333282470703,
+          "y": 107.1666669845581,
+          "height": 5,
+          "width": 11
+        },
+        "enabled": true,
+        "ref": "e48"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 48,
+        "parentIndex": 45,
+        "depth": 30,
+        "rect": {
+          "x": 229.8333282470703,
+          "y": 103.1666669845581,
+          "height": 1,
+          "width": 1.0049999999999955
+        },
+        "enabled": true,
+        "ref": "e49"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 49,
+        "parentIndex": 45,
+        "depth": 30,
+        "rect": {
+          "x": 229.8333282470703,
+          "y": 109.1666669845581,
+          "height": 1,
+          "width": 1.0049999999999955
+        },
+        "enabled": true,
+        "ref": "e50"
+      },
+      {
+        "label": "dev-new",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 50,
+        "parentIndex": 36,
+        "depth": 28,
+        "rect": {
+          "x": 242.3333282470703,
+          "y": 98.6666669845581,
+          "height": 16,
+          "width": 53.00001525878906
+        },
+        "enabled": true,
+        "ref": "e51"
+      },
+      {
+        "label": "dev-new",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 51,
+        "parentIndex": 50,
+        "depth": 29,
+        "rect": {
+          "x": 242.3333282470703,
+          "y": 98.6666669845581,
+          "height": 16,
+          "width": 53.00001525878906
+        },
+        "enabled": true,
+        "ref": "e52"
+      },
+      {
+        "label": "Workspace actions",
+        "hittable": false,
+        "type": "Button",
+        "index": 52,
+        "identifier": "workspace-header-menu-trigger",
+        "depth": 27,
+        "rect": {
+          "x": 330,
+          "y": 81.6666669845581,
+          "height": 32,
+          "width": 32
+        },
+        "enabled": true,
+        "parentIndex": 35,
+        "ref": "e53"
+      },
+      {
+        "label": "Open Explorer sidebar",
+        "hittable": false,
+        "type": "Button",
+        "index": 53,
+        "identifier": "workspace-explorer-toggle",
+        "depth": 26,
+        "rect": {
+          "x": 362,
+          "y": 81.6666669845581,
+          "height": 32,
+          "width": 32
+        },
+        "enabled": true,
+        "parentIndex": 32,
+        "ref": "e54"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 54,
+        "parentIndex": 31,
+        "depth": 25,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e55"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 55,
+        "parentIndex": 31,
+        "depth": 25,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e56"
+      },
+      {
+        "label": "Switch tabs (1 open)",
+        "hittable": false,
+        "type": "Button",
+        "index": 56,
+        "identifier": "workspace-tab-switcher-trigger",
+        "depth": 25,
+        "rect": {
+          "x": 0,
+          "y": 126,
+          "height": 34,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 31,
+        "ref": "e57"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 57,
+        "identifier": "workspace-active-tab-icon",
+        "depth": 26,
+        "rect": {
+          "x": 20,
+          "y": 136,
+          "height": 14,
+          "width": 14
+        },
+        "enabled": true,
+        "parentIndex": 56,
+        "ref": "e58"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 58,
+        "identifier": "workspace-tabs-row",
+        "depth": 25,
+        "rect": {
+          "x": 0,
+          "y": 126,
+          "height": 35,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 31,
+        "ref": "e59"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 59,
+        "parentIndex": 31,
+        "depth": 25,
+        "rect": {
+          "x": 0,
+          "y": 161,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e60"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 60,
+        "parentIndex": 31,
+        "depth": 25,
+        "rect": {
+          "x": 0,
+          "y": 161,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e61"
+      },
+      {
+        "label": "Add attachment",
+        "hittable": false,
+        "type": "Other",
+        "index": 61,
+        "parentIndex": 60,
+        "depth": 26,
+        "rect": {
+          "x": 0,
+          "y": 161,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e62"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 62,
+        "parentIndex": 61,
+        "depth": 27,
+        "rect": {
+          "x": 0,
+          "y": 161,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e63"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 63,
+        "parentIndex": 61,
+        "depth": 27,
+        "rect": {
+          "x": 0,
+          "y": 161,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e64"
+      },
+      {
+        "label": "Message agent...",
+        "hittable": false,
+        "type": "Other",
+        "index": 64,
+        "identifier": "composer-viewport",
+        "depth": 27,
+        "rect": {
+          "x": 0,
+          "y": 161,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 61,
+        "ref": "e65"
+      },
+      {
+        "label": "Message agent...",
+        "hittable": false,
+        "type": "Other",
+        "index": 65,
+        "parentIndex": 64,
+        "depth": 28,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 713,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e66"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 66,
+        "identifier": "composer-dock-content",
+        "depth": 29,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 307,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 65,
+        "ref": "e67"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 67,
+        "parentIndex": 66,
+        "depth": 30,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 307,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e68"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 68,
+        "parentIndex": 66,
+        "depth": 30,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 307,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e69"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 69,
+        "parentIndex": 68,
+        "depth": 31,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 307,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e70"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 70,
+        "identifier": "agent-chat-scroll",
+        "depth": 31,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 307,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 68,
+        "ref": "e71"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "ScrollView",
+        "index": 71,
+        "parentIndex": 70,
+        "depth": 32,
+        "rect": {
+          "x": 0,
+          "y": -141,
+          "height": 307,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e72"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "Other",
+        "index": 72,
+        "parentIndex": 71,
+        "depth": 33,
+        "rect": {
+          "x": 0,
+          "y": -3213,
+          "height": 3379,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e73"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "Other",
+        "index": 73,
+        "parentIndex": 72,
+        "depth": 34,
+        "rect": {
+          "x": 0,
+          "y": -3213,
+          "height": 3379,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e74"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 74,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -3213,
+          "height": 32,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e75"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 75,
+        "identifier": "older-history-slot",
+        "depth": 36,
+        "rect": {
+          "x": 12,
+          "y": -3213,
+          "height": 32,
+          "width": 378
+        },
+        "enabled": true,
+        "parentIndex": 74,
+        "ref": "e76"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 76,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -3181,
+          "height": 634,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e77"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "Other",
+        "index": 77,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -2547,
+          "height": 36,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e78"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 78,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -2547,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 77,
+        "ref": "e79"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "Button",
+        "index": 79,
+        "parentIndex": 77,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -2547,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e80"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "Other",
+        "index": 80,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -2511,
+          "height": 646,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e81"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 81,
+        "identifier": "assistant-message",
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -2511,
+          "height": 642,
+          "width": 362
+        },
+        "enabled": true,
+        "parentIndex": 80,
+        "ref": "e82"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "Other",
+        "index": 82,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -2499,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e83"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "Other",
+        "index": 83,
+        "parentIndex": 82,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -2499,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e84"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 84,
+        "parentIndex": 83,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -2499,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e85"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "TextView",
+        "index": 85,
+        "value": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "parentIndex": 83,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e86"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "TextView",
+        "index": 86,
+        "parentIndex": 85,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -2499,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e87"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 87,
+        "value": "0%",
+        "parentIndex": 85,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -2499,
+          "height": 132,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e88"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 88,
+        "parentIndex": 87,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -2538,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e89"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 89,
+        "value": "0%",
+        "parentIndex": 85,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -2400,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e90"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 90,
+        "parentIndex": 89,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -2373,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e91"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 91,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -2339,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e92"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 92,
+        "parentIndex": 91,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -2339,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e93"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "Other",
+        "index": 93,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2339,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e94"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "Other",
+        "index": 94,
+        "parentIndex": 93,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2339,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e95"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 95,
+        "parentIndex": 94,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2339,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e96"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 96,
+        "value": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "parentIndex": 94,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e97"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 97,
+        "parentIndex": 96,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2339,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e98"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 98,
+        "value": "0%",
+        "parentIndex": 96,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -2339,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e99"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 99,
+        "parentIndex": 98,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -2378,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e100"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 100,
+        "value": "0%",
+        "parentIndex": 96,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2284,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e101"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 101,
+        "parentIndex": 100,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -2257,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e102"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 102,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -2247,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e103"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 103,
+        "parentIndex": 102,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -2247,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e104"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "Other",
+        "index": 104,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2247,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e105"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "Other",
+        "index": 105,
+        "parentIndex": 104,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2247,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e106"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 106,
+        "parentIndex": 105,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2247,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e107"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 107,
+        "value": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "parentIndex": 105,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e108"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 108,
+        "parentIndex": 107,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2247,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e109"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 109,
+        "value": "0%",
+        "parentIndex": 107,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -2247,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e110"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 110,
+        "parentIndex": 109,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -2286,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e111"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 111,
+        "value": "0%",
+        "parentIndex": 107,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2192,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e112"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 112,
+        "parentIndex": 111,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -2165,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e113"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 113,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -2155,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e114"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 114,
+        "parentIndex": 113,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -2155,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e115"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "Other",
+        "index": 115,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2155,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e116"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "Other",
+        "index": 116,
+        "parentIndex": 115,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2155,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e117"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 117,
+        "parentIndex": 116,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2155,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e118"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 118,
+        "value": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "parentIndex": 116,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e119"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 119,
+        "parentIndex": 118,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2155,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e120"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 120,
+        "value": "0%",
+        "parentIndex": 118,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -2155,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e121"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 121,
+        "parentIndex": 120,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -2194,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e122"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 122,
+        "value": "0%",
+        "parentIndex": 118,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2100,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e123"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 123,
+        "parentIndex": 122,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -2073,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e124"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 124,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -2063,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e125"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 125,
+        "parentIndex": 124,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -2063,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e126"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "Other",
+        "index": 126,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2063,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e127"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "Other",
+        "index": 127,
+        "parentIndex": 126,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2063,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e128"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 128,
+        "parentIndex": 127,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2063,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e129"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 129,
+        "value": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "parentIndex": 127,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e130"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 130,
+        "parentIndex": 129,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2063,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e131"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 131,
+        "value": "0%",
+        "parentIndex": 129,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -2063,
+          "height": 66,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e132"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 132,
+        "parentIndex": 131,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -2102,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e133"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 133,
+        "value": "0%",
+        "parentIndex": 129,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -2030,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e134"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 134,
+        "parentIndex": 133,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -2003,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e135"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "Other",
+        "index": 135,
+        "parentIndex": 80,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -1981,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e136"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "Other",
+        "index": 136,
+        "parentIndex": 135,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -1981,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e137"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 137,
+        "parentIndex": 136,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -1981,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e138"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 138,
+        "value": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "parentIndex": 136,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e139"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 139,
+        "parentIndex": 138,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1981,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e140"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 140,
+        "value": "0%",
+        "parentIndex": 138,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -1981,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e141"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 141,
+        "parentIndex": 140,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -2020,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e142"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 142,
+        "value": "0%",
+        "parentIndex": 138,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1926,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e143"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 143,
+        "parentIndex": 142,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -1899,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e144"
+      },
+      {
+        "label": "Edit, packages/app/src/hooks/use-scroll-anchor.ts",
+        "hittable": false,
+        "type": "Other",
+        "index": 144,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1865,
+          "height": 32,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e145"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 145,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1865,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 144,
+        "ref": "e146"
+      },
+      {
+        "label": "Edit, packages/app/src/hooks/use-scroll-anchor.ts",
+        "hittable": false,
+        "type": "Button",
+        "index": 146,
+        "parentIndex": 144,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1865,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e147"
+      },
+      {
+        "label": "Shell, node scripts/simulate-stream-burst.mjs",
+        "hittable": false,
+        "type": "Other",
+        "index": 147,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1833,
+          "height": 36,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e148"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 148,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1833,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 147,
+        "ref": "e149"
+      },
+      {
+        "label": "Shell, node scripts/simulate-stream-burst.mjs",
+        "hittable": false,
+        "type": "Button",
+        "index": 149,
+        "parentIndex": 147,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1833,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e150"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "Other",
+        "index": 150,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1797,
+          "height": 570,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e151"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 151,
+        "identifier": "assistant-message",
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -1797,
+          "height": 566,
+          "width": 362
+        },
+        "enabled": true,
+        "parentIndex": 150,
+        "ref": "e152"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "Other",
+        "index": 152,
+        "parentIndex": 150,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -1785,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e153"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "Other",
+        "index": 153,
+        "parentIndex": 152,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -1785,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e154"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 154,
+        "parentIndex": 153,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -1785,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e155"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "TextView",
+        "index": 155,
+        "value": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "parentIndex": 153,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e156"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle 3",
+        "hittable": false,
+        "type": "TextView",
+        "index": 156,
+        "parentIndex": 155,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1785,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e157"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 157,
+        "value": "0%",
+        "parentIndex": 155,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -1785,
+          "height": 242,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e158"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 158,
+        "parentIndex": 157,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -1824,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e159"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 159,
+        "value": "0%",
+        "parentIndex": 155,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1576,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e160"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 160,
+        "parentIndex": 159,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -1549,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e161"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so",
+        "hittable": false,
+        "type": "Other",
+        "index": 161,
+        "parentIndex": 150,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -1519,
+          "height": 264,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e162"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so",
+        "hittable": false,
+        "type": "Other",
+        "index": 162,
+        "parentIndex": 161,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -1519,
+          "height": 264,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e163"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 163,
+        "parentIndex": 162,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -1519,
+          "height": 264,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e164"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so",
+        "hittable": false,
+        "type": "TextView",
+        "index": 164,
+        "value": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so",
+        "parentIndex": 162,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e165"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so the first useful step is to read the relevant files.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 165,
+        "parentIndex": 164,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1519,
+          "height": 264,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e166"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 166,
+        "value": "0%",
+        "parentIndex": 164,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -1519,
+          "height": 264,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e167"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 167,
+        "parentIndex": 166,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -1558,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e168"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 168,
+        "value": "0%",
+        "parentIndex": 164,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1288,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e169"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 169,
+        "parentIndex": 168,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -1261,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e170"
+      },
+      {
+        "label": "Thinking",
+        "hittable": false,
+        "type": "Other",
+        "index": 170,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1227,
+          "height": 32,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e171"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 171,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1227,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 170,
+        "ref": "e172"
+      },
+      {
+        "label": "Thinking",
+        "hittable": false,
+        "type": "Button",
+        "index": 172,
+        "parentIndex": 170,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1227,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e173"
+      },
+      {
+        "label": "Read, packages/app/src/components/conversation-list.tsx",
+        "hittable": false,
+        "type": "Other",
+        "index": 173,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1195,
+          "height": 32,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e174"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 174,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1195,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 173,
+        "ref": "e175"
+      },
+      {
+        "label": "Read, packages/app/src/components/conversation-list.tsx",
+        "hittable": false,
+        "type": "Button",
+        "index": 175,
+        "parentIndex": 173,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1195,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e176"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "Other",
+        "index": 176,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1163,
+          "height": 36,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e177"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 177,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1163,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 176,
+        "ref": "e178"
+      },
+      {
+        "label": "Search, scrollToEnd",
+        "hittable": false,
+        "type": "Button",
+        "index": 178,
+        "parentIndex": 176,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -1163,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e179"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "Other",
+        "index": 179,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -1127,
+          "height": 646,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e180"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 180,
+        "identifier": "assistant-message",
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -1127,
+          "height": 642,
+          "width": 362
+        },
+        "enabled": true,
+        "parentIndex": 179,
+        "ref": "e181"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "Other",
+        "index": 181,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -1115,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e182"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "Other",
+        "index": 182,
+        "parentIndex": 181,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -1115,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e183"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 183,
+        "parentIndex": 182,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -1115,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e184"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "TextView",
+        "index": 184,
+        "value": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "parentIndex": 182,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e185"
+      },
+      {
+        "label": "Now I have a clearer picture. The auto-scroll uses a ref on the FlatList and tracks whether the user has scrolled away from the bottom by comparing the offset against the content size. There are a few subtle issues worth flagging before we change anything:",
+        "hittable": false,
+        "type": "TextView",
+        "index": 185,
+        "parentIndex": 184,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1115,
+          "height": 132,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e186"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 186,
+        "value": "0%",
+        "parentIndex": 184,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -1115,
+          "height": 132,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e187"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 187,
+        "parentIndex": 186,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -1154,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e188"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 188,
+        "value": "0%",
+        "parentIndex": 184,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -1016,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e189"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 189,
+        "parentIndex": 188,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -989,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e190"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 190,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -955,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e191"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 191,
+        "parentIndex": 190,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -955,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e192"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "Other",
+        "index": 192,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -955,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e193"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "Other",
+        "index": 193,
+        "parentIndex": 192,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -955,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e194"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 194,
+        "parentIndex": 193,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -955,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e195"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 195,
+        "value": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "parentIndex": 193,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e196"
+      },
+      {
+        "label": "The threshold for 'near the bottom' is hardcoded at 80px, which feels too tight on dense content where headers and tool calls take up a lot of vertical space.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 196,
+        "parentIndex": 195,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -955,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e197"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 197,
+        "value": "0%",
+        "parentIndex": 195,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -955,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e198"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 198,
+        "parentIndex": 197,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -994,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e199"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 199,
+        "value": "0%",
+        "parentIndex": 195,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -900,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e200"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 200,
+        "parentIndex": 199,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -873,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e201"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 201,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -863,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e202"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 202,
+        "parentIndex": 201,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -863,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e203"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "Other",
+        "index": 203,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -863,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e204"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "Other",
+        "index": 204,
+        "parentIndex": 203,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -863,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e205"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 205,
+        "parentIndex": 204,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -863,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e206"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 206,
+        "value": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "parentIndex": 204,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e207"
+      },
+      {
+        "label": "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 207,
+        "parentIndex": 206,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -863,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e208"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 208,
+        "value": "0%",
+        "parentIndex": 206,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -863,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e209"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 209,
+        "parentIndex": 208,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -902,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e210"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 210,
+        "value": "0%",
+        "parentIndex": 206,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -808,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e211"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 211,
+        "parentIndex": 210,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -781,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e212"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 212,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -771,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e213"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 213,
+        "parentIndex": 212,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -771,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e214"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "Other",
+        "index": 214,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -771,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e215"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "Other",
+        "index": 215,
+        "parentIndex": 214,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -771,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e216"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 216,
+        "parentIndex": 215,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -771,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e217"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 217,
+        "value": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "parentIndex": 215,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e218"
+      },
+      {
+        "label": "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 218,
+        "parentIndex": 217,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -771,
+          "height": 88,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e219"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 219,
+        "value": "0%",
+        "parentIndex": 217,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -771,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e220"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 220,
+        "parentIndex": 219,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -810,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e221"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 221,
+        "value": "0%",
+        "parentIndex": 217,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -716,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e222"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 222,
+        "parentIndex": 221,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -689,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e223"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 223,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 30,
+          "y": -679,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e224"
+      },
+      {
+        "label": "•",
+        "hittable": false,
+        "type": "StaticText",
+        "index": 224,
+        "parentIndex": 223,
+        "depth": 37,
+        "rect": {
+          "x": 30,
+          "y": -679,
+          "height": 22,
+          "width": 7.333332061767578
+        },
+        "enabled": true,
+        "ref": "e225"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "Other",
+        "index": 225,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -679,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e226"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "Other",
+        "index": 226,
+        "parentIndex": 225,
+        "depth": 37,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -679,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e227"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 227,
+        "parentIndex": 226,
+        "depth": 38,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -679,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e228"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 228,
+        "value": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "parentIndex": 226,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e229"
+      },
+      {
+        "label": "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 229,
+        "parentIndex": 228,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -679,
+          "height": 66,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e230"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 230,
+        "value": "0%",
+        "parentIndex": 228,
+        "depth": 39,
+        "rect": {
+          "x": 349.00000063578284,
+          "y": -679,
+          "height": 66,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e231"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 231,
+        "parentIndex": 230,
+        "depth": 40,
+        "rect": {
+          "x": 376.00000063578284,
+          "y": -718,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e232"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 232,
+        "value": "0%",
+        "parentIndex": 228,
+        "depth": 39,
+        "rect": {
+          "x": 41.33333396911621,
+          "y": -646,
+          "height": 30,
+          "width": 340.6666564941406
+        },
+        "enabled": true,
+        "ref": "e233"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 233,
+        "parentIndex": 232,
+        "depth": 40,
+        "rect": {
+          "x": 2.333333969116211,
+          "y": -619,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e234"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "Other",
+        "index": 234,
+        "parentIndex": 179,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -597,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e235"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "Other",
+        "index": 235,
+        "parentIndex": 234,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -597,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e236"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 236,
+        "parentIndex": 235,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -597,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e237"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 237,
+        "value": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "parentIndex": 235,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e238"
+      },
+      {
+        "label": "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast.",
+        "hittable": false,
+        "type": "TextView",
+        "index": 238,
+        "parentIndex": 237,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -597,
+          "height": 88,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e239"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 239,
+        "value": "0%",
+        "parentIndex": 237,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -597,
+          "height": 88,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e240"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 240,
+        "parentIndex": 239,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -636,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e241"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 241,
+        "value": "0%",
+        "parentIndex": 237,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -542,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e242"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 242,
+        "parentIndex": 241,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -515,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e243"
+      },
+      {
+        "label": "Edit, packages/app/src/hooks/use-scroll-anchor.ts",
+        "hittable": false,
+        "type": "Other",
+        "index": 243,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -481,
+          "height": 32,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e244"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 244,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -481,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 243,
+        "ref": "e245"
+      },
+      {
+        "label": "Edit, packages/app/src/hooks/use-scroll-anchor.ts",
+        "hittable": false,
+        "type": "Button",
+        "index": 245,
+        "parentIndex": 243,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -481,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e246"
+      },
+      {
+        "label": "Shell, node scripts/simulate-stream-burst.mjs",
+        "hittable": false,
+        "type": "Other",
+        "index": 246,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -449,
+          "height": 36,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e247"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 247,
+        "identifier": "tool-call-badge",
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -449,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "parentIndex": 246,
+        "ref": "e248"
+      },
+      {
+        "label": "Shell, node scripts/simulate-stream-burst.mjs",
+        "hittable": false,
+        "type": "Button",
+        "index": 248,
+        "parentIndex": 246,
+        "depth": 36,
+        "rect": {
+          "x": 7,
+          "y": -449,
+          "height": 32,
+          "width": 388
+        },
+        "enabled": true,
+        "ref": "e249"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "Other",
+        "index": 249,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": -413,
+          "height": 512,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e250"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 250,
+        "identifier": "assistant-message",
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -413,
+          "height": 512,
+          "width": 362
+        },
+        "enabled": true,
+        "parentIndex": 249,
+        "ref": "e251"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "Other",
+        "index": 251,
+        "parentIndex": 249,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -401,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e252"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "Other",
+        "index": 252,
+        "parentIndex": 251,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -401,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e253"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 253,
+        "parentIndex": 252,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -401,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e254"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "hittable": false,
+        "type": "TextView",
+        "index": 254,
+        "value": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle",
+        "parentIndex": 252,
+        "depth": 38,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e255"
+      },
+      {
+        "label": "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle 4",
+        "hittable": false,
+        "type": "TextView",
+        "index": 255,
+        "parentIndex": 254,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -401,
+          "height": 242,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e256"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 256,
+        "value": "0%",
+        "parentIndex": 254,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -401,
+          "height": 242,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e257"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 257,
+        "parentIndex": 256,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -440,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e258"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 258,
+        "value": "0%",
+        "parentIndex": 254,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -192,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e259"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 259,
+        "parentIndex": 258,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": -165,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e260"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rath",
+        "hittable": false,
+        "type": "Other",
+        "index": 260,
+        "parentIndex": 249,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": -135,
+          "height": 176,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e261"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rath",
+        "hittable": false,
+        "type": "Other",
+        "index": 261,
+        "parentIndex": 260,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": -135,
+          "height": 176,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e262"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 262,
+        "parentIndex": 261,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": -135,
+          "height": 176,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e263"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rath",
+        "hittable": false,
+        "type": "TextView",
+        "index": 263,
+        "value": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rath",
+        "parentIndex": 261,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": 0,
+          "height": 41,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e264"
+      },
+      {
+        "label": "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rath",
+        "hittable": false,
+        "type": "TextView",
+        "index": 264,
+        "parentIndex": 263,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": -135,
+          "height": 176,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e265"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 265,
+        "value": "0%",
+        "parentIndex": 263,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": -135,
+          "height": 176,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e266"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 266,
+        "parentIndex": 265,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": -174,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e267"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 267,
+        "value": "0%",
+        "parentIndex": 263,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": 8,
+          "height": 30,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e268"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 268,
+        "parentIndex": 267,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": 35,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e269"
+      },
+      {
+        "label": "(end of synthetic stream)",
+        "hittable": false,
+        "type": "Other",
+        "index": 269,
+        "parentIndex": 249,
+        "depth": 36,
+        "rect": {
+          "x": 20,
+          "y": 65,
+          "height": 22,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e270"
+      },
+      {
+        "label": "(end of synthetic stream)",
+        "hittable": false,
+        "type": "Other",
+        "index": 270,
+        "parentIndex": 269,
+        "depth": 37,
+        "rect": {
+          "x": 20,
+          "y": 65,
+          "height": 22,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e271"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 271,
+        "parentIndex": 270,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": 65,
+          "height": 22,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e272"
+      },
+      {
+        "label": "(end of synthetic stream)",
+        "hittable": false,
+        "type": "TextView",
+        "index": 272,
+        "value": "(end of synthetic stream)",
+        "parentIndex": 270,
+        "depth": 38,
+        "rect": {
+          "x": 20,
+          "y": 65,
+          "height": 22,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e273"
+      },
+      {
+        "label": "(end of synthetic stream)",
+        "hittable": false,
+        "type": "TextView",
+        "index": 273,
+        "parentIndex": 272,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": 65,
+          "height": 22,
+          "width": 183.234375
+        },
+        "enabled": true,
+        "ref": "e274"
+      },
+      {
+        "label": "Vertical scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 274,
+        "value": "0%",
+        "parentIndex": 272,
+        "depth": 39,
+        "rect": {
+          "x": 349,
+          "y": 65,
+          "height": 22,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e275"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 275,
+        "parentIndex": 274,
+        "depth": 40,
+        "rect": {
+          "x": 376,
+          "y": 26,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e276"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 276,
+        "value": "0%",
+        "parentIndex": 272,
+        "depth": 39,
+        "rect": {
+          "x": 20,
+          "y": 73,
+          "height": 11,
+          "width": 362
+        },
+        "enabled": true,
+        "ref": "e277"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 277,
+        "parentIndex": 276,
+        "depth": 40,
+        "rect": {
+          "x": -19,
+          "y": 81,
+          "height": 3,
+          "width": 36
+        },
+        "enabled": true,
+        "ref": "e278"
+      },
+      {
+        "label": "Copy turn",
+        "hittable": false,
+        "type": "Other",
+        "index": 278,
+        "parentIndex": 73,
+        "depth": 35,
+        "rect": {
+          "x": 12,
+          "y": 99,
+          "height": 67,
+          "width": 378
+        },
+        "enabled": true,
+        "ref": "e279"
+      },
+      {
+        "label": "Copy turn",
+        "hittable": false,
+        "type": "Button",
+        "index": 279,
+        "parentIndex": 278,
+        "depth": 36,
+        "rect": {
+          "x": 16,
+          "y": 112,
+          "height": 22,
+          "width": 22
+        },
+        "enabled": true,
+        "ref": "e280"
+      },
+      {
+        "label": "Fork chat from here",
+        "hittable": false,
+        "type": "Other",
+        "index": 280,
+        "parentIndex": 278,
+        "depth": 36,
+        "rect": {
+          "x": 46,
+          "y": 112,
+          "height": 22,
+          "width": 22
+        },
+        "enabled": true,
+        "ref": "e281"
+      },
+      {
+        "label": "Fork chat from here",
+        "hittable": false,
+        "type": "Button",
+        "index": 281,
+        "identifier": "assistant-fork-menu-trigger",
+        "depth": 37,
+        "rect": {
+          "x": 46,
+          "y": 112,
+          "height": 22,
+          "width": 22
+        },
+        "enabled": true,
+        "parentIndex": 280,
+        "ref": "e282"
+      },
+      {
+        "label": "Worked for 9s, ended 8:44 PM",
+        "hittable": false,
+        "type": "Button",
+        "index": 282,
+        "parentIndex": 278,
+        "depth": 36,
+        "rect": {
+          "x": 76,
+          "y": 115.33333325386047,
+          "height": 15.666671752929688,
+          "width": 85.33332824707031
+        },
+        "enabled": true,
+        "ref": "e283"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 283,
+        "value": "0%",
+        "parentIndex": 71,
+        "depth": 33,
+        "rect": {
+          "x": 0,
+          "y": 164,
+          "height": 30,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e284"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 284,
+        "parentIndex": 283,
+        "depth": 34,
+        "rect": {
+          "x": 3,
+          "y": 164,
+          "height": 3,
+          "width": 393
+        },
+        "enabled": true,
+        "ref": "e285"
+      },
+      {
+        "label": "Vertical scroll bar, 676 pages",
+        "hittable": false,
+        "type": "Other",
+        "index": 285,
+        "value": "0%",
+        "parentIndex": 71,
+        "depth": 33,
+        "rect": {
+          "x": 369,
+          "y": 161,
+          "height": 5,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e286"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 286,
+        "parentIndex": 285,
+        "depth": 34,
+        "rect": {
+          "x": 396,
+          "y": 164,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e287"
+      },
+      {
+        "label": "Vertical scroll bar, 676 pages",
+        "hittable": false,
+        "type": "Other",
+        "index": 287,
+        "value": "0%",
+        "parentIndex": 71,
+        "depth": 33,
+        "rect": {
+          "x": 369,
+          "y": 161,
+          "height": 5,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e288"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 288,
+        "parentIndex": 287,
+        "depth": 34,
+        "rect": {
+          "x": 396,
+          "y": 164,
+          "height": 36,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e289"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 289,
+        "value": "0%",
+        "parentIndex": 71,
+        "depth": 33,
+        "rect": {
+          "x": 0,
+          "y": 164,
+          "height": 30,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e290"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 290,
+        "parentIndex": 289,
+        "depth": 34,
+        "rect": {
+          "x": 3,
+          "y": 164,
+          "height": 3,
+          "width": 393
+        },
+        "enabled": true,
+        "ref": "e291"
+      },
+      {
+        "label": "Message agent...",
+        "hittable": false,
+        "type": "Other",
+        "index": 291,
+        "identifier": "composer-viewport-content",
+        "depth": 29,
+        "rect": {
+          "x": 0,
+          "y": 166,
+          "height": 406,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 65,
+        "ref": "e292"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 292,
+        "identifier": "message-input-root",
+        "depth": 30,
+        "rect": {
+          "x": 16,
+          "y": 166,
+          "height": 356,
+          "width": 370
+        },
+        "enabled": true,
+        "parentIndex": 291,
+        "ref": "e293"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 293,
+        "parentIndex": 291,
+        "depth": 30,
+        "rect": {
+          "x": 16,
+          "y": 166,
+          "height": 356,
+          "width": 370
+        },
+        "enabled": true,
+        "ref": "e294"
+      },
+      {
+        "label": "Message agent...",
+        "hittable": false,
+        "type": "Other",
+        "index": 294,
+        "parentIndex": 291,
+        "depth": 30,
+        "rect": {
+          "x": 29,
+          "y": 175,
+          "height": 298,
+          "width": 344
+        },
+        "enabled": true,
+        "ref": "e295"
+      },
+      {
+        "label": "Message agent...",
+        "hittable": false,
+        "type": "TextView",
+        "index": 295,
+        "value": "one\ntwo\nthree\nfour\nfive\nsix\nseven\neight\nnine\nten\neleven\ntwelve\nthirteen\nfourteen\nfifteen\nsixteen\nseventeen\neighteen\nnineteen\ntwenty",
+        "parentIndex": 294,
+        "depth": 31,
+        "rect": {
+          "x": 29,
+          "y": 175,
+          "height": 298,
+          "width": 344
+        },
+        "enabled": true,
+        "ref": "e296"
+      },
+      {
+        "label": "Vertical scroll bar, 2 pages",
+        "hittable": false,
+        "type": "Other",
+        "index": 296,
+        "value": "100%",
+        "parentIndex": 295,
+        "depth": 32,
+        "rect": {
+          "x": 340,
+          "y": 175,
+          "height": 298,
+          "width": 30
+        },
+        "enabled": true,
+        "ref": "e297"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 297,
+        "parentIndex": 296,
+        "depth": 33,
+        "rect": {
+          "x": 367,
+          "y": 245,
+          "height": 225,
+          "width": 3
+        },
+        "enabled": true,
+        "ref": "e298"
+      },
+      {
+        "label": "Horizontal scroll bar, 1 page",
+        "hittable": false,
+        "type": "Other",
+        "index": 298,
+        "value": "0%",
+        "parentIndex": 295,
+        "depth": 32,
+        "rect": {
+          "x": 29,
+          "y": 440,
+          "height": 30,
+          "width": 344
+        },
+        "enabled": true,
+        "ref": "e299"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 299,
+        "parentIndex": 298,
+        "depth": 33,
+        "rect": {
+          "x": 32,
+          "y": 467,
+          "height": 3,
+          "width": 335
+        },
+        "enabled": true,
+        "ref": "e300"
+      },
+      {
+        "label": "Add attachment",
+        "hittable": false,
+        "type": "Button",
+        "index": 300,
+        "identifier": "message-input-attach-button",
+        "depth": 30,
+        "rect": {
+          "x": 23,
+          "y": 485,
+          "height": 28,
+          "width": 28
+        },
+        "enabled": true,
+        "parentIndex": 291,
+        "ref": "e301"
+      },
+      {
+        "label": "Select model (Ten second stream)",
+        "hittable": false,
+        "type": "Other",
+        "index": 301,
+        "parentIndex": 291,
+        "depth": 30,
+        "rect": {
+          "x": 51,
+          "y": 485,
+          "height": 28,
+          "width": 232
+        },
+        "enabled": true,
+        "ref": "e302"
+      },
+      {
+        "label": "Select model (Ten second stream)",
+        "hittable": false,
+        "type": "Button",
+        "index": 302,
+        "identifier": "combined-model-selector",
+        "depth": 31,
+        "rect": {
+          "x": 51,
+          "y": 485,
+          "height": 28,
+          "width": 202
+        },
+        "enabled": true,
+        "parentIndex": 301,
+        "ref": "e303"
+      },
+      {
+        "label": "Context window 3% used",
+        "hittable": false,
+        "type": "Image",
+        "index": 303,
+        "identifier": "context-window-meter",
+        "depth": 30,
+        "rect": {
+          "x": 283,
+          "y": 485,
+          "height": 28,
+          "width": 28
+        },
+        "enabled": true,
+        "parentIndex": 291,
+        "ref": "e304"
+      },
+      {
+        "label": "Start dictation",
+        "hittable": false,
+        "type": "Button",
+        "index": 304,
+        "parentIndex": 291,
+        "depth": 30,
+        "rect": {
+          "x": 315,
+          "y": 485,
+          "height": 28,
+          "width": 28
+        },
+        "enabled": true,
+        "ref": "e305"
+      },
+      {
+        "label": "Send message",
+        "hittable": false,
+        "type": "Button",
+        "index": 305,
+        "parentIndex": 291,
+        "depth": 30,
+        "rect": {
+          "x": 351,
+          "y": 485,
+          "height": 28,
+          "width": 28
+        },
+        "enabled": true,
+        "ref": "e306"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 306,
+        "parentIndex": 16,
+        "depth": 11,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e307"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 307,
+        "parentIndex": 10,
+        "depth": 7,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e308"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 308,
+        "parentIndex": 307,
+        "depth": 8,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e309"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 309,
+        "parentIndex": 308,
+        "depth": 9,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e310"
+      },
+      {
+        "hittable": false,
+        "type": "Window",
+        "index": 310,
+        "parentIndex": 0,
+        "depth": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e311"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 311,
+        "parentIndex": 310,
+        "depth": 2,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e312"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 312,
+        "parentIndex": 311,
+        "depth": 3,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e313"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 313,
+        "parentIndex": 311,
+        "depth": 3,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 336,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e314"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 314,
+        "parentIndex": 313,
+        "depth": 4,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 278,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e315"
+      },
+      {
+        "label": "Emoji",
+        "hittable": true,
+        "type": "Window",
+        "index": 315,
+        "parentIndex": 0,
+        "depth": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e316"
+      },
+      {
+        "label": "Emoji",
+        "hittable": true,
+        "type": "Other",
+        "index": 316,
+        "parentIndex": 315,
+        "depth": 2,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e317"
+      },
+      {
+        "label": "Emoji",
+        "hittable": true,
+        "type": "Other",
+        "index": 317,
+        "parentIndex": 316,
+        "depth": 3,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 336,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e318"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 318,
+        "parentIndex": 317,
+        "depth": 4,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e319"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 319,
+        "parentIndex": 318,
+        "depth": 5,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e320"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 320,
+        "parentIndex": 319,
+        "depth": 6,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e321"
+      },
+      {
+        "label": "Typing Predictions",
+        "hittable": true,
+        "type": "Other",
+        "index": 321,
+        "identifier": "SystemInputAssistantView",
+        "depth": 4,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 317,
+        "ref": "e322"
+      },
+      {
+        "label": "Typing Predictions",
+        "hittable": true,
+        "type": "Other",
+        "index": 322,
+        "parentIndex": 321,
+        "depth": 5,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e323"
+      },
+      {
+        "label": "Typing Predictions",
+        "hittable": true,
+        "type": "Other",
+        "index": 323,
+        "identifier": "CenterPageView",
+        "depth": 6,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 322,
+        "ref": "e324"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 324,
+        "parentIndex": 323,
+        "depth": 7,
+        "rect": {
+          "x": 0,
+          "y": -62,
+          "height": 1245,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e325"
+      },
+      {
+        "hittable": false,
+        "type": "ScrollView",
+        "index": 325,
+        "parentIndex": 324,
+        "depth": 8,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e326"
+      },
+      {
+        "label": "Typing Predictions",
+        "hittable": true,
+        "type": "Other",
+        "index": 326,
+        "parentIndex": 323,
+        "depth": 7,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e327"
+      },
+      {
+        "label": "Typing Predictions",
+        "hittable": true,
+        "type": "Other",
+        "index": 327,
+        "parentIndex": 326,
+        "depth": 8,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e328"
+      },
+      {
+        "label": "“thirteen”",
+        "hittable": true,
+        "type": "Other",
+        "index": 328,
+        "parentIndex": 327,
+        "depth": 9,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e329"
+      },
+      {
+        "label": "“thirteen”",
+        "hittable": true,
+        "type": "Other",
+        "index": 329,
+        "parentIndex": 328,
+        "depth": 10,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e330"
+      },
+      {
+        "label": "“thirteen”",
+        "hittable": true,
+        "type": "Other",
+        "index": 330,
+        "parentIndex": 329,
+        "depth": 11,
+        "rect": {
+          "x": 0,
+          "y": 538,
+          "height": 45,
+          "width": 134
+        },
+        "enabled": true,
+        "ref": "e331"
+      },
+      {
+        "label": "this",
+        "hittable": true,
+        "type": "Other",
+        "index": 331,
+        "parentIndex": 329,
+        "depth": 11,
+        "rect": {
+          "x": 134,
+          "y": 538,
+          "height": 45,
+          "width": 134
+        },
+        "enabled": true,
+        "ref": "e332"
+      },
+      {
+        "label": "thinking",
+        "hittable": true,
+        "type": "Other",
+        "index": 332,
+        "parentIndex": 329,
+        "depth": 11,
+        "rect": {
+          "x": 268,
+          "y": 538,
+          "height": 45,
+          "width": 134
+        },
+        "enabled": true,
+        "ref": "e333"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 333,
+        "parentIndex": 317,
+        "depth": 4,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 233,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e334"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 334,
+        "parentIndex": 333,
+        "depth": 5,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 291,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e335"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 335,
+        "parentIndex": 334,
+        "depth": 6,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 291,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e336"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "index": 336,
+        "parentIndex": 335,
+        "depth": 7,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 291,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e337"
+      },
+      {
+        "label": "q",
+        "hittable": false,
+        "type": "Other",
+        "index": 337,
+        "parentIndex": 317,
+        "depth": 4,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 233,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e338"
+      },
+      {
+        "label": "q",
+        "hittable": false,
+        "type": "Keyboard",
+        "index": 338,
+        "parentIndex": 337,
+        "depth": 5,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 233,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e339"
+      },
+      {
+        "label": "q",
+        "hittable": false,
+        "type": "Other",
+        "index": 339,
+        "parentIndex": 338,
+        "depth": 6,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 233,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e340"
+      },
+      {
+        "label": "q",
+        "hittable": false,
+        "type": "Other",
+        "index": 340,
+        "identifier": "UIKeyboardLayoutStar Preview",
+        "depth": 7,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 233,
+          "width": 402
+        },
+        "enabled": true,
+        "parentIndex": 339,
+        "ref": "e341"
+      },
+      {
+        "label": "q",
+        "hittable": false,
+        "type": "Key",
+        "index": 341,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 0,
+          "y": 590,
+          "height": 46,
+          "width": 40.333333333333336
+        },
+        "enabled": true,
+        "ref": "e342"
+      },
+      {
+        "label": "w",
+        "hittable": false,
+        "type": "Key",
+        "index": 342,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 40.333333333333336,
+          "y": 590,
+          "height": 46,
+          "width": 40.00000000000001
+        },
+        "enabled": true,
+        "ref": "e343"
+      },
+      {
+        "label": "e",
+        "hittable": false,
+        "type": "Key",
+        "index": 343,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 80.33333333333334,
+          "y": 590,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e344"
+      },
+      {
+        "label": "r",
+        "hittable": false,
+        "type": "Key",
+        "index": 344,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 120.66666666666669,
+          "y": 590,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e345"
+      },
+      {
+        "label": "t",
+        "hittable": false,
+        "type": "Key",
+        "index": 345,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 160.66666666666669,
+          "y": 590,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e346"
+      },
+      {
+        "label": "y",
+        "hittable": false,
+        "type": "Key",
+        "index": 346,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 201.00000000000003,
+          "y": 590,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e347"
+      },
+      {
+        "label": "u",
+        "hittable": false,
+        "type": "Key",
+        "index": 347,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 241.33333333333337,
+          "y": 590,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e348"
+      },
+      {
+        "label": "i",
+        "hittable": false,
+        "type": "Key",
+        "index": 348,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 281.33333333333337,
+          "y": 590,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e349"
+      },
+      {
+        "label": "o",
+        "hittable": false,
+        "type": "Key",
+        "index": 349,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 321.6666666666667,
+          "y": 590,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e350"
+      },
+      {
+        "label": "p",
+        "hittable": false,
+        "type": "Key",
+        "index": 350,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 361.6666666666667,
+          "y": 590,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e351"
+      },
+      {
+        "label": "a",
+        "hittable": false,
+        "type": "Key",
+        "index": 351,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 19.666666666666668,
+          "y": 644,
+          "height": 46,
+          "width": 40.33333333333333
+        },
+        "enabled": true,
+        "ref": "e352"
+      },
+      {
+        "label": "s",
+        "hittable": false,
+        "type": "Key",
+        "index": 352,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 60,
+          "y": 644,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e353"
+      },
+      {
+        "label": "d",
+        "hittable": false,
+        "type": "Key",
+        "index": 353,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 100.33333333333334,
+          "y": 644,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e354"
+      },
+      {
+        "label": "f",
+        "hittable": false,
+        "type": "Key",
+        "index": 354,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 140.33333333333334,
+          "y": 644,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e355"
+      },
+      {
+        "label": "g",
+        "hittable": false,
+        "type": "Key",
+        "index": 355,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 181.2026666666667,
+          "y": 644,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e356"
+      },
+      {
+        "label": "h",
+        "hittable": false,
+        "type": "Key",
+        "index": 356,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 221.2026666666667,
+          "y": 644,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e357"
+      },
+      {
+        "label": "j",
+        "hittable": false,
+        "type": "Key",
+        "index": 357,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 261.536,
+          "y": 644,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e358"
+      },
+      {
+        "label": "k",
+        "hittable": false,
+        "type": "Key",
+        "index": 358,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 301.536,
+          "y": 644,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e359"
+      },
+      {
+        "label": "l",
+        "hittable": false,
+        "type": "Key",
+        "index": 359,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 341.8693333333333,
+          "y": 644,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e360"
+      },
+      {
+        "label": "shift",
+        "hittable": false,
+        "type": "Button",
+        "index": 360,
+        "identifier": "shift",
+        "depth": 8,
+        "rect": {
+          "x": 0,
+          "y": 698,
+          "height": 46,
+          "width": 51.333333333333336
+        },
+        "enabled": true,
+        "parentIndex": 340,
+        "ref": "e361"
+      },
+      {
+        "label": "z",
+        "hittable": false,
+        "type": "Key",
+        "index": 361,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 60,
+          "y": 698,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e362"
+      },
+      {
+        "label": "x",
+        "hittable": false,
+        "type": "Key",
+        "index": 362,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 100.33333333333334,
+          "y": 698,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e363"
+      },
+      {
+        "label": "c",
+        "hittable": false,
+        "type": "Key",
+        "index": 363,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 140.33333333333334,
+          "y": 698,
+          "height": 46,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "ref": "e364"
+      },
+      {
+        "label": "v",
+        "hittable": false,
+        "type": "Key",
+        "index": 364,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 181.2026666666667,
+          "y": 698,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e365"
+      },
+      {
+        "label": "b",
+        "hittable": false,
+        "type": "Key",
+        "index": 365,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 221.2026666666667,
+          "y": 698,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e366"
+      },
+      {
+        "label": "n",
+        "hittable": false,
+        "type": "Key",
+        "index": 366,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 261.536,
+          "y": 698,
+          "height": 46,
+          "width": 40
+        },
+        "enabled": true,
+        "ref": "e367"
+      },
+      {
+        "label": "m",
+        "hittable": false,
+        "type": "Key",
+        "index": 367,
+        "parentIndex": 340,
+        "depth": 8,
+        "rect": {
+          "x": 301.536,
+          "y": 698,
+          "height": 46,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "ref": "e368"
+      },
+      {
+        "label": "delete",
+        "hittable": false,
+        "type": "Key",
+        "index": 368,
+        "identifier": "delete",
+        "depth": 8,
+        "rect": {
+          "x": 350.42133333333334,
+          "y": 698,
+          "height": 46,
+          "width": 51.333333333333314
+        },
+        "enabled": true,
+        "parentIndex": 340,
+        "ref": "e369"
+      },
+      {
+        "label": "numbers",
+        "hittable": false,
+        "type": "Key",
+        "index": 369,
+        "identifier": "more",
+        "depth": 8,
+        "rect": {
+          "x": 0,
+          "y": 752,
+          "height": 46,
+          "width": 101
+        },
+        "enabled": true,
+        "parentIndex": 340,
+        "ref": "e370"
+      },
+      {
+        "label": "space",
+        "hittable": false,
+        "type": "Key",
+        "index": 370,
+        "identifier": "space",
+        "depth": 8,
+        "rect": {
+          "x": 100.33333333333334,
+          "y": 752,
+          "height": 46,
+          "width": 201.33333333333334
+        },
+        "enabled": true,
+        "parentIndex": 340,
+        "ref": "e371"
+      },
+      {
+        "label": "return",
+        "hittable": false,
+        "type": "Button",
+        "index": 371,
+        "identifier": "Return",
+        "depth": 8,
+        "rect": {
+          "x": 301.6666666666667,
+          "y": 752,
+          "height": 46,
+          "width": 100.33333333333331
+        },
+        "enabled": true,
+        "parentIndex": 340,
+        "ref": "e372"
+      },
+      {
+        "label": "Emoji",
+        "hittable": true,
+        "type": "Other",
+        "index": 372,
+        "parentIndex": 317,
+        "depth": 4,
+        "rect": {
+          "x": 0,
+          "y": 583,
+          "height": 291,
+          "width": 402
+        },
+        "enabled": true,
+        "ref": "e373"
+      },
+      {
+        "label": "Emoji",
+        "hittable": true,
+        "type": "Button",
+        "index": 373,
+        "parentIndex": 372,
+        "depth": 5,
+        "rect": {
+          "x": 8.47726568115926,
+          "y": 805.6989567998571,
+          "height": 68.73516393505099,
+          "width": 68.0852958475086
+        },
+        "enabled": true,
+        "ref": "e374"
+      },
+      {
+        "hittable": false,
+        "type": "StaticText",
+        "index": 374,
+        "parentIndex": 373,
+        "depth": 6,
+        "rect": {
+          "x": 8.47726568115926,
+          "y": 805.6989567998571,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e375"
+      },
+      {
+        "label": "Dictate",
+        "hittable": false,
+        "type": "Button",
+        "index": 375,
+        "identifier": "dictation",
+        "depth": 5,
+        "rect": {
+          "x": 325.43743847133214,
+          "y": 805.3656234665239,
+          "height": 68.73516393505099,
+          "width": 68.08529584750863
+        },
+        "enabled": true,
+        "parentIndex": 372,
+        "ref": "e376"
+      },
+      {
+        "hittable": false,
+        "type": "StaticText",
+        "index": 376,
+        "parentIndex": 375,
+        "depth": 6,
+        "rect": {
+          "x": 325.43743847133214,
+          "y": 805.3656234665239,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e377"
+      },
+      {
+        "label": "Dictate",
+        "hittable": true,
+        "type": "Button",
+        "index": 377,
+        "identifier": "dictation",
+        "depth": 5,
+        "rect": {
+          "x": 325.43743847133214,
+          "y": 805.3656234665239,
+          "height": 68.73516393505099,
+          "width": 68.08529584750863
+        },
+        "enabled": true,
+        "parentIndex": 372,
+        "ref": "e378"
+      },
+      {
+        "hittable": false,
+        "type": "StaticText",
+        "index": 378,
+        "parentIndex": 377,
+        "depth": 6,
+        "rect": {
+          "x": 325.43743847133214,
+          "y": 805.3656234665239,
+          "height": 0,
+          "width": 0
+        },
+        "enabled": true,
+        "ref": "e379"
+      }
+    ],
+    "truncated": false,
+    "appName": "sh.paseo.debug",
+    "appBundleId": "sh.paseo.debug",
+    "visibility": {
+      "partial": false,
+      "visibleNodeCount": 379,
+      "totalNodeCount": 379,
+      "reasons": []
+    },
+    "snapshotQuality": {
+      "state": "healthy",
+      "backend": "tree"
+    },
+    "snapshotDiagnostics": {
+      "stats": {
+        "count": 31,
+        "p50Ms": 252,
+        "p95Ms": 1740,
+        "maxMs": 3250,
+        "slowThresholdMs": 1500,
+        "platform": "ios",
+        "backends": {
+          "xctest": 31
+        }
+      },
+      "warning": "Warning: ios snapshots are slow in this run: p95 1740ms over 31 captures. Possible causes: device load, app or dev server stuck, helper fallback, or stale daemon."
+    },
+    "refsGeneration": 776096
+  }
+}

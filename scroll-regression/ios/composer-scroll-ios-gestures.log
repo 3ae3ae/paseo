@@ -1,0 +1,354 @@
+
+Connecting to 3s0s50t248bag ...
+
+Warning: Permanently added 'paseo-ios.devbox.namespace' (RSA) to the list of known hosts.
+Tapped (398, 118)
+Opened: sh.paseo.debug
+Session state: /Users/runner/.agent-device/sessions/composer-scroll-ios
+Tapped @e422 (201, 760)
+settled after 2363ms: +35 -344 (~112 unchanged)
+- @e1 [application] "Paseo Debug"
++ @e1 [application] "Paseo Debug"
+- @e25 [other] "Switch tabs (2 open)"
+- @e26 [other] "Open menu"
+- @e27 [other] "Open menu"
+- @e28 [other] "Open menu"
+- @e29 [other] "Open menu"
+- @e31 [button] "Open menu"
++ @e29 [button] "Open menu"
+- @e36 [other] "main"
+- @e37 [other] "main"
++ @e31 [other]
+- @e39 [text] "main"
+- @e41 [text] "composer-dock-ios-fixture"
+- @e43 [text] "·"
+- @e52 [text] "dev-new"
+- @e53 [button] "Workspace actions"
+- @e54 [button] "Open Explorer sidebar"
++ @e43 [button] "Workspace actions"
++ @e44 [button] "Open Explorer sidebar"
+- @e57 [button] "Switch tabs (2 open)"
+- @e58 [other] "workspace-active-tab-icon"
+- @e59 [other] "workspace-tabs-row"
++ @e47 [button] "Switch tabs (2 open)"
+- @e62 [other] "Add attachment"
+- @e65 [other] "Message agent... Message, @files, /commands"
+- @e66 [other] "Scroll to bottom"
+- @e67 [other] "Horizontal scroll bar, 1 page"
+- @e69 [other] "Horizontal scroll bar, 1 page"
+- @e71 [other] "Horizontal scroll bar, 1 page"
+- @e72 [scroll-area] "Thinking"
+- @e73 [other] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fi"
+- @e74 [other] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fi"
+- @e76 [other] "older-history-slot"
+- @e78 [other] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fi"
+- @e79 [other] "user-message"
+- @e80 [other] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fi"
+- @e82 [text] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fi"
+- @e83 [text] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fi"
+- @e84 [other] "user-message-trailing-row"
+- @e85 [text] "8:53 PM"
+- @e86 [text] "8:53 PM"
+- @e87 [other] "Rewind to this message"
+- @e88 [button] "Rewind to this message"
+- @e89 [button] "Copy message"
+- @e90 [other] "Cycle 1"
+- @e91 [other] "assistant-message"
+- @e92 [other] "Cycle 1"
+- @e93 [other] "Cycle 1"
++ @e57 [scroll-area]
+- @e95 [text-view] "Cycle 1"
+- @e96 [text-view] "Cycle 1"
++ @e64 [text-view] "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams."
++ @e65 [text-view] "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams."
++ @e71 [text-view] "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame."
++ @e72 [text-view] "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame."
++ @e79 [text-view] "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout."
++ @e80 [text-view] "Coalescing happens upstream, so the FlatList sees fewer updates than the wire — but each batch can still cause a relayout."
++ @e86 [text-view] "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast."
++ @e87 [text-view] "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast."
++ @e91 [button] "Edit, packages/app/src/hooks/use-scroll-anchor.ts"
++ @e93 [button] "Shell, node scripts/simulate-stream-burst.mjs"
++ @e98 [text-view] "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle"
++ @e99 [text-view] "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle 3"
++ @e105 [text-view] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so"
++ @e106 [text-view] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rather than the math itself, so the first useful step is to read the relevant files."
++ @e113 [button] "Scroll to bottom"
++ @e116 [text-view] "Message agent... Message, @files, /commands"
++ @e119 [button] "Add attachment"
++ @e121 [button] "Select model (Ten second stream)"
++ @e122 [image] "Context window 2% used"
++ @e123 [button] "Start dictation"
++ @e124 [button] "Enable Voice mode"
++ @e129 [window]
++ @e142 [scroll-area]
++ @e144 [other] "Typing Predictions"
++ @e147 [other] "I"
++ @e148 [other] "The"
++ @e149 [other] "I’m"
++ @e155 [keyboard]
+… changed lines truncated
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/chat-gesture-open.png (402x874 @1x)
+Panned (200, 210) by (0, 160)
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/chat-slow-down.png (402x874 @1x)
+Flung down
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/chat-flick.png (402x874 @1x)
+Slow scroll retained keyboard; flick keyboard visible=true; input heights=30,30,30

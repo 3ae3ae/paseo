@@ -1,0 +1,3142 @@
+
+> paseo@0.8.0 test:e2e:composer-keyboard:android
+> ./packages/app/e2e/mobile/composer-keyboard/android.sh
+
+(node:3389115) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389147) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389147) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Opened: sh.paseo.debug
+Session state: /home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/.dev/agent-device-composer-keyboard/sessions/composer-keyboard-android
+(node:3389270) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389487) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389509) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3389520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Using workspace wks_3acbfdfad4f0df0c
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+(node:3390582) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3390589) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3390622) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 900ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3390739) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3390750) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3390757) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3390764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Warning: Activity not started, its current task has been brought to the front
+(node:3390981) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391107) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391282) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391289) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391305) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391331) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1084ms: +9 -16 (~3 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [button] "Create profile"
+- @e10 [text] "Create profile"
+- @e11 [button] "Select model (Five minute stream)"
+- @e12 [text] "Model"
+- @e13 [text] "Five minute stream"
+- @e14 [button] "Select thinking option (Low)"
+- @e15 [text] "Thinking"
+- @e16 [text] "Low"
+- @e17 [button] "Select agent mode (Load test)"
+- @e18 [text] "Mode"
+- @e19 [text] "Load test"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [scroll-area]
++ @e7 [group] "/clear, Archive this agent and start a fresh draft"
++ @e8 [text] "/clear"
++ @e9 [text] "Archive this agent and start a fresh draft"
++ @e10 [group] "/exit, Archive the current agent"
++ @e11 [text] "/exit"
++ @e12 [text] "Archive the current agent"
+(node:3391405) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Warning: Activity not started, its current task has been brought to the front
+(node:3391431) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391486) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391547) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391591) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391611) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391618) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 57 chars
+settled after 839ms: +2 -5 (~33 unchanged)
+- @e25 [text] "10:59 PM"
+- @e26 [button] "Rewind to this message"
+- @e27 [button] "Copy message"
+- @e31 [text-field] "Message, @files, /commands"
++ @e28 [text-field] "keyboard invariant line one
+line two
+line three
+line four"
+- @e38 [button] "Enable Voice mode"
++ @e35 [button] "Send message"
+(node:3391660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391667) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 57 chars
+settled after 861ms: +0 -0 (~35 unchanged)
+unchanged interactive (20):
+= @e1~s410877 [image] "Back"
+= @e2~s410877 [image] "Home"
+= @e3~s410877 [image] "Recents"
+= @e4~s410877 [scroll-area]
+= @e5~s410877 [scroll-area]
+= @e6~s410877 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s410877 [button] "Open menu"
+= @e8~s410877 [text] "Fix composer flickering and resize regressions"
+= @e9~s410877 [text] "paseo"
+= @e10~s410877 [text] "·"
+= @e11~s410877 [text] "dev-new"
+= @e12~s410877 [button] "Workspace actions"
+= @e13~s410877 [button] "Workspace scripts"
+= @e14~s410877 [button] "Open Explorer sidebar"
+= @e15~s410877 [button] "Switch tabs (31 open)"
+= @e16~s410877 [text] "Keyboard dismiss QA 1789592328"
+= @e17~s410877 [scroll-area] "agent-chat-scroll"
+= @e18~s410877 [button] "Copy turn"
+= @e19~s410877 [button] "Fork chat from here"
+= @e20~s410877 [button] "Worked for 2s, ended 10:59 PM"
+… more interactive elements not shown, use snapshot -i
+(node:3391734) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Warning: Activity not started, its current task has been brought to the front
+(node:3391781) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391829) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3391892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1331 chars
+settled after 827ms: +1 -3 (~33 unchanged)
+- @e4 [image] "IME switcher"
+- @e23 [text] "Cycle 1"
+- @e29 [text-field] "keyboard invariant line one
+line two
+line three
+line four"
++ @e27 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
+unchanged interactive (20):
+= @e1~s410884 [image] "Back"
+= @e2~s410884 [image] "Home"
+= @e3~s410884 [image] "Recents"
+= @e4~s410884 [scroll-area]
+= @e5~s410884 [scroll-area]
+= @e6~s410884 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s410884 [button] "Open menu"
+= @e8~s410884 [text] "Fix composer flickering and resize regressions"
+= @e9~s410884 [text] "paseo"
+= @e10~s410884 [text] "·"
+= @e11~s410884 [text] "dev-new"
+= @e12~s410884 [button] "Workspace actions"
+= @e13~s410884 [button] "Workspace scripts"
+= @e14~s410884 [button] "Open Explorer sidebar"
+= @e15~s410884 [button] "Switch tabs (31 open)"
+= @e16~s410884 [text] "Keyboard dismiss QA 1789592328"
+= @e17~s410884 [scroll-area] "agent-chat-scroll"
+= @e18~s410884 [button] "Copy turn"
+= @e19~s410884 [button] "Fork chat from here"
+= @e20~s410884 [button] "Worked for 2s, ended 10:59 PM"
+… more interactive elements not shown, use snapshot -i
+(node:3391963) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392018) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392039) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392057) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=344, header=330, bottom=1007, keyboard=1048
+(node:3392119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 27 chars
+settled after 822ms: +1 -2 (~33 unchanged)
+- @e4 [image] "IME switcher"
+- @e28 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
++ @e27 [text-field] "ddjdj"
+unchanged interactive (20):
+= @e1~s410891 [image] "Back"
+= @e2~s410891 [image] "Home"
+= @e3~s410891 [image] "Recents"
+= @e4~s410891 [scroll-area]
+= @e5~s410891 [scroll-area]
+= @e6~s410891 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s410891 [button] "Open menu"
+= @e8~s410891 [text] "Fix composer flickering and resize regressions"
+= @e9~s410891 [text] "paseo"
+= @e10~s410891 [text] "·"
+= @e11~s410891 [text] "dev-new"
+= @e12~s410891 [button] "Workspace actions"
+= @e13~s410891 [button] "Workspace scripts"
+= @e14~s410891 [button] "Open Explorer sidebar"
+= @e15~s410891 [button] "Switch tabs (31 open)"
+= @e16~s410891 [text] "Keyboard dismiss QA 1789592328"
+= @e17~s410891 [scroll-area] "agent-chat-scroll"
+= @e18~s410891 [button] "Copy turn"
+= @e19~s410891 [button] "Fork chat from here"
+= @e20~s410891 [button] "Worked for 2s, ended 10:59 PM"
+… more interactive elements not shown, use snapshot -i
+(node:3392289) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392338) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392494) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392838) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392845) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392865) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 57 chars
+settled after 854ms: +2 -5 (~33 unchanged)
+- @e25 [text] "10:59 PM"
+- @e26 [button] "Rewind to this message"
+- @e27 [button] "Copy message"
+- @e31 [text-field] "Message, @files, /commands"
++ @e28 [text-field] "keyboard invariant line one
+line two
+line three
+line four"
+- @e38 [button] "Enable Voice mode"
++ @e35 [button] "Send message"
+(node:3392931) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3392979) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393023) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close Explorer sidebar" (1035, 156)
+settled after 1026ms: +31 -22 (~4 unchanged)
+- @e4 [group] "Changes"
+- @e5 [text] "Changes"
+- @e6 [group] "Files"
+- @e7 [text] "Files"
+- @e8 [group] "4973"
+- @e9 [text] "4973"
+- @e10 [button] "Close Explorer sidebar"
+- @e11 [button] "Current branch: fix/new-workspace-composer-dock. Press to switch branch."
+- @e12 [text] "fix/new-workspace-composer-dock"
+- @e13 [button] "Pull request #4973"
+- @e14 [text] "#4973"
+- @e15 [button] "Open on GitHub"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
+- @e17 [button] "Diff mode"
+- @e18 [text] "Uncommitted"
+- @e19 [button] "Refresh"
+- @e20 [button] "Diff options"
+- @e21 [scroll-area] "git-diff-scroll"
+- @e22 [group] "docs/floating-panels.md, +9, -2"
+- @e23 [group] "docs/mobile-testing.md, +5, -1"
+- @e24 [button] "Jump to file"
+- @e25 [button] "Commits"
+- @e26 [text] "Commits"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (31 open)"
++ @e16 [text] "Keyboard dismiss QA 1789592328"
++ @e17 [scroll-area] "agent-chat-scroll"
++ @e18 [button] "Copy turn"
++ @e19 [button] "Fork chat from here"
++ @e20 [button] "Worked for 2s, ended 10:59 PM"
++ @e21 [text] "Worked for 2s"
++ @e22 [text] "Cycle 1"
++ @e23 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind"
++ @e24 [text] "(end of synthetic stream)"
++ @e25 [button] "Open Changes tab"
++ @e26 [text] "+2.9k"
++ @e27 [text] "-1.5k"
++ @e28 [text-field] "keyboard invariant line one
+line two
+line three
+line four"
++ @e29 [button] "Add attachment"
++ @e30 [button] "Select model (Five minute stream)"
++ @e31 [text] "Five minute stream"
++ @e32 [text] "Low"
++ @e33 [image] "Context window 0% used"
++ @e34 [button] "Start dictation"
++ @e35 [button] "Send message"
+(node:3393135) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393142) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393301) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped (540, 600)
+settled after 991ms: +32 -12 (~3 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (31 open)"
++ @e16 [text] "Keyboard dismiss QA 1789592328"
++ @e17 [scroll-area] "agent-chat-scroll"
++ @e18 [button] "Copy turn"
++ @e19 [button] "Fork chat from here"
++ @e20 [button] "Worked for 2s, ended 10:59 PM"
++ @e21 [text] "Worked for 2s"
++ @e22 [text] "Cycle 1"
++ @e23 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind"
++ @e24 [text] "(end of synthetic stream)"
++ @e25 [button] "Open Changes tab"
++ @e26 [text] "+2.9k"
++ @e27 [text] "-1.5k"
++ @e28 [text-field] "keyboard invariant line one
+line two
+line three
+line four"
++ @e29 [button] "Add attachment"
++ @e30 [button] "Select model (Five minute stream)"
++ @e31 [text] "Five minute stream"
++ @e32 [text] "Low"
++ @e33 [image] "Context window 0% used"
++ @e34 [button] "Start dictation"
++ @e35 [button] "Send message"
+(node:3393342) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393391) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393442) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393481) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393637) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393759) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393835) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="menu-button" (63, 157)
+settled after 3725ms: +58 -33 (~5 unchanged)
+- @e4 [scroll-area]
+- @e5 [scroll-area]
+- @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+- @e7 [button] "Open menu"
+- @e8 [text] "Fix composer flickering and resize regressions"
+- @e9 [text] "paseo"
+- @e10 [text] "·"
++ @e4 [button] "Close sidebar"
++ @e5 [button] "New workspace"
++ @e6 [text] "New workspace"
++ @e7 [button] "History"
++ @e8 [text] "History"
++ @e9 [button] "Search"
++ @e10 [text] "Search"
++ @e11 [button] "Schedules"
++ @e12 [text] "Schedules"
++ @e13 [scroll-area] "sidebar-project-workspace-list-scroll"
++ @e14 [button] "Pinned"
++ @e15 [text] "Pinned"
++ @e16 [scroll-area] "sidebar-pinned-list"
++ @e17 [button] "skills, Skills, dev-new"
++ @e18 [text] "S"
++ @e19 [text] "Skills"
++ @e20 [button] "Workspace actions"
++ @e22 [button] "hub, Hub, dev-new"
++ @e23 [text] "H"
++ @e24 [text] "Hub"
+- @e13 [button] "Workspace scripts"
+- @e14 [button] "Open Explorer sidebar"
+- @e15 [button] "Switch tabs (31 open)"
+- @e16 [text] "Keyboard dismiss QA 1789592328"
+- @e17 [scroll-area] "agent-chat-scroll"
+- @e18 [button] "Copy turn"
+- @e19 [button] "Fork chat from here"
+- @e20 [button] "Worked for 2s, ended 11:00 PM"
+- @e21 [text] "Worked for 2s"
+- @e22 [text] "Cycle 1"
+- @e23 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This"
+- @e24 [text] "(end of synthetic stream)"
+- @e25 [text] "11:00 PM"
+- @e26 [button] "Rewind to this message"
+- @e27 [button] "Copy message"
++ @e26 [text] "dev-new"
++ @e27 [button] "assistant, Assistant, dev-new"
++ @e28 [text] "A"
++ @e29 [text] "Assistant"
++ @e30 [button] "Workspace actions"
++ @e31 [text] "dev-new"
++ @e32 [button] "paseo, Paseo, dev-new"
++ @e33 [text] "Paseo"
++ @e34 [button] "Workspace actions"
++ @e35 [text] "dev-new"
++ @e36 [text] "Workspaces"
++ @e37 [button] "Display preferences"
++ @e38 [scroll-area] "sidebar-project-list"
++ @e39 [button] "filthy-dragon"
++ @e40 [text] "filthy-dragon"
++ @e41 [button] "Create a new workspace for filthy-dragon"
++ @e42 [button] "Project actions"
++ @e43 [scroll-area] "sidebar-workspace-list-remote:github.com/getpaseo/paseo"
++ @e44 [button] "fix/composer-flickering-regression, dev-new, Pull request #4946, Ready to review"
++ @e45 [text] "fix/composer-flickering-regression"
++ @e46 [button] "Workspace actions"
++ @e47 [text] "dev-new"
++ @e48 [text] "·"
++ @e49 [group] "Pull request #4946"
++ @e50 [text] "4946"
++ @e51 [text] "·"
++ @e52 [text] "running"
++ @e53 [button] "debug-mobile-smooth-rendering, dev-new"
++ @e54 [text] "debug-mobile-smooth-rendering"
++ @e55 [button] "Workspace actions"
++ @e56 [text] "dev-new"
++ @e57 [button] "debug-mobile-smooth-rendering, dev-new, Ready to review"
++ @e58 [button] "Add project"
++ @e59 [text] "Add project"
++ @e60 [button] "Hosts"
++ @e61 [button] "Import session"
++ @e62 [button] "Help and support"
++ @e63 [button] "Settings"
+… changed lines truncated
+(node:3393870) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="sidebar-global-new-workspace" (540, 127)
+settled after 1960ms: +18 -59 (~4 unchanged)
+- @e4 [button] "Close sidebar"
+- @e5 [button] "New workspace"
+- @e6 [text] "New workspace"
+- @e7 [button] "History"
+- @e8 [text] "History"
+- @e9 [button] "Search"
+- @e10 [text] "Search"
+- @e11 [button] "Schedules"
+- @e12 [text] "Schedules"
+- @e13 [scroll-area] "sidebar-project-workspace-list-scroll"
+- @e14 [button] "Pinned"
+- @e15 [text] "Pinned"
+- @e16 [scroll-area] "sidebar-pinned-list"
+- @e17 [button] "skills, Skills, dev-new"
+- @e18 [text] "S"
+- @e19 [text] "Skills"
+- @e20 [button] "Workspace actions"
++ @e4 [scroll-area]
++ @e5 [group] "composer-dock-header"
++ @e6 [button] "Open menu"
++ @e7 [group]
++ @e8 [button] "Workspace project"
++ @e9 [text] "paseo"
++ @e10 [button] "Host"
+- @e22 [button] "hub, Hub, dev-new"
+- @e23 [text] "H"
+- @e24 [text] "Hub"
+- @e25 [button] "Workspace actions"
+- @e26 [text] "dev-new"
+- @e27 [button] "assistant, Assistant, dev-new"
+- @e28 [text] "A"
+- @e29 [text] "Assistant"
+- @e30 [button] "Workspace actions"
+- @e31 [text] "dev-new"
+- @e32 [button] "paseo, Paseo, dev-new"
+- @e33 [text] "Paseo"
+- @e34 [button] "Workspace actions"
+- @e35 [text] "dev-new"
+- @e36 [text] "Workspaces"
+- @e37 [button] "Display preferences"
+- @e38 [scroll-area] "sidebar-project-list"
+- @e39 [button] "filthy-dragon"
+- @e40 [text] "filthy-dragon"
+- @e41 [button] "Create a new workspace for filthy-dragon"
+- @e42 [button] "Project actions"
+- @e43 [scroll-area] "sidebar-workspace-list-remote:github.com/getpaseo/paseo"
+- @e44 [button] "fix/composer-flickering-regression, dev-new, Pull request #4946, Ready to review"
+- @e45 [text] "fix/composer-flickering-regression"
+- @e46 [button] "Workspace actions"
+- @e47 [text] "dev-new"
+- @e48 [text] "·"
+- @e49 [group] "Pull request #4946"
+- @e50 [text] "4946"
+- @e51 [text] "·"
+- @e52 [text] "running"
+- @e53 [button] "debug-mobile-smooth-rendering, dev-new"
+- @e54 [text] "debug-mobile-smooth-rendering"
+- @e55 [button] "Workspace actions"
+- @e56 [text] "dev-new"
+- @e57 [button] "debug-mobile-smooth-rendering, dev-new, Ready to review"
+- @e58 [button] "Add project"
+- @e59 [text] "Add project"
+- @e60 [button] "Hosts"
+- @e61 [button] "Import session"
+- @e62 [button] "Help and support"
+- @e63 [button] "Settings"
++ @e12 [button] "Workspace isolation"
++ @e13 [text] "Local"
++ @e14 [button] "Choose what to launch"
++ @e15 [text] "Chat"
++ @e16 [text-field] "Message, @files, /commands"
++ @e17 [button] "Add attachment"
++ @e18 [button] "Select model (Ten second stream)"
++ @e19 [text] "Ten second stream"
++ @e20 [text] "Low"
++ @e21 [button] "Start dictation"
++ @e22 [button] "Create"
+(node:3393891) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3393900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1210ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s410942 [image] "Back"
+= @e2~s410942 [image] "Home"
+= @e3~s410942 [image] "Recents"
+= @e4~s410942 [scroll-area]
+= @e5~s410942 [group] "composer-dock-header"
+= @e6~s410942 [button] "Open menu"
+= @e7~s410942 [group]
+= @e8~s410942 [button] "Workspace project"
+= @e9~s410942 [text] "paseo"
+= @e10~s410942 [button] "Host"
+= @e11~s410942 [text] "dev-new"
+= @e12~s410942 [button] "Workspace isolation"
+= @e13~s410942 [text] "Local"
+= @e14~s410942 [button] "Choose what to launch"
+= @e15~s410942 [text] "Chat"
+= @e17~s410942 [button] "Add attachment"
+= @e18~s410942 [button] "Select model (Ten second stream)"
+= @e19~s410942 [text] "Ten second stream"
+= @e20~s410942 [text] "Low"
+= @e21~s410942 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3394007) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394287) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394518) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394671) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Setup fields followed composer growth: 124px
+(node:3394803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1331 chars
+settled after 1179ms: +1 -2 (~21 unchanged)
+- @e4 [image] "IME switcher"
+- @e17 [text-field] "x
+
+
+grown"
++ @e16 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
+unchanged interactive (20):
+= @e1~s410951 [image] "Back"
+= @e2~s410951 [image] "Home"
+= @e3~s410951 [image] "Recents"
+= @e4~s410951 [scroll-area]
+= @e5~s410951 [group] "composer-dock-header"
+= @e6~s410951 [button] "Open menu"
+= @e7~s410951 [group]
+= @e8~s410951 [button] "Workspace project"
+= @e9~s410951 [text] "paseo"
+= @e10~s410951 [button] "Host"
+= @e11~s410951 [text] "dev-new"
+= @e12~s410951 [button] "Workspace isolation"
+= @e13~s410951 [text] "Local"
+= @e14~s410951 [button] "Choose what to launch"
+= @e15~s410951 [text] "Chat"
+= @e17~s410951 [button] "Add attachment"
+= @e18~s410951 [button] "Select model (Ten second stream)"
+= @e19~s410951 [text] "Ten second stream"
+= @e20~s410951 [text] "Low"
+= @e21~s410951 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3394838) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394934) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3394963) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395006) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=244, header=231, bottom=1006, keyboard=1048
+(node:3395176) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395197) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Setup fields visible above the composer: 813 <= 990
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+(node:3395326) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+BEGIN host=chat
+(node:3395377) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1545ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3395482) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395493) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395582) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395773) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3395881) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Content followed input growth: 124px
+(node:3395922) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1331 chars
+settled after 1613ms: +1 -2 (~33 unchanged)
+- @e22 [text] "Cycle 1"
+- @e28 [text-field] "short
+
+
+grown"
++ @e27 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
+unchanged interactive (20):
+= @e1~s410969 [image] "Back"
+= @e2~s410969 [image] "Home"
+= @e3~s410969 [image] "Recents"
+= @e4~s410969 [scroll-area]
+= @e5~s410969 [scroll-area]
+= @e6~s410969 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s410969 [button] "Open menu"
+= @e8~s410969 [text] "Fix composer flickering and resize regressions"
+= @e9~s410969 [text] "paseo"
+= @e10~s410969 [text] "·"
+= @e11~s410969 [text] "dev-new"
+= @e12~s410969 [button] "Workspace actions"
+= @e13~s410969 [button] "Workspace scripts"
+= @e14~s410969 [button] "Open Explorer sidebar"
+= @e15~s410969 [button] "Switch tabs (31 open)"
+= @e16~s410969 [text] "Keyboard dismiss QA 1789592328"
+= @e17~s410969 [scroll-area] "agent-chat-scroll"
+= @e18~s410969 [button] "Copy turn"
+= @e19~s410969 [button] "Fork chat from here"
+= @e20~s410969 [button] "Worked for 2s, ended 11:00 PM"
+… more interactive elements not shown, use snapshot -i
+(node:3395980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=344, header=330, bottom=1007, keyboard=1048
+(node:3396123) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396213) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396231) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=1090, header=330, bottom=1753, keyboard=1794
+(node:3396368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396438) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396505) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 27 chars
+settled after 2812ms: +1 -1 (~33 unchanged)
+- @e27 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
++ @e27 [text-field] "ddjdj"
+unchanged interactive (20):
+= @e1~s410979 [image] "Back"
+= @e2~s410979 [image] "Home"
+= @e3~s410979 [image] "Recents"
+= @e4~s410979 [scroll-area]
+= @e5~s410979 [scroll-area]
+= @e6~s410979 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s410979 [button] "Open menu"
+= @e8~s410979 [text] "Fix composer flickering and resize regressions"
+= @e9~s410979 [text] "paseo"
+= @e10~s410979 [text] "·"
+= @e11~s410979 [text] "dev-new"
+= @e12~s410979 [button] "Workspace actions"
+= @e13~s410979 [button] "Workspace scripts"
+= @e14~s410979 [button] "Open Explorer sidebar"
+= @e15~s410979 [button] "Switch tabs (31 open)"
+= @e16~s410979 [text] "Keyboard dismiss QA 1789592328"
+= @e17~s410979 [scroll-area] "agent-chat-scroll"
+= @e18~s410979 [button] "Copy turn"
+= @e19~s410979 [button] "Fork chat from here"
+= @e20~s410979 [button] "Worked for 2s, ended 11:00 PM"
+… more interactive elements not shown, use snapshot -i
+(node:3396847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396865) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396926) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3396943) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397066) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397093) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397110) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: growth, header/keyboard/safe-area bounds, close/reopen height, hold-delete baseline, content/header dismissal, JS-stall motion
+(node:3397274) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1662ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3397350) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397370) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: commands popover keyboard=closed
+(node:3397490) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1811ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3397565) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397585) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3397610) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: files popover keyboard=closed
+(node:3397678) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1898ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3397963) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398063) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398083) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398101) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1718ms: +32 -13 (~6 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [button] "Create profile"
+- @e10 [text] "Create profile"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (31 open)"
++ @e16 [text] "Keyboard dismiss QA 1789592328"
++ @e17 [scroll-area] "agent-chat-scroll"
++ @e18 [button] "Copy turn"
++ @e19 [button] "Fork chat from here"
++ @e20 [button] "Worked for 2s, ended 11:00 PM"
++ @e21 [text] "Worked for 2s"
++ @e22 [text] "Cycle 1"
++ @e23 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This"
++ @e24 [text] "(end of synthetic stream)"
++ @e25 [text] "11:00 PM"
++ @e26 [button] "Rewind to this message"
++ @e27 [button] "Copy message"
++ @e28 [button] "Open Changes tab"
++ @e29 [text] "+2.9k"
++ @e30 [text] "-1.5k"
++ @e31 [text-field] "Message, @files, /commands"
++ @e32 [button] "Add attachment"
+- @e12 [text] "Model"
+- @e14 [button] "Select thinking option (Low)"
+- @e15 [text] "Thinking"
+- @e17 [button] "Select agent mode (Load test)"
+- @e18 [text] "Mode"
+- @e19 [text] "Load test"
++ @e36 [image] "Context window 0% used"
++ @e37 [button] "Start dictation"
++ @e38 [button] "Enable Voice mode"
+PASS host=chat: model selector keyboard=closed
+(node:3398161) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1777ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3398583) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398674) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3398956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="message-input-attachment-menu-item-github" (541, 1616)
+settled after 2289ms: +4 -10 (~5 unchanged)
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e6 [text] "Attach issue or PR"
++ @e7 [text-field] "Search issues and PRs..."
++ @e8 [scroll-area]
++ @e9 [text] "Searching..."
+(node:3399660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3399675) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3399767) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: attachment menu and forge picker keyboard=closed
+(node:3399789) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1543ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3399853) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3399903) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3399910) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: commands popover keyboard=open
+(node:3399953) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1379ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3400020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400138) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: files popover keyboard=open
+(node:3400168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1463ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3400236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400362) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400369) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400393) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1103ms: +32 -13 (~6 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [button] "Create profile"
+- @e10 [text] "Create profile"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (31 open)"
++ @e16 [text] "Keyboard dismiss QA 1789592328"
++ @e17 [scroll-area] "agent-chat-scroll"
++ @e18 [button] "Copy turn"
++ @e19 [button] "Fork chat from here"
++ @e20 [button] "Worked for 2s, ended 11:00 PM"
++ @e21 [text] "Worked for 2s"
++ @e22 [text] "Cycle 1"
++ @e23 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This"
++ @e24 [text] "(end of synthetic stream)"
++ @e25 [text] "11:00 PM"
++ @e26 [button] "Rewind to this message"
++ @e27 [button] "Copy message"
++ @e28 [button] "Open Changes tab"
++ @e29 [text] "+2.9k"
++ @e30 [text] "-1.5k"
++ @e31 [text-field] "Message, @files, /commands"
++ @e32 [button] "Add attachment"
+- @e12 [text] "Model"
+- @e14 [button] "Select thinking option (Low)"
+- @e15 [text] "Thinking"
+- @e17 [button] "Select agent mode (Load test)"
+- @e18 [text] "Mode"
+- @e19 [text] "Load test"
++ @e36 [image] "Context window 0% used"
++ @e37 [button] "Start dictation"
++ @e38 [button] "Enable Voice mode"
+PASS host=chat: model selector keyboard=open
+(node:3400432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1629ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3400530) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400615) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400635) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400659) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400681) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="message-input-attachment-menu-item-github" (541, 1616)
+settled after 3676ms: +18 -10 (~5 unchanged)
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e6 [text] "Attach issue or PR"
++ @e7 [text-field] "Search issues and PRs..."
++ @e8 [scroll-area]
++ @e9 [button] "#4904 fix(server): claim scheduled slots atomically"
++ @e10 [text] "#4904 fix(server): claim scheduled slots atomically"
++ @e11 [button] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e12 [text] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e13 [button] "#4972 Let plugins open external links and workspace browsers"
++ @e14 [text] "#4972 Let plugins open external links and workspace browsers"
++ @e15 [button] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e16 [text] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e17 [button] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e18 [text] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e19 [button] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e20 [text] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e21 [button] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e22 [text] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e23 [button] "#4961 fix(omp): reconcile duplicate foreground prompt echoes"
+(node:3400800) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400807) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400826) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=chat: attachment menu and forge picker keyboard=open
+(node:3400849) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1481ms: +2 -2 (~36 unchanged)
+- @e31 [text-field] "Message, @files, /commands"
++ @e31 [text-field] "x"
+- @e38 [button] "Enable Voice mode"
++ @e38 [button] "Send message"
+(node:3400908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400926) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400946) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3400963) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 17 chars
+(node:3401061) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3401085) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="model-row-mock-ten-second-stream" (540, 809)
+settled after 2055ms: +12 -5 (~7 unchanged)
+- @e7 [text-field] "Ten second stream"
+- @e8 [scroll-area]
+- @e9 [button] "Ten second stream, Mock Load Test · Fast realistic stream for tests and smoke checks."
++ @e7 [text-field] "Search models..."
++ @e8 [scroll-area] "compact-provider-list"
++ @e9 [button] "Create profile"
++ @e10 [text] "Create profile"
++ @e11 [button] "Select model (Ten second stream)"
++ @e12 [text] "Model"
+- @e11 [text] "Mock Load Test · Fast realistic stream for tests and smoke checks."
+- @e12 [button] "Create profile from this model"
++ @e14 [button] "Select thinking option (Low)"
++ @e15 [text] "Thinking"
++ @e16 [text] "Low"
++ @e17 [button] "Select agent mode (Load test)"
++ @e18 [text] "Mode"
++ @e19 [text] "Load test"
+(node:3401114) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1655ms: +32 -13 (~6 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [button] "Create profile"
+- @e10 [text] "Create profile"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (31 open)"
++ @e16 [text] "Keyboard dismiss QA 1789592328"
++ @e17 [scroll-area] "agent-chat-scroll"
++ @e18 [button] "Copy turn"
++ @e19 [button] "Fork chat from here"
++ @e20 [button] "Worked for 2s, ended 11:00 PM"
++ @e21 [text] "Worked for 2s"
++ @e22 [text] "Cycle 1"
++ @e23 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This"
++ @e24 [text] "(end of synthetic stream)"
++ @e25 [text] "11:00 PM"
++ @e26 [button] "Rewind to this message"
++ @e27 [button] "Copy message"
++ @e28 [button] "Open Changes tab"
++ @e29 [text] "+2.9k"
++ @e30 [text] "-1.5k"
++ @e31 [text-field] "Message, @files, /commands"
++ @e32 [button] "Add attachment"
+- @e12 [text] "Model"
+- @e14 [button] "Select thinking option (Low)"
+- @e15 [text] "Thinking"
+- @e17 [button] "Select agent mode (Load test)"
+- @e18 [text] "Mode"
+- @e19 [text] "Load test"
++ @e36 [image] "Context window 0% used"
++ @e37 [button] "Start dictation"
++ @e38 [button] "Enable Voice mode"
+(node:3401164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 4089 chars
+(node:3401250) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Send message" (983, 1693)
+not settled after 10000ms
+hint: A snapshot capture stalled past the settle budget, so no settled diff is shown. The action itself succeeded; observe with wait stable or snapshot.
+(node:3401483) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3401832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3401973) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402010) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Native swipe moved stream content: 24.30% changed
+(node:3402515) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402546) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Native swipe moved stream content: 23.50% changed
+PASS host=chat: native stream swipe after submit and after idle at bottom
+(node:3402576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402587) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="workspace-header-menu-trigger" (849, 157)
+settled after 2533ms: +25 -35 (~3 unchanged)
+- @e4 [scroll-area]
+- @e5 [scroll-area]
+- @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+- @e7 [button] "Open menu"
+- @e8 [text] "Fix composer flickering and resize regressions"
+- @e9 [text] "paseo"
+- @e10 [text] "·"
+- @e11 [text] "dev-new"
+- @e12 [button] "Workspace actions"
+- @e13 [button] "Workspace scripts"
+- @e14 [button] "Open Explorer sidebar"
+- @e15 [button] "Switch tabs (31 open)"
+- @e16 [text] "Keyboard dismiss QA 1789592328"
+- @e17 [scroll-area] "agent-chat-scroll"
+- @e18 [text] "The change should keep scroll-to-bottom working when the user is at the bottom while not yanking the viewport when they are reading earlier messages. The bash output confirms the userIsAtBottom flag flips correctly during a simulated streaming burst, and the gesture flag suppresses scroll while a drag is active. If you want, I can follow up with a regression test that drives the FlatList with synthetic deltas at high frequency to lock in the behavior. For now, I'll stop here so you can take a look.## Cycle 4"
+- @e19 [text] "I'll take a look at the scroll anchor behavior you described. Let me start by walking through how the conversation list currently handles streaming updates and where the auto-scroll logic actually lives. My instinct is that the anchor is supposed to pin to the bottom only when the user is already there, but I want to confirm that against the code rather than guess. This kind of behavior is usually a thin layout effect over a ref, and the bugs tend to come from event ordering rath"
+- @e20 [button] "Shell, node scripts/simulate-stream-burst.mjs"
+- @e21 [text] "Shell"
+- @e22 [text] "node scripts/simulate-stream-burst.mjs"
+- @e23 [button] "Edit, packages/app/src/hooks/use-scroll-anchor.ts"
+- @e24 [text] "Edit"
+- @e25 [text] "packages/app/src/hooks/use-scroll-anchor.ts"
+- @e26 [text] "Let me make a small adjustment to the threshold and add a flag for active gestures, then run a quick command to confirm the order of events when streaming is fast."
+- @e27 [button] "Scroll to bottom"
+- @e28 [button] "Open Changes tab"
+- @e29 [text] "+2.9k"
+- @e30 [text] "-1.5k"
+- @e31 [text-field] "Message, @files, /commands"
+- @e32 [button] "Add attachment"
+- @e33 [button] "Select model (Ten second stream)"
+- @e34 [text] "Ten second stream"
+- @e35 [text] "Low"
+- @e36 [image] "Context window 3% used"
+- @e37 [button] "Start dictation"
+- @e38 [button] "Enable Voice mode"
++ @e4 [seekbar] "Bottom sheet handle"
++ @e5 [seekbar] "Bottom Sheet"
++ @e6 [scroll-area] "workspace-header-menu-content"
++ @e7 [text] "Workspace actions"
++ @e8 [group] "New agent"
++ @e9 [text] "New agent"
++ @e10 [group] "Copy workspace path"
++ @e11 [text] "Copy workspace path"
++ @e12 [group] "Copy branch name"
++ @e13 [text] "Copy branch name"
++ @e14 [group] "Import session"
++ @e15 [text] "Import session"
++ @e16 [text] "Terminal profiles"
++ @e17 [group] "New terminal"
++ @e18 [text] "New terminal"
++ @e19 [group] "Claude Code"
++ @e20 [text] "Claude Code"
++ @e21 [group] "Codex"
++ @e22 [text] "Codex"
++ @e23 [group] "OpenCode"
++ @e24 [text] "OpenCode"
++ @e25 [group] "Pi"
++ @e26 [text] "Pi"
++ @e27 [group] "Edit profiles"
++ @e28 [text] "Edit profiles"
+(node:3402630) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402637) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="workspace-header-new-agent" (541, 651)
+settled after 2029ms: +21 -24 (~4 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [scroll-area] "workspace-header-menu-content"
+- @e7 [text] "Workspace actions"
+- @e8 [group] "New agent"
+- @e9 [text] "New agent"
+- @e10 [group] "Copy workspace path"
+- @e11 [text] "Copy workspace path"
+- @e12 [group] "Copy branch name"
+- @e13 [text] "Copy branch name"
+- @e14 [group] "Import session"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (32 open)"
++ @e16 [text] "New Agent"
++ @e17 [scroll-area]
++ @e18 [button] "Import session"
+- @e16 [text] "Terminal profiles"
+- @e17 [group] "New terminal"
+- @e18 [text] "New terminal"
+- @e19 [group] "Claude Code"
+- @e20 [text] "Claude Code"
+- @e21 [group] "Codex"
+- @e22 [text] "Codex"
+- @e23 [group] "OpenCode"
+- @e24 [text] "OpenCode"
+- @e25 [group] "Pi"
+- @e26 [text] "Pi"
+- @e27 [group] "Edit profiles"
+- @e28 [text] "Edit profiles"
++ @e20 [text-field] "Message, @files, /commands"
++ @e21 [button] "Add attachment"
++ @e22 [button] "Select model (Ten second stream)"
++ @e23 [text] "Ten second stream"
++ @e24 [text] "Low"
++ @e25 [button] "Start dictation"
+(node:3402723) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+BEGIN host=workspace-draft
+(node:3402748) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1163ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3402854) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402865) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3402978) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403039) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403106) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403149) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403179) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Content followed input growth: 124px
+(node:3403246) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1331 chars
+settled after 1129ms: +1 -1 (~25 unchanged)
+- @e20 [text-field] "short
+
+
+grown"
++ @e20 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
+unchanged interactive (20):
+= @e1~s411115 [image] "Back"
+= @e2~s411115 [image] "Home"
+= @e3~s411115 [image] "Recents"
+= @e4~s411115 [scroll-area]
+= @e5~s411115 [scroll-area]
+= @e6~s411115 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s411115 [button] "Open menu"
+= @e8~s411115 [text] "Fix composer flickering and resize regressions"
+= @e9~s411115 [text] "paseo"
+= @e10~s411115 [text] "·"
+= @e11~s411115 [text] "dev-new"
+= @e12~s411115 [button] "Workspace actions"
+= @e13~s411115 [button] "Workspace scripts"
+= @e14~s411115 [button] "Open Explorer sidebar"
+= @e15~s411115 [button] "Switch tabs (32 open)"
+= @e16~s411115 [text] "New Agent"
+= @e17~s411115 [scroll-area]
+= @e18~s411115 [button] "Import session"
+= @e19~s411115 [text] "Import session"
+= @e21~s411115 [button] "Add attachment"
+… more interactive elements not shown, use snapshot -i
+(node:3403313) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403367) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403385) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=470, header=330, bottom=1007, keyboard=1048
+(node:3403456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403485) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403626) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=1216, header=330, bottom=1753, keyboard=1794
+(node:3403677) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403737) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403762) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3403805) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 27 chars
+settled after 1274ms: +1 -1 (~25 unchanged)
+- @e20 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
++ @e20 [text-field] "ddjdj"
+unchanged interactive (20):
+= @e1~s411125 [image] "Back"
+= @e2~s411125 [image] "Home"
+= @e3~s411125 [image] "Recents"
+= @e4~s411125 [scroll-area]
+= @e5~s411125 [scroll-area]
+= @e6~s411125 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+= @e7~s411125 [button] "Open menu"
+= @e8~s411125 [text] "Fix composer flickering and resize regressions"
+= @e9~s411125 [text] "paseo"
+= @e10~s411125 [text] "·"
+= @e11~s411125 [text] "dev-new"
+= @e12~s411125 [button] "Workspace actions"
+= @e13~s411125 [button] "Workspace scripts"
+= @e14~s411125 [button] "Open Explorer sidebar"
+= @e15~s411125 [button] "Switch tabs (32 open)"
+= @e16~s411125 [text] "New Agent"
+= @e17~s411125 [scroll-area]
+= @e18~s411125 [button] "Import session"
+= @e19~s411125 [text] "Import session"
+= @e21~s411125 [button] "Add attachment"
+… more interactive elements not shown, use snapshot -i
+(node:3404220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404238) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404275) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404293) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404342) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404485) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404526) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: growth, header/keyboard/safe-area bounds, close/reopen height, hold-delete baseline, content/header dismissal, JS-stall motion
+(node:3404629) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1263ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3404793) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404813) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3404897) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: commands popover keyboard=closed
+(node:3404952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1126ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3405080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405101) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: files popover keyboard=closed
+(node:3405162) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1113ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3405310) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405439) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1313ms: +20 -32 (~5 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search all models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [text] "Profiles"
+- @e10 [button] "Edit agent profiles"
+- @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
+- @e12 [text] "Kimi K3"
+- @e13 [text] "Pi · Kimi K3 · Medium"
+- @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
+- @e15 [text] "hard worker"
+- @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
+- @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
+- @e18 [text] "Gemini 3.7 Flash"
+- @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
+- @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
+- @e21 [text] "Fable 5.1"
+- @e22 [text] "Claude · Fable 5.1 · Bypass · High"
+- @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
+- @e24 [text] "UI / Opus"
+- @e25 [text] "Claude · Opus 5 · Bypass · High"
+- @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
+- @e27 [text] "astra"
+- @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
+- @e29 [button] "GLM 5.1, Pi · GLM 5.1"
+- @e30 [text] "GLM 5.1"
+- @e31 [text] "Pi · GLM 5.1"
+- @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
+- @e33 [text] "DeepSeek V4 Pro 0813"
+- @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (32 open)"
++ @e16 [text] "New Agent"
++ @e17 [scroll-area]
++ @e18 [button] "Import session"
++ @e19 [text] "Import session"
++ @e20 [text-field] "Message, @files, /commands"
++ @e21 [button] "Add attachment"
+- @e36 [text] "Model"
++ @e24 [text] "Low"
++ @e25 [button] "Start dictation"
+PASS host=workspace-draft: model selector keyboard=closed
+(node:3405599) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1194ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3405660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405678) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405715) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="message-input-attachment-menu-item-github" (541, 1616)
+settled after 2574ms: +18 -10 (~5 unchanged)
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e6 [text] "Attach issue or PR"
++ @e7 [text-field] "Search issues and PRs..."
++ @e8 [scroll-area]
++ @e9 [button] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e10 [text] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e11 [button] "#4904 fix(server): claim scheduled slots atomically"
++ @e12 [text] "#4904 fix(server): claim scheduled slots atomically"
++ @e13 [button] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e14 [text] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e15 [button] "#4972 Let plugins open external links and workspace browsers"
++ @e16 [text] "#4972 Let plugins open external links and workspace browsers"
++ @e17 [button] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e18 [text] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e19 [button] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e20 [text] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e21 [button] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e22 [text] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e23 [button] "#4961 fix(omp): reconcile duplicate foreground prompt echoes"
+(node:3405898) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405905) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3405931) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: attachment menu and forge picker keyboard=closed
+(node:3405947) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1095ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3406014) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406071) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: commands popover keyboard=open
+(node:3406136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1209ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3406227) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406277) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406291) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: files popover keyboard=open
+(node:3406390) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1146ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3406477) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406538) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406558) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406573) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3406632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 2174ms: +20 -32 (~5 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search all models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [text] "Profiles"
+- @e10 [button] "Edit agent profiles"
+- @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
+- @e12 [text] "Kimi K3"
+- @e13 [text] "Pi · Kimi K3 · Medium"
+- @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
+- @e15 [text] "hard worker"
+- @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
+- @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
+- @e18 [text] "Gemini 3.7 Flash"
+- @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
+- @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
+- @e21 [text] "Fable 5.1"
+- @e22 [text] "Claude · Fable 5.1 · Bypass · High"
+- @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
+- @e24 [text] "UI / Opus"
+- @e25 [text] "Claude · Opus 5 · Bypass · High"
+- @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
+- @e27 [text] "astra"
+- @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
+- @e29 [button] "GLM 5.1, Pi · GLM 5.1"
+- @e30 [text] "GLM 5.1"
+- @e31 [text] "Pi · GLM 5.1"
+- @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
+- @e33 [text] "DeepSeek V4 Pro 0813"
+- @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (32 open)"
++ @e16 [text] "New Agent"
++ @e17 [scroll-area]
++ @e18 [button] "Import session"
++ @e19 [text] "Import session"
++ @e20 [text-field] "Message, @files, /commands"
++ @e21 [button] "Add attachment"
+- @e36 [text] "Model"
++ @e24 [text] "Low"
++ @e25 [button] "Start dictation"
+PASS host=workspace-draft: model selector keyboard=open
+(node:3406990) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 2234ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3407915) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3407963) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3407983) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408013) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408030) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="message-input-attachment-menu-item-github" (541, 1616)
+settled after 7183ms: +18 -10 (~5 unchanged)
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e6 [text] "Attach issue or PR"
++ @e7 [text-field] "Search issues and PRs..."
++ @e8 [scroll-area]
++ @e9 [button] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e10 [text] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e11 [button] "#4904 fix(server): claim scheduled slots atomically"
++ @e12 [text] "#4904 fix(server): claim scheduled slots atomically"
++ @e13 [button] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e14 [text] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e15 [button] "#4972 Let plugins open external links and workspace browsers"
++ @e16 [text] "#4972 Let plugins open external links and workspace browsers"
++ @e17 [button] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e18 [text] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e19 [button] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e20 [text] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e21 [button] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e22 [text] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e23 [button] "#4961 fix(omp): reconcile duplicate foreground prompt echoes"
+(node:3408146) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408234) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408253) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=workspace-draft: attachment menu and forge picker keyboard=open
+(node:3408300) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 3788ms: +2 -1 (~24 unchanged)
+- @e20 [text-field] "Message, @files, /commands"
++ @e20 [text-field] "x"
++ @e26 [button] "Send message"
+(node:3408408) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408426) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408486) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408602) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 17 chars
+(node:3408803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3408827) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="model-row-mock-ten-second-stream" (540, 809)
+settled after 4867ms: +30 -5 (~7 unchanged)
+- @e7 [text-field] "Ten second stream"
+- @e8 [scroll-area]
+- @e9 [button] "Ten second stream, Mock Load Test · Fast realistic stream for tests and smoke checks."
++ @e7 [text-field] "Search all models..."
++ @e8 [scroll-area] "compact-provider-list"
++ @e9 [text] "Profiles"
++ @e10 [button] "Edit agent profiles"
++ @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
++ @e12 [text] "Kimi K3"
++ @e13 [text] "Pi · Kimi K3 · Medium"
++ @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
++ @e15 [text] "hard worker"
++ @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
++ @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
++ @e18 [text] "Gemini 3.7 Flash"
++ @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
++ @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
++ @e21 [text] "Fable 5.1"
++ @e22 [text] "Claude · Fable 5.1 · Bypass · High"
++ @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
++ @e24 [text] "UI / Opus"
++ @e25 [text] "Claude · Opus 5 · Bypass · High"
++ @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
++ @e27 [text] "astra"
++ @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
++ @e29 [button] "GLM 5.1, Pi · GLM 5.1"
++ @e30 [text] "GLM 5.1"
++ @e31 [text] "Pi · GLM 5.1"
++ @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e33 [text] "DeepSeek V4 Pro 0813"
++ @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e35 [button] "Select model (Ten second stream)"
++ @e36 [text] "Model"
+- @e11 [text] "Mock Load Test · Fast realistic stream for tests and smoke checks."
+- @e12 [button] "Create profile from this model"
+(node:3408912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1077ms: +20 -32 (~5 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search all models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [text] "Profiles"
+- @e10 [button] "Edit agent profiles"
+- @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
+- @e12 [text] "Kimi K3"
+- @e13 [text] "Pi · Kimi K3 · Medium"
+- @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
+- @e15 [text] "hard worker"
+- @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
+- @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
+- @e18 [text] "Gemini 3.7 Flash"
+- @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
+- @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
+- @e21 [text] "Fable 5.1"
+- @e22 [text] "Claude · Fable 5.1 · Bypass · High"
+- @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
+- @e24 [text] "UI / Opus"
+- @e25 [text] "Claude · Opus 5 · Bypass · High"
+- @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
+- @e27 [text] "astra"
+- @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
+- @e29 [button] "GLM 5.1, Pi · GLM 5.1"
+- @e30 [text] "GLM 5.1"
+- @e31 [text] "Pi · GLM 5.1"
+- @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
+- @e33 [text] "DeepSeek V4 Pro 0813"
+- @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e4 [scroll-area]
++ @e5 [scroll-area]
++ @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
++ @e7 [button] "Open menu"
++ @e8 [text] "Fix composer flickering and resize regressions"
++ @e9 [text] "paseo"
++ @e10 [text] "·"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace actions"
++ @e13 [button] "Workspace scripts"
++ @e14 [button] "Open Explorer sidebar"
++ @e15 [button] "Switch tabs (32 open)"
++ @e16 [text] "New Agent"
++ @e17 [scroll-area]
++ @e18 [button] "Import session"
++ @e19 [text] "Import session"
++ @e20 [text-field] "Message, @files, /commands"
++ @e21 [button] "Add attachment"
+- @e36 [text] "Model"
++ @e24 [text] "Low"
++ @e25 [button] "Start dictation"
+(node:3408993) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 4089 chars
+(node:3409132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Send message" (983, 1693)
+settled after 1124ms: +9 -9 (~17 unchanged)
+- @e16 [text] "New Agent"
+- @e17 [scroll-area]
+- @e18 [button] "Import session"
+- @e19 [text] "Import session"
+- @e20 [text-field] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fixture 43: distinct history row after submitting from a dock host.
+Native scroll fixture 44: distinct history row after submitting from a dock host.
+Native scroll fixture 45: distinct history row after submitting from a dock host.
+Native scroll fixture 46: distinct history row after submitting from a dock host.
+Native scroll fixture 47: distinct history row after submitting from a dock host.
+Native scroll fixture 48: distinct history row after submitting from a dock host.
+Native scroll fixture 49: distinct history row after submitting from a dock host."
+- @e21 [button] "Add attachment"
+- @e22 [button] "Select model (Ten second stream)"
++ @e16 [text] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fixture 43: distinct history row after submitting from a dock host.
+Native scroll fixture 44: distinct history row after submitting from a dock host.
+Native scroll fixture 45: distinct history row after submitting from a dock host.
+Native scroll fixture 46: distinct history row after submitting from a dock host.
+Native scroll fixture 47: distinct history row after submitting from a dock host.
+Native scroll fixture 48: distinct history row after submitting from a dock host.
+Native scroll fixture 49: distinct history row after submitting from a dock host."
++ @e17 [scroll-area] "agent-chat-scroll"
++ @e18 [button] "Fork chat from here"
++ @e19 [text] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fixture 43: distinct history row after submitting from a dock host.
+Native scroll fixture 44: distinct history row after submitting from a dock host.
+Native scroll fixture 45: distinct history row after submitting from a dock host.
+Native scroll fixture 46: distinct history row after submitting from a dock host.
+Native scroll fixture 47: distinct history row after submitting from a dock host.
+Native scroll fixture 48: distinct history row after submitting from a dock host.
+Native scroll fixture 49: distinct history row after submitting from a dock host."
++ @e20 [text-field] "Message, @files, /commands" [disabled]
++ @e21 [button] "Add attachment" [disabled]
++ @e22 [button] "Select model (Ten second stream)" [disabled]
+- @e25 [button] "Start dictation"
+- @e26 [button] "Send message"
++ @e25 [button] "Start dictation" [disabled]
++ @e26 [button] "Send message" [disabled]
+(node:3409156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3409273) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3409319) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3409386) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Native swipe moved stream content: 24.67% changed
+(node:3409745) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410005) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Native swipe moved stream content: 25.67% changed
+PASS host=workspace-draft: native stream swipe after submit and after idle at bottom
+(node:3410042) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410053) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="menu-button" (63, 157)
+settled after 2842ms: +58 -37 (~5 unchanged)
+- @e4 [scroll-area]
+- @e5 [scroll-area]
+- @e6 [group] "Fix composer flickering and resize regressions, paseo, ·, dev-new, dev-new"
+- @e7 [button] "Open menu"
+- @e8 [text] "Fix composer flickering and resize regressions"
+- @e9 [text] "paseo"
+- @e10 [text] "·"
++ @e4 [button] "Close sidebar"
++ @e5 [button] "New workspace"
++ @e6 [text] "New workspace"
++ @e7 [button] "History"
++ @e8 [text] "History"
++ @e9 [button] "Search"
++ @e10 [text] "Search"
++ @e11 [button] "Schedules"
++ @e12 [text] "Schedules"
++ @e13 [scroll-area] "sidebar-project-workspace-list-scroll"
++ @e14 [button] "Pinned"
++ @e15 [text] "Pinned"
++ @e16 [scroll-area] "sidebar-pinned-list"
++ @e17 [button] "skills, Skills, dev-new"
++ @e18 [text] "S"
++ @e19 [text] "Skills"
++ @e20 [button] "Workspace actions"
++ @e22 [button] "hub, Hub, dev-new, Ready to review"
++ @e23 [text] "H"
++ @e24 [text] "Hub"
+- @e13 [button] "Workspace scripts"
+- @e14 [button] "Open Explorer sidebar"
+- @e15 [button] "Switch tabs (32 open)"
+- @e16 [text] "Native scroll fixture 0: distinct history row after submitti"
+- @e17 [scroll-area] "agent-chat-scroll"
+- @e18 [button] "Shell, node scripts/simulate-stream-burst.mjs"
+- @e19 [text] "Shell"
+- @e20 [text] "node scripts/simulate-stream-burst.mjs"
+- @e21 [button] "Edit, packages/app/src/hooks/use-scroll-anchor.ts"
+- @e22 [text] "Edit"
+- @e23 [text] "packages/app/src/hooks/use-scroll-anchor.ts"
+- @e24 [text] "•"
+- @e25 [text] "We rely on onContentSizeChange to detect new content, but that fires after layout, not as the streaming delta arrives, so we end up scrolling one frame late on fast streams."
+- @e26 [text] "•"
+- @e27 [text] "The gesture handler does not pause scroll-to-bottom while the user is actively dragging, which means a drag in progress can be visually overridden mid-frame."
++ @e26 [text] "dev-new"
++ @e27 [button] "assistant, Assistant, dev-new"
++ @e28 [text] "A"
++ @e29 [text] "Assistant"
++ @e30 [button] "Workspace actions"
++ @e31 [text] "dev-new"
++ @e32 [button] "paseo, Paseo, dev-new"
++ @e33 [text] "Paseo"
++ @e34 [button] "Workspace actions"
++ @e35 [text] "dev-new"
++ @e36 [text] "Workspaces"
++ @e37 [button] "Display preferences"
++ @e38 [scroll-area] "sidebar-project-list"
++ @e39 [button] "filthy-dragon"
++ @e40 [text] "filthy-dragon"
++ @e41 [button] "Create a new workspace for filthy-dragon"
++ @e42 [button] "Project actions"
++ @e43 [scroll-area] "sidebar-workspace-list-remote:github.com/getpaseo/paseo"
++ @e44 [button] "fix/composer-flickering-regression, dev-new, Pull request #4946, Ready to review"
++ @e45 [text] "fix/composer-flickering-regression"
++ @e46 [button] "Workspace actions"
++ @e47 [text] "dev-new"
++ @e48 [text] "·"
++ @e49 [group] "Pull request #4946"
++ @e50 [text] "4946"
++ @e51 [text] "·"
++ @e52 [text] "running"
++ @e53 [button] "debug-mobile-smooth-rendering, dev-new"
++ @e54 [text] "debug-mobile-smooth-rendering"
++ @e55 [button] "Workspace actions"
++ @e56 [text] "dev-new"
++ @e57 [button] "debug-mobile-smooth-rendering, dev-new, Ready to review"
++ @e58 [button] "Add project"
++ @e59 [text] "Add project"
++ @e60 [button] "Hosts"
++ @e61 [button] "Import session"
++ @e62 [button] "Help and support"
++ @e63 [button] "Settings"
+… changed lines truncated
+(node:3410084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="sidebar-global-new-workspace" (540, 127)
+settled after 1304ms: +16 -59 (~4 unchanged)
+- @e4 [button] "Close sidebar"
+- @e5 [button] "New workspace"
+- @e6 [text] "New workspace"
+- @e7 [button] "History"
+- @e8 [text] "History"
+- @e9 [button] "Search"
+- @e10 [text] "Search"
+- @e11 [button] "Schedules"
+- @e12 [text] "Schedules"
+- @e13 [scroll-area] "sidebar-project-workspace-list-scroll"
+- @e14 [button] "Pinned"
+- @e15 [text] "Pinned"
+- @e16 [scroll-area] "sidebar-pinned-list"
+- @e17 [button] "skills, Skills, dev-new"
+- @e18 [text] "S"
+- @e19 [text] "Skills"
+- @e20 [button] "Workspace actions"
++ @e4 [scroll-area]
++ @e5 [group] "composer-dock-header"
++ @e6 [button] "Open menu"
++ @e7 [group]
++ @e8 [button] "Host"
+- @e22 [button] "hub, Hub, dev-new, Ready to review"
+- @e23 [text] "H"
+- @e24 [text] "Hub"
+- @e25 [button] "Workspace actions"
+- @e26 [text] "dev-new"
+- @e27 [button] "assistant, Assistant, dev-new"
+- @e28 [text] "A"
+- @e29 [text] "Assistant"
+- @e30 [button] "Workspace actions"
+- @e31 [text] "dev-new"
+- @e32 [button] "paseo, Paseo, dev-new"
+- @e33 [text] "Paseo"
+- @e34 [button] "Workspace actions"
+- @e35 [text] "dev-new"
+- @e36 [text] "Workspaces"
+- @e37 [button] "Display preferences"
+- @e38 [scroll-area] "sidebar-project-list"
+- @e39 [button] "filthy-dragon"
+- @e40 [text] "filthy-dragon"
+- @e41 [button] "Create a new workspace for filthy-dragon"
+- @e42 [button] "Project actions"
+- @e43 [scroll-area] "sidebar-workspace-list-remote:github.com/getpaseo/paseo"
+- @e44 [button] "fix/composer-flickering-regression, dev-new, Pull request #4946, Ready to review"
+- @e45 [text] "fix/composer-flickering-regression"
+- @e46 [button] "Workspace actions"
+- @e47 [text] "dev-new"
+- @e48 [text] "·"
+- @e49 [group] "Pull request #4946"
+- @e50 [text] "4946"
+- @e51 [text] "·"
+- @e52 [text] "running"
+- @e53 [button] "debug-mobile-smooth-rendering, dev-new"
+- @e54 [text] "debug-mobile-smooth-rendering"
+- @e55 [button] "Workspace actions"
+- @e56 [text] "dev-new"
+- @e57 [button] "debug-mobile-smooth-rendering, dev-new, Ready to review"
+- @e58 [button] "Add project"
+- @e59 [text] "Add project"
+- @e60 [button] "Hosts"
+- @e61 [button] "Import session"
+- @e62 [button] "Help and support"
+- @e63 [button] "Settings"
++ @e10 [button] "Workspace isolation"
++ @e11 [text] "Local"
++ @e12 [button] "Choose what to launch"
++ @e13 [text] "Chat"
++ @e14 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
++ @e15 [button] "Add attachment"
++ @e16 [button] "Select model (Ten second stream)"
++ @e17 [text] "Ten second stream"
++ @e18 [text] "Low"
++ @e19 [button] "Start dictation"
++ @e20 [button] "Create"
+(node:3410119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+BEGIN host=new-workspace
+(node:3410155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1162ms: +3 -1 (~19 unchanged)
++ @e8 [button] "Workspace project"
++ @e9 [text] "paseo"
+- @e14 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
++ @e16 [text-field] "x"
+(node:3410260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410271) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410297) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410589) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410618) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Content followed input growth: 124px
+(node:3410684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1331 chars
+settled after 1045ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "short
+
+
+grown"
++ @e16 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
+unchanged interactive (20):
+= @e1~s411244 [image] "Back"
+= @e2~s411244 [image] "Home"
+= @e3~s411244 [image] "Recents"
+= @e4~s411244 [scroll-area]
+= @e5~s411244 [group] "composer-dock-header"
+= @e6~s411244 [button] "Open menu"
+= @e7~s411244 [group]
+= @e8~s411244 [button] "Workspace project"
+= @e9~s411244 [text] "paseo"
+= @e10~s411244 [button] "Host"
+= @e11~s411244 [text] "dev-new"
+= @e12~s411244 [button] "Workspace isolation"
+= @e13~s411244 [text] "Local"
+= @e14~s411244 [button] "Choose what to launch"
+= @e15~s411244 [text] "Chat"
+= @e17~s411244 [button] "Add attachment"
+= @e18~s411244 [button] "Select model (Ten second stream)"
+= @e19~s411244 [text] "Ten second stream"
+= @e20~s411244 [text] "Low"
+= @e21~s411244 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3410727) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410774) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410799) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=244, header=231, bottom=1006, keyboard=1048
+(node:3410866) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410895) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3410993) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer contained: top=990, header=231, bottom=1752, keyboard=1794
+(node:3411102) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411173) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411285) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 27 chars
+settled after 1225ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12 line13 line14 line15 line16 line17 line18 line19 line20 line21 line22 line23 line24 line25 line26 line27 line28 line29 line30 line31 line32 line33 line34 line35 line36 line37 line38 line39 line40 line41 line42 line43 line44 line45 line46 line47 line48 line49 line50 line51 line52 line53 line54 line55 line56 line57 line58 line59 line60 line61 line62 line63 line64 line65 line66 line67 line68 line69 line70 line71 line72 line73 line74 line75 line76 line77 line78 line79 line80 line81 line82 line83 line84 line85 line86 line87 line88 line89 line90 line91 line92 line93 line94 line95 line96 line97 line98 line99 line100 line101 line102 line103 line104 line105 line106 line107 line108 line109 line110 line111 line112 line113 line114 line115 line116 line117 line118 line119 line120 line121 line122 line123 line124 line125 line126 line127 line128 line129 line130 line131 line132 line133 line134 line135 line136 line137 line138 line139 line140 line141 line142 line143 line144 line145 line146 line147 line148 line149 line150 line151 line152 line153 line154 line155 line156 line157 line158 line159 line160 line161 line162 line163 line164 line165 line166 line167 line168 line169 line170 line171 line172 line173 line174 line175 line176 line177 line178 line179 line180"
++ @e16 [text-field] "ddjdj"
+unchanged interactive (20):
+= @e1~s411255 [image] "Back"
+= @e2~s411255 [image] "Home"
+= @e3~s411255 [image] "Recents"
+= @e4~s411255 [scroll-area]
+= @e5~s411255 [group] "composer-dock-header"
+= @e6~s411255 [button] "Open menu"
+= @e7~s411255 [group]
+= @e8~s411255 [button] "Workspace project"
+= @e9~s411255 [text] "paseo"
+= @e10~s411255 [button] "Host"
+= @e11~s411255 [text] "dev-new"
+= @e12~s411255 [button] "Workspace isolation"
+= @e13~s411255 [text] "Local"
+= @e14~s411255 [button] "Choose what to launch"
+= @e15~s411255 [text] "Chat"
+= @e17~s411255 [button] "Add attachment"
+= @e18~s411255 [button] "Select model (Ten second stream)"
+= @e19~s411255 [text] "Ten second stream"
+= @e20~s411255 [text] "Low"
+= @e21~s411255 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3411766) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411870) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3411929) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412017) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412038) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: growth, header/keyboard/safe-area bounds, close/reopen height, hold-delete baseline, content/header dismissal, JS-stall motion
+(node:3412089) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1067ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411260 [image] "Back"
+= @e2~s411260 [image] "Home"
+= @e3~s411260 [image] "Recents"
+= @e4~s411260 [scroll-area]
+= @e5~s411260 [group] "composer-dock-header"
+= @e6~s411260 [button] "Open menu"
+= @e7~s411260 [group]
+= @e8~s411260 [button] "Workspace project"
+= @e9~s411260 [text] "paseo"
+= @e10~s411260 [button] "Host"
+= @e11~s411260 [text] "dev-new"
+= @e12~s411260 [button] "Workspace isolation"
+= @e13~s411260 [text] "Local"
+= @e14~s411260 [button] "Choose what to launch"
+= @e15~s411260 [text] "Chat"
+= @e17~s411260 [button] "Add attachment"
+= @e18~s411260 [button] "Select model (Ten second stream)"
+= @e19~s411260 [text] "Ten second stream"
+= @e20~s411260 [text] "Low"
+= @e21~s411260 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3412328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412479) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: commands popover keyboard=closed
+(node:3412589) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1279ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411267 [image] "Back"
+= @e2~s411267 [image] "Home"
+= @e3~s411267 [image] "Recents"
+= @e4~s411267 [scroll-area]
+= @e5~s411267 [group] "composer-dock-header"
+= @e6~s411267 [button] "Open menu"
+= @e7~s411267 [group]
+= @e8~s411267 [button] "Workspace project"
+= @e9~s411267 [text] "paseo"
+= @e10~s411267 [button] "Host"
+= @e11~s411267 [text] "dev-new"
+= @e12~s411267 [button] "Workspace isolation"
+= @e13~s411267 [text] "Local"
+= @e14~s411267 [button] "Choose what to launch"
+= @e15~s411267 [text] "Chat"
+= @e17~s411267 [button] "Add attachment"
+= @e18~s411267 [button] "Select model (Ten second stream)"
+= @e19~s411267 [text] "Ten second stream"
+= @e20~s411267 [text] "Low"
+= @e21~s411267 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3412660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: files popover keyboard=closed
+(node:3412779) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1013ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411273 [image] "Back"
+= @e2~s411273 [image] "Home"
+= @e3~s411273 [image] "Recents"
+= @e4~s411273 [scroll-area]
+= @e5~s411273 [group] "composer-dock-header"
+= @e6~s411273 [button] "Open menu"
+= @e7~s411273 [group]
+= @e8~s411273 [button] "Workspace project"
+= @e9~s411273 [text] "paseo"
+= @e10~s411273 [button] "Host"
+= @e11~s411273 [text] "dev-new"
+= @e12~s411273 [button] "Workspace isolation"
+= @e13~s411273 [text] "Local"
+= @e14~s411273 [button] "Choose what to launch"
+= @e15~s411273 [text] "Chat"
+= @e17~s411273 [button] "Add attachment"
+= @e18~s411273 [button] "Select model (Ten second stream)"
+= @e19~s411273 [text] "Ten second stream"
+= @e20~s411273 [text] "Low"
+= @e21~s411273 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3412846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412871) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412891) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412905) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3412933) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1538ms: +17 -32 (~5 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search all models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [text] "Profiles"
+- @e10 [button] "Edit agent profiles"
+- @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
+- @e12 [text] "Kimi K3"
+- @e13 [text] "Pi · Kimi K3 · Medium"
+- @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
+- @e15 [text] "hard worker"
+- @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
+- @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
+- @e18 [text] "Gemini 3.7 Flash"
+- @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
+- @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
+- @e21 [text] "Fable 5.1"
+- @e22 [text] "Claude · Fable 5.1 · Bypass · High"
+- @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
+- @e24 [text] "UI / Opus"
+- @e25 [text] "Claude · Opus 5 · Bypass · High"
+- @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
+- @e27 [text] "astra"
+- @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
+- @e29 [button] "GLM 5.1, Pi · GLM 5.1"
+- @e30 [text] "GLM 5.1"
+- @e31 [text] "Pi · GLM 5.1"
+- @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
+- @e33 [text] "DeepSeek V4 Pro 0813"
+- @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e4 [scroll-area]
++ @e5 [group] "composer-dock-header"
++ @e6 [button] "Open menu"
++ @e7 [group]
++ @e8 [button] "Workspace project"
++ @e9 [text] "paseo"
++ @e10 [button] "Host"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace isolation"
++ @e13 [text] "Local"
++ @e14 [button] "Choose what to launch"
++ @e15 [text] "Chat"
++ @e16 [text-field] "Message, @files, /commands"
++ @e17 [button] "Add attachment"
+- @e36 [text] "Model"
++ @e20 [text] "Low"
++ @e21 [button] "Start dictation"
++ @e22 [button] "Create"
+PASS host=new-workspace: model selector keyboard=closed
+(node:3412966) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 993ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411284 [image] "Back"
+= @e2~s411284 [image] "Home"
+= @e3~s411284 [image] "Recents"
+= @e4~s411284 [scroll-area]
+= @e5~s411284 [group] "composer-dock-header"
+= @e6~s411284 [button] "Open menu"
+= @e7~s411284 [group]
+= @e8~s411284 [button] "Workspace project"
+= @e9~s411284 [text] "paseo"
+= @e10~s411284 [button] "Host"
+= @e11~s411284 [text] "dev-new"
+= @e12~s411284 [button] "Workspace isolation"
+= @e13~s411284 [text] "Local"
+= @e14~s411284 [button] "Choose what to launch"
+= @e15~s411284 [text] "Chat"
+= @e17~s411284 [button] "Add attachment"
+= @e18~s411284 [button] "Select model (Ten second stream)"
+= @e19~s411284 [text] "Ten second stream"
+= @e20~s411284 [text] "Low"
+= @e21~s411284 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3413025) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413043) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413063) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413094) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="message-input-attachment-menu-item-github" (541, 1616)
+settled after 3205ms: +18 -10 (~5 unchanged)
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e6 [text] "Attach issue or PR"
++ @e7 [text-field] "Search issues and PRs..."
++ @e8 [scroll-area]
++ @e9 [button] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e10 [text] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e11 [button] "#4904 fix(server): claim scheduled slots atomically"
++ @e12 [text] "#4904 fix(server): claim scheduled slots atomically"
++ @e13 [button] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e14 [text] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e15 [button] "#4972 Let plugins open external links and workspace browsers"
++ @e16 [text] "#4972 Let plugins open external links and workspace browsers"
++ @e17 [button] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e18 [text] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e19 [button] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e20 [text] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e21 [button] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e22 [text] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e23 [button] "#4961 fix(omp): reconcile duplicate foreground prompt echoes"
+(node:3413220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413327) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: attachment menu and forge picker keyboard=closed
+(node:3413351) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1014ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411299 [image] "Back"
+= @e2~s411299 [image] "Home"
+= @e3~s411299 [image] "Recents"
+= @e4~s411299 [scroll-area]
+= @e5~s411299 [group] "composer-dock-header"
+= @e6~s411299 [button] "Open menu"
+= @e7~s411299 [group]
+= @e8~s411299 [button] "Workspace project"
+= @e9~s411299 [text] "paseo"
+= @e10~s411299 [button] "Host"
+= @e11~s411299 [text] "dev-new"
+= @e12~s411299 [button] "Workspace isolation"
+= @e13~s411299 [text] "Local"
+= @e14~s411299 [button] "Choose what to launch"
+= @e15~s411299 [text] "Chat"
+= @e17~s411299 [button] "Add attachment"
+= @e18~s411299 [button] "Select model (Ten second stream)"
+= @e19~s411299 [text] "Ten second stream"
+= @e20~s411299 [text] "Low"
+= @e21~s411299 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3413410) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413466) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413474) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: commands popover keyboard=open
+(node:3413510) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 996ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411304 [image] "Back"
+= @e2~s411304 [image] "Home"
+= @e3~s411304 [image] "Recents"
+= @e4~s411304 [scroll-area]
+= @e5~s411304 [group] "composer-dock-header"
+= @e6~s411304 [button] "Open menu"
+= @e7~s411304 [group]
+= @e8~s411304 [button] "Workspace project"
+= @e9~s411304 [text] "paseo"
+= @e10~s411304 [button] "Host"
+= @e11~s411304 [text] "dev-new"
+= @e12~s411304 [button] "Workspace isolation"
+= @e13~s411304 [text] "Local"
+= @e14~s411304 [button] "Choose what to launch"
+= @e15~s411304 [text] "Chat"
+= @e17~s411304 [button] "Add attachment"
+= @e18~s411304 [button] "Select model (Ten second stream)"
+= @e19~s411304 [text] "Ten second stream"
+= @e20~s411304 [text] "Low"
+= @e21~s411304 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3413570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413642) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413649) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: files popover keyboard=open
+(node:3413692) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1241ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411309 [image] "Back"
+= @e2~s411309 [image] "Home"
+= @e3~s411309 [image] "Recents"
+= @e4~s411309 [scroll-area]
+= @e5~s411309 [group] "composer-dock-header"
+= @e6~s411309 [button] "Open menu"
+= @e7~s411309 [group]
+= @e8~s411309 [button] "Workspace project"
+= @e9~s411309 [text] "paseo"
+= @e10~s411309 [button] "Host"
+= @e11~s411309 [text] "dev-new"
+= @e12~s411309 [button] "Workspace isolation"
+= @e13~s411309 [text] "Local"
+= @e14~s411309 [button] "Choose what to launch"
+= @e15~s411309 [text] "Chat"
+= @e17~s411309 [button] "Add attachment"
+= @e18~s411309 [button] "Select model (Ten second stream)"
+= @e19~s411309 [text] "Ten second stream"
+= @e20~s411309 [text] "Low"
+= @e21~s411309 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3413809) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413863) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413883) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413897) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3413914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1386ms: +17 -32 (~5 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search all models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [text] "Profiles"
+- @e10 [button] "Edit agent profiles"
+- @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
+- @e12 [text] "Kimi K3"
+- @e13 [text] "Pi · Kimi K3 · Medium"
+- @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
+- @e15 [text] "hard worker"
+- @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
+- @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
+- @e18 [text] "Gemini 3.7 Flash"
+- @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
+- @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
+- @e21 [text] "Fable 5.1"
+- @e22 [text] "Claude · Fable 5.1 · Bypass · High"
+- @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
+- @e24 [text] "UI / Opus"
+- @e25 [text] "Claude · Opus 5 · Bypass · High"
+- @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
+- @e27 [text] "astra"
+- @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
+- @e29 [button] "GLM 5.1, Pi · GLM 5.1"
+- @e30 [text] "GLM 5.1"
+- @e31 [text] "Pi · GLM 5.1"
+- @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
+- @e33 [text] "DeepSeek V4 Pro 0813"
+- @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e4 [scroll-area]
++ @e5 [group] "composer-dock-header"
++ @e6 [button] "Open menu"
++ @e7 [group]
++ @e8 [button] "Workspace project"
++ @e9 [text] "paseo"
++ @e10 [button] "Host"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace isolation"
++ @e13 [text] "Local"
++ @e14 [button] "Choose what to launch"
++ @e15 [text] "Chat"
++ @e16 [text-field] "Message, @files, /commands"
++ @e17 [button] "Add attachment"
+- @e36 [text] "Model"
++ @e20 [text] "Low"
++ @e21 [button] "Start dictation"
++ @e22 [button] "Create"
+PASS host=new-workspace: model selector keyboard=open
+(node:3413955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 980ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411321 [image] "Back"
+= @e2~s411321 [image] "Home"
+= @e3~s411321 [image] "Recents"
+= @e4~s411321 [scroll-area]
+= @e5~s411321 [group] "composer-dock-header"
+= @e6~s411321 [button] "Open menu"
+= @e7~s411321 [group]
+= @e8~s411321 [button] "Workspace project"
+= @e9~s411321 [text] "paseo"
+= @e10~s411321 [button] "Host"
+= @e11~s411321 [text] "dev-new"
+= @e12~s411321 [button] "Workspace isolation"
+= @e13~s411321 [text] "Local"
+= @e14~s411321 [button] "Choose what to launch"
+= @e15~s411321 [text] "Chat"
+= @e17~s411321 [button] "Add attachment"
+= @e18~s411321 [button] "Select model (Ten second stream)"
+= @e19~s411321 [text] "Ten second stream"
+= @e20~s411321 [text] "Low"
+= @e21~s411321 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3414030) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414085) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414105) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="message-input-attachment-menu-item-github" (541, 1616)
+settled after 3043ms: +18 -10 (~5 unchanged)
+- @e6 [scroll-area] "message-input-attachment-menu-content"
+- @e7 [text] "Add attachment"
+- @e8 [group] "Add image"
+- @e9 [text] "Add image"
+- @e10 [group] "Paste image"
+- @e11 [text] "Paste image"
+- @e12 [group] "Add issue or PR"
+- @e13 [text] "Add issue or PR"
+- @e14 [group] "Upload file"
+- @e15 [text] "Upload file"
++ @e6 [text] "Attach issue or PR"
++ @e7 [text-field] "Search issues and PRs..."
++ @e8 [scroll-area]
++ @e9 [button] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e10 [text] "#4974 Add standalone Vercel Sandbox hosting example"
++ @e11 [button] "#4904 fix(server): claim scheduled slots atomically"
++ @e12 [text] "#4904 fix(server): claim scheduled slots atomically"
++ @e13 [button] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e14 [text] "#4973 fix(app): keep composer layout stable across chat and workspace screens"
++ @e15 [button] "#4972 Let plugins open external links and workspace browsers"
++ @e16 [text] "#4972 Let plugins open external links and workspace browsers"
++ @e17 [button] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e18 [text] "#4969 fix(server): resolve workspace diff base against origin, not a stale local branch"
++ @e19 [button] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e20 [text] "#4968 bug: workspace diff/commit counts stay pinned to the wrong base after a PR targets a different branch"
++ @e21 [button] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e22 [text] "#4962 Feature request: first-class multi-project orchestration tasks"
++ @e23 [button] "#4961 fix(omp): reconcile duplicate foreground prompt echoes"
+(node:3414304) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414311) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414330) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS host=new-workspace: attachment menu and forge picker keyboard=open
+(node:3414359) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 1 chars
+settled after 1280ms: +1 -1 (~21 unchanged)
+- @e16 [text-field] "Message, @files, /commands"
++ @e16 [text-field] "x"
+unchanged interactive (20):
+= @e1~s411336 [image] "Back"
+= @e2~s411336 [image] "Home"
+= @e3~s411336 [image] "Recents"
+= @e4~s411336 [scroll-area]
+= @e5~s411336 [group] "composer-dock-header"
+= @e6~s411336 [button] "Open menu"
+= @e7~s411336 [group]
+= @e8~s411336 [button] "Workspace project"
+= @e9~s411336 [text] "paseo"
+= @e10~s411336 [button] "Host"
+= @e11~s411336 [text] "dev-new"
+= @e12~s411336 [button] "Workspace isolation"
+= @e13~s411336 [text] "Local"
+= @e14~s411336 [button] "Choose what to launch"
+= @e15~s411336 [text] "Chat"
+= @e17~s411336 [button] "Add attachment"
+= @e18~s411336 [button] "Select model (Ten second stream)"
+= @e19~s411336 [text] "Ten second stream"
+= @e20~s411336 [text] "Low"
+= @e21~s411336 [button] "Start dictation"
+… more interactive elements not shown, use snapshot -i
+(node:3414444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414493) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="workspace-create-isolation-trigger" (162, 1212)
+settled after 3693ms: +8 -18 (~4 unchanged)
+- @e4 [scroll-area]
+- @e5 [group] "composer-dock-header"
+- @e6 [button] "Open menu"
+- @e7 [group]
+- @e8 [button] "Workspace project"
+- @e9 [text] "paseo"
+- @e10 [button] "Host"
+- @e11 [text] "dev-new"
+- @e12 [button] "Workspace isolation"
++ @e4 [seekbar] "Bottom sheet handle"
++ @e5 [seekbar] "Bottom Sheet"
++ @e6 [text] "Isolation"
++ @e7 [text-field] "Search..."
++ @e8 [scroll-area]
++ @e9 [button] "Local"
+- @e14 [button] "Choose what to launch"
+- @e15 [text] "Chat"
+- @e16 [text-field] "Message, @files, /commands"
+- @e17 [button] "Add attachment"
+- @e18 [button] "Select model (Ten second stream)"
+- @e19 [text] "Ten second stream"
+- @e20 [text] "Low"
+- @e21 [button] "Start dictation"
+- @e22 [button] "Create"
++ @e11 [button] "New worktree"
++ @e12 [text] "New worktree"
+(node:3414669) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped text="Local" (541, 1085)
+settled after 1402ms: +18 -8 (~4 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [text] "Isolation"
+- @e7 [text-field] "Search..."
+- @e8 [scroll-area]
+- @e9 [button] "Local"
++ @e4 [scroll-area]
++ @e5 [group] "composer-dock-header"
++ @e6 [button] "Open menu"
++ @e7 [group]
++ @e8 [button] "Workspace project"
++ @e9 [text] "paseo"
++ @e10 [button] "Host"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace isolation"
+- @e11 [button] "New worktree"
+- @e12 [text] "New worktree"
++ @e14 [button] "Choose what to launch"
++ @e15 [text] "Chat"
++ @e16 [text-field] "Message, @files, /commands"
++ @e17 [button] "Add attachment"
++ @e18 [button] "Select model (Ten second stream)"
++ @e19 [text] "Ten second stream"
++ @e20 [text] "Low"
++ @e21 [button] "Start dictation"
++ @e22 [button] "Create"
+(node:3414700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414782) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3414803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 17 chars
+(node:3415058) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3415194) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="model-row-mock-ten-second-stream" (540, 809)
+settled after 3065ms: +30 -5 (~7 unchanged)
+- @e7 [text-field] "Ten second stream"
+- @e8 [scroll-area]
+- @e9 [button] "Ten second stream, Mock Load Test · Fast realistic stream for tests and smoke checks."
++ @e7 [text-field] "Search all models..."
++ @e8 [scroll-area] "compact-provider-list"
++ @e9 [text] "Profiles"
++ @e10 [button] "Edit agent profiles"
++ @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
++ @e12 [text] "Kimi K3"
++ @e13 [text] "Pi · Kimi K3 · Medium"
++ @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
++ @e15 [text] "hard worker"
++ @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
++ @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
++ @e18 [text] "Gemini 3.7 Flash"
++ @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
++ @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
++ @e21 [text] "Fable 5.1"
++ @e22 [text] "Claude · Fable 5.1 · Bypass · High"
++ @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
++ @e24 [text] "UI / Opus"
++ @e25 [text] "Claude · Opus 5 · Bypass · High"
++ @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
++ @e27 [text] "astra"
++ @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
++ @e29 [button] "GLM 5.1, Pi · GLM 5.1"
++ @e30 [text] "GLM 5.1"
++ @e31 [text] "Pi · GLM 5.1"
++ @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e33 [text] "DeepSeek V4 Pro 0813"
++ @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e35 [button] "Select model (Ten second stream)"
++ @e36 [text] "Model"
+- @e11 [text] "Mock Load Test · Fast realistic stream for tests and smoke checks."
+- @e12 [button] "Create profile from this model"
+(node:3415764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped label="Close" (975, 531)
+settled after 1832ms: +17 -32 (~5 unchanged)
+- @e4 [seekbar] "Bottom sheet handle"
+- @e5 [seekbar] "Bottom Sheet"
+- @e6 [button] "Close"
+- @e7 [text-field] "Search all models..."
+- @e8 [scroll-area] "compact-provider-list"
+- @e9 [text] "Profiles"
+- @e10 [button] "Edit agent profiles"
+- @e11 [button] "Kimi K3, Pi · Kimi K3 · Medium"
+- @e12 [text] "Kimi K3"
+- @e13 [text] "Pi · Kimi K3 · Medium"
+- @e14 [button] "hard worker, Codex · GPT-5.6-Sol · Full access · Medium"
+- @e15 [text] "hard worker"
+- @e16 [text] "Codex · GPT-5.6-Sol · Full access · Medium"
+- @e17 [button] "Gemini 3.7 Flash, Pi · Gemini 3.7 Flash · Extra high"
+- @e18 [text] "Gemini 3.7 Flash"
+- @e19 [text] "Pi · Gemini 3.7 Flash · Extra high"
+- @e20 [button] "Fable 5.1, Claude · Fable 5.1 · Bypass · High"
+- @e21 [text] "Fable 5.1"
+- @e22 [text] "Claude · Fable 5.1 · Bypass · High"
+- @e23 [button] "UI / Opus, Claude · Opus 5 · Bypass · High"
+- @e24 [text] "UI / Opus"
+- @e25 [text] "Claude · Opus 5 · Bypass · High"
+- @e26 [button] "astra, Codex · GPT-6-Astra · Full access · Medium"
+- @e27 [text] "astra"
+- @e28 [text] "Codex · GPT-6-Astra · Full access · Medium"
+- @e29 [button] "GLM 5.1, Pi · GLM 5.1"
+- @e30 [text] "GLM 5.1"
+- @e31 [text] "Pi · GLM 5.1"
+- @e32 [button] "DeepSeek V4 Pro 0813, Pi · DeepSeek V4 Pro 0813 · Medium"
+- @e33 [text] "DeepSeek V4 Pro 0813"
+- @e34 [text] "Pi · DeepSeek V4 Pro 0813 · Medium"
++ @e4 [scroll-area]
++ @e5 [group] "composer-dock-header"
++ @e6 [button] "Open menu"
++ @e7 [group]
++ @e8 [button] "Workspace project"
++ @e9 [text] "paseo"
++ @e10 [button] "Host"
++ @e11 [text] "dev-new"
++ @e12 [button] "Workspace isolation"
++ @e13 [text] "Local"
++ @e14 [button] "Choose what to launch"
++ @e15 [text] "Chat"
++ @e16 [text-field] "Message, @files, /commands"
++ @e17 [button] "Add attachment"
+- @e36 [text] "Model"
++ @e20 [text] "Low"
++ @e21 [button] "Start dictation"
++ @e22 [button] "Create"
+(node:3416223) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Filled 4089 chars
+(node:3416315) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Tapped id="workspace-create-submit" (983, 1692)
+settled after 1490ms: +9 -9 (~13 unchanged)
+- @e8 [button] "Workspace project"
++ @e8 [button] "Workspace project" [disabled]
+- @e10 [button] "Host"
++ @e10 [button] "Host" [disabled]
+- @e12 [button] "Workspace isolation"
++ @e12 [button] "Workspace isolation" [disabled]
+- @e14 [button] "Choose what to launch"
++ @e14 [button] "Choose what to launch" [disabled]
+- @e16 [text-field] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fixture 43: distinct history row after submitting from a dock host.
+Native scroll fixture 44: distinct history row after submitting from a dock host.
+Native scroll fixture 45: distinct history row after submitting from a dock host.
+Native scroll fixture 46: distinct history row after submitting from a dock host.
+Native scroll fixture 47: distinct history row after submitting from a dock host.
+Native scroll fixture 48: distinct history row after submitting from a dock host.
+Native scroll fixture 49: distinct history row after submitting from a dock host."
+- @e17 [button] "Add attachment"
+- @e18 [button] "Select model (Ten second stream)"
++ @e16 [text-field] "Native scroll fixture 0: distinct history row after submitting from a dock host.
+Native scroll fixture 1: distinct history row after submitting from a dock host.
+Native scroll fixture 2: distinct history row after submitting from a dock host.
+Native scroll fixture 3: distinct history row after submitting from a dock host.
+Native scroll fixture 4: distinct history row after submitting from a dock host.
+Native scroll fixture 5: distinct history row after submitting from a dock host.
+Native scroll fixture 6: distinct history row after submitting from a dock host.
+Native scroll fixture 7: distinct history row after submitting from a dock host.
+Native scroll fixture 8: distinct history row after submitting from a dock host.
+Native scroll fixture 9: distinct history row after submitting from a dock host.
+Native scroll fixture 10: distinct history row after submitting from a dock host.
+Native scroll fixture 11: distinct history row after submitting from a dock host.
+Native scroll fixture 12: distinct history row after submitting from a dock host.
+Native scroll fixture 13: distinct history row after submitting from a dock host.
+Native scroll fixture 14: distinct history row after submitting from a dock host.
+Native scroll fixture 15: distinct history row after submitting from a dock host.
+Native scroll fixture 16: distinct history row after submitting from a dock host.
+Native scroll fixture 17: distinct history row after submitting from a dock host.
+Native scroll fixture 18: distinct history row after submitting from a dock host.
+Native scroll fixture 19: distinct history row after submitting from a dock host.
+Native scroll fixture 20: distinct history row after submitting from a dock host.
+Native scroll fixture 21: distinct history row after submitting from a dock host.
+Native scroll fixture 22: distinct history row after submitting from a dock host.
+Native scroll fixture 23: distinct history row after submitting from a dock host.
+Native scroll fixture 24: distinct history row after submitting from a dock host.
+Native scroll fixture 25: distinct history row after submitting from a dock host.
+Native scroll fixture 26: distinct history row after submitting from a dock host.
+Native scroll fixture 27: distinct history row after submitting from a dock host.
+Native scroll fixture 28: distinct history row after submitting from a dock host.
+Native scroll fixture 29: distinct history row after submitting from a dock host.
+Native scroll fixture 30: distinct history row after submitting from a dock host.
+Native scroll fixture 31: distinct history row after submitting from a dock host.
+Native scroll fixture 32: distinct history row after submitting from a dock host.
+Native scroll fixture 33: distinct history row after submitting from a dock host.
+Native scroll fixture 34: distinct history row after submitting from a dock host.
+Native scroll fixture 35: distinct history row after submitting from a dock host.
+Native scroll fixture 36: distinct history row after submitting from a dock host.
+Native scroll fixture 37: distinct history row after submitting from a dock host.
+Native scroll fixture 38: distinct history row after submitting from a dock host.
+Native scroll fixture 39: distinct history row after submitting from a dock host.
+Native scroll fixture 40: distinct history row after submitting from a dock host.
+Native scroll fixture 41: distinct history row after submitting from a dock host.
+Native scroll fixture 42: distinct history row after submitting from a dock host.
+Native scroll fixture 43: distinct history row after submitting from a dock host.
+Native scroll fixture 44: distinct history row after submitting from a dock host.
+Native scroll fixture 45: distinct history row after submitting from a dock host.
+Native scroll fixture 46: distinct history row after submitting from a dock host.
+Native scroll fixture 47: distinct history row after submitting from a dock host.
+Native scroll fixture 48: distinct history row after submitting from a dock host.
+Native scroll fixture 49: distinct history row after submitting from a dock host." [disabled]
++ @e17 [button] "Add attachment" [disabled]
++ @e18 [button] "Select model (Ten second stream)" [disabled]
+- @e21 [button] "Start dictation"
+- @e22 [button] "Create"
++ @e21 [button] "Start dictation" [disabled]
++ @e22 [button] "Create" [disabled]
+(node:3416545) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3416840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3416872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3416909) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Native swipe moved stream content: 24.05% changed
+(node:3417037) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3417065) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Native swipe moved stream content: 24.33% changed
+PASS host=new-workspace: native stream swipe after submit and after idle at bottom
+Composer keyboard invariants passed

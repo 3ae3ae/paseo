@@ -1,0 +1,8 @@
+file:///home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/packages/app/e2e/mobile/composer-keyboard/assert-composer-keyboard.mjs:38
+  if (fraction < 0.01) throw new Error(`Native swipe did not move stream content: ${(fraction * 100).toFixed(2)}% changed`);
+                             ^
+
+Error: Native swipe did not move stream content: 0.00% changed
+    at [90mfile:///home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/[39mpackages/app/e2e/mobile/composer-keyboard/assert-composer-keyboard.mjs:38:30
+
+Node.js v22.20.0

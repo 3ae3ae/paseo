@@ -1,0 +1,206 @@
+
+Connecting to 3s0s50t248bag ...
+
+Warning: Permanently added 'paseo-ios.devbox.namespace' (RSA) to the list of known hosts.
+Tapped (398, 118)
+Tapped id="menu-button" (24, 98)
+settled after 2066ms: +183 -7 (~19 unchanged)
++ @e2 [window]
++ @e4 [other] "Close menu"
++ @e5 [button] "Close menu"
++ @e23 [other] "Close sidebar"
++ @e24 [button] "Close sidebar"
++ @e25 [button] "New workspace"
++ @e26 [button] "History"
++ @e27 [button] "Search"
++ @e28 [button] "Schedules"
++ @e29 [scroll-area] "Pinned"
++ @e30 [other] "Pinned"
++ @e31 [button] "Pinned"
++ @e32 [scroll-area]
++ @e33 [cell] "skills, Skills"
++ @e34 [button] "skills, Skills"
++ @e35 [button] "Workspace actions"
++ @e36 [other] "hub, Hub, Ready to review"
++ @e37 [button] "hub, Hub, Ready to review"
++ @e38 [button] "Workspace actions"
++ @e39 [other] "assistant, Assistant"
++ @e40 [button] "assistant, Assistant"
++ @e41 [button] "Workspace actions"
++ @e42 [other] "paseo, Paseo"
++ @e43 [button] "paseo, Paseo"
++ @e44 [button] "Workspace actions"
++ @e45 [text] "Workspaces"
++ @e46 [button] "Display preferences"
++ @e47 [scroll-area] "Create a new workspace for assistant"
++ @e48 [other] "admiring-hamster, Create a new workspace for admiring-hamster, Project actions"
++ @e49 [button] "admiring-hamster, Create a new workspace for admiring-hamster, Project actions"
++ @e50 [button] "Create a new workspace for admiring-hamster"
++ @e51 [button] "Project actions"
++ @e52 [scroll-area]
++ @e53 [cell] "fix/terminal-keyboard-flicker, Pull request #4469"
++ @e54 [button] "fix/terminal-keyboard-flicker, Pull request #4469"
++ @e55 [button] "Workspace actions"
++ @e56 [other] "Checks passed"
++ @e57 [cell] "A, assistant, Create a new workspace for assistant, Project actions"
++ @e58 [button] "A, assistant, Create a new workspace for assistant, Project actions"
++ @e59 [button] "Create a new workspace for assistant"
++ @e60 [button] "Project actions"
++ @e61 [button] "Create a new workspace for assistant"
++ @e62 [cell] "C, composer-dock-ios-fixture, Create a new workspace for composer-dock-ios-fixture, Project actions"
++ @e63 [button] "C, composer-dock-ios-fixture, Create a new workspace for composer-dock-ios-fixture, Project actions"
++ @e64 [button] "Create a new workspace for composer-dock-ios-fixture"
++ @e65 [button] "Project actions"
++ @e66 [scroll-area]
++ @e67 [other] "main"
++ @e68 [button] "main"
++ @e69 [button] "Workspace actions"
++ @e70 [cell] "editor, Create a new workspace for editor, Project actions"
++ @e71 [button] "editor, Create a new workspace for editor, Project actions"
++ @e72 [button] "Create a new workspace for editor"
++ @e73 [button] "Project actions"
++ @e74 [scroll-area]
++ @e75 [cell] "Find Blank Page PR pending review"
++ @e76 [button] "Find Blank Page PR pending review"
++ @e77 [button] "Workspace actions"
++ @e78 [cell] "Review #871 — sharing and handle flow, Pull request #871"
++ @e79 [button] "Review #871 — sharing and handle flow, Pull request #871"
++ @e80 [button] "Workspace actions"
++ @e81 [text] "·"
++ @e82 [other] "Checks passed"
++ @e83 [cell] "G, greasy-yak, Create a new workspace for greasy-yak, Project actions"
++ @e84 [button] "G, greasy-yak, Create a new workspace for greasy-yak, Project actions"
++ @e85 [button] "Create a new workspace for greasy-yak"
++ @e86 [button] "Project actions"
++ @e87 [button] "Create a new workspace for greasy-yak"
++ @e88 [other] "H, hub, Create a new workspace for hub, Project actions"
++ @e89 [button] "H, hub, Create a new workspace for hub, Project actions"
++ @e90 [button] "Create a new workspace for hub"
++ @e91 [button] "Project actions"
++ @e92 [scroll-area]
++ @e93 [cell] "Fix hosted GitHub reply registration, Pull request #122"
++ @e94 [button] "Fix hosted GitHub reply registration, Pull request #122"
++ @e95 [button] "Workspace actions"
++ @e96 [other] "Checks passed"
++ @e97 [cell] "Steer existing agents by trigger context, Pull request #118"
++ @e98 [button] "Steer existing agents by trigger context, Pull request #118"
++ @e99 [button] "Workspace actions"
+… changed lines truncated
+Tapped id="sidebar-global-new-workspace" (201, 86)
+settled after 2238ms: +49 -202 (~0 unchanged)
+- @e1 [application] "Paseo Debug"
+- @e2 [window]
+- @e3 [other] "Switch tabs (2 open)"
+- @e4 [other] "Close menu"
+- @e5 [button] "Close menu"
+- @e6 [other] "main"
+- @e7 [text] "composer-dock-ios-fixture"
+- @e8 [text] "·"
+- @e9 [other] "dev-new"
+- @e10 [text] "dev-new"
+- @e11 [button] "Workspace actions"
+- @e12 [button] "Open Explorer sidebar"
+- @e13 [button] "Switch tabs (2 open)"
+- @e14 [other] "Import session"
+- @e15 [scroll-area]
+- @e16 [button] "Import session"
+- @e17 [other] "Message agent... Message, @files, /commands"
+- @e18 [text-view] "Message agent... Message, @files, /commands"
+- @e19 [button] "Add attachment"
+- @e20 [other] "Select model (Select model)"
+- @e21 [button] "Select model (Select model)"
+- @e22 [button] "Start dictation"
+- @e23 [other] "Close sidebar"
+- @e24 [button] "Close sidebar"
+- @e25 [button] "New workspace"
+- @e26 [button] "History"
+- @e27 [button] "Search"
+- @e28 [button] "Schedules"
+- @e29 [scroll-area] "Pinned"
+- @e30 [other] "Pinned"
+- @e31 [button] "Pinned"
++ @e1 [application] "Paseo Debug"
++ @e2 [window]
++ @e3 [other]
++ @e4 [other]
++ @e5 [other]
++ @e6 [other]
++ @e7 [other]
++ @e8 [other]
++ @e9 [other]
++ @e10 [other]
++ @e11 [other]
++ @e12 [other]
++ @e13 [other]
++ @e14 [other]
++ @e15 [other]
++ @e16 [other]
++ @e17 [other]
++ @e18 [other]
++ @e19 [other]
++ @e20 [other]
++ @e21 [other]
++ @e22 [other]
++ @e23 [button] "Open menu"
++ @e24 [other]
++ @e25 [other]
++ @e26 [other]
++ @e27 [text] "New workspace"
++ @e28 [button] "Workspace project"
++ @e29 [text] "C"
++ @e30 [button] "Workspace isolation"
++ @e31 [other]
++ @e32 [button] "Choose what to launch"
++ @e33 [other]
++ @e34 [other]
++ @e35 [text-view] "Message agent... Message, @files, /commands"
++ @e36 [other]
++ @e37 [other]
++ @e38 [button] "Add attachment"
++ @e39 [other]
++ @e40 [button] "Select model (Select model)"
++ @e41 [button] "Start dictation"
++ @e42 [button] "Create"
++ @e43 [other]
++ @e44 [other]
++ @e45 [other]
++ @e46 [other]
++ @e47 [window]
++ @e48 [other]
++ @e49 [other]
+… changed lines truncated
+Filled 1 chars
+Tapped (370, 465)
+Long pressed (376, 720)
+Tapped (4, 370)
+Filled 131 chars
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/new-workspace-cap-open.png (402x874 @1x)
+Tapped (398, 118)
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/new-workspace-header-dismissed.png (402x874 @1x)
+Tapped @e51 (201, 609)
+Error (TEXT_ENTRY_MISMATCH): text entry verification failed: expected "x", observed "x
+seventeen
+eighteen
+nineteen
+twenty"
+Hint: Retry with --debug and inspect diagnostics log for details.
+Diagnostic ID: mu4kztek-1dc7138c
+Diagnostics Log: /Users/runner/.agent-device/sessions/composer-scroll-ios/runner.log
+Tapped (370, 465)
+Long pressed (376, 720)
+/Volumes/devbox/workspace/composer-dock-ios-assert.cjs:6
+for(const name of ['content-dismissed','header-dismissed']) if(keyboard(read(name))) throw Error(`${name}: keyboard still visible`);
+                                                                                     ^
+
+Error: content-dismissed: keyboard still visible
+    at Object.<anonymous> (/Volumes/devbox/workspace/composer-dock-ios-assert.cjs:6:92)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.20.0

@@ -1,0 +1,29 @@
+
+Connecting to 3s0s50t248bag ...
+
+Warning: Permanently added 'paseo-ios.devbox.namespace' (RSA) to the list of known hosts.
+Filled 1 chars
+Tapped (370, 465)
+Long pressed (376, 720)
+Tapped (4, 370)
+Filled 131 chars
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/workspace-draft-cap-open.png (402x874 @1x)
+Tapped (398, 118)
+/Volumes/devbox/workspace/composer-scroll-ios-evidence/workspace-draft-header-dismissed.png (402x874 @1x)
+Tapped @e83 (201, 650)
+Error (TEXT_ENTRY_MISMATCH): text entry verification failed: expected "x", observed "x
+eighteen
+nineteen
+twent"
+Hint: Retry with --debug and inspect diagnostics log for details.
+Diagnostic ID: mu4kyhro-28a33356
+Diagnostics Log: /Users/runner/.agent-device/sessions/composer-scroll-ios/runner.log
+Tapped (370, 465.0000305175781)
+Long pressed (376, 720)
+PASS iOS host=workspace-draft: content/header dismissal, cap close/reopen 250pt, empty/reset 30pt, header/keyboard bounds
+
+
+ A new version of devbox is available: 0.0.187. 
+
+ Run `devbox update` to upgrade.
+

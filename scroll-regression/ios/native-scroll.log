@@ -1,0 +1,5 @@
+Native swipe moved stream content: 28.64% changed
+Native swipe moved stream content: 29.79% changed
+PASS iOS chat: content/header dismiss; empty 30pt; cap 298pt retained after dismissal/reopen; cleared 30pt
+PASS iOS workspace-draft: content/header dismiss; empty 30pt; cap 250pt retained after dismissal/reopen; cleared 30pt
+PASS iOS new-workspace: content/header dismiss; empty 30pt; cap 333pt retained after dismissal/reopen; cleared 30pt

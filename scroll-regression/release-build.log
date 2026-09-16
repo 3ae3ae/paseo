@@ -1,0 +1,207 @@
+$ cd packages/app
+$ npm --prefix ../.. run build:client && CI=1 APP_VARIANT=production npx expo prebuild --platform android --clean --non-interactive && cd android && ./gradlew assembleRelease --no-daemon -q
+
+> paseo@0.8.0 build:client
+> npm run build --workspace=@getpaseo/client
+
+> @getpaseo/client@0.8.0 build
+> npm run build --workspace=@getpaseo/protocol && tsc -p tsconfig.json --incremental false
+
+> @getpaseo/protocol@0.8.0 prebuild
+> npm run generate:validators
+
+> @getpaseo/protocol@0.8.0 generate:validators
+> node scripts/generate-validation-aot.mjs
+
+generated src/generated/validation/ws-outbound.aot.ts from codegen/ws-outbound.compile.ts (WSOutboundMessageSchema)
+
+> @getpaseo/protocol@0.8.0 build
+> tsc -p tsconfig.json --incremental false
+(node:3418652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[33m  [33m[1m--non-interactive[22m[39m[33m is not supported, use [33m[1m$CI=1[22m[39m[33m instead[39m
+(node:3418664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+- [1mClearing android[22m
+[32m✔[39m Cleared android code
+- [1mCreating native directory (./android)[22m
+[32m✔[39m Created native directory
+- [1mUpdating package.json[22m
+[32m✔[39m Updated package.json[2m | no changes[22m
+- [1mRunning prebuild[22m
+[32m✔[39m Finished prebuild
+[32m[ExpoRootProject][0m Using the following versions:
+  - buildTools:  [32m36.0.0[0m
+  - minSdk:      [32m29[0m
+  - compileSdk:  [32m36[0m
+  - targetSdk:   [32m36[0m
+  - ndk:         [32m27.1.12297006[0m
+  - kotlin:      [32m2.1.20[0m
+  - ksp:         [32m2.1.20-2.0.1[0m
+ ℹ️  [33mApplying gradle plugin[0m '[32mexpo-dev-launcher-gradle-plugin[0m'
+
+Using expo modules
+  - [32mgetpaseo-expo-two-way-audio[0m (0.1.0)
+  - [32mexpo-constants[0m (18.0.13)
+  - [32mexpo-dev-client[0m (6.0.20)
+  - [32mexpo-dev-launcher[0m (6.0.20)
+  - [32mexpo-dev-menu[0m (7.0.18)
+  - [32mexpo-dev-menu-interface[0m (2.0.0)
+  - [32mexpo-json-utils[0m (0.15.0)
+  - [32mexpo-manifests[0m (1.0.10)
+  - [32mexpo-modules-core[0m (3.0.29)
+  - [32mexpo-updates-interface[0m (2.0.0)
+  - [32mpaseo-diff-prototype[0m (0.1.0)
+  - [32mpaseo-native-trace[0m (0.1.0)
+  - [32mpaseo-word-stream[0m (0.1.0)
+  - [33m[📦][0m [32mexpo-application[0m (7.0.8)
+  - [33m[📦][0m [32mexpo-asset[0m (12.0.12)
+  - [33m[📦][0m [32mexpo-audio[0m (1.0.16)
+  - [33m[📦][0m [32mexpo-camera[0m (17.0.10)
+  - [33m[📦][0m [32mexpo-clipboard[0m (8.0.7)
+  - [33m[📦][0m [32mexpo-crypto[0m (15.0.8)
+  - [33m[📦][0m [32mexpo-document-picker[0m (14.0.8)
+  - [33m[📦][0m [32mexpo-file-system[0m (19.0.21)
+  - [33m[📦][0m [32mexpo-font[0m (14.0.11)
+  - [33m[📦][0m [32mexpo-haptics[0m (15.0.8)
+  - [33m[📦][0m [32mexpo-image[0m (3.0.11)
+  - [33m[📦][0m [32mexpo-image-loader[0m (6.0.0)
+  - [33m[📦][0m [32mexpo-image-manipulator[0m (14.0.8)
+  - [33m[📦][0m [32mexpo-image-picker[0m (17.0.10)
+  - [33m[📦][0m [32mexpo-keep-awake[0m (15.0.8)
+  - [33m[📦][0m [32mexpo-linking[0m (8.0.11)
+  - [33m[📦][0m [32mexpo-localization[0m (17.0.9)
+  - [33m[📦][0m [32mexpo-notifications[0m (0.32.16)
+  - [33m[📦][0m [32mexpo-sharing[0m (14.0.8)
+  - [33m[📦][0m [32mexpo-splash-screen[0m (31.0.13)
+  - [33m[📦][0m [32mexpo-sqlite[0m (16.0.10)
+  - [33m[📦][0m [32mexpo-system-ui[0m (6.0.9)
+
+The NODE_ENV environment variable is required but was not specified. Ensure the project is bundled with Expo CLI or NODE_ENV is set. Using only .env.local and .env
+(node:3419787) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:3419823) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419809) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419798) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419833) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419905) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419842) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419882) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419895) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419867) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419935) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419963) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419965) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419853) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419954) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419962) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419970) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419999) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419998) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420014) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420013) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3419768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420026) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420042) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420050) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3420044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Note: /home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/node_modules/@react-native-masked-view/masked-view/android/src/main/java/org/reactnative/maskedview/RNCMaskedViewPackage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/node_modules/@react-native-async-storage/async-storage/android/src/javaPackage/java/com/reactnativecommunity/asyncstorage/AsyncStoragePackage.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: /home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/node_modules/react-native-worklets/android/src/main/java/com/swmansion/worklets/WorkletsPackage.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+(node:3433990) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90mUsing src/app as the root directory for Expo Router.[39m
+[33mExperimental Expo Autolinking module resolver is enabled.[39m
+[90mReact Compiler enabled[39m
+[2mStarting Metro Bundler[22m
+[33mwarning[39m: Bundler cache is empty, rebuilding [2m(this may take a minute)[22m
+[33m|[39m (node:3434081) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓[49m[39m[47m[37m░░░░░░░░░░░░░░░[39m[49m[1m  9.5% [22m[2m( 8/26)[22m
+[33m|[39m (node:3434107) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434095) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434109) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434082) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434130) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434137) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434122) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[33m|[39m (node:3434116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[33m|[39m (Use `node --trace-warnings ...` to show where the warning was created)
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63.4% [22m[2m( 855/1124)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63.4% [22m[2m(1341/3563)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63.4% [22m[2m(1784/4020)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░[39m[49m[1m 79.0% [22m[2m(3955/4511)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░[39m[49m[1m 92.3% [22m[2m(4715/4907)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 99.9% [22m[2m(5933/5937)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 99.9% [22m[2m(5938/5939)[22m
+[1mAndroid[22m [0m[2mpackages/app/[22m[0m[1mindex.ts[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 99.9% [22m[2m(5939/5939)[22m
+[32m[1mAndroid[22m Bundled [39m[2m50142ms[22m[0m[2m packages/app/index.ts (5940 modules)[22m[0m
+Writing bundle output to: /home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/packages/app/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle
+Writing sourcemap output to: /home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/packages/app/android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map
+Copying 33 asset files
+Done writing bundle output
+Done writing sourcemap output
+
+Exit code: 0
+

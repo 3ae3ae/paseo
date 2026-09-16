@@ -1,0 +1,26 @@
+before: 0-bottom -> 1-after-scroll-up; exit 1
+file:///home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/packages/app/e2e/mobile/composer-keyboard/assert-composer-keyboard.mjs:49
+    throw new Error(
+          ^
+
+Error: Native swipe did not move stream content: 0.00% changed
+    at [90mfile:///home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/[39mpackages/app/e2e/mobile/composer-keyboard/assert-composer-keyboard.mjs:49:11
+
+Node.js v22.20.0
+
+before: 2-back-at-bottom-idle -> 3-after-scroll-up-2; exit 1
+file:///home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/packages/app/e2e/mobile/composer-keyboard/assert-composer-keyboard.mjs:49
+    throw new Error(
+          ^
+
+Error: Native swipe did not move stream content: 0.00% changed
+    at [90mfile:///home/moboudra/dev/paseo/.dev/paseo-home/worktrees/04qpit1r/filthy-dragon/[39mpackages/app/e2e/mobile/composer-keyboard/assert-composer-keyboard.mjs:49:11
+
+Node.js v22.20.0
+
+after: 0-bottom -> 1-after-scroll-up; exit 0
+Native swipe moved stream content: 23.89% changed
+
+after: 2-back-at-bottom-idle -> 3-after-scroll-up-2; exit 0
+Native swipe moved stream content: 26.44% changed
+

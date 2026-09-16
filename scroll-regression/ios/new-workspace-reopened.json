@@ -1,0 +1,2286 @@
+{
+  "success": true,
+  "data": {
+    "nodes": [
+      {
+        "hittable": true,
+        "label": "Paseo Debug",
+        "index": 0,
+        "enabled": true,
+        "depth": 0,
+        "type": "Application",
+        "rect": {
+          "y": 0,
+          "width": 402,
+          "x": 0,
+          "height": 874
+        },
+        "ref": "e1"
+      },
+      {
+        "index": 1,
+        "enabled": true,
+        "depth": 1,
+        "parentIndex": 0,
+        "type": "Window",
+        "hittable": false,
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "width": 402,
+          "x": 0
+        },
+        "ref": "e2"
+      },
+      {
+        "type": "Other",
+        "hittable": false,
+        "index": 2,
+        "rect": {
+          "height": 874,
+          "width": 402,
+          "y": 0,
+          "x": 0
+        },
+        "parentIndex": 1,
+        "enabled": true,
+        "depth": 2,
+        "ref": "e3"
+      },
+      {
+        "index": 3,
+        "depth": 3,
+        "enabled": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 402,
+          "height": 874
+        },
+        "hittable": false,
+        "type": "Other",
+        "parentIndex": 2,
+        "ref": "e4"
+      },
+      {
+        "hittable": false,
+        "enabled": true,
+        "rect": {
+          "width": 402,
+          "y": 0,
+          "height": 874,
+          "x": 0
+        },
+        "type": "Other",
+        "depth": 4,
+        "index": 4,
+        "parentIndex": 3,
+        "ref": "e5"
+      },
+      {
+        "enabled": true,
+        "depth": 5,
+        "type": "Other",
+        "parentIndex": 4,
+        "rect": {
+          "height": 874,
+          "width": 402,
+          "x": 0,
+          "y": 0
+        },
+        "index": 5,
+        "hittable": false,
+        "ref": "e6"
+      },
+      {
+        "hittable": false,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "parentIndex": 5,
+        "index": 6,
+        "enabled": true,
+        "depth": 6,
+        "ref": "e7"
+      },
+      {
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 0,
+          "height": 874
+        },
+        "parentIndex": 6,
+        "depth": 7,
+        "type": "Other",
+        "enabled": true,
+        "index": 7,
+        "hittable": false,
+        "ref": "e8"
+      },
+      {
+        "index": 8,
+        "depth": 8,
+        "rect": {
+          "y": 0,
+          "width": 402,
+          "height": 874,
+          "x": 0
+        },
+        "parentIndex": 7,
+        "type": "Other",
+        "hittable": false,
+        "enabled": true,
+        "ref": "e9"
+      },
+      {
+        "hittable": false,
+        "enabled": true,
+        "rect": {
+          "y": 0,
+          "x": 0,
+          "width": 402,
+          "height": 874
+        },
+        "depth": 9,
+        "parentIndex": 8,
+        "type": "Other",
+        "index": 9,
+        "ref": "e10"
+      },
+      {
+        "type": "Other",
+        "depth": 9,
+        "enabled": true,
+        "hittable": false,
+        "parentIndex": 8,
+        "rect": {
+          "width": 402,
+          "y": 0,
+          "height": 874,
+          "x": 0
+        },
+        "index": 10,
+        "ref": "e11"
+      },
+      {
+        "depth": 10,
+        "rect": {
+          "height": 874,
+          "x": 0,
+          "y": 0,
+          "width": 402
+        },
+        "type": "Other",
+        "parentIndex": 10,
+        "index": 11,
+        "hittable": false,
+        "enabled": true,
+        "ref": "e12"
+      },
+      {
+        "depth": 10,
+        "hittable": false,
+        "enabled": true,
+        "parentIndex": 10,
+        "rect": {
+          "y": 0,
+          "width": 402,
+          "height": 874,
+          "x": 0
+        },
+        "type": "Other",
+        "index": 12,
+        "ref": "e13"
+      },
+      {
+        "index": 13,
+        "depth": 11,
+        "enabled": true,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 0,
+          "height": 874
+        },
+        "parentIndex": 12,
+        "hittable": false,
+        "type": "Other",
+        "ref": "e14"
+      },
+      {
+        "parentIndex": 12,
+        "enabled": true,
+        "hittable": false,
+        "depth": 11,
+        "rect": {
+          "width": 402,
+          "height": 874,
+          "x": 0,
+          "y": 0
+        },
+        "type": "Other",
+        "index": 14,
+        "ref": "e15"
+      },
+      {
+        "type": "Other",
+        "parentIndex": 14,
+        "depth": 12,
+        "hittable": false,
+        "index": 15,
+        "rect": {
+          "width": 402,
+          "height": 874,
+          "y": 0,
+          "x": 0
+        },
+        "enabled": true,
+        "ref": "e16"
+      },
+      {
+        "index": 16,
+        "rect": {
+          "width": 402,
+          "x": 0,
+          "y": 0,
+          "height": 874
+        },
+        "enabled": true,
+        "type": "Other",
+        "depth": 13,
+        "parentIndex": 15,
+        "hittable": false,
+        "ref": "e17"
+      },
+      {
+        "index": 17,
+        "hittable": false,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "depth": 14,
+        "enabled": true,
+        "parentIndex": 16,
+        "ref": "e18"
+      },
+      {
+        "index": 18,
+        "enabled": true,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "height": 874,
+          "width": 402
+        },
+        "label": "Open menu",
+        "hittable": false,
+        "depth": 15,
+        "parentIndex": 17,
+        "ref": "e19"
+      },
+      {
+        "enabled": true,
+        "hittable": false,
+        "depth": 16,
+        "index": 19,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "width": 402,
+          "y": 0,
+          "x": 0
+        },
+        "label": "Open menu",
+        "parentIndex": 18,
+        "ref": "e20"
+      },
+      {
+        "label": "Open menu",
+        "hittable": false,
+        "rect": {
+          "y": 0,
+          "width": 402,
+          "height": 874,
+          "x": 0
+        },
+        "depth": 17,
+        "enabled": true,
+        "index": 20,
+        "type": "Other",
+        "parentIndex": 19,
+        "ref": "e21"
+      },
+      {
+        "label": "Open menu",
+        "identifier": "composer-dock-header",
+        "hittable": false,
+        "type": "Other",
+        "depth": 18,
+        "rect": {
+          "width": 402,
+          "y": 0,
+          "height": 126,
+          "x": 0
+        },
+        "parentIndex": 20,
+        "index": 21,
+        "enabled": true,
+        "ref": "e22"
+      },
+      {
+        "depth": 19,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 70,
+          "height": 56
+        },
+        "enabled": true,
+        "index": 22,
+        "hittable": false,
+        "type": "Other",
+        "parentIndex": 21,
+        "ref": "e23"
+      },
+      {
+        "enabled": true,
+        "type": "Button",
+        "depth": 19,
+        "parentIndex": 21,
+        "label": "Open menu",
+        "hittable": false,
+        "identifier": "menu-button",
+        "index": 23,
+        "rect": {
+          "x": 8,
+          "width": 32,
+          "y": 81.6666669845581,
+          "height": 32
+        },
+        "ref": "e24"
+      },
+      {
+        "hittable": false,
+        "parentIndex": 23,
+        "rect": {
+          "x": 16,
+          "width": 16,
+          "y": 91.6666669845581,
+          "height": 12
+        },
+        "index": 24,
+        "type": "Other",
+        "enabled": true,
+        "depth": 20,
+        "ref": "e25"
+      },
+      {
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 24,
+        "type": "Other",
+        "rect": {
+          "x": 16,
+          "width": 16,
+          "y": 91.6666669845581,
+          "height": 1.3333358764648438
+        },
+        "hittable": false,
+        "index": 25,
+        "ref": "e26"
+      },
+      {
+        "parentIndex": 24,
+        "enabled": true,
+        "index": 26,
+        "rect": {
+          "x": 16,
+          "width": 16,
+          "y": 97.00000047683716,
+          "height": 1.6666717529296875
+        },
+        "type": "Other",
+        "hittable": false,
+        "depth": 21,
+        "ref": "e27"
+      },
+      {
+        "index": 27,
+        "type": "Other",
+        "rect": {
+          "x": 16,
+          "width": 8,
+          "y": 102.33333396911621,
+          "height": 1.6666641235351562
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 24,
+        "hittable": false,
+        "ref": "e28"
+      },
+      {
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 0,
+          "height": 874
+        },
+        "type": "Other",
+        "depth": 18,
+        "enabled": true,
+        "parentIndex": 20,
+        "index": 28,
+        "hittable": false,
+        "ref": "e29"
+      },
+      {
+        "parentIndex": 20,
+        "enabled": true,
+        "type": "Other",
+        "index": 29,
+        "depth": 18,
+        "hittable": false,
+        "label": "New workspace",
+        "identifier": "composer-viewport",
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": 126,
+          "height": 748
+        },
+        "ref": "e30"
+      },
+      {
+        "label": "New workspace",
+        "index": 30,
+        "type": "Other",
+        "parentIndex": 29,
+        "enabled": true,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": -176,
+          "height": 748
+        },
+        "hittable": false,
+        "depth": 19,
+        "ref": "e31"
+      },
+      {
+        "hittable": false,
+        "index": 31,
+        "label": "New workspace",
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": -176,
+          "height": 307
+        },
+        "enabled": true,
+        "depth": 20,
+        "parentIndex": 30,
+        "identifier": "composer-dock-content",
+        "type": "Other",
+        "ref": "e32"
+      },
+      {
+        "hittable": false,
+        "depth": 21,
+        "index": 32,
+        "type": "Other",
+        "parentIndex": 31,
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": -176,
+          "height": 307
+        },
+        "enabled": true,
+        "ref": "e33"
+      },
+      {
+        "enabled": true,
+        "type": "Other",
+        "rect": {
+          "x": 0,
+          "width": 402,
+          "y": -94.33333587646484,
+          "height": 25.333328247070312
+        },
+        "parentIndex": 31,
+        "depth": 21,
+        "index": 33,
+        "label": "New workspace",
+        "hittable": false,
+        "ref": "e34"
+      },
+      {
+        "enabled": true,
+        "type": "StaticText",
+        "rect": {
+          "x": 24,
+          "y": -94.33333587646484,
+          "width": 362,
+          "height": 25.333343505859375
+        },
+        "parentIndex": 33,
+        "depth": 22,
+        "index": 34,
+        "label": "New workspace",
+        "hittable": false,
+        "ref": "e35"
+      },
+      {
+        "parentIndex": 34,
+        "rect": {
+          "x": 24,
+          "y": -94.33333587646484,
+          "width": 362,
+          "height": 25.333343505859375
+        },
+        "label": "New workspace",
+        "hittable": false,
+        "type": "StaticText",
+        "depth": 23,
+        "enabled": true,
+        "index": 35,
+        "ref": "e36"
+      },
+      {
+        "depth": 21,
+        "index": 36,
+        "parentIndex": 31,
+        "hittable": false,
+        "rect": {
+          "x": 0,
+          "y": -37,
+          "width": 402,
+          "height": 136
+        },
+        "identifier": "new-workspace-ref-picker-row",
+        "type": "Other",
+        "enabled": true,
+        "ref": "e37"
+      },
+      {
+        "index": 37,
+        "label": "Workspace project",
+        "rect": {
+          "x": 16,
+          "y": -37,
+          "width": 238.6666717529297,
+          "height": 28
+        },
+        "enabled": true,
+        "depth": 21,
+        "type": "Button",
+        "hittable": false,
+        "identifier": "new-workspace-project-picker-trigger",
+        "parentIndex": 31,
+        "ref": "e38"
+      },
+      {
+        "parentIndex": 37,
+        "depth": 22,
+        "type": "Other",
+        "hittable": false,
+        "rect": {
+          "x": 24,
+          "y": -31,
+          "width": 16,
+          "height": 16
+        },
+        "enabled": true,
+        "index": 38,
+        "ref": "e39"
+      },
+      {
+        "hittable": false,
+        "depth": 22,
+        "index": 39,
+        "parentIndex": 37,
+        "rect": {
+          "x": 28,
+          "y": -29,
+          "width": 7.666667938232422,
+          "height": 12
+        },
+        "enabled": true,
+        "type": "StaticText",
+        "label": "C",
+        "ref": "e40"
+      },
+      {
+        "hittable": false,
+        "label": "C",
+        "index": 40,
+        "type": "StaticText",
+        "rect": {
+          "x": 28,
+          "y": -29,
+          "width": 7.666667938232422,
+          "height": 12
+        },
+        "enabled": true,
+        "depth": 23,
+        "parentIndex": 39,
+        "ref": "e41"
+      },
+      {
+        "hittable": false,
+        "identifier": "workspace-create-isolation-trigger",
+        "label": "Workspace isolation",
+        "index": 41,
+        "type": "Button",
+        "rect": {
+          "height": 28,
+          "y": -1,
+          "x": 16,
+          "width": 90.33333587646484
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 31,
+        "ref": "e42"
+      },
+      {
+        "hittable": false,
+        "index": 42,
+        "type": "Other",
+        "rect": {
+          "height": 14,
+          "y": 7,
+          "x": 84.33333206176758,
+          "width": 14
+        },
+        "enabled": true,
+        "depth": 22,
+        "parentIndex": 41,
+        "ref": "e43"
+      },
+      {
+        "hittable": false,
+        "index": 43,
+        "type": "Other",
+        "rect": {
+          "height": 14,
+          "y": 7,
+          "x": 84.33333206176758,
+          "width": 14
+        },
+        "enabled": true,
+        "depth": 23,
+        "parentIndex": 42,
+        "ref": "e44"
+      },
+      {
+        "hittable": false,
+        "index": 44,
+        "type": "Other",
+        "rect": {
+          "height": 4.666666666666664,
+          "y": 11.666666666666664,
+          "x": 87.24999872843425,
+          "width": 8.166666666666657
+        },
+        "enabled": true,
+        "depth": 24,
+        "parentIndex": 43,
+        "ref": "e45"
+      },
+      {
+        "hittable": false,
+        "index": 45,
+        "type": "Other",
+        "rect": {
+          "height": 4.666666666666664,
+          "y": 11.666666666666657,
+          "x": 87.24999872843425,
+          "width": 8.166666666666671
+        },
+        "enabled": true,
+        "depth": 25,
+        "parentIndex": 44,
+        "ref": "e46"
+      },
+      {
+        "hittable": false,
+        "label": "Choose what to launch",
+        "index": 46,
+        "type": "Other",
+        "rect": {
+          "height": 28,
+          "y": 35,
+          "x": 16,
+          "width": 86.66666412353516
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 31,
+        "ref": "e47"
+      },
+      {
+        "hittable": false,
+        "identifier": "new-workspace-launch-trigger",
+        "label": "Choose what to launch",
+        "index": 47,
+        "type": "Button",
+        "rect": {
+          "height": 28,
+          "y": 35,
+          "x": 16,
+          "width": 86.66666412353516
+        },
+        "enabled": true,
+        "depth": 22,
+        "parentIndex": 46,
+        "ref": "e48"
+      },
+      {
+        "hittable": false,
+        "index": 48,
+        "type": "Other",
+        "rect": {
+          "height": 28,
+          "y": 71,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 31,
+        "ref": "e49"
+      },
+      {
+        "hittable": false,
+        "identifier": "composer-viewport-content",
+        "label": "Message agent...",
+        "index": 49,
+        "type": "Other",
+        "rect": {
+          "height": 441,
+          "y": 131,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 20,
+        "parentIndex": 30,
+        "ref": "e50"
+      },
+      {
+        "hittable": false,
+        "identifier": "message-input-root",
+        "index": 50,
+        "type": "Other",
+        "rect": {
+          "height": 391,
+          "y": 131,
+          "x": 16,
+          "width": 370
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e51"
+      },
+      {
+        "hittable": false,
+        "index": 51,
+        "type": "Other",
+        "rect": {
+          "height": 391,
+          "y": 131,
+          "x": 16,
+          "width": 370
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e52"
+      },
+      {
+        "hittable": false,
+        "label": "Message agent...",
+        "index": 52,
+        "type": "Other",
+        "rect": {
+          "height": 333,
+          "y": 140,
+          "x": 29,
+          "width": 344
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e53"
+      },
+      {
+        "hittable": false,
+        "label": "Message agent...",
+        "index": 53,
+        "type": "TextView",
+        "value": "one\ntwo\nthree\nfour\nfive\nsix\nseven\neight\nnine\nten\neleven\ntwelve\nthirteen\nfourteen\nfifteen\nsixteen\nseventeen\neighteen\nnineteen\ntwenty",
+        "rect": {
+          "height": 333,
+          "y": 140,
+          "x": 29,
+          "width": 344
+        },
+        "enabled": true,
+        "depth": 22,
+        "parentIndex": 52,
+        "ref": "e54"
+      },
+      {
+        "hittable": false,
+        "label": "Vertical scroll bar, 2 pages",
+        "index": 54,
+        "type": "Other",
+        "value": "100%",
+        "rect": {
+          "height": 333,
+          "y": 140,
+          "x": 340,
+          "width": 30
+        },
+        "enabled": true,
+        "depth": 23,
+        "parentIndex": 53,
+        "ref": "e55"
+      },
+      {
+        "hittable": false,
+        "index": 55,
+        "type": "Other",
+        "rect": {
+          "height": 281.33333333333337,
+          "y": 188.66666666666666,
+          "x": 367,
+          "width": 3
+        },
+        "enabled": true,
+        "depth": 24,
+        "parentIndex": 54,
+        "ref": "e56"
+      },
+      {
+        "hittable": false,
+        "label": "Horizontal scroll bar, 1 page",
+        "index": 56,
+        "type": "Other",
+        "value": "0%",
+        "rect": {
+          "height": 30,
+          "y": 440,
+          "x": 29,
+          "width": 344
+        },
+        "enabled": true,
+        "depth": 23,
+        "parentIndex": 53,
+        "ref": "e57"
+      },
+      {
+        "hittable": false,
+        "index": 57,
+        "type": "Other",
+        "rect": {
+          "height": 3,
+          "y": 467,
+          "x": 32,
+          "width": 335
+        },
+        "enabled": true,
+        "depth": 24,
+        "parentIndex": 56,
+        "ref": "e58"
+      },
+      {
+        "hittable": false,
+        "identifier": "message-input-attach-button",
+        "label": "Add attachment",
+        "index": 58,
+        "type": "Button",
+        "rect": {
+          "height": 28,
+          "y": 485,
+          "x": 23,
+          "width": 28
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e59"
+      },
+      {
+        "hittable": false,
+        "index": 59,
+        "type": "Other",
+        "rect": {
+          "height": 28,
+          "y": 485,
+          "x": 23,
+          "width": 28
+        },
+        "enabled": true,
+        "depth": 22,
+        "parentIndex": 58,
+        "ref": "e60"
+      },
+      {
+        "hittable": false,
+        "index": 60,
+        "type": "Other",
+        "rect": {
+          "height": 20,
+          "y": 489,
+          "x": 27,
+          "width": 20
+        },
+        "enabled": true,
+        "depth": 23,
+        "parentIndex": 59,
+        "ref": "e61"
+      },
+      {
+        "hittable": false,
+        "index": 61,
+        "type": "Other",
+        "rect": {
+          "height": 13.333333333333371,
+          "y": 492.3333333333333,
+          "x": 30.333333333333332,
+          "width": 13.333333333333332
+        },
+        "enabled": true,
+        "depth": 24,
+        "parentIndex": 60,
+        "ref": "e62"
+      },
+      {
+        "hittable": false,
+        "index": 62,
+        "type": "Other",
+        "rect": {
+          "height": 1.6666666666666856,
+          "y": 498.16666666666674,
+          "x": 30.333333333333332,
+          "width": 13.333333333333332
+        },
+        "enabled": true,
+        "depth": 25,
+        "parentIndex": 61,
+        "ref": "e63"
+      },
+      {
+        "hittable": false,
+        "index": 63,
+        "type": "Other",
+        "rect": {
+          "height": 13.333333333333314,
+          "y": 492.33333333333326,
+          "x": 36.16666666666667,
+          "width": 1.6666666666666643
+        },
+        "enabled": true,
+        "depth": 25,
+        "parentIndex": 61,
+        "ref": "e64"
+      },
+      {
+        "hittable": false,
+        "label": "Select model (Select model)",
+        "index": 64,
+        "type": "Other",
+        "rect": {
+          "height": 28,
+          "y": 485,
+          "x": 51,
+          "width": 264
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e65"
+      },
+      {
+        "hittable": false,
+        "identifier": "combined-model-selector",
+        "label": "Select model (Select model)",
+        "index": 65,
+        "type": "Button",
+        "rect": {
+          "height": 28,
+          "y": 485,
+          "x": 51,
+          "width": 105.66667175292969
+        },
+        "enabled": true,
+        "depth": 22,
+        "parentIndex": 64,
+        "ref": "e66"
+      },
+      {
+        "hittable": false,
+        "label": "Select model",
+        "index": 66,
+        "type": "StaticText",
+        "rect": {
+          "height": 18,
+          "y": 490,
+          "x": 59,
+          "width": 89.66667175292969
+        },
+        "enabled": true,
+        "depth": 23,
+        "parentIndex": 65,
+        "ref": "e67"
+      },
+      {
+        "hittable": false,
+        "label": "Select model",
+        "index": 67,
+        "type": "StaticText",
+        "rect": {
+          "height": 18,
+          "y": 490,
+          "x": 59,
+          "width": 89.66667175292969
+        },
+        "enabled": true,
+        "depth": 24,
+        "parentIndex": 66,
+        "ref": "e68"
+      },
+      {
+        "hittable": false,
+        "label": "Start dictation",
+        "index": 68,
+        "type": "Button",
+        "rect": {
+          "height": 28,
+          "y": 485,
+          "x": 315,
+          "width": 28
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e69"
+      },
+      {
+        "hittable": false,
+        "identifier": "workspace-create-submit",
+        "label": "Create",
+        "index": 69,
+        "type": "Button",
+        "rect": {
+          "height": 28,
+          "y": 485,
+          "x": 351,
+          "width": 28
+        },
+        "enabled": true,
+        "depth": 21,
+        "parentIndex": 49,
+        "ref": "e70"
+      },
+      {
+        "hittable": false,
+        "index": 70,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 11,
+        "parentIndex": 12,
+        "ref": "e71"
+      },
+      {
+        "hittable": false,
+        "index": 71,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 7,
+        "parentIndex": 6,
+        "ref": "e72"
+      },
+      {
+        "hittable": false,
+        "index": 72,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 71,
+        "ref": "e73"
+      },
+      {
+        "hittable": false,
+        "index": 73,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 9,
+        "parentIndex": 72,
+        "ref": "e74"
+      },
+      {
+        "hittable": false,
+        "index": 74,
+        "type": "Window",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 1,
+        "parentIndex": 0,
+        "ref": "e75"
+      },
+      {
+        "hittable": false,
+        "index": 75,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 2,
+        "parentIndex": 74,
+        "ref": "e76"
+      },
+      {
+        "hittable": false,
+        "index": 76,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 3,
+        "parentIndex": 75,
+        "ref": "e77"
+      },
+      {
+        "hittable": false,
+        "index": 77,
+        "type": "Other",
+        "rect": {
+          "height": 336,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 3,
+        "parentIndex": 75,
+        "ref": "e78"
+      },
+      {
+        "hittable": false,
+        "index": 78,
+        "type": "Other",
+        "rect": {
+          "height": 278,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 77,
+        "ref": "e79"
+      },
+      {
+        "hittable": true,
+        "label": "Emoji",
+        "index": 79,
+        "type": "Window",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 1,
+        "parentIndex": 0,
+        "ref": "e80"
+      },
+      {
+        "hittable": true,
+        "label": "Emoji",
+        "index": 80,
+        "type": "Other",
+        "rect": {
+          "height": 874,
+          "y": 0,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 2,
+        "parentIndex": 79,
+        "ref": "e81"
+      },
+      {
+        "hittable": true,
+        "label": "Emoji",
+        "index": 81,
+        "type": "Other",
+        "rect": {
+          "height": 336,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 3,
+        "parentIndex": 80,
+        "ref": "e82"
+      },
+      {
+        "hittable": false,
+        "index": 82,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 81,
+        "ref": "e83"
+      },
+      {
+        "hittable": false,
+        "index": 83,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 82,
+        "ref": "e84"
+      },
+      {
+        "hittable": false,
+        "index": 84,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 83,
+        "ref": "e85"
+      },
+      {
+        "hittable": true,
+        "identifier": "SystemInputAssistantView",
+        "label": "Typing Predictions",
+        "index": 85,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 81,
+        "ref": "e86"
+      },
+      {
+        "hittable": true,
+        "label": "Typing Predictions",
+        "index": 86,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 85,
+        "ref": "e87"
+      },
+      {
+        "hittable": true,
+        "identifier": "CenterPageView",
+        "label": "Typing Predictions",
+        "index": 87,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 86,
+        "ref": "e88"
+      },
+      {
+        "hittable": false,
+        "index": 88,
+        "type": "Other",
+        "rect": {
+          "height": 1245,
+          "y": -62,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 7,
+        "parentIndex": 87,
+        "ref": "e89"
+      },
+      {
+        "hittable": false,
+        "index": 89,
+        "type": "ScrollView",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 88,
+        "ref": "e90"
+      },
+      {
+        "hittable": true,
+        "label": "Typing Predictions",
+        "index": 90,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 7,
+        "parentIndex": 87,
+        "ref": "e91"
+      },
+      {
+        "hittable": true,
+        "label": "Typing Predictions",
+        "index": 91,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 90,
+        "ref": "e92"
+      },
+      {
+        "hittable": true,
+        "label": "“twelve”",
+        "index": 92,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 9,
+        "parentIndex": 91,
+        "ref": "e93"
+      },
+      {
+        "hittable": true,
+        "label": "“twelve”",
+        "index": 93,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 10,
+        "parentIndex": 92,
+        "ref": "e94"
+      },
+      {
+        "hittable": true,
+        "label": "“twelve”",
+        "index": 94,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 0,
+          "width": 134
+        },
+        "enabled": true,
+        "depth": 11,
+        "parentIndex": 93,
+        "ref": "e95"
+      },
+      {
+        "hittable": true,
+        "label": "twenty",
+        "index": 95,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 134,
+          "width": 134
+        },
+        "enabled": true,
+        "depth": 11,
+        "parentIndex": 93,
+        "ref": "e96"
+      },
+      {
+        "hittable": true,
+        "label": "tweeting",
+        "index": 96,
+        "type": "Other",
+        "rect": {
+          "height": 45,
+          "y": 538,
+          "x": 268,
+          "width": 134
+        },
+        "enabled": true,
+        "depth": 11,
+        "parentIndex": 93,
+        "ref": "e97"
+      },
+      {
+        "hittable": false,
+        "index": 97,
+        "type": "Other",
+        "rect": {
+          "height": 233,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 81,
+        "ref": "e98"
+      },
+      {
+        "hittable": false,
+        "index": 98,
+        "type": "Other",
+        "rect": {
+          "height": 291,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 97,
+        "ref": "e99"
+      },
+      {
+        "hittable": false,
+        "index": 99,
+        "type": "Other",
+        "rect": {
+          "height": 291,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 98,
+        "ref": "e100"
+      },
+      {
+        "hittable": false,
+        "index": 100,
+        "type": "Other",
+        "rect": {
+          "height": 291,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 7,
+        "parentIndex": 99,
+        "ref": "e101"
+      },
+      {
+        "hittable": false,
+        "label": "q",
+        "index": 101,
+        "type": "Other",
+        "rect": {
+          "height": 233,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 81,
+        "ref": "e102"
+      },
+      {
+        "hittable": false,
+        "label": "q",
+        "index": 102,
+        "type": "Keyboard",
+        "rect": {
+          "height": 233,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 101,
+        "ref": "e103"
+      },
+      {
+        "hittable": false,
+        "label": "q",
+        "index": 103,
+        "type": "Other",
+        "rect": {
+          "height": 233,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 102,
+        "ref": "e104"
+      },
+      {
+        "hittable": false,
+        "identifier": "UIKeyboardLayoutStar Preview",
+        "label": "q",
+        "index": 104,
+        "type": "Other",
+        "rect": {
+          "height": 233,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 7,
+        "parentIndex": 103,
+        "ref": "e105"
+      },
+      {
+        "hittable": false,
+        "label": "q",
+        "index": 105,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 0,
+          "width": 40.333333333333336
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e106"
+      },
+      {
+        "hittable": false,
+        "label": "w",
+        "index": 106,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 40.333333333333336,
+          "width": 40.00000000000001
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e107"
+      },
+      {
+        "hittable": false,
+        "label": "e",
+        "index": 107,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 80.33333333333334,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e108"
+      },
+      {
+        "hittable": false,
+        "label": "r",
+        "index": 108,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 120.66666666666669,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e109"
+      },
+      {
+        "hittable": false,
+        "label": "t",
+        "index": 109,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 160.66666666666669,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e110"
+      },
+      {
+        "hittable": false,
+        "label": "y",
+        "index": 110,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 201.00000000000003,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e111"
+      },
+      {
+        "hittable": false,
+        "label": "u",
+        "index": 111,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 241.33333333333337,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e112"
+      },
+      {
+        "hittable": false,
+        "label": "i",
+        "index": 112,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 281.33333333333337,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e113"
+      },
+      {
+        "hittable": false,
+        "label": "o",
+        "index": 113,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 321.6666666666667,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e114"
+      },
+      {
+        "hittable": false,
+        "label": "p",
+        "index": 114,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 590,
+          "x": 361.6666666666667,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e115"
+      },
+      {
+        "hittable": false,
+        "label": "a",
+        "index": 115,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 19.666666666666668,
+          "width": 40.33333333333333
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e116"
+      },
+      {
+        "hittable": false,
+        "label": "s",
+        "index": 116,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 60,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e117"
+      },
+      {
+        "hittable": false,
+        "label": "d",
+        "index": 117,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 100.33333333333334,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e118"
+      },
+      {
+        "hittable": false,
+        "label": "f",
+        "index": 118,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 140.33333333333334,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e119"
+      },
+      {
+        "hittable": false,
+        "label": "g",
+        "index": 119,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 181.2026666666667,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e120"
+      },
+      {
+        "hittable": false,
+        "label": "h",
+        "index": 120,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 221.2026666666667,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e121"
+      },
+      {
+        "hittable": false,
+        "label": "j",
+        "index": 121,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 261.536,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e122"
+      },
+      {
+        "hittable": false,
+        "label": "k",
+        "index": 122,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 301.536,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e123"
+      },
+      {
+        "hittable": false,
+        "label": "l",
+        "index": 123,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 644,
+          "x": 341.8693333333333,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e124"
+      },
+      {
+        "hittable": false,
+        "identifier": "shift",
+        "label": "shift",
+        "index": 124,
+        "type": "Button",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 0,
+          "width": 51.333333333333336
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e125"
+      },
+      {
+        "hittable": false,
+        "label": "z",
+        "index": 125,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 60,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e126"
+      },
+      {
+        "hittable": false,
+        "label": "x",
+        "index": 126,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 100.33333333333334,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e127"
+      },
+      {
+        "hittable": false,
+        "label": "c",
+        "index": 127,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 140.33333333333334,
+          "width": 40.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e128"
+      },
+      {
+        "hittable": false,
+        "label": "v",
+        "index": 128,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 181.2026666666667,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e129"
+      },
+      {
+        "hittable": false,
+        "label": "b",
+        "index": 129,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 221.2026666666667,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e130"
+      },
+      {
+        "hittable": false,
+        "label": "n",
+        "index": 130,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 261.536,
+          "width": 40
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e131"
+      },
+      {
+        "hittable": false,
+        "label": "m",
+        "index": 131,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 301.536,
+          "width": 40.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e132"
+      },
+      {
+        "hittable": false,
+        "identifier": "delete",
+        "label": "delete",
+        "index": 132,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 698,
+          "x": 350.42133333333334,
+          "width": 51.333333333333314
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e133"
+      },
+      {
+        "hittable": false,
+        "identifier": "more",
+        "label": "numbers",
+        "index": 133,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 752,
+          "x": 0,
+          "width": 101
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e134"
+      },
+      {
+        "hittable": false,
+        "identifier": "space",
+        "label": "space",
+        "index": 134,
+        "type": "Key",
+        "rect": {
+          "height": 46,
+          "y": 752,
+          "x": 100.33333333333334,
+          "width": 201.33333333333334
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e135"
+      },
+      {
+        "hittable": false,
+        "identifier": "Return",
+        "label": "return",
+        "index": 135,
+        "type": "Button",
+        "rect": {
+          "height": 46,
+          "y": 752,
+          "x": 301.6666666666667,
+          "width": 100.33333333333331
+        },
+        "enabled": true,
+        "depth": 8,
+        "parentIndex": 104,
+        "ref": "e136"
+      },
+      {
+        "hittable": true,
+        "label": "Emoji",
+        "index": 136,
+        "type": "Other",
+        "rect": {
+          "height": 291,
+          "y": 583,
+          "x": 0,
+          "width": 402
+        },
+        "enabled": true,
+        "depth": 4,
+        "parentIndex": 81,
+        "ref": "e137"
+      },
+      {
+        "hittable": true,
+        "label": "Emoji",
+        "index": 137,
+        "type": "Button",
+        "rect": {
+          "height": 68.73516393505099,
+          "y": 805.6989567998571,
+          "x": 8.47726568115926,
+          "width": 68.0852958475086
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 136,
+        "ref": "e138"
+      },
+      {
+        "hittable": false,
+        "index": 138,
+        "type": "StaticText",
+        "rect": {
+          "height": 0,
+          "y": 805.6989567998571,
+          "x": 8.47726568115926,
+          "width": 0
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 137,
+        "ref": "e139"
+      },
+      {
+        "hittable": false,
+        "identifier": "dictation",
+        "label": "Dictate",
+        "index": 139,
+        "type": "Button",
+        "rect": {
+          "height": 68.73516393505099,
+          "y": 805.3656234665239,
+          "x": 325.43743847133214,
+          "width": 68.08529584750863
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 136,
+        "ref": "e140"
+      },
+      {
+        "hittable": false,
+        "index": 140,
+        "type": "StaticText",
+        "rect": {
+          "height": 0,
+          "y": 805.3656234665239,
+          "x": 325.43743847133214,
+          "width": 0
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 139,
+        "ref": "e141"
+      },
+      {
+        "hittable": true,
+        "identifier": "dictation",
+        "label": "Dictate",
+        "index": 141,
+        "type": "Button",
+        "rect": {
+          "height": 68.73516393505099,
+          "y": 805.3656234665239,
+          "x": 325.43743847133214,
+          "width": 68.08529584750863
+        },
+        "enabled": true,
+        "depth": 5,
+        "parentIndex": 136,
+        "ref": "e142"
+      },
+      {
+        "hittable": false,
+        "index": 142,
+        "type": "StaticText",
+        "rect": {
+          "height": 0,
+          "y": 805.3656234665239,
+          "x": 325.43743847133214,
+          "width": 0
+        },
+        "enabled": true,
+        "depth": 6,
+        "parentIndex": 141,
+        "ref": "e143"
+      }
+    ],
+    "truncated": false,
+    "appName": "sh.paseo.debug",
+    "appBundleId": "sh.paseo.debug",
+    "visibility": {
+      "partial": false,
+      "visibleNodeCount": 143,
+      "totalNodeCount": 143,
+      "reasons": []
+    },
+    "snapshotQuality": {
+      "state": "healthy",
+      "backend": "tree"
+    },
+    "snapshotDiagnostics": {
+      "stats": {
+        "count": 138,
+        "p50Ms": 141,
+        "p95Ms": 1129,
+        "maxMs": 3250,
+        "slowThresholdMs": 1500,
+        "platform": "ios",
+        "backends": {
+          "xctest": 138
+        }
+      }
+    },
+    "refsGeneration": 776202
+  }
+}
