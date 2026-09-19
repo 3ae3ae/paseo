@@ -7145,8 +7145,13 @@ export class CodexAppServerAgentClient implements AgentClient {
       const listLimit = options?.cwd ? Math.max(scanLimit, 50) : scanLimit;
       const allThreads: Array<Record<string, unknown>> = [];
       let cursor: string | undefined;
+      const seenCursors = new Set<string | undefined>();
       // Codex caps each page independently of the requested limit.
       do {
+        if (seenCursors.has(cursor)) {
+          throw new Error("Codex thread/list returned a repeated cursor");
+        }
+        seenCursors.add(cursor);
         const response = toObjectRecord(
           await client.request("thread/list", {
             limit: listLimit - allThreads.length,

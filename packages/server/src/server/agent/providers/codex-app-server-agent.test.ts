@@ -1,4 +1,5 @@
 import { describe, expect, test, vi } from "vitest";
+import { z } from "zod";
 import type { ChildProcessWithoutNullStreams } from "node:child_process";
 import { EventEmitter } from "node:events";
 import { type Dirent, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -5991,34 +5992,83 @@ describe("Codex app-server provider", () => {
 });
 
 describe("Codex importable sessions", () => {
-  test("listImportableSessions follows capped pages up to the requested limit", async () => {
-    const threads = Array.from({ length: 250 }, (_, index) => ({
+  const ThreadListParamsSchema = z.object({
+    cursor: z.string().optional(),
+    limit: z.number().int().positive(),
+    cwd: z.string().optional(),
+    sortKey: z.enum(["created_at", "updated_at"]).optional(),
+  });
+
+  test.each([
+    { limit: 240, scanLimit: undefined, expectedCount: 240 },
+    { limit: 700, scanLimit: 700, expectedCount: 500 },
+  ])("lists $expectedCount recent workspace sessions across capped pages", async (options) => {
+    const threads = Array.from({ length: 550 }, (_, index) => ({
       id: `thread-${index}`,
       cwd: "/workspace/project-a",
       preview: `Session ${index}`,
+      createdAt: index,
       updatedAt: 1000 - index,
     }));
-    const listThreads = vi
-      .fn()
-      .mockReturnValueOnce({ data: threads.slice(0, 100), nextCursor: "page-2" })
-      .mockReturnValueOnce({ data: threads.slice(100, 200), nextCursor: "page-3" })
-      .mockReturnValueOnce({ data: threads.slice(200, 240), nextCursor: "page-4" });
-    const appServer = createFakeCodexAppServer({ "thread/list": listThreads });
+    const allThreads = [
+      ...threads,
+      { id: "other-project", cwd: "/workspace/project-b", createdAt: 2000, updatedAt: 2000 },
+    ];
+    const appServer = createFakeCodexAppServer({
+      "thread/list": (input) => {
+        const { cursor, limit, cwd, sortKey } = ThreadListParamsSchema.parse(input);
+        const timestamp = sortKey === "updated_at" ? "updatedAt" : "createdAt";
+        const matching = allThreads.filter((thread) => !cwd || thread.cwd === cwd);
+        matching.sort((a, b) => b[timestamp] - a[timestamp]);
+        const offset = Number(cursor ?? 0);
+        const data = matching.slice(offset, offset + Math.min(limit, 100));
+        const nextOffset = offset + data.length;
+        return { data, nextCursor: nextOffset < matching.length ? String(nextOffset) : null };
+      },
+    });
     const provider = createProviderWithFakeAppServer(appServer);
 
     const sessions = await provider.listImportableSessions({
-      limit: 240,
+      limit: options.limit,
+      scanLimit: options.scanLimit,
       cwd: "/workspace/project-a",
     });
 
     expect(sessions.map((session) => session.providerHandleId)).toEqual(
-      threads.slice(0, 240).map((thread) => thread.id),
+      threads.slice(0, options.expectedCount).map((thread) => thread.id),
     );
-    expect(listThreads.mock.calls).toEqual([
-      [{ limit: 240, cwd: "/workspace/project-a", sortKey: "updated_at" }],
-      [{ limit: 140, cwd: "/workspace/project-a", cursor: "page-2", sortKey: "updated_at" }],
-      [{ limit: 40, cwd: "/workspace/project-a", cursor: "page-3", sortKey: "updated_at" }],
-    ]);
+    appServer.assertNoErrors();
+  });
+
+  test.each([
+    { name: "empty page", data: [], nextCursor: "page-a" },
+    { name: "invalid rows", data: [null, 42], nextCursor: "page-a" },
+    { name: "cursor cycle", data: [], nextCursor: "page-b" },
+  ])("rejects a repeated cursor with $name and closes the process", async (page) => {
+    const requestedCursors = new Set<string | undefined>();
+    const appServer = createFakeCodexAppServer({
+      "thread/list": (input) => {
+        const { cursor } = ThreadListParamsSchema.parse(input);
+        // Fail promptly on the old code instead of leaving the test in an endless loop.
+        if (requestedCursors.has(cursor)) {
+          return { __jsonRpcError: { code: -32603, message: "Fixture received a repeated page" } };
+        }
+        requestedCursors.add(cursor);
+        const nextCursor = cursor === "page-a" ? page.nextCursor : "page-a";
+        return { data: page.data, nextCursor };
+      },
+    });
+    const provider = createProviderWithFakeAppServer(appServer);
+    let exited = false;
+    appServer.child.once("exit", () => {
+      exited = true;
+    });
+
+    await expect(provider.listImportableSessions({ limit: 200 })).rejects.toThrow(
+      "Codex thread/list returned a repeated cursor",
+    );
+
+    expect(exited).toBe(true);
     appServer.assertNoErrors();
   });
 
@@ -6026,12 +6076,21 @@ describe("Codex importable sessions", () => {
     "listImportableSessions follows empty pages until the final cursor is %s",
     async (nextCursor) => {
       const threads = Array.from({ length: 101 }, (_, index) => ({ id: `thread-${index}` }));
-      const listThreads = vi
-        .fn()
-        .mockReturnValueOnce({ data: threads.slice(0, 100), nextCursor: "page-2" })
-        .mockReturnValueOnce({ data: [], nextCursor: "page-3" })
-        .mockReturnValueOnce({ data: threads.slice(100), nextCursor });
-      const appServer = createFakeCodexAppServer({ "thread/list": listThreads });
+      const pages: Record<string, unknown> = {
+        first: { data: threads.slice(0, 100), nextCursor: "page-2" },
+        "page-2": { data: [], nextCursor: "page-3" },
+        "page-3": { data: threads.slice(100), nextCursor },
+      };
+      const appServer = createFakeCodexAppServer({
+        "thread/list": (input) => {
+          const { cursor } = ThreadListParamsSchema.parse(input);
+          return (
+            pages[cursor ?? "first"] ?? {
+              __jsonRpcError: { code: -32603, message: "Unexpected cursor" },
+            }
+          );
+        },
+      });
       const provider = createProviderWithFakeAppServer(appServer);
 
       const sessions = await provider.listImportableSessions({ limit: 500 });
@@ -6039,23 +6098,29 @@ describe("Codex importable sessions", () => {
       expect(sessions.map((session) => session.providerHandleId)).toEqual(
         threads.map((thread) => thread.id),
       );
-      expect(listThreads).toHaveBeenCalledTimes(3);
       appServer.assertNoErrors();
     },
   );
 
   test("listImportableSessions rejects a failed later page instead of returning partial results", async () => {
-    const listThreads = vi
-      .fn()
-      .mockReturnValueOnce({ data: [{ id: "thread-1" }], nextCursor: "page-2" })
-      .mockReturnValueOnce({ __jsonRpcError: { code: -32603, message: "Listing failed" } });
-    const appServer = createFakeCodexAppServer({ "thread/list": listThreads });
+    const appServer = createFakeCodexAppServer({
+      "thread/list": (input) => {
+        const { cursor } = ThreadListParamsSchema.parse(input);
+        if (cursor) {
+          return { __jsonRpcError: { code: -32603, message: "Listing failed" } };
+        }
+        return { data: [{ id: "thread-1" }], nextCursor: "page-2" };
+      },
+    });
     const provider = createProviderWithFakeAppServer(appServer);
-    const kill = vi.spyOn(appServer.child, "kill");
+    let exited = false;
+    appServer.child.once("exit", () => {
+      exited = true;
+    });
 
     await expect(provider.listImportableSessions({ limit: 200 })).rejects.toThrow("Listing failed");
 
-    expect(kill).toHaveBeenCalled();
+    expect(exited).toBe(true);
     appServer.assertNoErrors();
   });
 
@@ -6084,33 +6149,10 @@ describe("Codex importable sessions", () => {
         updatedAt: 4000,
       },
     ];
-    const calls: Array<{ method: string; params?: unknown }> = [];
-
-    const fakeClient = {
-      request: async (method: string, params?: unknown) => {
-        calls.push({ method, params });
-        if (method === "thread/list") return { data: allThreads };
-        return {};
-      },
-      notify: () => {},
-      dispose: async () => {},
-    };
-
-    const provider = new CodexAppServerAgentClient(createTestLogger(), undefined, {
-      _createCodexClient: () => fakeClient,
+    const appServer = createFakeCodexAppServer({
+      "thread/list": () => ({ data: allThreads }),
     });
-    castInternals<{ spawnAppServer: () => Promise<ChildProcessWithoutNullStreams> }>(
-      provider,
-    ).spawnAppServer = async () => {
-      const child = new EventEmitter() as ChildProcessWithoutNullStreams;
-      child.exitCode = 0;
-      child.signalCode = null;
-      child.stdin = new PassThrough();
-      child.stdout = new PassThrough();
-      child.stderr = new PassThrough();
-      child.kill = vi.fn(() => true) as ChildProcessWithoutNullStreams["kill"];
-      return child;
-    };
+    const provider = createProviderWithFakeAppServer(appServer);
 
     const sessions = await provider.listImportableSessions({ cwd: "/workspace/project-a" });
 
@@ -6127,23 +6169,8 @@ describe("Codex importable sessions", () => {
         lastPromptPreview: "First A session",
       }),
     );
-    expect(calls).toEqual([
-      {
-        method: "initialize",
-        params: {
-          clientInfo: {
-            name: "codex_app_server_daemon",
-            title: "Codex App Server Daemon",
-            version: "0.0.0",
-          },
-          capabilities: { experimentalApi: true, mcpServerOpenaiFormElicitation: true },
-        },
-      },
-      {
-        method: "thread/list",
-        params: { limit: 50, cwd: "/workspace/project-a", sortKey: "updated_at" },
-      },
-    ]);
+    expect(appServer.requests().filter((request) => request.method === "thread/read")).toEqual([]);
+    appServer.assertNoErrors();
   });
 });
 
