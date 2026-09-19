@@ -5991,6 +5991,74 @@ describe("Codex app-server provider", () => {
 });
 
 describe("Codex importable sessions", () => {
+  test("listImportableSessions follows capped pages up to the requested limit", async () => {
+    const threads = Array.from({ length: 250 }, (_, index) => ({
+      id: `thread-${index}`,
+      cwd: "/workspace/project-a",
+      preview: `Session ${index}`,
+      updatedAt: 1000 - index,
+    }));
+    const listThreads = vi
+      .fn()
+      .mockReturnValueOnce({ data: threads.slice(0, 100), nextCursor: "page-2" })
+      .mockReturnValueOnce({ data: threads.slice(100, 200), nextCursor: "page-3" })
+      .mockReturnValueOnce({ data: threads.slice(200, 240), nextCursor: "page-4" });
+    const appServer = createFakeCodexAppServer({ "thread/list": listThreads });
+    const provider = createProviderWithFakeAppServer(appServer);
+
+    const sessions = await provider.listImportableSessions({
+      limit: 240,
+      cwd: "/workspace/project-a",
+    });
+
+    expect(sessions.map((session) => session.providerHandleId)).toEqual(
+      threads.slice(0, 240).map((thread) => thread.id),
+    );
+    expect(listThreads.mock.calls).toEqual([
+      [{ limit: 240, cwd: "/workspace/project-a", sortKey: "updated_at" }],
+      [{ limit: 140, cwd: "/workspace/project-a", cursor: "page-2", sortKey: "updated_at" }],
+      [{ limit: 40, cwd: "/workspace/project-a", cursor: "page-3", sortKey: "updated_at" }],
+    ]);
+    appServer.assertNoErrors();
+  });
+
+  test.each([null, undefined])(
+    "listImportableSessions follows empty pages until the final cursor is %s",
+    async (nextCursor) => {
+      const threads = Array.from({ length: 101 }, (_, index) => ({ id: `thread-${index}` }));
+      const listThreads = vi
+        .fn()
+        .mockReturnValueOnce({ data: threads.slice(0, 100), nextCursor: "page-2" })
+        .mockReturnValueOnce({ data: [], nextCursor: "page-3" })
+        .mockReturnValueOnce({ data: threads.slice(100), nextCursor });
+      const appServer = createFakeCodexAppServer({ "thread/list": listThreads });
+      const provider = createProviderWithFakeAppServer(appServer);
+
+      const sessions = await provider.listImportableSessions({ limit: 500 });
+
+      expect(sessions.map((session) => session.providerHandleId)).toEqual(
+        threads.map((thread) => thread.id),
+      );
+      expect(listThreads).toHaveBeenCalledTimes(3);
+      appServer.assertNoErrors();
+    },
+  );
+
+  test("listImportableSessions rejects a failed later page instead of returning partial results", async () => {
+    const listThreads = vi
+      .fn()
+      .mockReturnValueOnce({ data: [{ id: "thread-1" }], nextCursor: "page-2" })
+      .mockReturnValueOnce({ __jsonRpcError: { code: -32603, message: "Listing failed" } });
+    const appServer = createFakeCodexAppServer({ "thread/list": listThreads });
+    const provider = createProviderWithFakeAppServer(appServer);
+    const kill = vi.spyOn(appServer.child, "kill");
+
+    await expect(provider.listImportableSessions({ limit: 200 })).rejects.toThrow("Listing failed");
+
+    expect(kill).toHaveBeenCalled();
+    appServer.assertNoErrors();
+  });
+
   test("listImportableSessions uses thread list metadata without hydrating thread history", async () => {
     const allThreads = [
       {
@@ -6071,7 +6139,10 @@ describe("Codex importable sessions", () => {
           capabilities: { experimentalApi: true, mcpServerOpenaiFormElicitation: true },
         },
       },
-      { method: "thread/list", params: { limit: 50, cwd: "/workspace/project-a" } },
+      {
+        method: "thread/list",
+        params: { limit: 50, cwd: "/workspace/project-a", sortKey: "updated_at" },
+      },
     ]);
   });
 });
