@@ -6284,7 +6284,10 @@ export class CodexAppServerAgentSession implements AgentSession {
     const bufferedOutput = this.consumeOutputDelta(outputDeltas, parsed.callId);
     const resolvedOutput = parsed.output ?? bufferedOutput;
     if (!subAgentCallId) {
-      this.rememberTerminalProcessForCommand(parsed.command, resolvedOutput);
+      this.rememberTerminalProcessForCommand(
+        parsed.command,
+        extractCodexTerminalSessionId(resolvedOutput ?? undefined),
+      );
     }
     const timelineItem = mapCodexExecNotificationToToolCall({
       callId: parsed.callId,
@@ -6471,6 +6474,12 @@ export class CodexAppServerAgentSession implements AgentSession {
     const normalizedItemType = normalizeCodexThreadItemType(
       typeof parsed.item.type === "string" ? parsed.item.type : undefined,
     );
+    if (normalizedItemType === "commandExecution") {
+      this.rememberTerminalProcessForCommand(
+        parsed.item.command,
+        nonEmptyString(parsed.item.processId),
+      );
+    }
     const itemId = parsed.item.id;
     if (this.shouldSkipCompletedThreadItem(timelineItem, normalizedItemType, itemId)) {
       this.replayPendingSubAgentNotifications(registeredChildThreadIds);
@@ -6641,6 +6650,10 @@ export class CodexAppServerAgentSession implements AgentSession {
     );
     const itemId = parsed.item.id;
     if (normalizedItemType === "commandExecution") {
+      this.rememberTerminalProcessForCommand(
+        parsed.item.command,
+        nonEmptyString(parsed.item.processId),
+      );
       const callId = timelineItem.callId || itemId;
       if (callId && this.emittedExecCommandStartedCallIds.has(callId)) {
         return;
@@ -6759,7 +6772,7 @@ export class CodexAppServerAgentSession implements AgentSession {
     return buffered.join("");
   }
 
-  private rememberTerminalProcessForCommand(command: unknown, output: string | null): void {
+  private rememberTerminalProcessForCommand(command: unknown, processId: string | undefined): void {
     const normalizedCommand = normalizeCodexCommandValue(command);
     if (!normalizedCommand) {
       return;
@@ -6771,7 +6784,6 @@ export class CodexAppServerAgentSession implements AgentSession {
     if (!displayCommand) {
       return;
     }
-    const processId = extractCodexTerminalSessionId(output ?? undefined);
     if (!processId) {
       return;
     }

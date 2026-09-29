@@ -1501,6 +1501,109 @@ describe("Codex app-server provider", () => {
     }
   });
 
+  test.each(["startsCommand", "completesCommand"] as const)(
+    "labels terminal input when Codex %s before the interaction",
+    async (commandNotification) => {
+      const appServer = createFakeCodexAppServer();
+      const session = new CodexAppServerAgentSession(
+        createConfig({ cwd: "/workspace/project" }),
+        null,
+        createTestLogger(),
+        async () => appServer.child,
+      );
+
+      try {
+        await session.connect();
+        const commandEvent = waitForTimelineToolCall(session, "interactive-shell");
+        appServer[commandNotification]({
+          threadId: "thread-1",
+          callId: "interactive-shell",
+          command: "python3 -i",
+          processId: "4242",
+          output: "",
+        });
+        await commandEvent;
+
+        const terminalEvent = waitForNextTimelineItem(session);
+        appServer.typesIntoTerminal({
+          threadId: "thread-1",
+          turnId: "turn-1",
+          itemId: "interactive-shell",
+          processId: "4242",
+          text: "print(1)\n",
+        });
+
+        await expect(terminalEvent).resolves.toMatchObject({
+          item: {
+            type: "tool_call",
+            callId: "terminal-session-4242-1",
+            name: "terminal",
+            detail: { type: "plain_text", label: "python3 -i", text: "print(1)\n" },
+            metadata: { processId: "4242" },
+          },
+        });
+        appServer.assertNoErrors();
+      } finally {
+        await session.close();
+      }
+    },
+  );
+
+  test.each(["startsCommand", "completesCommand"] as const)(
+    "backfills the same terminal input when Codex %s after the interaction",
+    async (commandNotification) => {
+      const appServer = createFakeCodexAppServer();
+      const session = new CodexAppServerAgentSession(
+        createConfig({ cwd: "/workspace/project" }),
+        null,
+        createTestLogger(),
+        async () => appServer.child,
+      );
+
+      try {
+        await session.connect();
+        const terminalEvent = waitForNextTimelineItem(session);
+        appServer.typesIntoTerminal({
+          threadId: "thread-1",
+          turnId: "turn-1",
+          itemId: "interactive-shell",
+          processId: "4242",
+          text: "print(1)\n",
+        });
+        const originalTerminal = await terminalEvent;
+        const relabeledTerminal = waitForTimelineToolCall(session, "terminal-session-4242-1");
+        appServer[commandNotification]({
+          threadId: "thread-1",
+          callId: "interactive-shell",
+          command: "python3 -i",
+          processId: "4242",
+          output: "",
+        });
+
+        await expect(relabeledTerminal).resolves.toEqual({
+          ...originalTerminal,
+          item: {
+            type: "tool_call",
+            callId: "terminal-session-4242-1",
+            name: "terminal",
+            status: "completed",
+            error: null,
+            detail: {
+              type: "plain_text",
+              label: "python3 -i",
+              text: "print(1)\n",
+              icon: "square_terminal",
+            },
+            metadata: { processId: "4242" },
+          },
+        });
+        appServer.assertNoErrors();
+      } finally {
+        await session.close();
+      }
+    },
+  );
+
   test("keeps repeated writes to one terminal as separate timeline rows", async () => {
     const appServer = createFakeCodexAppServer();
     const session = new CodexAppServerAgentSession(

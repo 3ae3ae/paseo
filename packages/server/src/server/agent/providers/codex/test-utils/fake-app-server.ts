@@ -19,6 +19,9 @@ interface FakeLegacyCommand {
   command: string;
   output: string;
 }
+interface FakeCommand extends FakeLegacyCommand {
+  processId?: string;
+}
 interface FakeSilentCommand {
   threadId: string;
   callId: string;
@@ -78,7 +81,8 @@ export interface FakeCodexAppServer {
   completesCompaction(params: { threadId: string; itemId: string }): void;
   runsLegacyCommand(params: FakeLegacyCommand): void;
   appliesLegacyPatch(params: FakeLegacyPatch): void;
-  completesCommand(params: FakeLegacyCommand): void;
+  startsCommand(params: Omit<FakeCommand, "output">): void;
+  completesCommand(params: FakeCommand): void;
   completesSilentCommand(params: FakeSilentCommand): void;
   completesSilentLegacyCommand(params: FakeSilentCommand): void;
   typesIntoTerminal(params: FakeTerminalInput): void;
@@ -453,12 +457,25 @@ export function createFakeCodexAppServer(
         });
       }
     },
+    startsCommand(params) {
+      writeNotification("item/started", {
+        threadId: params.threadId,
+        item: {
+          type: "commandExecution",
+          id: params.callId,
+          status: "inProgress",
+          command: params.command,
+          processId: params.processId ?? null,
+        },
+      });
+    },
     completesCommand(params) {
       completeItem(params.threadId, {
         type: "commandExecution",
         id: params.callId,
         status: "completed",
         command: params.command,
+        processId: params.processId ?? null,
         aggregatedOutput: params.output,
         exitCode: 0,
       });
