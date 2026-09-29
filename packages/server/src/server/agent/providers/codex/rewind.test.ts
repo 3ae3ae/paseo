@@ -90,6 +90,7 @@ describe("Codex Rewind", () => {
 
     await revertCodexConversation({
       client: codex,
+      requiresBoundedFork: false,
       threadId: "source-thread",
       messageId: "codex-first",
       cwd: "/workspace/project",
@@ -128,6 +129,7 @@ describe("Codex Rewind", () => {
 
     await revertCodexConversation({
       client: codex,
+      requiresBoundedFork: false,
       threadId: "source-thread",
       messageId: "codex-second",
       userMessageTurns,
@@ -169,6 +171,7 @@ describe("Codex Rewind", () => {
 
     await revertCodexConversation({
       client: codex,
+      requiresBoundedFork: false,
       threadId: "source-thread",
       messageId: "codex-first",
       cwd: "/workspace/project",
@@ -212,6 +215,7 @@ describe("Codex Rewind", () => {
     await expect(
       revertCodexConversation({
         client: codex,
+        requiresBoundedFork: false,
         threadId: "source-thread",
         messageId: "codex-first",
         cwd: "/workspace/project",
@@ -236,6 +240,7 @@ describe("Codex Rewind", () => {
     await expect(
       revertCodexConversation({
         client: codex,
+        requiresBoundedFork: false,
         threadId: "source-thread",
         messageId: "missing-message",
         userMessageTurns,

@@ -1894,87 +1894,99 @@ describe("Codex app-server provider", () => {
     appServer.assertNoErrors();
   });
 
-  test("rewinds the conversation to a freshly emitted Codex user message id", async () => {
-    const appServer = createFakeCodexAppServer();
-    const session = new CodexAppServerAgentSession(
-      createConfig({ cwd: "/workspace/project" }),
-      null,
-      createTestLogger(),
-      async () => appServer.child,
-    );
+  test.each(["0.144.0", "0.155.0"])(
+    "rewinds legacy history through rollback on Codex %s",
+    async (version) => {
+      const appServer = createFakeCodexAppServer({
+        initialize: () => ({ userAgent: `codex_cli_rs/${version} (Mac OS 27.0.0; arm64)` }),
+      });
+      const session = new CodexAppServerAgentSession(
+        createConfig({ cwd: "/workspace/project" }),
+        null,
+        createTestLogger(),
+        async () => appServer.child,
+      );
 
-    await session.startTurn("remember first");
-    emitCodexUserMessage(appServer, { id: "codex-first", text: "remember first" });
-    appServer.completeTurn();
-    await session.startTurn("remember second");
-    emitCodexUserMessage(appServer, { id: "codex-second", text: "remember second" });
-    appServer.completeTurn();
+      await session.startTurn("remember first");
+      emitCodexUserMessage(appServer, { id: "codex-first", text: "remember first" });
+      appServer.completeTurn();
+      await session.startTurn("remember second");
+      emitCodexUserMessage(appServer, { id: "codex-second", text: "remember second" });
+      appServer.completeTurn();
 
-    await session.revertConversation({ messageId: "codex-first" });
+      await session.revertConversation({ messageId: "codex-first" });
 
-    expect(appServer.recordedRollbacks).toEqual([{ threadId: "forked-thread", numTurns: 2 }]);
-    await expect(session.getRuntimeInfo()).resolves.toMatchObject({
-      sessionId: "forked-thread",
-    });
-    appServer.assertNoErrors();
-    await session.close();
-  });
+      expect(appServer.recordedRollbacks).toEqual([{ threadId: "forked-thread", numTurns: 2 }]);
+      await expect(session.getRuntimeInfo()).resolves.toMatchObject({
+        sessionId: "forked-thread",
+      });
+      appServer.assertNoErrors();
+      await session.close();
+    },
+  );
 
-  test("rewinds a paginated conversation through the public session capability", async () => {
-    const appServer = createFakeCodexAppServer({
-      "thread/read": () => ({
-        thread: { id: "thread-1", historyMode: "paginated", turns: [] },
-      }),
-      "thread/rollback": () => {
-        throw new Error("paginated threads do not support thread/rollback");
-      },
-    });
-    const session = new CodexAppServerAgentSession(
-      createConfig({ cwd: "/workspace/project" }),
-      null,
-      createTestLogger(),
-      async () => appServer.child,
-    );
+  test.each(["legacy", "paginated"] as const)(
+    "rewinds a %s conversation without thread/rollback on current Codex",
+    async (historyMode) => {
+      const appServer = createFakeCodexAppServer({
+        initialize: () => ({ userAgent: "codex_cli_rs/0.156.0 (Mac OS 27.0.0; arm64)" }),
+        "thread/read": () => ({
+          thread: { id: "thread-1", historyMode, turns: [] },
+        }),
+        "thread/rollback": () => ({
+          __jsonRpcError: {
+            code: -32600,
+            message: "Invalid request: unknown variant `thread/rollback`",
+          },
+        }),
+      });
+      const session = new CodexAppServerAgentSession(
+        createConfig({ cwd: "/workspace/project" }),
+        null,
+        createTestLogger(),
+        async () => appServer.child,
+      );
 
-    await session.startTurn("remember first");
-    emitCodexUserMessage(appServer, {
-      id: "codex-first",
-      text: "remember first",
-      turnId: "turn-first",
-    });
-    appServer.completeTurn();
-    await session.startTurn("remember second");
-    emitCodexUserMessage(appServer, {
-      id: "codex-second",
-      text: "remember second",
-      turnId: "turn-second",
-    });
-    appServer.completeTurn();
+      await session.startTurn("remember first");
+      emitCodexUserMessage(appServer, {
+        id: "codex-first",
+        text: "remember first",
+        turnId: "turn-first",
+      });
+      appServer.completeTurn();
+      await session.startTurn("remember second");
+      emitCodexUserMessage(appServer, {
+        id: "codex-second",
+        text: "remember second",
+        turnId: "turn-second",
+      });
+      appServer.completeTurn();
 
-    await session.revertConversation({ messageId: "codex-first" });
+      await session.revertConversation({ messageId: "codex-first" });
 
-    const forkRequests = appServer
-      .requests()
-      .filter((request) => request.method === "thread/fork")
-      .map((request) => request.params);
-    expect(forkRequests).toEqual([
-      {
-        threadId: "thread-1",
-        beforeTurnId: "turn-first",
-        cwd: "/workspace/project",
-        model: "gpt-5.4",
-        serviceTier: null,
-        excludeTurns: false,
-        persistExtendedHistory: true,
-      },
-    ]);
-    expect(appServer.recordedRollbacks).toEqual([]);
-    await expect(session.getRuntimeInfo()).resolves.toMatchObject({
-      sessionId: "forked-thread",
-    });
-    appServer.assertNoErrors();
-    await session.close();
-  });
+      const forkRequests = appServer
+        .requests()
+        .filter((request) => request.method === "thread/fork")
+        .map((request) => request.params);
+      expect(forkRequests).toEqual([
+        {
+          threadId: "thread-1",
+          beforeTurnId: "turn-first",
+          cwd: "/workspace/project",
+          model: "gpt-5.4",
+          serviceTier: null,
+          excludeTurns: false,
+          persistExtendedHistory: true,
+        },
+      ]);
+      expect(appServer.recordedRollbacks).toEqual([]);
+      await expect(session.getRuntimeInfo()).resolves.toMatchObject({
+        sessionId: "forked-thread",
+      });
+      appServer.assertNoErrors();
+      await session.close();
+    },
+  );
 
   test.each(["legacy", "paginated"] as const)(
     "rewinds a %s thread onto a fork that keeps the custom provider and runtime MCP servers",
