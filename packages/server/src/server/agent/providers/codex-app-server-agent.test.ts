@@ -26,6 +26,7 @@ import {
   mapCodexPlanUpdateToTodo,
   mapCodexPlanToToolCall,
   normalizeCodexOutputSchema,
+  threadItemToTimeline,
   toAgentUsage,
 } from "./codex-app-server-agent.js";
 
@@ -5718,6 +5719,56 @@ describe("Codex app-server provider", () => {
       ]);
     },
   );
+
+  test("preserves failed imageGeneration items without failure details", () => {
+    expect(
+      threadItemToTimeline({
+        id: "image-generation-failed",
+        type: "imageGeneration",
+        status: "failed",
+        revisedPrompt: "paint a blue whale",
+        result: "",
+        transparentBackground: null,
+        failure: null,
+      }),
+    ).toEqual({
+      type: "tool_call",
+      callId: "image-generation-failed",
+      name: "image_generation",
+      status: "failed",
+      error: { message: "Image generation failed" },
+      detail: {
+        type: "unknown",
+        input: { prompt: "paint a blue whale" },
+        output: null,
+      },
+    });
+  });
+
+  test("preserves imageGeneration usage-limit failure details", () => {
+    expect(
+      threadItemToTimeline({
+        id: "image-generation-limited",
+        type: "imageGeneration",
+        status: "failed",
+        revisedPrompt: "paint a blue whale",
+        result: "",
+        transparentBackground: null,
+        failure: { type: "usageLimitExceeded", limitId: "image_gen", resetsAt: 1786150800 },
+      }),
+    ).toEqual({
+      type: "tool_call",
+      callId: "image-generation-limited",
+      name: "image_generation",
+      status: "failed",
+      error: { type: "usageLimitExceeded", limitId: "image_gen", resetsAt: 1786150800 },
+      detail: {
+        type: "unknown",
+        input: { prompt: "paint a blue whale" },
+        output: null,
+      },
+    });
+  });
 
   test("materializes imageGeneration base64 results before rendering markdown", () => {
     const session = createSession();
