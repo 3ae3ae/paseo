@@ -464,8 +464,8 @@ test("provider permissions do not survive an unexpected exit and reconnect", asy
       reason: "confirm command",
     });
     await expect
-      .poll(() => manager.getPendingPermissions(agent.id).map((request) => request.id))
-      .toEqual(["permission-stale-command"]);
+      .poll(() => manager.getPendingPermissions(agent.id))
+      .toMatchObject([{ metadata: { itemId: "stale-command" } }]);
 
     exitedAppServer.child.emit("exit", 17, null);
 
@@ -488,10 +488,11 @@ test("provider permissions do not survive an unexpected exit and reconnect", asy
       reason: "confirm command",
     });
     await expect
-      .poll(() => manager.getPendingPermissions(agent.id).map((request) => request.id))
-      .toEqual(["permission-new-command"]);
+      .poll(() => manager.getPendingPermissions(agent.id))
+      .toMatchObject([{ metadata: { itemId: "new-command" } }]);
 
-    await manager.respondToPermission(agent.id, "permission-new-command", {
+    const requestId = manager.getPendingPermissions(agent.id)[0]!.id;
+    await manager.respondToPermission(agent.id, requestId, {
       behavior: "allow",
     });
 

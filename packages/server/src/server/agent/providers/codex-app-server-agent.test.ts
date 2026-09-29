@@ -1313,7 +1313,7 @@ describe("Codex app-server provider", () => {
 
     const permissionEvent = await permissionRequested;
     expect(permissionEvent.request).toMatchObject({
-      id: "permission-exec-approval-1",
+      id: expect.any(String),
       provider: "codex",
       name: "CodexBash",
       kind: "tool",
@@ -1338,6 +1338,66 @@ describe("Codex app-server provider", () => {
     appServer.assertNoErrors();
     await session.close();
   });
+
+  test.each([
+    ["callback-first", "callback-second"],
+    [null, null],
+    [undefined, undefined],
+  ])(
+    "routes concurrent approvals for one item independently (%s, %s)",
+    async (firstId, secondId) => {
+      const appServer = createFakeCodexAppServer();
+      const session = new CodexAppServerAgentSession(
+        createConfig({ cwd: "/workspace/project" }),
+        null,
+        createTestLogger(),
+        async () => appServer.child,
+      );
+
+      try {
+        await session.connect();
+        const firstPermission = waitForNextPermission(session);
+        const firstRequestId = appServer.requestCommandApproval({
+          itemId: "shared-item",
+          approvalId: firstId,
+          threadId: "thread-1",
+          turnId: "turn-1",
+          command: "echo first",
+          cwd: "/workspace/project",
+          reason: "Approve the first command",
+        });
+        const first = (await firstPermission).request;
+        const secondPermission = waitForNextPermission(session);
+        const secondRequestId = appServer.requestCommandApproval({
+          itemId: "shared-item",
+          approvalId: secondId,
+          threadId: "thread-1",
+          turnId: "turn-1",
+          command: "echo second",
+          cwd: "/workspace/project",
+          reason: "Approve the second command",
+        });
+        const second = (await secondPermission).request;
+
+        expect(session.getPendingPermissions()).toEqual([first, second]);
+        expect(first.id).not.toBe(second.id);
+        await session.respondToPermission(second.id, { behavior: "allow" });
+        await expect(appServer.waitForApprovalDecision(secondRequestId)).resolves.toEqual({
+          decision: "accept",
+        });
+        expect(session.getPendingPermissions()).toEqual([first]);
+
+        await session.respondToPermission(first.id, { behavior: "deny" });
+        await expect(appServer.waitForApprovalDecision(firstRequestId)).resolves.toEqual({
+          decision: "decline",
+        });
+        expect(session.getPendingPermissions()).toEqual([]);
+        appServer.assertNoErrors();
+      } finally {
+        await session.close();
+      }
+    },
+  );
 
   test("shows a successful shell command that produces no output", async () => {
     const appServer = createFakeCodexAppServer();
@@ -2821,7 +2881,7 @@ describe("Codex app-server provider", () => {
         provider: "codex",
         turnId: "test-turn",
         request: {
-          id: "permission-call-question-1",
+          id: expect.any(String),
           provider: "codex",
           name: "request_user_input",
           kind: "question",
@@ -5274,7 +5334,8 @@ describe("Codex app-server provider", () => {
       ],
     });
 
-    await session.respondToPermission("permission-call-question-2", {
+    const requestId = session.getPendingPermissions()[0]!.id;
+    await session.respondToPermission(requestId, {
       behavior: "allow",
       updatedInput: {
         answers: {
@@ -5292,7 +5353,7 @@ describe("Codex app-server provider", () => {
       type: "permission_resolved",
       provider: "codex",
       turnId: "test-turn",
-      requestId: "permission-call-question-2",
+      requestId,
       resolution: {
         behavior: "allow",
         updatedInput: {

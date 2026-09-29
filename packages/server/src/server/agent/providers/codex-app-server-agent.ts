@@ -6857,7 +6857,7 @@ export class CodexAppServerAgentSession implements AgentSession {
       cwd: parsed.cwd ?? this.config.cwd ?? null,
       running: true,
     });
-    const requestId = `permission-${parsed.itemId}`;
+    const requestId = `permission-${randomUUID()}`;
     const title = parsed.command ? `Run command: ${parsed.command}` : "Run command";
     const request: AgentPermissionRequest = {
       id: requestId,
@@ -6900,7 +6900,7 @@ export class CodexAppServerAgentSession implements AgentSession {
         reason: z.string().nullable().optional(),
       })
       .parse(params);
-    const requestId = `permission-${parsed.itemId}`;
+    const requestId = `permission-${randomUUID()}`;
     const request: AgentPermissionRequest = {
       id: requestId,
       provider: CODEX_PROVIDER,
@@ -6937,7 +6937,7 @@ export class CodexAppServerAgentSession implements AgentSession {
         questions: z.array(z.unknown()),
       })
       .parse(params);
-    const requestId = `permission-${parsed.itemId}`;
+    const requestId = `permission-${randomUUID()}`;
     const questions = normalizeCodexQuestionPrompts(parsed.questions);
     const request: AgentPermissionRequest = {
       id: requestId,

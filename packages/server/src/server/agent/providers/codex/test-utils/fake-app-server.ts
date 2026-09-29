@@ -85,12 +85,13 @@ export interface FakeCodexAppServer {
   says(params: { threadId: string; itemId?: string; text: string; chunks?: string[] }): void;
   requestCommandApproval(params: {
     itemId: string;
+    approvalId?: string | null;
     threadId: string;
     turnId: string;
     command: string;
     cwd: string;
     reason: string;
-  }): void;
+  }): number;
   waitForCommandApprovalDecision(itemId: string): Promise<unknown>;
   requestFileChangeApproval(params: {
     itemId: string;
@@ -104,7 +105,7 @@ export interface FakeCodexAppServer {
     turnId: string;
     questions: Array<Record<string, unknown>>;
   }): void;
-  waitForApprovalDecision(itemId: string): Promise<unknown>;
+  waitForApprovalDecision(approval: string | number): Promise<unknown>;
   requestMcpElicitation(params: {
     threadId: string;
     turnId: string | null;
@@ -527,6 +528,7 @@ export function createFakeCodexAppServer(
           params,
         })}\n`,
       );
+      return requestId;
     },
     async waitForCommandApprovalDecision(itemId) {
       return await this.waitForApprovalDecision(itemId);
@@ -557,10 +559,10 @@ export function createFakeCodexAppServer(
         })}\n`,
       );
     },
-    async waitForApprovalDecision(itemId) {
-      const requestId = approvalRequestIds.get(itemId);
+    async waitForApprovalDecision(approval) {
+      const requestId = typeof approval === "number" ? approval : approvalRequestIds.get(approval);
       if (requestId === undefined) {
-        throw new Error(`No pending fake Codex app-server approval for ${itemId}`);
+        throw new Error(`No pending fake Codex app-server approval for ${approval}`);
       }
       const message = await waitForMessage(
         (candidate) =>
