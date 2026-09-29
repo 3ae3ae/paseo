@@ -628,6 +628,29 @@ describe("codex tool-call mapper", () => {
     });
   });
 
+  it.each([
+    {
+      type: "commandExecution",
+      command: "echo fixture",
+      aggregatedOutput: "",
+      exitCode: null,
+    },
+    { type: "fileChange", changes: [] },
+  ])("maps declined $type into a failed canonical call", (item) => {
+    const result = mapCodexToolCallFromThreadItem({
+      ...item,
+      id: "codex-declined-call",
+      status: "declined",
+    });
+
+    expect(result).toMatchObject({
+      type: "tool_call",
+      callId: "codex-declined-call",
+      status: "failed",
+      error: { message: "Tool call failed" },
+    });
+  });
+
   it("maps failed tool calls with required error", () => {
     const item = expectMapped(
       mapCodexToolCallFromThreadItem({
