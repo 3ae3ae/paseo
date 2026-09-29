@@ -51,7 +51,9 @@ export async function listFilesRecursive(rootDir: string): Promise<string[]> {
   return out;
 }
 
-async function readManagedFilesManifest(dstDir: string): Promise<ManagedFilesManifest | null> {
+export async function readManagedFilesManifest(
+  dstDir: string,
+): Promise<ManagedFilesManifest | null> {
   const raw = await fs
     .readFile(path.join(dstDir, MANAGED_FILES_MANIFEST), "utf-8")
     .catch(() => null);
@@ -185,6 +187,29 @@ export async function removeSkill(skillName: string, targets: RemoveSkillTargets
   }
 }
 
+async function retireManagedSkill(dstDir: string): Promise<number> {
+  const info = await fs.lstat(dstDir).catch(() => null);
+  if (!info?.isDirectory()) return 0;
+  const manifest = await readManagedFilesManifest(dstDir);
+  if (!manifest) return 0;
+  const files = Object.keys(manifest.files);
+  await assertManagedPathsStayInsideSkill(dstDir, [MANAGED_FILES_MANIFEST, ...files]);
+  const removed: string[] = [];
+  for (const [rel, previousHash] of Object.entries(manifest.files)) {
+    const filePath = path.join(dstDir, rel);
+    const currentHash = await hashFile(filePath).catch(() => null);
+    if (currentHash !== previousHash) continue;
+    await fs.rm(filePath);
+    removed.push(rel);
+  }
+  await pruneEmptyParentDirs(dstDir, removed);
+  await fs.rm(path.join(dstDir, MANAGED_FILES_MANIFEST));
+  await fs.rmdir(dstDir).catch((error: NodeJS.ErrnoException) => {
+    if (error.code !== "ENOTEMPTY" && error.code !== "ENOENT") throw error;
+  });
+  return removed.length + 1;
+}
+
 export async function syncSkills(options: SkillSyncOptions): Promise<SkillSyncResult> {
   let changedFiles = 0;
   let processedSkills = 0;
@@ -206,10 +231,8 @@ export async function syncSkills(options: SkillSyncOptions): Promise<SkillSyncRe
         path.join(options.claudeDir, skillName),
       );
 
-      changedFiles += await syncDirectoryFiles(
-        bundleSkillDir,
-        path.join(options.codexDir, skillName),
-      );
+      // Codex also discovers .agents/skills; retain user edits to its old dedicated copy.
+      changedFiles += await retireManagedSkill(path.join(options.codexDir, skillName));
 
       processedSkills++;
     } catch (error) {
