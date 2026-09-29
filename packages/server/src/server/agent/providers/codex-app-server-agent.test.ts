@@ -1117,6 +1117,98 @@ describe("Codex app-server provider", () => {
     });
   });
 
+  test.each([
+    {
+      model: undefined,
+      thinkingOptionId: undefined,
+      expectedModel: "project-model",
+      expectedEffort: "high",
+    },
+    {
+      model: "selected-model",
+      thinkingOptionId: undefined,
+      expectedModel: "selected-model",
+      expectedEffort: "high",
+    },
+    {
+      model: undefined,
+      thinkingOptionId: "medium",
+      expectedModel: "project-model",
+      expectedEffort: "medium",
+    },
+  ])(
+    "resolves project defaults with model=$model and thinkingOptionId=$thinkingOptionId",
+    async ({ model, thinkingOptionId, expectedModel, expectedEffort }) => {
+      const cwd = "/workspace/project";
+      const appServer = createFakeCodexAppServer({
+        "config/read": (params) => {
+          const targetsProject =
+            params !== null && typeof params === "object" && "cwd" in params && params.cwd === cwd;
+          return {
+            config: targetsProject
+              ? { model: "project-model", model_reasoning_effort: "high" }
+              : { model: "global-model", model_reasoning_effort: "low" },
+          };
+        },
+        getUserSavedConfig: () => ({
+          config: { model: "global-model", modelReasoningEffort: "low" },
+        }),
+      });
+      const session = new CodexAppServerAgentSession(
+        createConfig({ cwd, model, thinkingOptionId }),
+        null,
+        createTestLogger(),
+        async () => appServer.child,
+      );
+
+      try {
+        await session.startTurn("use project defaults");
+
+        await expect(appServer.waitForRequest("thread/start")).resolves.toMatchObject({
+          model: expectedModel,
+          cwd,
+        });
+        await expect(appServer.waitForTurnStart()).resolves.toMatchObject({
+          model: expectedModel,
+          effort: expectedEffort,
+          cwd,
+        });
+        appServer.assertNoErrors();
+      } finally {
+        await session.close();
+      }
+    },
+  );
+
+  test("keeps saved defaults when Codex does not support config/read", async () => {
+    const appServer = createFakeCodexAppServer({
+      "config/read": () => ({
+        __jsonRpcError: { code: -32601, message: "Method not found" },
+      }),
+      getUserSavedConfig: () => ({
+        config: { model: "saved-model", modelReasoningEffort: "low" },
+      }),
+    });
+    const session = new CodexAppServerAgentSession(
+      createConfig({ model: undefined }),
+      null,
+      createTestLogger(),
+      async () => appServer.child,
+    );
+
+    try {
+      await session.startTurn("use saved defaults");
+
+      await expect(appServer.waitForTurnStart()).resolves.toMatchObject({
+        model: "saved-model",
+        effort: "low",
+      });
+      appServer.assertNoErrors();
+    } finally {
+      await session.close();
+    }
+  });
+
   test("preserves cwd-resolved Codex writable roots under an explicit workflow mode", async () => {
     const appServer = createFakeCodexAppServer({
       "config/read": () => ({
