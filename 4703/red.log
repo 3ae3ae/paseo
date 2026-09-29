@@ -1,0 +1,39 @@
+
+ RUN  v4.1.7 <worktrees>/4703
+
+ ❯ packages/server/src/server/session/daemon/daemon-self-updater.test.ts (8 tests | 1 failed) 5ms
+     × probes and updates the running install's prefix when npm defaults elsewhere 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/session/daemon/daemon-self-updater.test.ts > DaemonSelfUpdater > probes and updates the running install's prefix when npm defaults elsewhere
+AssertionError: expected { success: false, …(2) } to deeply equal { success: true, error: null, …(1) }
+
+- Expected
++ Received
+
+  {
+-   "error": null,
+-   "newVersion": "0.1.96",
+-   "success": true,
++   "error": "@getpaseo/cli is not installed with npm -g on this host",
++   "newVersion": null,
++   "success": false,
+  }
+
+ ❯ packages/server/src/server/session/daemon/daemon-self-updater.test.ts:125:20
+    123|         path.join(packagePath, "node_modules", "@getpaseo", "server") …
+    124|     } });
+    125|     expect(result).toEqual({ success: true, error: null, newVersion: "…
+       |                    ^
+    126|     expect(commands).toHaveLength(3);
+    127|     expect(commands.map((args) => args.slice(-2))).toEqual([
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (8)
+   Start at  14:55:35
+   Duration  119ms (transform 35ms, setup 0ms, import 59ms, tests 5ms, environment 0ms)
+

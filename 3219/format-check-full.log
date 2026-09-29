@@ -1,0 +1,8 @@
+
+> paseo@0.10.0 format:check
+> oxfmt --check .
+
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 989ms on 4737 files using 12 threads.

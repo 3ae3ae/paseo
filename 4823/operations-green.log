@@ -1,0 +1,37 @@
+
+ RUN  v4.1.7 <worktrees>/4823
+
+ ❯ packages/server/src/server/orchestration-skills/internal/operations.test.ts (31 tests | 1 failed) 44ms
+     × installs only the selected skills 8ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/orchestration-skills/internal/operations.test.ts > custom skill selection > installs only the selected skills
+AssertionError: expected [ true, true, false ] to deeply equal [ true, true, true ]
+
+- Expected
++ Received
+
+  [
+    true,
+    true,
+-   true,
++   false,
+  ]
+
+ ❯ packages/server/src/server/orchestration-skills/internal/operations.test.ts:302:57
+    300|       installed: ["paseo", "paseo-loop"],
+    301|     });
+    302|     expect(await installedIn(sandbox.targets, "paseo")).toEqual([true,…
+       |                                                         ^
+    303|     expect(await installedIn(sandbox.targets, "paseo-loop")).toEqual([…
+    304|     expect(await installedIn(sandbox.targets, "paseo-advisor")).toEqua…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 12 passed (31)
+   Start at  15:33:36
+   Duration  128ms (transform 26ms, setup 0ms, import 34ms, tests 44ms, environment 0ms)
+

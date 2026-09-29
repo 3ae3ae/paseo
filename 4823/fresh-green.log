@@ -1,0 +1,9 @@
+
+ RUN  v4.1.7 <worktrees>/4823
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 29 skipped (30)
+   Start at  15:32:03
+   Duration  98ms (transform 26ms, setup 0ms, import 35ms, tests 9ms, environment 0ms)
+

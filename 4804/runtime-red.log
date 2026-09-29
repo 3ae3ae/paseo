@@ -1,0 +1,19 @@
+Real data WebSocket open; withholding E2EE hello
+{"firstClosed":false,"dataCount":1,"attached":0,"controlOpen":true}
+node:internal/modules/run_main:105
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: stalled E2EE handshake must release its real socket
+
+false !== true
+
+    at <anonymous> (<worktrees>/4804/.dev/relay-handshake-qa.mts:58:10) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual'
+}
+
+Node.js v24.2.0

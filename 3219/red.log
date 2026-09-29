@@ -1,0 +1,30 @@
+
+ RUN  v4.1.7 <worktrees>/3219
+
+ ❯ packages/server/src/server/speech/providers/local/sherpa/model-downloader.test.ts (3 tests | 1 failed) 15ms
+     × repairs a partial legacy extraction when its cached archive remains 15ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/speech/providers/local/sherpa/model-downloader.test.ts > sherpa model downloader > repairs a partial legacy extraction when its cached archive remains
+AssertionError: expected 'truncated' to be 'complete model data' // Object.is equality
+
+Expected: "complete model data"
+Received: "truncated"
+
+ ❯ packages/server/src/server/speech/providers/local/sherpa/model-downloader.test.ts:36:71
+     34|       writeFileSync(path.join(modelDir, "model.onnx"), "truncated");
+     35|       await ensureSherpaOnnxModel({ modelsDir, modelId: spec.id, logge…
+     36|       expect(readFileSync(path.join(modelDir, "model.onnx"), "utf8")).…
+       |                                                                       ^
+     37|     } finally {
+     38|       rmSync(root, { recursive: true, force: true });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (3)
+   Start at  15:03:22
+   Duration  119ms (transform 27ms, setup 0ms, import 52ms, tests 15ms, environment 0ms)
+

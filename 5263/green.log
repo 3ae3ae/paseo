@@ -1,0 +1,15 @@
+
+ RUN  v4.1.7 <worktrees>/5263
+
+(node:91853) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:91855) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:91856) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  15:11:35
+   Duration  4.45s (transform 3.27s, setup 0ms, import 4.12s, tests 271ms, environment 0ms)
+

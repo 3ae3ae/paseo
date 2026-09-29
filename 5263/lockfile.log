@@ -1,0 +1,123 @@
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@react-native/metro-babel-transformer@0.85.3',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@react-native/babel-plugin-codegen@0.85.3',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@react-native/babel-preset@0.85.3',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@react-native/codegen@0.85.3',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@react-native/metro-config@0.85.3',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@react-native/js-polyfills@0.85.3',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-babel-transformer@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-cache@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-cache-key@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-config@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-core@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-file-map@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-minify-terser@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-resolver@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-runtime@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-source-map@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-symbolicate@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-transform-plugins@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'metro-transform-worker@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'ob1@0.84.4',
+npm warn EBADENGINE   required: { node: '^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0' },
+npm warn EBADENGINE   current: { node: 'v24.2.0', npm: '11.20.0' }
+npm warn EBADENGINE }
+
+up to date, audited 2688 packages in 7s
+
+502 packages are looking for funding
+  run `npm fund` for details
+
+93 vulnerabilities (8 low, 45 moderate, 34 high, 6 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.

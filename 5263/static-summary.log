@@ -1,0 +1,4 @@
+{"issue": "5263", "script": "format", "exit": 0}
+{"issue": "5263", "script": "format:check", "exit": 0}
+{"issue": "5263", "script": "lint", "exit": 0}
+{"issue": "5263", "script": "typecheck", "exit": 0}

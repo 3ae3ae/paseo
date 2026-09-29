@@ -1,0 +1,75 @@
+=== Delete Command Tests ===
+
+Test 1: delete --help shows options
+✓ delete --help shows options
+
+Test 2: delete requires ID, --all, or --cwd
+Error: Agent ID required unless --all or --cwd is specified
+Usage: paseo agent delete <id> | --all | --cwd <path>
+✓ delete requires ID, --all, or --cwd
+
+Test 3: delete handles daemon not running
+Error: Cannot connect to daemon at localhost:58528: Transport closed (code 1006)
+Check the selected endpoint and credentials. SSH transport does not install or start the daemon.
+✓ delete handles daemon not running
+
+Test 4: delete --all flag is accepted
+Error: Cannot connect to daemon at localhost:58528: Transport closed (code 1006)
+Check the selected endpoint and credentials. SSH transport does not install or start the daemon.
+✓ delete --all flag is accepted
+
+Test 5: delete --cwd flag is accepted
+Error: Cannot connect to daemon at localhost:58528: Transport closed (code 1006)
+Check the selected endpoint and credentials. SSH transport does not install or start the daemon.
+✓ delete --cwd flag is accepted
+
+Test 6: delete with ID and --host flag is accepted
+Error: Cannot connect to daemon at localhost:58528: Transport closed (code 1006)
+Check the selected endpoint and credentials. SSH transport does not install or start the daemon.
+✓ delete with ID and --host flag is accepted
+
+Test 7: paseo --help shows delete command
+✓ paseo --help shows delete command
+
+Test 8: -q (quiet) flag is accepted with delete
+Error: Cannot connect to daemon at localhost:58528: Transport closed (code 1006)
+Check the selected endpoint and credentials. SSH transport does not install or start the daemon.
+✓ -q (quiet) flag is accepted with delete
+
+(node:13503) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+node:internal/modules/run_main:105
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
+  {
+    agentIds: [
+      '31446f8f-3d6f-4ba5-860c-725f48e8104a',
+-     '7347d838-7cb1-472a-9047-61a44059bf5b'
+    ],
++   deletedCount: 1
+-   deletedCount: 2
+  }
+
+    at <anonymous> (<worktrees>/2465/packages/cli/tests/27-agent-delete.test.ts:136:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: {
+    deletedCount: 1,
+    agentIds: [ '31446f8f-3d6f-4ba5-860c-725f48e8104a' ]
+  },
+  expected: {
+    deletedCount: 2,
+    agentIds: [
+      '31446f8f-3d6f-4ba5-860c-725f48e8104a',
+      '7347d838-7cb1-472a-9047-61a44059bf5b'
+    ]
+  },
+  operator: 'deepStrictEqual'
+}
+
+Node.js v24.2.0

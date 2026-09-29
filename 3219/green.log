@@ -1,0 +1,11 @@
+
+ RUN  v4.1.7 <worktrees>/3219
+
+kokoro-en-v0_19/._model.onnx: Truncated tar archive: Unknown error: -1
+tar: Error exit delayed from previous errors.
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  15:05:46
+   Duration  282ms (transform 71ms, setup 0ms, import 123ms, tests 67ms, environment 0ms)
+

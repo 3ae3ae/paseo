@@ -1,0 +1,29 @@
+
+ RUN  v4.1.7 <worktrees>/5299
+
+ ❯ packages/server/src/server/session/git-mutation/git-mutation-service.test.ts (16 tests | 1 failed) 216ms
+     × creates from the validated remote when the local default branch is absent 156ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/session/git-mutation/git-mutation-service.test.ts > createBranchFromBase > creates from the validated remote when the local default branch is absent
+Error: Git command failed: git checkout -b from-remote --no-track main (exit code: 128, signal: none)
+fatal: 'main' is not a commit and a branch 'from-remote' cannot be created from it
+ ❯ packages/server/src/utils/run-git-command.ts:550:15
+    548|           settle(() =>
+    549|             reject(
+    550|               new Error(
+       |               ^
+    551|                 `Git command failed: ${command}${truncationNote} (exit…
+    552|               ),
+ ❯ settle packages/server/src/utils/run-git-command.ts:342:9
+ ❯ ChildProcess.<anonymous> packages/server/src/utils/run-git-command.ts:548:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (16)
+   Start at  15:30:23
+   Duration  615ms (transform 218ms, setup 0ms, import 343ms, tests 216ms, environment 0ms)
+

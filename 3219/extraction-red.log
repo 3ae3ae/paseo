@@ -1,0 +1,35 @@
+
+ RUN  v4.1.7 <worktrees>/3219
+
+kokoro-en-v0_19/._model.onnx: Truncated tar archive: Unknown error: -1
+tar: Error exit delayed from previous errors.
+ ❯ packages/server/src/server/speech/providers/local/sherpa/model-downloader.test.ts (4 tests | 1 failed) 14ms
+     × does not expose a partial model when tar extraction fails 14ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/speech/providers/local/sherpa/model-downloader.test.ts > sherpa model downloader > does not expose a partial model when tar extraction fails
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ packages/server/src/server/speech/providers/local/sherpa/model-downloader.test.ts:32:69
+     30|       await expect(ensureSherpaOnnxModel({ modelsDir, modelId: spec.id…
+     31|         .rejects.toThrow("tar exited");
+     32|       expect(existsSync(getSherpaOnnxModelDir(modelsDir, spec.id))).to…
+       |                                                                     ^
+     33|       expect(existsSync(archive)).toBe(true);
+     34|       expect(readdirSync(modelsDir)).toEqual([".downloads"]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (4)
+   Start at  15:05:07
+   Duration  124ms (transform 30ms, setup 0ms, import 55ms, tests 14ms, environment 0ms)
+

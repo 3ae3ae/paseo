@@ -1,0 +1,95 @@
+
+> @getpaseo/app@0.10.0 test:e2e
+> playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/composer-attachments.spec.ts --grep pastes copied document --workers=1
+
+[metro] Starting project at <worktrees>/3851/packages/app
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Experimental Expo Autolinking module resolver is enabled.
+[metro] React Compiler enabled
+[metro] Starting Metro Bundler
+[metro] Waiting on http://localhost:60829
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1180ms packages/app/index.ts (5150 modules)
+[e2e] Metro warmed on port 60829
+
+Running 1 test using 1 worker
+
+(node:2335) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2335) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 60846, home: /var/folders/jb/1xg7njqx7gv03wvtmhx_mr2c0000gn/T/paseo-e2e-worker-0-vuXO8P
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 134ms packages/app/index.ts (1 module)
+[metro] Web Bundled 22ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[e2e] Worker 0 daemon stopped
+  ✘  1 [browser] › e2e/browser/composer-attachments.spec.ts:57:7 › Composer attachments › pastes copied document text instead of its image representation (8.5s)
+[e2e] Metro stopped
+
+
+  1) [browser] › e2e/browser/composer-attachments.spec.ts:57:7 › Composer attachments › pastes copied document text instead of its image representation 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByRole('textbox', { name: 'Message agent...' }).first()
+    Timeout: 5000ms
+    Expected: "Document text with 한글 and two lines.
+    Second line."
+    Received: ""
+
+    Call log:
+      - Expect "toHaveValue" with timeout 5000ms
+      - waiting for getByRole('textbox', { name: 'Message agent...' }).first()
+        9 × locator resolved to <textarea dir="auto" autocorrect="on" autocomplete="on" spellcheck="true" data-composer-input="" autocapitalize="sentences" virtualkeyboardpolicy="auto" aria-label="Message agent..." placeholder="Message the agent, tag @files, or use /commands and /skills" class="css-textinput-11aywtz r-placeholderTextColor-6taxm2 unistyles_tkcgji0p1c "></textarea>
+          - unexpected value ""
+
+
+       at ../support/helpers/composer.ts:44
+
+      42 |
+      43 | export async function expectComposerDraft(page: Page, text: string): Promise<void> {
+    > 44 |   await expect(composerInput(page)).toHaveValue(text, { timeout: 5_000 });
+         |                                     ^
+      45 | }
+      46 |
+      47 | export async function expectComposerEditable(page: Page): Promise<void> {
+        at expectComposerDraft (<worktrees>/3851/packages/app/e2e/support/helpers/composer.ts:44:37)
+        at <worktrees>/3851/packages/app/e2e/browser/composer-attachments.spec.ts:74:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/composer-attachments-Compo-231d3-of-its-image-representation-browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: browser-console (text/plain) ────────────────────────────────────────────────────
+    [console:info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    [console:log] Running application "main" with appParams:
+     {rootTag: #root, hydrate: undefined} 
+    Development-level warnings: ON.
+    Performance optimizations: OFF.
+    [co...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/composer-attachments-Compo-231d3-of-its-image-representation-browser/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/composer-attachments-Compo-231d3-of-its-image-representation-browser/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/composer-attachments-Compo-231d3-of-its-image-representation-browser/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/composer-attachments-Compo-231d3-of-its-image-representation-browser/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [browser] › e2e/browser/composer-attachments.spec.ts:57:7 › Composer attachments › pastes copied document text instead of its image representation 
+npm error Lifecycle script `test:e2e` failed with error:
+npm error code 1
+npm error path <worktrees>/3851/packages/app
+npm error workspace @getpaseo/app@0.10.0
+npm error location <worktrees>/3851/packages/app
+npm error command failed
+npm error command sh -c playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/composer-attachments.spec.ts --grep 'pastes copied document' --workers=1

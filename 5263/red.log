@@ -1,0 +1,36 @@
+
+ RUN  v4.1.7 <worktrees>/5263
+
+(node:85602) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ❯ packages/server/src/server/websocket-proxy.e2e.test.ts (3 tests | 1 failed) 109ms
+   × attributes WebSocket clients behind a 'loopback proxy' 108ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/websocket-proxy.e2e.test.ts > attributes WebSocket clients behind a 'loopback proxy'
+AssertionError: expected '{"level":30,"time":1790662197858,"pid…' to contain '"remoteAddress":"100.64.0.7"'
+
+- Expected
++ Received
+
+- "remoteAddress":"100.64.0.7"
++ {"level":30,"time":1790662197858,"pid":85377,"hostname":"test-host","module":"bootstrap","module":"websocket-server","connectionId":"conn_2d362a06ffd540a6ba0aa2c5b2a9f0e6","transport":"direct","peer":"loopback","host":"127.0.0.1:60351","remoteAddress":"127.0.0.1","connectionId":"conn_2d362a06ffd540a6ba0aa2c5b2a9f0e6","transport":"direct","peer":"loopback","host":"127.0.0.1:60351","remoteAddress":"127.0.0.1","totalPendingConnections":1,"msg":"Client connected; awaiting hello"}
++
+
+ ❯ packages/server/src/server/websocket-proxy.e2e.test.ts:23:23
+     21|     await once(socket, "open");
+     22|     const connected = logs.find((line) => line.includes('"msg":"Client…
+     23|     expect(connected).toContain(`"remoteAddress":"${address}"`);
+       |                       ^
+     24|     expect(connected).toContain(`"peer":"${peer}"`);
+     25|   } finally {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (3)
+   Start at  15:09:54
+   Duration  3.74s (transform 2.87s, setup 0ms, import 3.58s, tests 109ms, environment 0ms)
+

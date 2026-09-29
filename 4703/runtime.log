@@ -1,0 +1,4 @@
+npm ["-g","ls","@getpaseo/cli","--json","--depth=0","--long"]
+Default-prefix probe cannot find the running custom install
+npm ["-g","ls","@getpaseo/cli","--json","--depth=0","--long","--prefix","/var/folders/jb/1xg7njqx7gv03wvtmhx_mr2c0000gn/T/paseo-prefix-qa-tsZLmB/custom prefix"]
+Explicit-prefix probe finds the running package: {"version":"0.10.0","packagePath":"/private/var/folders/jb/1xg7njqx7gv03wvtmhx_mr2c0000gn/T/paseo-prefix-qa-tsZLmB/custom prefix/lib/node_modules/@getpaseo/cli","globalRootPath":"/var/folders/jb/1xg7njqx7gv03wvtmhx_mr2c0000gn/T/paseo-prefix-qa-tsZLmB/custom prefix/lib","isLinked":false}

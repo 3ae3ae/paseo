@@ -1,0 +1,91 @@
+
+> @getpaseo/app@0.10.0 test:e2e
+> playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/file-editing.spec.ts --grep jumps to each relative reference --workers=1
+
+[metro] Starting project at <worktrees>/1302/packages/app
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Experimental Expo Autolinking module resolver is enabled.
+[metro] React Compiler enabled
+[metro] Starting Metro Bundler
+[metro] Waiting on http://localhost:60950
+[metro] Logs for your project will appear below.
+[metro] | (node:5811) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[metro] | (Use `node --trace-warnings ...` to show where the warning was created)
+[metro] Web Bundled 1914ms packages/app/index.ts (5150 modules)
+[e2e] Metro warmed on port 60950
+
+Running 1 test using 1 worker
+
+(node:5968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 60969, home: /var/folders/jb/1xg7njqx7gv03wvtmhx_mr2c0000gn/T/paseo-e2e-worker-0-dRMHOk
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web Bundled 21ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[e2e] Worker 0 daemon stopped
+  ✘  1 [browser] › e2e/browser/file-editing.spec.ts:99:7 › CodeMirror workspace file editing › jumps to each relative reference to the same file (13.9s)
+[e2e] Metro stopped
+
+
+  1) [browser] › e2e/browser/file-editing.spec.ts:99:7 › CodeMirror workspace file editing › jumps to each relative reference to the same file 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel('Line 403, column 1')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for getByLabel('Line 403, column 1')
+
+
+      110 |         await page.getByTestId(`workspace-tab-agent_${session.agentId}`).filter({ visible: true }).click();
+      111 |         await page.getByText(`src/router.go:${line}`, { exact: true }).click();
+    > 112 |         await expect(page.getByLabel(`Line ${line}, column 1`)).toBeVisible();
+          |                                                                 ^
+      113 |       }
+      114 |     } finally { await session.cleanup(); }
+      115 |   });
+        at <worktrees>/1302/packages/app/e2e/browser/file-editing.spec.ts:112:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/file-editing-CodeMirror-wo-43bce--reference-to-the-same-file-browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: browser-console (text/plain) ────────────────────────────────────────────────────
+    [console:info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    [console:log] Running application "main" with appParams:
+     {rootTag: #root, hydrate: undefined} 
+    Development-level warnings: ON.
+    Performance optimizations: OFF.
+    [co...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/file-editing-CodeMirror-wo-43bce--reference-to-the-same-file-browser/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/file-editing-CodeMirror-wo-43bce--reference-to-the-same-file-browser/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/file-editing-CodeMirror-wo-43bce--reference-to-the-same-file-browser/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/file-editing-CodeMirror-wo-43bce--reference-to-the-same-file-browser/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [browser] › e2e/browser/file-editing.spec.ts:99:7 › CodeMirror workspace file editing › jumps to each relative reference to the same file 
+npm error Lifecycle script `test:e2e` failed with error:
+npm error code 1
+npm error path <worktrees>/1302/packages/app
+npm error workspace @getpaseo/app@0.10.0
+npm error location <worktrees>/1302/packages/app
+npm error command failed
+npm error command sh -c playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/file-editing.spec.ts --grep 'jumps to each relative reference' --workers=1
