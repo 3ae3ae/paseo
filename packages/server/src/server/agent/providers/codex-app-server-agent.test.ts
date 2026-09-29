@@ -2484,6 +2484,55 @@ describe("Codex app-server provider", () => {
     expect(JSON.stringify(turnStart?.params)).toContain("from the provider home");
   });
 
+  test.each([
+    {
+      name: "raw arguments",
+      template: "Request: $ARGUMENTS",
+      args: "Preserve $1 __CODEX_DOLLAR_PLACEHOLDER__ unchanged",
+      expected: "Request: Preserve $1 __CODEX_DOLLAR_PLACEHOLDER__ unchanged",
+    },
+    {
+      name: "positional arguments",
+      template: "$1 | $2",
+      args: '"$2" second',
+      expected: "$2 | second",
+    },
+    {
+      name: "named arguments",
+      template: "$LONG_NAME | $NAME | $OTHER",
+      args: 'LONG_NAME=long NAME="$& $$ $` $\' $1 $OTHER __CODEX_DOLLAR_PLACEHOLDER__" OTHER=other',
+      expected: "long | $& $$ $` $' $1 $OTHER __CODEX_DOLLAR_PLACEHOLDER__ | other",
+    },
+    {
+      name: "escaped and missing placeholders",
+      template: "$$ARGUMENTS | $$1 | $$NAME | $1 | $9 | $NAME | $NAME_SUFFIX | $UNKNOWN",
+      args: "first NAME=value",
+      expected: "$ARGUMENTS | $1 | $NAME | first |  | value | $NAME_SUFFIX | $UNKNOWN",
+    },
+  ])("preserves literal text in custom prompt $name", async ({ template, args, expected }) => {
+    const codexHome = await mkdtemp(path.join(tmpdir(), "codex-prompt-arguments-"));
+    mkdirSync(path.join(codexHome, "prompts"));
+    writeFileSync(path.join(codexHome, "prompts", "literal.md"), template);
+    const appServer = createFakeCodexAppServer();
+    const session = new CodexAppServerAgentSession(
+      createConfig({ cwd: codexHome }),
+      null,
+      createTestLogger(),
+      async () => appServer.child,
+      { codexHome },
+    );
+
+    try {
+      await session.startTurn(`/prompts:literal ${args}`);
+      const turnStart = await appServer.waitForTurnStart();
+      expect(turnStart.input).toEqual([{ type: "text", text: expected, text_elements: [] }]);
+      appServer.assertNoErrors();
+    } finally {
+      await session.close();
+      rmSync(codexHome, { recursive: true, force: true });
+    }
+  });
+
   test("deduplicates Codex skill slash commands returned from multiple skill roots", async () => {
     const commands = await listCommandsFromFakeCodex([
       {
