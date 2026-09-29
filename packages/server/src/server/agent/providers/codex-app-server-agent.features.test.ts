@@ -149,9 +149,7 @@ describe("Codex app-server provider features", () => {
         `Codex fast mode is not available for model '${model}'`,
       );
       await session.startTurn("hello");
-      await expect(appServer.waitForTurnStart()).resolves.not.toMatchObject({
-        serviceTier: expect.anything(),
-      });
+      await expect(appServer.waitForTurnStart()).resolves.toHaveProperty("serviceTier", null);
     } finally {
       await session.close();
     }
@@ -265,9 +263,7 @@ describe("Codex app-server provider features", () => {
     ]);
 
     await session.startTurn("hello");
-    await expect(appServer.waitForTurnStart()).resolves.not.toMatchObject({
-      serviceTier: expect.anything(),
-    });
+    await expect(appServer.waitForTurnStart()).resolves.toHaveProperty("serviceTier", null);
   });
 
   test("setFeature('fast_mode', true) sets serviceTier to fast", async () => {
@@ -281,17 +277,25 @@ describe("Codex app-server provider features", () => {
     });
   });
 
-  test("setFeature('fast_mode', false) clears serviceTier to null", async () => {
+  test("setFeature('fast_mode', false) clears the tier after a Fast turn", async () => {
     const { session, appServer } = await createConnectedSession({
       featureValues: { fast_mode: true },
     });
+    try {
+      await session.startTurn("Fast turn");
+      await expect(appServer.waitForTurnStart()).resolves.toHaveProperty("serviceTier", "fast");
+      appServer.completeTurn();
 
-    await session.setFeature?.("fast_mode", false);
-    await session.startTurn("hello");
-
-    await expect(appServer.waitForTurnStart()).resolves.not.toMatchObject({
-      serviceTier: expect.anything(),
-    });
+      await session.setFeature?.("fast_mode", false);
+      await session.startTurn("Regular turn");
+      const turnStarts = appServer.requests().filter((request) => request.method === "turn/start");
+      expect(turnStarts.map((request) => request.params)).toEqual([
+        expect.objectContaining({ serviceTier: "fast" }),
+        expect.objectContaining({ serviceTier: null }),
+      ]);
+    } finally {
+      await session.close();
+    }
   });
 
   test("setFeature('fast_mode', true) rejects models that do not support fast mode", async () => {
@@ -413,9 +417,7 @@ describe("Codex app-server provider features", () => {
     ]);
     await session.startTurn("hello");
 
-    await expect(appServer.waitForTurnStart()).resolves.not.toMatchObject({
-      serviceTier: expect.anything(),
-    });
+    await expect(appServer.waitForTurnStart()).resolves.toHaveProperty("serviceTier", null);
   });
 
   test("startTurn switches collaboration mode when plan mode is enabled", async () => {

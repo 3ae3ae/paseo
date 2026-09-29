@@ -4095,6 +4095,7 @@ export class CodexAppServerAgentSession implements AgentSession {
     const params: Record<string, unknown> = {
       threadId: this.currentThreadId,
       input,
+      serviceTier: this.serviceTier,
     };
     const { approvalPolicy, sandboxPolicyType } = this.applyTurnWorkflowPolicy(params, preset);
 
@@ -4104,9 +4105,6 @@ export class CodexAppServerAgentSession implements AgentSession {
     const thinkingOptionId = normalizeCodexThinkingOptionId(this.config.thinkingOptionId);
     if (thinkingOptionId) {
       params.effort = thinkingOptionId;
-    }
-    if (this.serviceTier) {
-      params.serviceTier = this.serviceTier;
     }
     if (this.resolvedCollaborationMode) {
       params.collaborationMode = {
