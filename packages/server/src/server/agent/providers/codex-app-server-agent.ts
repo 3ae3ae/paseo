@@ -375,9 +375,46 @@ function normalizeCodexOutputSchemaNode(schema: unknown, schemaPath: string): un
     return schema;
   }
 
-  const normalized: Record<string, unknown> = {};
-  for (const [key, value] of Object.entries(schema)) {
-    normalized[key] = normalizeCodexOutputSchemaNode(value, `${schemaPath}.${key}`);
+  const normalized = { ...schema };
+  for (const key of [
+    "properties",
+    "patternProperties",
+    "$defs",
+    "definitions",
+    "dependentSchemas",
+    "dependencies",
+  ]) {
+    const schemas = schema[key];
+    if (!isSchemaRecord(schemas)) {
+      continue;
+    }
+    const entries = Object.entries(schemas).map(([name, child]) => [
+      name,
+      normalizeCodexOutputSchemaNode(child, `${schemaPath}.${key}.${name}`),
+    ]);
+    normalized[key] = Object.fromEntries(entries);
+  }
+  for (const key of [
+    "items",
+    "prefixItems",
+    "additionalItems",
+    "contains",
+    "additionalProperties",
+    "unevaluatedProperties",
+    "unevaluatedItems",
+    "propertyNames",
+    "allOf",
+    "anyOf",
+    "oneOf",
+    "not",
+    "if",
+    "then",
+    "else",
+    "contentSchema",
+  ]) {
+    if (key in schema) {
+      normalized[key] = normalizeCodexOutputSchemaNode(schema[key], `${schemaPath}.${key}`);
+    }
   }
 
   if (!isObjectSchemaNode(normalized)) {

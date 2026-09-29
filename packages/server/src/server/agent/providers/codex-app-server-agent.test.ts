@@ -2359,6 +2359,60 @@ describe("Codex app-server provider", () => {
     });
   });
 
+  test.each(["properties", "$defs", "definitions", "patternProperties", "dependentSchemas"])(
+    "preserves schema maps with a schema named properties in %s",
+    (keyword) => {
+      const input = {
+        type: "object",
+        properties: { properties: { type: "string" } },
+        required: ["properties"],
+        additionalProperties: false,
+        [keyword]: {
+          properties: { type: "string" },
+        },
+      };
+      expect(normalizeCodexOutputSchema(input)).toEqual(input);
+    },
+  );
+
+  test("preserves output schema annotation values while normalizing nested schemas", () => {
+    const value = { type: "object", properties: { type: "string" } };
+    const input = {
+      type: "object",
+      properties: {
+        result: {
+          anyOf: [{ type: "object", properties: { value: { type: "string" } } }],
+          default: value,
+          examples: [value],
+          enum: [value],
+          const: value,
+        },
+      },
+    };
+
+    expect(normalizeCodexOutputSchema(input)).toEqual({
+      type: "object",
+      properties: {
+        result: {
+          anyOf: [
+            {
+              type: "object",
+              properties: { value: { type: "string" } },
+              required: ["value"],
+              additionalProperties: false,
+            },
+          ],
+          default: value,
+          examples: [value],
+          enum: [value],
+          const: value,
+        },
+      },
+      required: ["result"],
+      additionalProperties: false,
+    });
+  });
+
   test("passes a normalized output schema to turn/start", async () => {
     const session = createSession();
     const request = vi.fn(async (method: string) => {
