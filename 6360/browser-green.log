@@ -1,0 +1,182 @@
+
+> @getpaseo/app@0.11.2 test:e2e
+> playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/context-window-meter.spec.ts e2e/browser/sidebar-workspace.spec.ts --workers=1
+
+[metro] Starting project at <worktree>/packages/app
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Experimental Expo Autolinking module resolver is enabled.
+[metro] React Compiler enabled
+[metro] Starting Metro Bundler
+[metro] Waiting on http://localhost:62360
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1296ms packages/app/index.ts (5461 modules)
+[e2e] Metro warmed on port 62360
+
+Running 28 tests using 1 worker
+
+[e2e] Worker 0 daemon started on port 62383, home: <tmp>/paseo-e2e-worker-0-IEqJ9V
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 195ms packages/app/index.ts (1 module)
+[metro] Web Bundled 28ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   1 [browser] › e2e/browser/context-window-meter.spec.ts:89:3 › context window meter › draws usage clockwise from twelve o'clock (4.0s)
+[metro] Web Bundled 177ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 5ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+  ✓   2 [browser] › e2e/browser/context-window-meter.spec.ts:130:3 › shows account usage before the first turn (desktop) (5.7s)
+[metro] Web Bundled 154ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   3 [browser] › e2e/browser/context-window-meter.spec.ts:130:3 › shows account usage before the first turn (compact) (6.0s)
+[metro] Web Bundled 144ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 141ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 6ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web Bundled 141ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web Bundled 142ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 7ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+  ✓   4 [browser] › e2e/browser/context-window-meter.spec.ts:245:3 › the context window hover card shows the agent's usage (light) (13.1s)
+[metro] Web Bundled 141ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 146ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+  ✓   5 [browser] › e2e/browser/context-window-meter.spec.ts:334:3 › the context window sheet shows the agent's usage and refreshes it (light) (10.9s)
+[metro] Web Bundled 144ms packages/app/index.ts (1 module)
+[metro] Web Bundled 5ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 145ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web Bundled 151ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web Bundled 144ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+  ✓   6 [browser] › e2e/browser/context-window-meter.spec.ts:245:3 › the context window hover card shows the agent's usage (dark) (13.4s)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 145ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web Bundled 137ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+  ✓   7 [browser] › e2e/browser/context-window-meter.spec.ts:334:3 › the context window sheet shows the agent's usage and refreshes it (dark) (10.9s)
+[metro] Web Bundled 136ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   8 [browser] › e2e/browser/context-window-meter.spec.ts:379:1 › context details support keyboard entry and dismiss when the viewport moves (5.2s)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   9 [browser] › e2e/browser/context-window-meter.spec.ts:423:1 › context details stay open while the chat streams (13.4s)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 141ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  10 [browser] › e2e/browser/context-window-meter.spec.ts:456:1 › pointer hovering context details preserves composer focus (3.8s)
+[metro] Web Bundled 144ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  11 [browser] › e2e/browser/context-window-meter.spec.ts:470:1 › Find remains available after dismissing context details (3.7s)
+[metro] Web Bundled 139ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 139ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 143ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+  ✓  12 [browser] › e2e/browser/sidebar-workspace.spec.ts:297:7 › Sidebar workspace list › recovers missing workspaces from a damaged legacy cache after reload (10.2s)
+[metro] Web Bundled 139ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  13 [browser] › e2e/browser/sidebar-workspace.spec.ts:319:7 › Sidebar workspace list › project with GitHub remote shows its selected folder name in sidebar (3.2s)
+[metro] Web Bundled 136ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  14 [browser] › e2e/browser/sidebar-workspace.spec.ts:343:7 › Sidebar workspace list › non-git project shows directory name (3.0s)
+[metro] Web Bundled 137ms packages/app/index.ts (1 module)
+[metro] Web Bundled 6ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  15 [browser] › e2e/browser/sidebar-workspace.spec.ts:357:7 › Sidebar workspace list › workspace header uses the selected folder name instead of its GitHub remote (3.5s)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  16 [browser] › e2e/browser/sidebar-workspace.spec.ts:381:7 › Sidebar workspace list › git project shows branch name in workspace row (3.2s)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  17 [browser] › e2e/browser/sidebar-workspace.spec.ts:397:7 › Sidebar workspace list › workspace hover card shows host as metadata (3.2s)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  18 [browser] › e2e/browser/sidebar-workspace.spec.ts:412:7 › Sidebar workspace list › workspace hover card closes when the pointer leaves a clicked row (3.7s)
+[metro] Web Bundled 139ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  19 [browser] › e2e/browser/sidebar-workspace.spec.ts:432:7 › Sidebar workspace list › workspace hover card follows keyboard focus on a row (4.5s)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 146ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  20 [browser] › e2e/browser/sidebar-workspace.spec.ts:458:7 › Sidebar workspace list › marks a finished workspace unread until it is opened again (6.2s)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  21 [browser] › e2e/browser/sidebar-workspace.spec.ts:484:7 › Sidebar workspace list › Paseo-owned worktree hover card shows the worktree directory name (4.0s)
+[metro] Web Bundled 137ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  22 [browser] › e2e/browser/sidebar-workspace.spec.ts:498:7 › Mobile sidebar panelState transition › showMobileAgent open and close transition (3.5s)
+[metro] Web Bundled 137ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  23 [browser] › e2e/browser/sidebar-workspace.spec.ts:507:7 › Mobile sidebar panelState transition › keeps a pinned workspace rendered while the retained sidebar is closed (5.8s)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 142ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  24 [browser] › e2e/browser/sidebar-workspace.spec.ts:535:7 › Half-screen desktop layout › keeps the sidebar scroll position across close and reopen (10.6s)
+[metro] Web Bundled 147ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  25 [browser] › e2e/browser/sidebar-workspace.spec.ts:579:7 › Half-screen desktop layout › keeps the pinned sidebar at half of a 14-inch Mac display (2.7s)
+[metro] Web Bundled 145ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  26 [browser] › e2e/browser/sidebar-workspace.spec.ts:585:7 › Half-screen desktop layout › keeps the left toggle center-owned without left window controls (2.7s)
+[metro] Web Bundled 144ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  27 [browser] › e2e/browser/sidebar-workspace.spec.ts:607:7 › Half-screen desktop layout › yields app navigation to the settings split (2.8s)
+[metro] Web Bundled 138ms packages/app/index.ts (1 module)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  28 [browser] › e2e/browser/sidebar-workspace.spec.ts:616:7 › Half-screen desktop layout › keeps app navigation beside the Explorer pane (3.4s)
+[e2e] Worker 0 daemon stopped
+[e2e] Metro stopped
+
+  28 passed (2.9m)

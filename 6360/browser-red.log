@@ -1,0 +1,85 @@
+
+> @getpaseo/app@0.11.2 test:e2e
+> playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/context-window-meter.spec.ts --grep stay open while the chat streams --workers=1
+
+[metro] Starting project at <worktree>/packages/app
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Experimental Expo Autolinking module resolver is enabled.
+[metro] React Compiler enabled
+[metro] Starting Metro Bundler
+[metro] Waiting on http://localhost:62045
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1920ms packages/app/index.ts (5461 modules)
+[e2e] Metro warmed on port 62045
+
+Running 1 test using 1 worker
+
+[e2e] Worker 0 daemon started on port 62067, home: <tmp>/paseo-e2e-worker-0-NYzznn
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 194ms packages/app/index.ts (1 module)
+[metro] Web Bundled 25ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[e2e] Worker 0 daemon stopped
+  ✘  1 [browser] › e2e/browser/context-window-meter.spec.ts:423:1 › context details stay open while the chat streams (24.9s)
+[e2e] Metro stopped
+
+
+  1) [browser] › e2e/browser/context-window-meter.spec.ts:423:1 › context details stay open while the chat streams 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('dialog', { name: 'Context window' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for getByRole('dialog', { name: 'Context window' })
+
+
+      448 |
+      449 |     await expect(stop).toHaveCount(0, { timeout: 30_000 });
+    > 450 |     await expect(details).toBeVisible();
+          |                           ^
+      451 |   } finally {
+      452 |     await session.cleanup();
+      453 |   }
+        at <worktree>/packages/app/e2e/browser/context-window-meter.spec.ts:450:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/context-window-meter-conte-d984b-open-while-the-chat-streams-browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: browser-console (text/plain) ────────────────────────────────────────────────────
+    [console:info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    [console:log] Running application "main" with appParams:
+     {rootTag: #root, hydrate: undefined} 
+    Development-level warnings: ON.
+    Performance optimizations: OFF.
+    [co...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/context-window-meter-conte-d984b-open-while-the-chat-streams-browser/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/context-window-meter-conte-d984b-open-while-the-chat-streams-browser/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/context-window-meter-conte-d984b-open-while-the-chat-streams-browser/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/context-window-meter-conte-d984b-open-while-the-chat-streams-browser/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [browser] › e2e/browser/context-window-meter.spec.ts:423:1 › context details stay open while the chat streams 
+npm error Lifecycle script `test:e2e` failed with error:
+npm error code 1
+npm error path <worktree>/packages/app
+npm error workspace @getpaseo/app@0.11.2
+npm error location <worktree>/packages/app
+npm error command failed
+npm error command sh -c playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/context-window-meter.spec.ts --grep 'stay open while the chat streams' --workers=1
