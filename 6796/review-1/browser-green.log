@@ -1,0 +1,81 @@
+
+> @getpaseo/app@0.11.2 test:e2e
+> playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/client-slash-commands.spec.ts e2e/browser/composer-autocomplete.spec.ts --workers=1
+
+[metro] Starting project at <worktree>/packages/app
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Experimental Expo Autolinking module resolver is enabled.
+[metro] React Compiler enabled
+[metro] Starting Metro Bundler
+[metro] Waiting on http://localhost:52581
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1339ms packages/app/index.ts (5461 modules)
+[e2e] Metro warmed on port 52581
+
+Running 14 tests using 1 worker
+
+[e2e] Worker 0 daemon started on port 52601, home: <tmp>/paseo-e2e-worker-0-LZPen8
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 137ms packages/app/index.ts (1 module)
+[metro] Web Bundled 23ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   1 [browser] › e2e/browser/client-slash-commands.spec.ts:136:7 › Client slash commands › slash quit archives the active agent and removes its tab (3.7s)
+[metro] Web Bundled 150ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   2 [browser] › e2e/browser/client-slash-commands.spec.ts:144:7 › Client slash commands › slash quit selected from autocomplete archives immediately (3.7s)
+[metro] Web Bundled 148ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   3 [browser] › e2e/browser/client-slash-commands.spec.ts:156:7 › Client slash commands › tab before the menu filters does not run the highlighted exit (3.6s)
+[metro] Web Bundled 139ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   4 [browser] › e2e/browser/client-slash-commands.spec.ts:172:7 › Client slash commands › slash clear replaces the active agent with a matching draft (3.8s)
+[metro] Web Bundled 145ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   5 [browser] › e2e/browser/composer-autocomplete.spec.ts:373:7 › Composer autocomplete › keeps New workspace off the running-agent command list before a project is chosen (2.9s)
+[metro] Web Bundled 137ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   6 [browser] › e2e/browser/composer-autocomplete.spec.ts:392:7 › Composer autocomplete › stays visible after returning from app-wide routes (6.1s)
+[metro] Web Bundled 141ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   7 [browser] › e2e/browser/composer-autocomplete.spec.ts:468:7 › Composer autocomplete › does not flash at the wrong position on the first slash command paint (3.6s)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   8 [browser] › e2e/browser/composer-autocomplete.spec.ts:491:7 › Composer autocomplete › does not jump when deleting a slash command search (3.5s)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓   9 [browser] › e2e/browser/composer-autocomplete.spec.ts:520:7 › Composer autocomplete › shrinks to filtered slash command results without moving the bottom edge (3.4s)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  10 [browser] › e2e/browser/composer-autocomplete.spec.ts:550:7 › Composer autocomplete › stays visible while filtering slash command results (3.8s)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  11 [browser] › e2e/browser/composer-autocomplete.spec.ts:578:7 › Composer autocomplete › uses the live cursor when accepting a slash command (3.4s)
+[metro] Web Bundled 139ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  12 [browser] › e2e/browser/composer-autocomplete.spec.ts:618:7 › Composer autocomplete › uses the live input when clicking a slash command (3.4s)
+[metro] Web Bundled 141ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  13 [browser] › e2e/browser/composer-autocomplete.spec.ts:660:7 › Composer autocomplete › stays anchored to the composer when the desktop sidebar is open (3.4s)
+[metro] Web Bundled 140ms packages/app/index.ts (1 module)
+[metro] Web Bundled 5ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  14 [browser] › e2e/browser/composer-autocomplete.spec.ts:690:9 › Composer autocomplete › compact sidebar layering › keeps the mobile agent sidebar above autocomplete (3.7s)
+[e2e] Worker 0 daemon stopped
+[e2e] Metro stopped
+
+  14 passed (1.0m)
