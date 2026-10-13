@@ -1,0 +1,67 @@
+
+> @getpaseo/app@0.11.2 test:e2e
+> playwright test --project=browser --config .dev/playwright-qa.config.ts e2e/browser/agent-timeline-scroll-smoothness.spec.ts e2e/browser/sidebar-workspace-rename.spec.ts --workers=1
+
+[metro] Starting project at <worktree>/packages/app
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Experimental Expo Autolinking module resolver is enabled.
+[metro] React Compiler enabled
+[metro] Starting Metro Bundler
+[metro] Waiting on http://localhost:60026
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1593ms packages/app/index.ts (5461 modules)
+[e2e] Metro warmed on port 60026
+
+Running 8 tests using 1 worker
+
+[e2e] Worker 0 daemon started on port 60046, home: <tmp>/paseo-e2e-worker-0-MUgvO0
+  ✓  1 [browser] › e2e/browser/agent-timeline-scroll-smoothness.spec.ts:15:5 › scroll detector distinguishes entered image growth from a simultaneous viewport jump (702ms)
+  ✓  2 [browser] › e2e/browser/agent-timeline-scroll-smoothness.spec.ts:72:5 › scroll detector accounts for delayed wheel input and growth below the new reader (170ms)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 175ms packages/app/index.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 55ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[scroll] varied timeline preserves reading position during slow upward scrolling: {"browserTimeOrigin":1791887790756.3,"frames":4304,"pages":[{"direction":"tail","count":40,"hasOlder":true,"at":1791887793849},{"direction":"after","count":0,"hasOlder":true,"at":1791887793964},{"direction":"before","count":40,"hasOlder":true,"at":1791887811448},{"direction":"before","count":40,"hasOlder":true,"at":1791887827097},{"direction":"before","count":20,"hasOlder":false,"at":1791887842530}],"jumpCount":0,"worstReversePx":0,"frameGapP95Ms":25,"frameGapMaxMs":89.19999998807907,"imageLoads":136,"mounted":700,"unmounted":667,"jumps":[]}
+  ✓  3 [browser] › e2e/browser/agent-timeline-scroll-smoothness.spec.ts:137:7 › varied timeline preserves reading position during slow upward scrolling (1.4m)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 171ms packages/app/index.ts (1 module)
+[metro] Web Bundled 4ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[scroll] varied timeline preserves reading position during medium upward scrolling: {"browserTimeOrigin":1791887873027.6,"frames":1482,"pages":[{"direction":"tail","count":40,"hasOlder":true,"at":1791887876188},{"direction":"after","count":0,"hasOlder":true,"at":1791887876286},{"direction":"before","count":40,"hasOlder":true,"at":1791887883776},{"direction":"before","count":40,"hasOlder":true,"at":1791887889959},{"direction":"before","count":20,"hasOlder":false,"at":1791887896056}],"jumpCount":0,"worstReversePx":0,"frameGapP95Ms":38,"frameGapMaxMs":79.30000001192093,"imageLoads":75,"mounted":700,"unmounted":667,"jumps":[]}
+  ✓  4 [browser] › e2e/browser/agent-timeline-scroll-smoothness.spec.ts:137:7 › varied timeline preserves reading position during medium upward scrolling (33.7s)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 164ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[scroll] varied timeline preserves reading position during fast upward scrolling: {"browserTimeOrigin":1791887906802,"frames":647,"pages":[{"direction":"tail","count":40,"hasOlder":true,"at":1791887909855},{"direction":"after","count":0,"hasOlder":true,"at":1791887909948},{"direction":"before","count":40,"hasOlder":true,"at":1791887914395},{"direction":"before","count":40,"hasOlder":true,"at":1791887917396},{"direction":"before","count":20,"hasOlder":false,"at":1791887920380}],"jumpCount":0,"worstReversePx":0,"frameGapP95Ms":48.39999997615814,"frameGapMaxMs":78.60000002384186,"imageLoads":8,"mounted":700,"unmounted":667,"jumps":[]}
+  ✓  5 [browser] › e2e/browser/agent-timeline-scroll-smoothness.spec.ts:137:7 › varied timeline preserves reading position during fast upward scrolling (19.2s)
+[metro] Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 172ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  6 [browser] › e2e/browser/agent-timeline-scroll-smoothness.spec.ts:150:5 › reserves image space before its response arrives (3.9s)
+[metro] Web Bundled 178ms packages/app/index.ts (1 module)
+[metro] Web Bundled 5ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 167ms packages/app/index.ts (1 module)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  7 [browser] › e2e/browser/sidebar-workspace-rename.spec.ts:38:7 › Sidebar workspace rename › renaming via kebab sets a custom title that survives reload (6.6s)
+[metro] Web Bundled 157ms packages/app/index.ts (1 module)
+[metro] Web Bundled 5ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 163ms packages/app/index.ts (1 module)
+[metro] Web packages/app/src/attachments/web/indexeddb-attachment-store.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[metro] Web Bundled 3ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 177ms packages/app/index.ts (1 module)
+[metro] Web Bundled 4ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+[metro] Web Bundled 179ms packages/app/index.ts (1 module)
+[metro] Web Bundled 5ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro]  LOG  [web] Logs will appear in the browser console
+  ✓  8 [browser] › e2e/browser/sidebar-workspace-rename.spec.ts:106:5 › background workspace stays directly accessible across sidebar toggles and reconnect (11.6s)
+[e2e] Worker 0 daemon stopped
+[e2e] Metro stopped
+
+  8 passed (2.9m)
