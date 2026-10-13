@@ -1,0 +1,9 @@
+{
+  "relay": "relay.paseo.sh:443",
+  "serverId": "srv_PBdX5UV1IKTK",
+  "state": {
+    "status": "connected"
+  },
+  "agentCount": 0,
+  "latencyMs": 72.42787499999997
+}

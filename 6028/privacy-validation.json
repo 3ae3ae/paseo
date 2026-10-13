@@ -1,0 +1,59 @@
+{
+  "neutralNameMethod": "normal app UI rename before recording",
+  "neutralHostLabel": "QA host",
+  "daemonDisplayNameOverrideAvailable": false,
+  "pairingCompletedOffCamera": true,
+  "recordedProfileHasBothConnections": true,
+  "screenshotsReviewed": [
+    "before-direct-online.png",
+    "before-stuck.png",
+    "before-connection-probes.png",
+    "before-workspaces.png",
+    "after-direct-online.png",
+    "after-recovered.png",
+    "after-connection-probes.png",
+    "after-workspaces.png"
+  ],
+  "videoFramesReviewedSeconds": {
+    "before": [
+      1,
+      21,
+      30,
+      60,
+      83
+    ],
+    "after": [
+      1,
+      21,
+      30,
+      60,
+      83
+    ]
+  },
+  "visualNameOrCredentialMatches": [],
+  "knownCredentialValueMatches": [],
+  "redactions": [
+    "local computer name",
+    "daemon log hostname fields",
+    "absolute checkout/user paths",
+    "OS temporary paths",
+    "pairing URLs and credential values"
+  ],
+  "acceptedFixAndTestUnchanged": true,
+  "nameScan": {
+    "exitCode": 1,
+    "output": "",
+    "matchingFiles": []
+  },
+  "absoluteUserPathScan": {
+    "exitCode": 1,
+    "output": "",
+    "matchingFiles": []
+  },
+  "knownCredentialValuesScan": {
+    "matchingFiles": []
+  },
+  "temporaryPathsScan": {
+    "matchingFiles": []
+  }
+}

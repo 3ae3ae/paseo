@@ -1,0 +1,25 @@
+{"at": "2026-10-13T10:01:08.797Z", "event": "browser-start", "phase": "after", "version": "155.0.8059.40", "channel": "chrome", "metro": {"wrapperPid": 88108, "pid": 88329, "port": 52449, "forwarderPort": 53495, "daemonPort": 52448}, "forwarder": {"pid": 87886, "port": 53495, "targetPort": 52448}}
+{"at": "2026-10-13T10:01:08.805Z", "event": "document-load", "url": "http://127.0.0.1:52449/"}
+{"at": "2026-10-13T10:01:09.868Z", "event": "websocket-created", "url": "ws://127.0.0.1:52449/hot"}
+{"at": "2026-10-13T10:01:09.871Z", "event": "websocket-created", "url": "ws://127.0.0.1:52449/message"}
+{"at": "2026-10-13T10:01:09.955Z", "event": "websocket-created", "url": "ws://localhost:53495/ws"}
+{"at": "2026-10-13T10:01:10.039Z", "event": "websocket-created", "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"}
+{"at": "2026-10-13T10:01:10.472Z", "event": "ui-state", "label": "direct-online-at-recording-start", "elapsedMs": null, "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host", "identity": "Online\nlocalhost:53495\nv0.11.2", "documentLoads": 1}
+{"at": "2026-10-13T10:01:10.473Z", "event": "saved-profile", "label": "QA host", "connections": [{"id": "direct:localhost:53495", "type": "directTcp"}, {"id": "relay:wss:relay.paseo.sh:443", "type": "relay"}]}
+{"at": "2026-10-13T10:01:12.450Z", "event": "websocket-closed", "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"}
+{"at": "2026-10-13T10:01:32.532Z", "event": "probes-before-cut", "text": "TCP (localhost:53495)\n3ms\nRemove\nRelay (relay.paseo.sh:443)\n99ms\nRemove"}
+{"at": "2026-10-13T10:01:32.584Z", "event": "ui-state", "label": "direct-online-immediately-before-cut", "elapsedMs": null, "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host", "identity": "Online\nlocalhost:53495\nv0.11.2", "documentLoads": 1}
+{"at": "2026-10-13T10:01:32.630Z", "event": "kill-forwarder", "pid": 87886}
+{"at": "2026-10-13T10:01:32.643Z", "event": "websocket-closed", "url": "ws://localhost:53495/ws"}
+{"at": "2026-10-13T10:01:34.496Z", "event": "websocket-created", "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"}
+{"at": "2026-10-13T10:01:34.633Z", "event": "command", "command": ["~/.nvm/versions/node/v24.2.0/bin/node", "packages/cli/dist/index.js", "workspace", "create", "--isolation", "local", "--path", "/tmp/qa-6028/project", "--title", "QA 6028 created during after outage", "--home", "/tmp/qa-6028/home", "--json"], "cwd": "<worktree>", "env": {"PASEO_HOME": "/tmp/qa-6028/home"}}
+{"at": "2026-10-13T10:01:35.036Z", "event": "workspace-created-during-outage", "elapsedMs": 2406, "workspaceId": "wks_f047d105778f89ef", "project": "project", "name": "QA 6028 created during after outage", "isolation": "local", "cwd": "/tmp/qa-6028/project", "background": false}
+{"at": "2026-10-13T10:01:35.039Z", "event": "ui-state", "label": "connection-transition", "elapsedMs": 2408, "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host", "identity": "Error\nlocalhost:53495\nv0.11.2", "documentLoads": 1}
+{"at": "2026-10-13T10:01:36.890Z", "event": "websocket-closed", "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"}
+{"at": "2026-10-13T10:01:38.510Z", "event": "websocket-created", "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"}
+{"at": "2026-10-13T10:01:38.591Z", "event": "ui-state", "label": "connection-transition", "elapsedMs": 5961, "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host", "identity": "Connecting\nRelay\nv0.11.2", "documentLoads": 1}
+{"at": "2026-10-13T10:01:39.096Z", "event": "ui-state", "label": "connection-transition", "elapsedMs": 6466, "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host", "identity": "Online\nRelay\nv0.11.2", "documentLoads": 1}
+{"at": "2026-10-13T10:02:33.027Z", "event": "ui-state", "label": "after-60-seconds", "elapsedMs": 60394, "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host", "identity": "Online\nRelay\nv0.11.2", "documentLoads": 1}
+{"at": "2026-10-13T10:02:33.132Z", "event": "probes-after-cut", "elapsedMs": 60501, "text": "TCP (localhost:53495)\nTimeout\nRemove\nRelay (relay.paseo.sh:443)\n71ms\nRemove"}
+{"at": "2026-10-13T10:02:33.235Z", "event": "workspace-ui", "freshWorkspaceLoaded": true, "body": "New workspace\n⌘N\nHistory\nSearch\nSchedules\nWorkspaces\nP\nproject\nQA 6028 created during after outage\nnow\nQA 6028 created during before outage\n3m\nQA 6028 initial workspace\n5m\nAdd a project\nOpen a folder on your machine\nImport session\nOpen a Claude Code, Codex or other session you started in a terminal\nSetup providers\nConfigure Claude Code, Codex, and more\nStar\nSponsor\nCommunity"}
+{"at": "2026-10-13T10:02:33.292Z", "event": "result", "phase": "after", "outcome": "recovered-over-relay", "recoveryMs": 6467, "observationMs": 60394, "freshWorkspaceLoaded": true, "documentLoads": 1}

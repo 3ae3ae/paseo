@@ -1,0 +1,40 @@
+
+ RUN  v4.1.7 <worktree>/packages/app
+
+stderr | src/runtime/host-runtime.test.ts
+[DraftStore] Attachment garbage collection failed Error: IndexedDB is unavailable in this runtime.
+    at ensureIndexedDb (<worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:27:11)
+    at <worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:34:21
+    at new Promise (<anonymous>)
+    at openAttachmentDb (<worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:33:10)
+    at Object.garbageCollect (<worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:192:24)
+    at <worktree>/packages/app/src/attachments/service.ts:188:17
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+ ❯ |unit| src/runtime/host-runtime.test.ts (96 tests | 1 failed) 14ms
+     × falls back to relay when the direct client disconnects with heartbeat RTT 12 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |unit| src/runtime/host-runtime.test.ts > HostRuntimeController > falls back to relay when the direct client disconnects with heartbeat RTT 12
+AssertionError: expected 'direct:lan:6767' to be 'relay:relay.paseo.sh:443' // Object.is equality
+
+Expected: "relay:relay.paseo.sh:443"
+Received: "direct:lan:6767"
+
+ ❯ src/runtime/host-runtime.test.ts:1025:43
+    1023|
+    1024|       const snapshot = controller.getSnapshot();
+    1025|       expect(snapshot.activeConnectionId).toBe("relay:relay.paseo.sh:4…
+       |                                           ^
+    1026|       expect(snapshot.connectionStatus).toBe("online");
+    1027|       expect(snapshot.probeByConnectionId).toEqual(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 9 passed (96)
+   Start at  18:14:19
+   Duration  6.26s (transform 5.15s, setup 29ms, import 6.14s, tests 14ms, environment 0ms)
+

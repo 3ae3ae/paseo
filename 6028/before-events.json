@@ -1,0 +1,450 @@
+[
+  {
+    "at": "2026-10-13T09:58:13.480Z",
+    "event": "browser-start",
+    "phase": "before",
+    "version": "155.0.8059.40",
+    "channel": "chrome",
+    "metro": {
+      "wrapperPid": 74886,
+      "pid": 75224,
+      "port": 52449,
+      "forwarderPort": 53495,
+      "daemonPort": 52448
+    },
+    "forwarder": {
+      "pid": 73724,
+      "port": 53495,
+      "targetPort": 52448
+    }
+  },
+  {
+    "at": "2026-10-13T09:58:13.487Z",
+    "event": "document-load",
+    "url": "http://127.0.0.1:52449/"
+  },
+  {
+    "at": "2026-10-13T09:58:14.164Z",
+    "event": "console",
+    "level": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+  },
+  {
+    "at": "2026-10-13T09:58:14.324Z",
+    "event": "console",
+    "level": "log",
+    "text": "Running application \"main\" with appParams:\n {rootTag: #root, hydrate: undefined} \nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."
+  },
+  {
+    "at": "2026-10-13T09:58:14.352Z",
+    "event": "console",
+    "level": "warning",
+    "text": "[expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect."
+  },
+  {
+    "at": "2026-10-13T09:58:14.411Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.412Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/runtime/host-runtime.ts -> src/runtime/directory-sync/index.ts -> src/runtime/directory-sync/agent-replica.ts -> src/hooks/use-archive-agent.ts -> src/runtime/host-runtime.ts\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.426Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/plugins/themes/index.ts -> src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/themes/index.ts\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.465Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/components/sidebar-workspace-list.tsx -> src/components/sidebar/sidebar-status-list.tsx -> src/components/sidebar/sidebar-workspace-row-content.tsx -> src/components/workspace-hover-card.tsx -> src/components/sidebar-workspace-list.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.490Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/screens/workspace/workspace-tab-presentation.tsx -> src/panels/register-panels.ts -> src/panels/agent-panel.tsx -> src/panels/agent-tracks.tsx -> src/subagents/track.tsx -> src/screens/workspace/workspace-tab-presentation.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.491Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/review/index.ts -> src/review/feedback/surface.tsx -> src/screens/workspace/workspace-tab-presentation.tsx -> src/panels/register-panels.ts -> src/panels/diff-panel.tsx -> src/git/diff-document/index.tsx -> src/git/diff-document/surface.web.tsx -> src/review/index.ts\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.492Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/git/diff-pane.tsx -> src/review/index.ts -> src/review/feedback/surface.tsx -> src/screens/workspace/workspace-tab-presentation.tsx -> src/panels/register-panels.ts -> src/panels/diff-panel.tsx -> src/git/diff-pane.tsx\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.510Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Require cycle: src/panels/register-panels.ts -> src/panels/new-tab-panel.tsx -> src/workspace-tabs/launcher/index.tsx -> src/panels/register-panels.ts\n\nRequire cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle."
+  },
+  {
+    "at": "2026-10-13T09:58:14.541Z",
+    "event": "console",
+    "level": "warning",
+    "text": "props.pointerEvents is deprecated. Use style.pointerEvents"
+  },
+  {
+    "at": "2026-10-13T09:58:14.621Z",
+    "event": "websocket-created",
+    "url": "ws://127.0.0.1:52449/hot"
+  },
+  {
+    "at": "2026-10-13T09:58:14.627Z",
+    "event": "websocket-created",
+    "url": "ws://127.0.0.1:52449/message"
+  },
+  {
+    "at": "2026-10-13T09:58:14.673Z",
+    "event": "console",
+    "level": "warning",
+    "text": "Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md"
+  },
+  {
+    "at": "2026-10-13T09:58:14.680Z",
+    "event": "console",
+    "level": "error",
+    "text": "React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. uniProps uniprops"
+  },
+  {
+    "at": "2026-10-13T09:58:14.704Z",
+    "event": "websocket-created",
+    "url": "ws://localhost:53495/ws"
+  },
+  {
+    "at": "2026-10-13T09:58:14.794Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "status"
+  },
+  {
+    "at": "2026-10-13T09:58:14.796Z",
+    "event": "websocket-created",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:58:14.797Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "session.events.set_subscription.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.797Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "workspace.label.list.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.797Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "session.events.set_subscription.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.797Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "session.events.set_subscription.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.797Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "session.events.set_subscription.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.799Z",
+    "event": "pong",
+    "url": "ws://localhost:53495/ws",
+    "count": 1
+  },
+  {
+    "at": "2026-10-13T09:58:14.803Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "plugin.catalog.get.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.804Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "fetch_agents_response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.805Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "project.list.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.834Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "fetch_workspaces_response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.841Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "usage.list_reports.update"
+  },
+  {
+    "at": "2026-10-13T09:58:14.841Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "usage.list_reports.update"
+  },
+  {
+    "at": "2026-10-13T09:58:14.841Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "usage.list_reports.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.841Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "project.icon.get.response"
+  },
+  {
+    "at": "2026-10-13T09:58:14.843Z",
+    "event": "websocket-message",
+    "url": "ws://localhost:53495/ws",
+    "type": "session",
+    "sessionType": "workspace.label.list.response"
+  },
+  {
+    "at": "2026-10-13T09:58:15.056Z",
+    "event": "ui-state",
+    "label": "direct-online-at-recording-start",
+    "elapsedMs": null,
+    "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host",
+    "identity": "Online\nlocalhost:53495\nv0.11.2",
+    "documentLoads": 1
+  },
+  {
+    "at": "2026-10-13T09:58:15.057Z",
+    "event": "saved-profile",
+    "label": "QA host",
+    "connections": [
+      {
+        "id": "direct:localhost:53495",
+        "type": "directTcp"
+      },
+      {
+        "id": "relay:wss:relay.paseo.sh:443",
+        "type": "relay"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-13T09:58:17.167Z",
+    "event": "websocket-closed",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:58:24.790Z",
+    "event": "pong",
+    "url": "ws://localhost:53495/ws",
+    "count": 2
+  },
+  {
+    "at": "2026-10-13T09:58:34.793Z",
+    "event": "pong",
+    "url": "ws://localhost:53495/ws",
+    "count": 3
+  },
+  {
+    "at": "2026-10-13T09:58:37.113Z",
+    "event": "probes-before-cut",
+    "text": "TCP (localhost:53495)\n600µs\nRemove\nRelay (relay.paseo.sh:443)\n70ms\nRemove"
+  },
+  {
+    "at": "2026-10-13T09:58:37.183Z",
+    "event": "ui-state",
+    "label": "direct-online-immediately-before-cut",
+    "elapsedMs": null,
+    "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host",
+    "identity": "Online\nlocalhost:53495\nv0.11.2",
+    "documentLoads": 1
+  },
+  {
+    "at": "2026-10-13T09:58:37.235Z",
+    "event": "kill-forwarder",
+    "pid": 73724
+  },
+  {
+    "at": "2026-10-13T09:58:37.251Z",
+    "event": "websocket-closed",
+    "url": "ws://localhost:53495/ws"
+  },
+  {
+    "at": "2026-10-13T09:58:38.763Z",
+    "event": "console",
+    "level": "error",
+    "text": "WebSocket connection to 'ws://localhost:53495/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED"
+  },
+  {
+    "at": "2026-10-13T09:58:39.239Z",
+    "event": "command",
+    "command": [
+      "~/.nvm/versions/node/v24.2.0/bin/node",
+      "packages/cli/dist/index.js",
+      "workspace",
+      "create",
+      "--isolation",
+      "local",
+      "--path",
+      "/tmp/qa-6028/project",
+      "--title",
+      "QA 6028 created during before outage",
+      "--home",
+      "/tmp/qa-6028/home",
+      "--json"
+    ],
+    "cwd": "<worktree>",
+    "env": {
+      "PASEO_HOME": "/tmp/qa-6028/home"
+    }
+  },
+  {
+    "at": "2026-10-13T09:58:39.282Z",
+    "event": "websocket-created",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:58:39.658Z",
+    "event": "workspace-created-during-outage",
+    "elapsedMs": 2423,
+    "workspaceId": "wks_75a26d3667f92491",
+    "project": "project",
+    "name": "QA 6028 created during before outage",
+    "isolation": "local",
+    "cwd": "/tmp/qa-6028/project",
+    "background": false
+  },
+  {
+    "at": "2026-10-13T09:58:39.661Z",
+    "event": "ui-state",
+    "label": "connection-transition",
+    "elapsedMs": 2425,
+    "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host",
+    "identity": "Error\nlocalhost:53495\nv0.11.2",
+    "documentLoads": 1
+  },
+  {
+    "at": "2026-10-13T09:58:41.668Z",
+    "event": "websocket-closed",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:58:41.782Z",
+    "event": "console",
+    "level": "error",
+    "text": "WebSocket connection to 'ws://localhost:53495/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED"
+  },
+  {
+    "at": "2026-10-13T09:58:47.811Z",
+    "event": "console",
+    "level": "error",
+    "text": "WebSocket connection to 'ws://localhost:53495/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED"
+  },
+  {
+    "at": "2026-10-13T09:58:51.216Z",
+    "event": "websocket-created",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:58:53.617Z",
+    "event": "websocket-closed",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:58:59.835Z",
+    "event": "console",
+    "level": "error",
+    "text": "WebSocket connection to 'ws://localhost:53495/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED"
+  },
+  {
+    "at": "2026-10-13T09:59:03.218Z",
+    "event": "websocket-created",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:59:05.627Z",
+    "event": "websocket-closed",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:59:13.210Z",
+    "event": "websocket-created",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:59:15.608Z",
+    "event": "websocket-closed",
+    "url": "wss://relay.paseo.sh/ws?serverId=srv_PBdX5UV1IKTK&role=client&v=2"
+  },
+  {
+    "at": "2026-10-13T09:59:23.858Z",
+    "event": "console",
+    "level": "error",
+    "text": "WebSocket connection to 'ws://localhost:53495/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED"
+  },
+  {
+    "at": "2026-10-13T09:59:37.609Z",
+    "event": "ui-state",
+    "label": "after-60-seconds",
+    "elapsedMs": 60371,
+    "url": "http://127.0.0.1:52449/settings/hosts/srv_PBdX5UV1IKTK/host",
+    "identity": "Error\nlocalhost:53495\nv0.11.2",
+    "documentLoads": 1
+  },
+  {
+    "at": "2026-10-13T09:59:37.732Z",
+    "event": "probes-after-cut",
+    "elapsedMs": 60496,
+    "text": "TCP (localhost:53495)\n600µs\nRemove\nRelay (relay.paseo.sh:443)\n72ms\nRemove"
+  },
+  {
+    "at": "2026-10-13T09:59:37.829Z",
+    "event": "workspace-ui",
+    "freshWorkspaceLoaded": false,
+    "body": "New workspace\n⌘N\nHistory\nSearch\nSchedules\nWorkspaces\nP\nproject\nQA 6028 initial workspace\n2m\nQA host: Transport closed (code 1006)\nAdd a project\nOpen a folder on your machine\nImport session\nOpen a Claude Code, Codex or other session you started in a terminal\nSetup providers\nConfigure Claude Code, Codex, and more\nStar\nSponsor\nCommunity"
+  },
+  {
+    "at": "2026-10-13T09:59:37.889Z",
+    "event": "result",
+    "phase": "before",
+    "outcome": "stuck-on-direct",
+    "recoveryMs": null,
+    "observationMs": 60371,
+    "freshWorkspaceLoaded": false,
+    "documentLoads": 1
+  }
+]

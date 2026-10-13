@@ -1,0 +1,22 @@
+{
+  "before": {
+    "at": "2026-10-13T09:59:37.889Z",
+    "event": "result",
+    "phase": "before",
+    "outcome": "stuck-on-direct",
+    "recoveryMs": null,
+    "observationMs": 60371,
+    "freshWorkspaceLoaded": false,
+    "documentLoads": 1
+  },
+  "after": {
+    "at": "2026-10-13T10:02:33.292Z",
+    "event": "result",
+    "phase": "after",
+    "outcome": "recovered-over-relay",
+    "recoveryMs": 6467,
+    "observationMs": 60394,
+    "freshWorkspaceLoaded": true,
+    "documentLoads": 1
+  }
+}

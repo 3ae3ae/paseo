@@ -1,0 +1,16 @@
+{"event": "metro-spawn", "wrapperPid": 88108, "pid": 88329, "port": 52449, "forwarderPort": 53495, "daemonPort": 52448, "command": ["~/.nvm/versions/node/v24.2.0/bin/node", "<worktree>/node_modules/expo/bin/cli", "start", "--web", "--port", "52449"]}
+Starting project at <worktree>/packages/app
+Using src/app as the root directory for Expo Router.
+Experimental Expo Autolinking module resolver is enabled.
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+Waiting on http://localhost:52449
+Logs for your project will appear below.
+Web Bundled 1920ms packages/app/index.ts (5461 modules)
+Web Bundled 137ms packages/app/index.ts (1 module)
+Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web packages/app/index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 143ms packages/app/index.ts (1 module)
+ LOG  [web] Logs will appear in the browser console
+Web Bundled 25ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)

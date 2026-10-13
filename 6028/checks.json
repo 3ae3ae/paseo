@@ -1,0 +1,20 @@
+{
+  "cwd": "<worktree>",
+  "commands": [
+    {
+      "command": "npm run format:check",
+      "exitCode": 0,
+      "log": "format-check.log"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "log": "lint.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "typecheck.log"
+    }
+  ]
+}

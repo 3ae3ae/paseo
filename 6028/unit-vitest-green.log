@@ -1,0 +1,9 @@
+
+ RUN  v4.1.7 <worktree>/packages/app
+
+
+ Test Files  1 passed (1)
+      Tests  96 passed (96)
+   Start at  18:15:11
+   Duration  12.30s (transform 9.94s, setup 21ms, import 11.78s, tests 431ms, environment 0ms)
+

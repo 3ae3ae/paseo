@@ -1,0 +1,2 @@
+{"at": "2026-10-13T09:56:35.820Z", "event": "listening", "pid": 73724, "port": 53495, "targetPort": 52448}
+{"at": "2026-10-13T09:58:37.236Z", "event": "direct-cut", "sockets": 2}

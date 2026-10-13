@@ -1,0 +1,13 @@
+{
+  "ownedProcessesRemaining": [],
+  "isolatedPortsListening": false,
+  "daemonStopExitCode": 0,
+  "metroStopExitCode": 0,
+  "browserRunExitCodes": {
+    "before": 0,
+    "after": 0
+  },
+  "fixAndTestUnchanged": true,
+  "scratchRemoved": true,
+  "oldEvidenceRemoved": true
+}

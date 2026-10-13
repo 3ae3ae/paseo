@@ -1,0 +1,8 @@
+{
+  "workspaceId": "wks_75a26d3667f92491",
+  "project": "project",
+  "name": "QA 6028 created during before outage",
+  "isolation": "local",
+  "cwd": "/tmp/qa-6028/project",
+  "background": false
+}

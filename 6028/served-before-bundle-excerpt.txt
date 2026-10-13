@@ -1,0 +1,13 @@
+               connectedClient = client;
+                shouldCloseClient = true;
+              }
+              if (!this.isCurrentProbeRequest(requestVersion)) {
+                return;
+              }
+              const activated = await maybeActivateFirstAvailable(connection.id, connectedClient);
+              shouldCloseClient = shouldCloseClient && !activated;
+              if (activeClient) {
+                const rttMs = activeClient.getLastLivenessRttMs();
+                if (!this.isCurrentProbeRequest(requestVersion)) {
+                  return;
+                

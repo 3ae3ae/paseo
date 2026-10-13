@@ -1,0 +1,15 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "vp8",
+      "width": 1360,
+      "height": 900
+    }
+  ],
+  "format": {
+    "duration": "85.280000",
+    "size": "3298267"
+  }
+}

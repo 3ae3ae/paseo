@@ -1,0 +1,1 @@
+{"event": "normal-ui-setup", "label": "QA host", "connections": ["directTcp", "relay"], "recording": false}
