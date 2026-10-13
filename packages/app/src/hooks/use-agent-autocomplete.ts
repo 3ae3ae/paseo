@@ -108,8 +108,8 @@ function resolveAgentAutocompleteSnapshot(input: {
   };
 }
 
-function isSameSlashCommand(a: SlashCommandRange, b: SlashCommandRange | null): boolean {
-  return a.start === b?.start && a.query === b.query;
+function isSameSlashCommand(a: SlashCommandRange | null, b: SlashCommandRange | null): boolean {
+  return a?.start === b?.start && a?.query === b?.query;
 }
 
 interface DirectorySuggestionEntry {
@@ -525,15 +525,7 @@ export function useAgentAutocomplete(input: UseAgentAutocompleteInput): AgentAut
         selected.type === "client_command" ||
         selected.type === "plugin_command" ||
         selected.type === "provider_command";
-      // The cursor reaches the menu after paint, so a key can land while the options still
-      // belong to an older query. Never pick from that list.
-      if (
-        snapshot &&
-        selectedIsCommand &&
-        (!current.slashCommand || !isSameSlashCommand(current.slashCommand, activeSlashCommand))
-      ) {
-        return;
-      }
+      if (snapshot && selectedIsCommand && !current.slashCommand) return;
       if (
         selected.type === "client_command" &&
         selected.command.execution === "immediate" &&
@@ -583,9 +575,25 @@ export function useAgentAutocomplete(input: UseAgentAutocompleteInput): AgentAut
   );
 
   const selectOptionFromKeyPress = useCallback(
-    (option: AutocompleteOption, event?: AgentAutocompleteKeyPressEvent) =>
-      onSelectOption(option, event?.input),
-    [onSelectOption],
+    (option: AutocompleteOption, event?: AgentAutocompleteKeyPressEvent) => {
+      // The cursor reaches the menu after paint, so a key can land while the options still
+      // belong to an older query. Never pick from that list. A click picks what the user sees.
+      if (
+        mode === "command" &&
+        event &&
+        !isSameSlashCommand(
+          findActiveSlashCommand({
+            text: event.input.text,
+            cursorIndex: event.input.selection.start,
+          }),
+          activeSlashCommand,
+        )
+      ) {
+        return;
+      }
+      onSelectOption(option, event?.input);
+    },
+    [activeSlashCommand, mode, onSelectOption],
   );
 
   const { selectedIndex, onKeyPress } = useAutocomplete({
