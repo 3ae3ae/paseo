@@ -108,6 +108,10 @@ function resolveAgentAutocompleteSnapshot(input: {
   };
 }
 
+function isSameSlashCommand(a: SlashCommandRange, b: SlashCommandRange | null): boolean {
+  return a.start === b?.start && a.query === b.query;
+}
+
 interface DirectorySuggestionEntry {
   path: string;
   kind: "file" | "directory";
@@ -521,7 +525,15 @@ export function useAgentAutocomplete(input: UseAgentAutocompleteInput): AgentAut
         selected.type === "client_command" ||
         selected.type === "plugin_command" ||
         selected.type === "provider_command";
-      if (snapshot && selectedIsCommand && !current.slashCommand) return;
+      // The cursor reaches the menu after paint, so a key can land while the options still
+      // belong to an older query. Never pick from that list.
+      if (
+        snapshot &&
+        selectedIsCommand &&
+        (!current.slashCommand || !isSameSlashCommand(current.slashCommand, activeSlashCommand))
+      ) {
+        return;
+      }
       if (
         selected.type === "client_command" &&
         selected.command.execution === "immediate" &&
