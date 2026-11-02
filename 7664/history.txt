@@ -1,0 +1,55 @@
+commit 2187124642adff395d38085b916bbb04c082b644
+Author:     paseo-bot[bot] <266920839+paseo-bot[bot]@users.noreply.github.com>
+AuthorDate: Sun Oct 4 23:31:39 2026 +0100
+Commit:     GitHub <noreply@github.com>
+CommitDate: Sun Oct 4 23:31:39 2026 +0100
+
+    Answer an ACP agent's open permission request when its turn fails (#6045)
+    
+    * fix(acp): answer open permission requests when a turn fails
+    
+    When an ACP prompt failed while one of its session/request_permission
+    requests was still open, Paseo stopped showing the request but never
+    answered it, so agents that refuse new prompts until the request is
+    settled stayed stuck until the agent was reloaded.
+    
+    A turn that ends without completing now answers its open permission
+    requests with cancelled, as interrupt and close already do.
+    
+    Closes #6040
+    
+    * test(acp): cover permission requests left open by a cancelled turn
+    
+    ---------
+    
+    Co-authored-by: paseo-bot[bot] <266920839+paseo-bot[bot]@users.noreply.github.com>
+
+diff --git a/packages/server/src/server/agent/providers/acp-agent.ts b/packages/server/src/server/agent/providers/acp-agent.ts
+index de8055c7..1b47ccac 100644
+--- a/packages/server/src/server/agent/providers/acp-agent.ts
++++ b/packages/server/src/server/agent/providers/acp-agent.ts
+@@ -3297,12 +3291,24 @@ export class ACPAgentSession implements AgentSession, ACPClient {
+   private finishTurn(
+     event: Extract<AgentStreamEvent, { type: "turn_completed" | "turn_failed" | "turn_canceled" }>,
+   ): void {
+     this.deliverTranslatedEvents(this.flushPendingUserMessage());
++    // A turn that ends without completing leaves no way to answer its open
++    // permission requests, so tell the agent they were cancelled.
++    if (event.type !== "turn_completed") {
++      this.cancelPendingPermissions();
++    }
+     this.activeForegroundTurnId = null;
+     this.fallbackAssistantMessageId = null;
+     if (this.submittedUserMessageTurnId === event.turnId) {
+       this.submittedUserMessageTurnId = null;
+     }
+     this.pushEvent(event);
+   }
+ 
++  private cancelPendingPermissions(): void {
++    for (const pending of this.pendingPermissions.values()) {
++      pending.resolve({ outcome: { outcome: "cancelled" } });
++    }
++    this.pendingPermissions.clear();
++  }
++

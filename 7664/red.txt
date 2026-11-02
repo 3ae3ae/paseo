@@ -1,0 +1,99 @@
+$ npx vitest run packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts --bail=1 -t turn_completed
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts (6 tests | 1 failed | 5 skipped) 146ms
+     × answers a permission request left open by a 'turn_completed' turn with cancelled 145ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts > GenericACPAgentClient permission requests when a turn ends early > answers a permission request left open by a 'turn_completed' turn with cancelled
+AssertionError: expected [ { …(8) } ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   {
++     "actions": [
++       {
++         "behavior": "allow",
++         "id": "allow",
++         "label": "Allow once",
++       },
++       {
++         "behavior": "deny",
++         "id": "reject",
++         "label": "Reject",
++       },
++     ],
++     "detail": {
++       "command": "echo hello",
++       "cwd": undefined,
++       "exitCode": undefined,
++       "output": undefined,
++       "type": "shell",
++     },
++     "id": "b65c0634-2b4b-49d8-a4c6-63f0012a512c",
++     "kind": "tool",
++     "metadata": {
++       "options": [
++         {
++           "kind": "allow_once",
++           "name": "Allow once",
++           "optionId": "allow",
++         },
++         {
++           "kind": "reject_once",
++           "name": "Reject",
++           "optionId": "reject",
++         },
++       ],
++       "rawRequest": {
++         "options": [
++           {
++             "kind": "allow_once",
++             "name": "Allow once",
++             "optionId": "allow",
++           },
++           {
++             "kind": "reject_once",
++             "name": "Reject",
++             "optionId": "reject",
++           },
++         ],
++         "sessionId": "session-1",
++         "toolCall": {
++           "kind": "execute",
++           "status": "pending",
++           "title": "echo hello",
++           "toolCallId": "tool-1",
++         },
++       },
++       "toolCallId": "tool-1",
++     },
++     "name": "execute",
++     "provider": "acp",
++     "title": "echo hello",
++   },
++ ]
+
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:28:51
+     26|           await waitForEvent(events, terminalEvent);
+     27|           expect(hasEvent(events, "permission_requested")).toBe(true);
+     28|           expect(session.getPendingPermissions()).toEqual([]);
+       |                                                   ^
+     29|           const requested = permissionRequests(events)[0]!;
+     30|           expect(resolvedEvents(events)).toEqual([
+ ❯ withFakeACPAgent packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:155:5
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:19:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 skipped (6)
+   Start at  14:17:15
+   Duration  439ms (transform 170ms, setup 0ms, import 238ms, tests 146ms, environment 0ms)
+

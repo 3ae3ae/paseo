@@ -1,0 +1,143 @@
+Reporter-provided SDK stub from issue #7664; no real Hermes Agent ran.
+Inherited PASEO_* variables removed. PASEO_HOME=<worktree>/.dev/qa-7664-before; PASEO_LISTEN=127.0.0.1:0
+$ node --import tsx packages/server/scripts/supervisor-entrypoint.ts --dev
+Allocated listener: 127.0.0.1:65149
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before run --provider fake-acp --cwd <worktree>/.dev/qa-7664/work --no-wait --json PERM_ABANDON
+Created workspace wks_2848ed8d7d0aa7f0 - fix/acp-abandoned-permission
+Tip: pass --workspace <id> (or set PASEO_WORKSPACE_ID) to run in an existing workspace.
+{
+  "agentId": "18f7bf8f-b8a6-418a-952d-5161979ce94a",
+  "status": "running",
+  "provider": "fake-acp",
+  "cwd": "<worktree>/.dev/qa-7664/work",
+  "title": "PERM_ABANDON"
+}
+
+exit=0
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before inspect 18f7bf8f-b8a6-418a-952d-5161979ce94a
+KEY                 VALUE                                                                   
+Id                  18f7bf8f-b8a6-418a-952d-5161979ce94a                                    
+Name                PERM_ABANDON                                                            
+Provider            fake-acp                                                                
+Model               -                                                                       
+Thinking            auto                                                                    
+Status              idle                                                                    
+Archived            false                                                                   
+ArchivedAt          null                                                                    
+Mode                default                                                                 
+Cwd                 ~/Github/paseo-worktrees/7664/.dev/qa-7664/work                         
+CreatedAt           2026-11-02T05:08:11.426Z                                                
+UpdatedAt           2026-11-02T05:08:14.465Z                                                
+Capabilities        Streaming: true, Persistence: true, DynamicModes: true, McpServers: true
+PendingPermissions  8ce631be-1429-4933-8a96-3670b49ef431 (edit)                             
+Worktree            null                                                                    
+ParentAgentId       null                                                                    
+
+exit=0
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before inspect 18f7bf8f-b8a6-418a-952d-5161979ce94a --json
+{
+  "Id": "18f7bf8f-b8a6-418a-952d-5161979ce94a",
+  "Name": "PERM_ABANDON",
+  "Provider": "fake-acp",
+  "Model": "-",
+  "Thinking": "auto",
+  "Status": "idle",
+  "Archived": false,
+  "ArchivedAt": null,
+  "Mode": "default",
+  "Cwd": "<worktree>/.dev/qa-7664/work",
+  "CreatedAt": "2026-11-02T05:08:11.426Z",
+  "UpdatedAt": "2026-11-02T05:08:14.465Z",
+  "LastUsage": null,
+  "Capabilities": {
+    "Streaming": true,
+    "Persistence": true,
+    "DynamicModes": true,
+    "McpServers": true
+  },
+  "AvailableModes": [],
+  "PendingPermissions": [
+    {
+      "id": "8ce631be-1429-4933-8a96-3670b49ef431",
+      "tool": "edit"
+    }
+  ],
+  "Worktree": null,
+  "ParentAgentId": null
+}
+
+exit=0
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before permit ls --json
+[
+  {
+    "id": "8ce631be-1429-4933-8a96-3670b49ef431",
+    "agentId": "18f7bf8f-b8a6-418a-952d-5161979ce94a",
+    "agentShortId": "18f7bf8",
+    "name": "edit",
+    "description": "-"
+  }
+]
+
+exit=0
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before send 18f7bf8f-b8a6-418a-952d-5161979ce94a 'next turn' --json
+{
+  "agentId": "18f7bf8f-b8a6-418a-952d-5161979ce94a",
+  "status": "permission",
+  "message": "Agent is waiting for permission"
+}
+
+exit=0
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before inspect 18f7bf8f-b8a6-418a-952d-5161979ce94a --json
+{
+  "Id": "18f7bf8f-b8a6-418a-952d-5161979ce94a",
+  "Name": "PERM_ABANDON",
+  "Provider": "fake-acp",
+  "Model": "-",
+  "Thinking": "auto",
+  "Status": "idle",
+  "Archived": false,
+  "ArchivedAt": null,
+  "Mode": "default",
+  "Cwd": "<worktree>/.dev/qa-7664/work",
+  "CreatedAt": "2026-11-02T05:08:11.426Z",
+  "UpdatedAt": "2026-11-02T05:08:30.772Z",
+  "LastUsage": null,
+  "Capabilities": {
+    "Streaming": true,
+    "Persistence": true,
+    "DynamicModes": true,
+    "McpServers": true
+  },
+  "AvailableModes": [],
+  "PendingPermissions": [
+    {
+      "id": "8ce631be-1429-4933-8a96-3670b49ef431",
+      "tool": "edit"
+    }
+  ],
+  "Worktree": null,
+  "ParentAgentId": null
+}
+
+exit=0
+
+$ node <worktree>/packages/cli/dist/index.js --home <worktree>/.dev/qa-7664-before permit ls --json
+[
+  {
+    "id": "8ce631be-1429-4933-8a96-3670b49ef431",
+    "agentId": "18f7bf8f-b8a6-418a-952d-5161979ce94a",
+    "agentShortId": "18f7bf8",
+    "name": "edit",
+    "description": "-"
+  }
+]
+
+exit=0
+
+Supervisor stopped; exit=0

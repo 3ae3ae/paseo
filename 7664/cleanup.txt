@@ -1,0 +1,3 @@
+before: supervisor exited 0; pid lock removed; allocated port 65149 closed.
+after: supervisor exited 0; pid lock removed; allocated port 49309 closed.
+No owned fake ACP agents or terminal workers remain. Main daemon and ~/.paseo untouched.

@@ -1,0 +1,38 @@
+$ npx vitest run packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts --bail=1 -t tool becomes failed
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts (6 tests | 1 failed | 5 skipped) 110ms
+     × cancels only the matching permission when its tool becomes failed 109ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts > GenericACPAgentClient permission requests when a turn ends early > cancels only the matching permission when its tool becomes failed
+AssertionError: expected [ 'tool-1', 'tool-2' ] to deeply equal [ 'tool-2' ]
+
+- Expected
++ Received
+
+  [
++   "tool-1",
+    "tool-2",
+  ]
+
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:64:43
+     62|           await session.startTurn("turn one");
+     63|           await waitForToolUpdate(events);
+     64|           expect(pendingToolIds(session)).toEqual(["tool-2"]);
+       |                                           ^
+     65|           expect(resolvedEvents(events)).toEqual([
+     66|             expect.objectContaining({ requestId: permissionRequests(ev…
+ ❯ withFakeACPAgent packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:155:5
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:57:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 skipped (6)
+   Start at  14:17:17
+   Duration  313ms (transform 96ms, setup 0ms, import 147ms, tests 110ms, environment 0ms)
+

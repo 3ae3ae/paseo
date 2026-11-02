@@ -1,0 +1,47 @@
+$ npx vitest run packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts --bail=1 -t turn_failed
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts (6 tests | 1 failed | 5 skipped) 124ms
+     × answers a permission request left open by a 'turn_failed' turn with cancelled 123ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts > GenericACPAgentClient permission requests when a turn ends early > answers a permission request left open by a 'turn_failed' turn with cancelled
+AssertionError: expected [] to deeply equal [ { …(5) } ]
+
+- Expected
++ Received
+
+- [
+-   {
+-     "provider": "acp",
+-     "requestId": "ce39943c-4631-4279-929c-58a418a4d83b",
+-     "resolution": {
+-       "behavior": "deny",
+-       "message": "Permission request canceled",
+-     },
+-     "turnId": "1e966403-5e8c-4a56-bc2f-0d646e542257",
+-     "type": "permission_resolved",
+-   },
+- ]
++ []
+
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:30:42
+     28|           expect(session.getPendingPermissions()).toEqual([]);
+     29|           const requested = permissionRequests(events)[0]!;
+     30|           expect(resolvedEvents(events)).toEqual([
+       |                                          ^
+     31|             {
+     32|               type: "permission_resolved",
+ ❯ withFakeACPAgent packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:155:5
+ ❯ packages/server/src/server/agent/providers/generic-acp-agent.permission-turn-failure.test.ts:19:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 skipped (6)
+   Start at  14:17:14
+   Duration  430ms (transform 135ms, setup 0ms, import 213ms, tests 124ms, environment 0ms)
+
