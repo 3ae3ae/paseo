@@ -1,0 +1,68 @@
+Metro PID 30576, port 58652; Expo start without --web
+
+Running 43 tests using 1 worker
+
+(node:30655) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30655) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 58669, home: <worktree>/.dev/qa8125/test-home/worker-0
+Switched to a new branch 'feature'
+
+  ✓   1 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:266:5 › Changes opens All changes for a clean checkout (3.2s)
+Switched to a new branch 'feature'
+
+  ✓   2 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:277:5 › All changes combines committed and pending edits and preserves an unfinished review (4.7s)
+
+  ✓   3 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:327:5 › Changes keeps a manual comparison when checkout dirtiness changes (8.2s)
+Switched to a new branch 'feature'
+
+  ✓   4 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:367:5 › an empty Changes comparison links to the populated comparison (3.5s)
+Switched to a new branch 'feature'
+
+  ✓   5 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:390:5 › Changes comparison controls the working diff and tree selection focuses its file (3.8s)
+  ✓   6 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:405:5 › changes file actions open below the right-click without a reserved kebab (3.5s)
+  ✓   7 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve src/use-mounted-tab-set.ts from project . (4.3s)
+  ✓   8 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve src/use-mounted-tab-set.ts from project src (4.3s)
+  ✓   9 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve a-root-note.txt from project src (4.6s)
+  ✓  10 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:509:5 › canvas file headers select without toggling for context menu and long press (3.8s)
+  ✓  11 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:530:5 › every interactive file header has the same hover feedback (3.6s)
+  ✓  12 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:557:5 › horizontal body scrolling never moves or repaints the canvas header (3.2s)
+  ✓  13 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:575:5 › in-flow file headers move with the diff document (3.4s)
+  ✓  14 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:585:5 › the outgoing sticky header hands off without a gap or overlap (3.1s)
+  ✓  15 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:649:5 › changes context menus duplicate files and folders (3.4s)
+  ✓  16 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:667:5 › changes tree aligns every file status after its diff stat (2.9s)
+  ✓  17 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:691:5 › the scrolling diff lists files in changes tree order (3.0s)
+  ✓  18 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:725:5 › changes context menu recursively collapses descendant folders (3.4s)
+  ✓  19 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:767:5 › changes context menus expose folder revert and restore a file after confirmation (4.1s)
+
+  ✓  20 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:817:5 › discarding a staged rename restores its source path (3.9s)
+  ✓  21 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:848:5 › discarding an untracked file removes it from the working tree (4.0s)
+  ✓  22 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:879:5 › shows a revert error returned by the daemon (3.7s)
+  ✓  23 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:905:5 › Changes keeps review navigation and controls inside its workspace tab (3.8s)
+  ✓  24 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:971:5 › compact Changes keeps its actions compact and menu-only (3.8s)
+  ✓  25 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1025:5 › compact Explorer renders inline hunks with a saved tree-only desktop preference (5.4s)
+  ✓  26 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1048:5 › compact Changes jumps to a file from the changed-files sheet (7.7s)
+Switched to a new branch 'feature'
+
+  ✓  27 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1062:5 › Jump to file stays out of the desktop diff and of an empty comparison (6.5s)
+  ✓  28 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1074:5 › canvas diff stays sharp while its workspace pane is resized (3.0s)
+  ✓  29 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1152:5 › changes diff waits for configured fonts, then applies code typography changes (3.8s)
+  ✓  30 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1185:5 › creates, cancels, edits, and deletes a review while keeping Changes focused (3.2s)
+  ✓  31 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1212:5 › split canvas creates a review on the changed side and keeps it in that column (2.9s)
+  ✓  32 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1230:5 › scrolling clears the hovered review affordance (2.8s)
+  ✓  33 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1245:5 › canvas diff uses the overlay scrollbar and its thumb controls vertical scrolling (2.9s)
+  ✓  34 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1269:5 › canvas headers keep a many-file diff bounded while scrolling end to end (21.2s)
+  ✓  35 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1292:5 › the whole reviewable row reveals the gutter affordance and uses a text cursor (3.2s)
+  ✓  36 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1319:5 › selects, preserves, copies, and dismisses diff text without opening a review (4.0s)
+  ✓  37 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1351:5 › canvas diff clears a selection when collapsing an earlier file (2.9s)
+  ✓  38 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1362:5 › canvas diff replaces a selection with forward and backward drags (3.1s)
+  ✓  39 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1380:5 › canvas diff copies only the selected split side (3.1s)
+  ✓  40 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1404:5 › canvas diff copies exact wrapped fragments (3.1s)
+  ✓  41 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1423:5 › horizontally scrolled selection copies exactly and does not paint the gutter (3.0s)
+  ✓  42 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1449:5 › dragging within one wide grapheme or outside its cell never opens a review (3.0s)
+  ✓  43 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:1469:5 › collapsing and expanding restores the real horizontal scroll offset (3.0s)
+[e2e] Worker 0 daemon stopped
+Metro stopped
+
+  43 passed (3.2m)

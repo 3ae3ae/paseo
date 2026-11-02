@@ -1,0 +1,12 @@
+{
+  "recordedRevisionProcessCount": 15,
+  "remainingRecordedProcesses": [],
+  "remainingNodeProcessesWithWorktreeCwd": 0,
+  "networkTraceFilesRemoved": [
+    "red-artifacts/changes-pane-changes-file--fd41c-tab-set-ts-from-project-src-browser/trace.zip",
+    "red-artifacts/changes-pane-changes-file--40e50-t-note-txt-from-project-src-browser/trace.zip"
+  ],
+  "toolsDirectoryCreated": false,
+  "browser": "Playwright bundled chromium-headless-shell only",
+  "metro": "Expo start without --web; BROWSER=none, CI=1, EXPO_UNSTABLE_HEADLESS=1"
+}

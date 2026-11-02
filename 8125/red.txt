@@ -1,0 +1,216 @@
+Metro PID 24212, port 58073; Expo start without --web
+
+Running 3 tests using 1 worker
+
+(node:24425) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24425) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 58089, home: <worktree>/.dev/qa8125/test-home/worker-0
+  ✓  1 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve src/use-mounted-tab-set.ts from project . (5.2s)
+[e2e] Worker 0 daemon stopped
+  ✘  2 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve src/use-mounted-tab-set.ts from project src (13.3s)
+(node:27504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 1 daemon started on port 58320, home: <worktree>/.dev/qa8125/test-home/worker-1
+[e2e] Worker 1 daemon stopped
+  ✘  3 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve a-root-note.txt from project src (13.3s)
+Metro stopped
+
+
+  1) [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve src/use-mounted-tab-set.ts from project src › Duplicate creates a copy next to the source 
+
+    Error: Expected duplicate at <tmp> copy.ts
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"import { useLayoutEffect, useMemo, useRef, useState } from \"react\";·[39m
+    [32minterface UseMountedTabSetInput {[39m
+    [32m  activeTabId: string | null;[39m
+    [32m  allTabIds: string[];[39m
+    [32m  cap: number;[39m
+    [32m}·[39m
+    [32minterface UseMountedTabSetResult {[39m
+    [32m  mountedTabIds: Set<string>;[39m
+    [32m}·[39m
+    [32minterface DeriveRenderMountedTabIdsInput {[39m
+    [32m  activeTabId: string | null;[39m
+    [32m  availableTabIds: Set<string>;[39m
+    [32m  cap: number;[39m
+    [32m  mountedTabIds: Set<string>;[39m
+    [32m}·[39m
+    [32mfunction createInitialMountedTabIds(input: UseMountedTabSetInput): Set<string> {[39m
+    [32m  if (!input.activeTabId || !input.allTabIds.includes(input.activeTabId)) {[39m
+    [32m    return new Set<string>();[39m
+    [32m  }[39m
+    [32m  return new Set<string>([input.activeTabId]);[39m
+    [32m}·[39m
+    [32mfunction setsEqual(left: Set<string>, right: Set<string>): boolean {[39m
+    [32m  if (left.size !== right.size) {[39m
+    [32m    return false;[39m
+    [32m  }[39m
+    [32m  for (const value of left) {[39m
+    [32m    if (!right.has(value)) {[39m
+    [32m      return false;[39m
+    [32m    }[39m
+    [32m  }[39m
+    [32m  return true;[39m
+    [32m}·[39m
+    [32mfunction deriveRenderMountedTabIds(input: DeriveRenderMountedTabIdsInput): Set<string> {[39m
+    [32m  const { activeTabId, availableTabIds, cap, mountedTabIds } = input;[39m
+    [32m  if (!activeTabId || !availableTabIds.has(activeTabId) || mountedTabIds.has(activeTabId)) {[39m
+    [32m    return mountedTabIds;[39m
+    [32m  }·[39m
+    [32m  const next = new Set<string>([activeTabId]);[39m
+    [32m  const maxSize = Math.max(1, cap);[39m
+    [32m  for (const tabId of mountedTabIds) {[39m
+    [32m    if (next.size >= maxSize) {[39m
+    [32m      break;[39m
+    [32m    }[39m
+    [32m    if (availableTabIds.has(tabId)) {[39m
+    [32m      next.add(tabId);[39m
+    [32m    }[39m
+    [32m  }[39m
+    [32m  return next;[39m
+    [32m}·[39m
+    [32mexport function useMountedTabSet(input: UseMountedTabSetInput): UseMountedTabSetResult {[39m
+    [32m  const { activeTabId, allTabIds, cap } = input;[39m
+    [32m  const allTabIdsKey = allTabIds.join(\"\\u0000\");[39m
+    [32m  const availableTabIds = useMemo(() => {[39m
+    [32m    void allTabIdsKey;[39m
+    [32m    return new Set(allTabIds);[39m
+    [32m  }, [allTabIds, allTabIdsKey]);[39m
+    [32m  const [mountedTabIds, setMountedTabIds] = useState(() => createInitialMountedTabIds(input));[39m
+    [32m  const lruRef = useRef(activeTabId && allTabIds.includes(activeTabId) ? [activeTabId] : []);[39m
+    [32m  const renderMountedTabIds = useMemo([39m
+    [32m    () =>[39m
+    [32m      deriveRenderMountedTabIds({[39m
+    [32m        activeTabId,[39m
+    [32m        availableTabIds,[39m
+    [32m        cap,[39m
+    [32m        mountedTabIds,[39m
+    [32m      }),[39m
+    [32m    [activeTabId, availableTabIds, cap, mountedTabIds],[39m
+    [32m  );·[39m
+    [32m  useLayoutEffect(() => {[39m
+    [32m    const nextLru = lruRef.current.filter((tabId) => availableTabIds.has(tabId));[39m
+    [32m    if (activeTabId && availableTabIds.has(activeTabId)) {[39m
+    [32m      const existingIndex = nextLru.indexOf(activeTabId);[39m
+    [32m      if (existingIndex >= 0) {[39m
+    [32m        nextLru.splice(existingIndex, 1);[39m
+    [32m      }[39m
+    [32m      nextLru.unshift(activeTabId);[39m
+    [32m    }[39m
+    [32m    if (nextLru.length > cap) {[39m
+    [32m      nextLru.length = cap;[39m
+    [32m    }·[39m
+    [32m    lruRef.current = nextLru;[39m
+    [32m    setMountedTabIds((previousMountedTabIds) => {[39m
+    [32m      const nextMountedTabIds = new Set(nextLru);[39m
+    [32m      return setsEqual(previousMountedTabIds, nextMountedTabIds)[39m
+    [32m        ? previousMountedTabIds[39m
+    [32m        : nextMountedTabIds;[39m
+    [32m    });[39m
+    [32m  }, [activeTabId, availableTabIds, cap]);·[39m
+    [32m  return { mountedTabIds: renderMountedTabIds };[39m
+    [32m}[39m
+    [32m"[39m
+    Received: [31mnull[39m
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      478 |       const copyPath = path.join(workspace.repoPath, file.dir, `${file.name} copy${file.ext}`);
+      479 |       await page.getByRole("menuitem", { name: "Duplicate", exact: true }).click();
+    > 480 |       await expect
+          |       ^
+      481 |         .poll(() => readFileIfPresent(copyPath), { message: `Expected duplicate at ${copyPath}` })
+      482 |         .toBe(content);
+      483 |     });
+        at <worktree>/packages/app/e2e/browser/changes-pane.spec.ts:480:7
+        at <worktree>/packages/app/e2e/browser/changes-pane.spec.ts:476:5
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--fd41c-tab-set-ts-from-project-src-browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: browser-console (text/plain) ────────────────────────────────────────────────────
+    [console:info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    [console:log] Running application "main" with appParams:
+     {rootTag: #root, hydrate: undefined} 
+    Development-level warnings: ON.
+    Performance optimizations: OFF.
+    [co...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--fd41c-tab-set-ts-from-project-src-browser/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--fd41c-tab-set-ts-from-project-src-browser/error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--fd41c-tab-set-ts-from-project-src-browser/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--fd41c-tab-set-ts-from-project-src-browser/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve a-root-note.txt from project src › Duplicate creates a copy next to the source 
+
+    Error: Expected duplicate at <tmp> copy.txt
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"root note[39m
+    [32m"[39m
+    Received: [31mnull[39m
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      478 |       const copyPath = path.join(workspace.repoPath, file.dir, `${file.name} copy${file.ext}`);
+      479 |       await page.getByRole("menuitem", { name: "Duplicate", exact: true }).click();
+    > 480 |       await expect
+          |       ^
+      481 |         .poll(() => readFileIfPresent(copyPath), { message: `Expected duplicate at ${copyPath}` })
+      482 |         .toBe(content);
+      483 |     });
+        at <worktree>/packages/app/e2e/browser/changes-pane.spec.ts:480:7
+        at <worktree>/packages/app/e2e/browser/changes-pane.spec.ts:476:5
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--40e50-t-note-txt-from-project-src-browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: browser-console (text/plain) ────────────────────────────────────────────────────
+    [console:info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    [console:log] Running application "main" with appParams:
+     {rootTag: #root, hydrate: undefined} 
+    Development-level warnings: ON.
+    Performance optimizations: OFF.
+    [co...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--40e50-t-note-txt-from-project-src-browser/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--40e50-t-note-txt-from-project-src-browser/error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--40e50-t-note-txt-from-project-src-browser/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../paseo-qa/8125/red-artifacts/changes-pane-changes-file--40e50-t-note-txt-from-project-src-browser/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve src/use-mounted-tab-set.ts from project src 
+    [browser] › packages/app/e2e/browser/changes-pane.spec.ts:459:7 › changes file actions resolve a-root-note.txt from project src 
+  1 passed (48.5s)
+Restored final production source after original-code red check

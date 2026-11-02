@@ -1,0 +1,21 @@
+Metro PID 79629, port 56243; Expo start without --web
+
+Running 1 test using 1 worker
+
+(node:79673) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:79673) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 56260, home: <worktree>/.dev/qa8125/test-home/worker-0
+OLD Copy path for src/use-mounted-tab-set.ts: <tmp>
+OLD Open file for src/use-mounted-tab-set.ts: File not found with Retry
+OLD Download for src/use-mounted-tab-set.ts: visible ENOENT error toast
+OLD Copy path for a-root-note.txt: <tmp>
+OLD Open file for a-root-note.txt: File not found with Retry
+OLD Download for a-root-note.txt: visible ENOENT error toast
+  ✓  1 [browser] › packages/app/e2e/browser/changes-pane.spec.ts:439:5 › changes file actions resolve before workflow from project src (4.8s)
+[e2e] Worker 0 daemon stopped
+Metro stopped
+
+  1 passed (14.2s)
+Restored final source and regression spec

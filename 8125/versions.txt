@@ -1,0 +1,28 @@
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.2
+BuildVersion:		26B123
+
+$ uname -sm
+Darwin arm64
+
+$ node --version
+v24.2.0
+
+$ npm --version
+11.21.1
+
+$ git --version
+git version 2.56.0
+
+$ gh --version
+gh version 2.103.3 (2026-10-26)
+https://github.com/cli/cli/releases/tag/v2.103.3
+
+$ node -p require("playwright/package.json").version
+1.58.2
+
+$ ~/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --version
+Google Chrome for Testing 145.0.7632.6
+
+No agent provider CLI was invoked directly for this task. No provider credentials were read.

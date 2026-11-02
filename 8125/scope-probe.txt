@@ -1,0 +1,5 @@
+status.repoRoot resolves current worktree root: <tmp>
+cwd=project rejects sibling read/download: Access outside of workspace is not allowed
+cwd=repoRoot accepts sibling read/download; file content and filename match (token omitted)
+existing absolute-file preview target cwd=/ accepts sibling observation
+linked worktree status.repoRoot differs from mainRepoRoot; repoRoot reads linked contents, main root reads original contents
