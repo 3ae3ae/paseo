@@ -1,0 +1,37 @@
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/app/src/utils/project-placement.test.ts (5 tests | 1 failed) 6ms
+     × keeps unrelated default-root worktrees distinct when placement is undefined 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/app/src/utils/project-placement.test.ts > project-placement > keeps unrelated default-root worktrees distinct when placement is undefined
+AssertionError: expected [ '/home/alice', '/home/alice' ] to deeply equal [ …(2) ]
+
+- Expected
++ Received
+
+  [
+-   "/home/alice/.paseo/worktrees/project-hash-a/feature-a",
+-   "/home/alice/.paseo/worktrees/project-hash-b/feature-b",
++   "/home/alice",
++   "/home/alice",
+  ]
+
+ ❯ packages/app/src/utils/project-placement.test.ts:14:67
+     12|       const placements = cwds.map((cwd) => resolveProjectPlacement({ p…
+     13|
+     14|       expect(placements.map((placement) => placement.projectKey)).toEq…
+       |                                                                   ^
+     15|       expect(placements.map((placement) => placement.projectName)).toE…
+     16|         "feature-a",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (5)
+   Start at  14:05:38
+   Duration  131ms (transform 29ms, setup 0ms, import 38ms, tests 6ms, environment 0ms)
+

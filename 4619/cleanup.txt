@@ -1,0 +1,10 @@
+Remaining issue4619 daemon homes: []
+$ lsof -nP -iTCP:49681 -sTCP:LISTEN
+Exit code: 1 (1 means no listener)
+$ lsof -nP -iTCP:49756 -sTCP:LISTEN
+Exit code: 1 (1 means no listener)
+ M packages/app/src/utils/agent-directory-sync.test.ts
+ M packages/app/src/utils/agent-grouping.test.ts
+ M packages/app/src/utils/agent-grouping.ts
+ M packages/app/src/utils/project-placement.test.ts
+ M packages/app/src/utils/project-placement.ts

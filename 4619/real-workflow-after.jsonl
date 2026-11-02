@@ -1,0 +1,3 @@
+{"daemonVersion":"0.15.0-beta.1","port":49756}
+{"stage":"authoritative-directory","cwds":["<worktree>/.dev/issue4619-DTTOOl/.paseo/worktrees/1j2ea7wt/feature-a","<worktree>/.dev/issue4619-DTTOOl/.paseo/worktrees/1ozohkdv/feature-b"],"projectKeys":["prj_4f968a73c16d920d","prj_a5f02188ab997c78"]}
+{"stage":"timeline-first-catch-up","fallbackKeys":["<worktree>/.dev/issue4619-DTTOOl/.paseo/worktrees/1j2ea7wt/feature-a","<worktree>/.dev/issue4619-DTTOOl/.paseo/worktrees/1ozohkdv/feature-b"]}

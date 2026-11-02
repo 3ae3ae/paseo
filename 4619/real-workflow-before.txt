@@ -1,0 +1,53 @@
+$ [all inherited PASEO_* unset; ISSUE4619_PHASE=before] npx vitest run src/utils/issue4619-workflow.local.e2e.test.ts --project=unit --bail=1
+
+ RUN  v4.1.7 <worktree>/packages/app
+
+(node:89445) [DEP0151] DeprecationWarning: Package <worktree>/node_modules/react-native-worklets/ has a "main" field set to "./lib/module/index", excluding the full filename and extension to the resolved file at "lib/module/index.js", imported from <worktree>/node_modules/react-native-reanimated/lib/module/initializers.js.
+ Automatic extension resolution of the "main" field is deprecated for ES modules.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+stderr | src/utils/issue4619-workflow.local.e2e.test.ts > real daemon placement and timeline-first catch-up
+[DraftStore] Attachment garbage collection failed Error: IndexedDB is unavailable in this runtime.
+    at ensureIndexedDb (<worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:27:11)
+    at <worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:34:21
+    at new Promise (<anonymous>)
+    at openAttachmentDb (<worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:33:10)
+    at Object.garbageCollect (<worktree>/packages/app/src/attachments/web/indexeddb-attachment-store.ts:192:24)
+    at <worktree>/packages/app/src/attachments/service.ts:188:17
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+ ❯ |unit| src/utils/issue4619-workflow.local.e2e.test.ts (1 test | 1 failed) 3003ms
+   × real daemon placement and timeline-first catch-up 3001ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |unit| src/utils/issue4619-workflow.local.e2e.test.ts > real daemon placement and timeline-first catch-up
+AssertionError: expected [ …(2) ] to deeply equal [ …(2) ]
+
+- Expected
++ Received
+
+  [
+-   "<worktree>/.dev/issue4619-b5cFK8/.paseo/worktrees/1wosdmni/feature-a",
+-   "<worktree>/.dev/issue4619-b5cFK8/.paseo/worktrees/0rlfgclu/feature-b",
++   "<worktree>/.dev/issue4619-b5cFK8",
++   "<worktree>/.dev/issue4619-b5cFK8",
+  ]
+
+ ❯ src/utils/issue4619-workflow.local.e2e.test.ts:130:26
+    128|     );
+    129|     record({ stage: "timeline-first-catch-up", fallbackKeys });
+    130|     expect(fallbackKeys).toEqual(agents.map((agent) => agent.cwd));
+       |                          ^
+    131|   } finally {
+    132|     useSessionStore.getState().clearSession(serverId);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  14:13:09
+   Duration  10.25s (transform 5.74s, setup 29ms, import 7.12s, tests 3.00s, environment 0ms)
+
+
+Exit code: 1
