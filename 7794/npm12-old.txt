@@ -1,0 +1,48 @@
+label: npm12-old node: v24.15.0
+npm verbose cli <evidence>/tools/node-v24.15.0-darwin-arm64/bin/node <evidence>/tools/node_modules/.bin/npm
+npm info using npm@12.2.1
+npm info using node@v24.15.0
+npm verbose cwd <worktree>
+npm verbose os Darwin 27.2.0
+npm verbose node v24.15.0
+npm verbose npm  v12.2.1
+npm verbose exit 0
+npm info ok
+npm: 12.2.1
+registry target: {
+  version: '1.1.0',
+  resolved: 'https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-1.1.0.tgz',
+  integrity: 'sha512-WULp1S5n1XDcaucHf7r2vN3ZEo6bAio098WYpm2cCifNdaBF63dCVTcAjwlYUqfk9kbStI1TJz+vnDkrgCbNZg=='
+}
+Error: Command failed: <evidence>/tools/node_modules/.bin/npm install --ignore-scripts --legacy-peer-deps --no-audit --no-fund --package-lock=true --lockfile-version=3 --include=prod --omit=dev --global=false --workspaces=false
+npm verbose cli <evidence>/tools/node-v24.15.0-darwin-arm64/bin/node <evidence>/tools/node_modules/.bin/npm
+npm info using npm@12.2.1
+npm info using node@v24.15.0
+npm verbose title npm install
+npm verbose argv "install" "--ignore-scripts" "--legacy-peer-deps" "--no-audit" "--no-fund" "--package-lock" "true" "--lockfile-version" "3" "--include" "prod" "--omit" "dev" "--global" "false" "--workspaces" "false"
+npm verbose logfile logs-max:10 dir:/tmp/paseo-7794-real-ny4DSg/cache/_logs/2026-11-02T05_06_45_360Z-
+npm verbose logfile /tmp/paseo-7794-real-ny4DSg/cache/_logs/2026-11-02T05_06_45_360Z-debug-0.log
+npm verbose stack Error: Fetching packages of type "remote" have been disabled
+npm verbose stack     at #checkAllow (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:854:7)
+npm verbose stack     at #nodeFromSpec (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1496:23)
+npm verbose stack     at #nodeFromEdge (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1307:43)
+npm verbose stack     at #buildDepStep (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1144:39)
+npm verbose stack     at #buildDeps (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:995:30)
+npm verbose stack     at Arborist.buildIdealTree (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:188:28)
+npm verbose stack     at async Promise.all (index 1)
+npm verbose stack     at async Arborist.reify (<evidence>/tools/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:118:5)
+npm verbose stack     at async Install.exec (<evidence>/tools/node_modules/npm/lib/commands/install.js:176:5)
+npm verbose stack     at async Npm.exec (<evidence>/tools/node_modules/npm/lib/npm.js:194:9)
+npm error code EALLOWREMOTE
+npm error Fetching packages of type "remote" have been disabled
+npm error Refusing to fetch "paseo-cafe@https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-1.1.0.tgz"
+npm verbose cwd /private/tmp/paseo-7794-real-ny4DSg/installation
+npm verbose os Darwin 27.2.0
+npm verbose node v24.15.0
+npm verbose npm  v12.2.1
+npm verbose exit 1
+npm verbose code 1
+npm error A complete log of this run can be found in: /tmp/paseo-7794-real-ny4DSg/cache/_logs/2026-11-02T05_06_45_360Z-debug-0.log
+
+PASS: old acquireNpm refused the reviewed root URL with EALLOWREMOTE
+npm warning lines: []

@@ -1,0 +1,25 @@
+npm notice run paseo@0.15.0-beta.1 npx
+npm notice run 'vitest' run packages/server/src/server/plugins/managed-source.posix.test.ts -t installs and updates only the npm artifacts pinned by the plugin registry --bail=1
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/plugins/managed-source.posix.test.ts (11 tests | 1 failed | 10 skipped) 860ms
+   × installs and updates only the npm artifacts pinned by the plugin registry 859ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/plugins/managed-source.posix.test.ts > installs and updates only the npm artifacts pinned by the plugin registry
+Error: Command failed: <evidence>/tools/node_modules/.bin/npm install --ignore-scripts --legacy-peer-deps --no-audit --no-fund --package-lock=true --lockfile-version=3 --include=prod --omit=dev --global=false --workspaces=false
+npm error code EALLOWREMOTE
+npm error Fetching packages of type "remote" have been disabled
+npm error Refusing to fetch "paseo-fixture-plugin@http://127.0.0.1:49861/artifacts/1.tgz"
+npm error A complete log of this run can be found in: ~/.npm/_logs/2026-11-02T05_13_47_152Z-debug-0.log
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 skipped (11)
+   Start at  14:13:45
+   Duration  1.59s (transform 408ms, setup 0ms, import 649ms, tests 860ms, environment 0ms)
+

@@ -1,0 +1,29 @@
+node: v24.15.0 npm: 12.2.1
+$ npm pack --ignore-scripts --json <version-1-directory> <version-2-directory>
+{
+  "paseo-pack-format-fixture": {
+    "id": "paseo-pack-format-fixture@2.0.0",
+    "name": "paseo-pack-format-fixture",
+    "version": "2.0.0",
+    "size": 150,
+    "unpackedSize": 54,
+    "shasum": "a1fd95b7a1c06c0f28f5c864c8d6fa8acd2a96fe",
+    "integrity": "sha512-w9ukXELj/rNz1lk7JjUrRpizPu5BFdP16KgAAa8Bx1JMga1OstKY0J+BoppRFTOB2JE6gQNpl+n2kMXacje96w==",
+    "filename": "paseo-pack-format-fixture-2.0.0.tgz",
+    "files": [
+      {
+        "path": "package.json",
+        "size": 54,
+        "mode": 420
+      }
+    ],
+    "entryCount": 1,
+    "bundled": []
+  }
+}
+
+$ npm pack --ignore-scripts <version-1-directory> <version-2-directory>
+paseo-pack-format-fixture-1.0.0.tgz
+paseo-pack-format-fixture-2.0.0.tgz
+
+PASS: JSON retains only the later same-name version; plain filename output retains both in argument order

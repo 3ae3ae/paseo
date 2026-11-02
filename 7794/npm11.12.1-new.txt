@@ -1,0 +1,26 @@
+label: npm11-new node: v24.15.0
+npm verbose cli <evidence>/tools/node-v24.15.0-darwin-arm64/bin/node <evidence>/tools/node-v24.15.0-darwin-arm64/bin/npm
+npm info using npm@11.12.1
+npm info using node@v24.15.0
+npm verbose cwd <worktree>
+npm verbose os Darwin 27.2.0
+npm verbose node v24.15.0
+npm verbose npm  v11.12.1
+npm verbose exit 0
+npm info ok
+npm: 11.12.1
+registry target: {
+  version: '1.1.0',
+  resolved: 'https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-1.1.0.tgz',
+  integrity: 'sha512-WULp1S5n1XDcaucHf7r2vN3ZEo6bAio098WYpm2cCifNdaBF63dCVTcAjwlYUqfk9kbStI1TJz+vnDkrgCbNZg=='
+}
+installed artifact: {
+  packageName: 'paseo-cafe',
+  version: '1.1.0',
+  resolved: 'https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-1.1.0.tgz',
+  integrity: 'sha512-WULp1S5n1XDcaucHf7r2vN3ZEo6bAio098WYpm2cCifNdaBF63dCVTcAjwlYUqfk9kbStI1TJz+vnDkrgCbNZg=='
+}
+PASS: real acquireNpm installed the unchanged reviewed URL and matched version/resolved/integrity
+npm warning lines: [
+  '11 warn Unknown cli config "--allow-remote". This will stop working in the next major version of npm.'
+]

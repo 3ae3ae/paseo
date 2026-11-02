@@ -1,0 +1,14 @@
+node: v24.15.0 npm: 12.2.1
+Error: Command failed: <evidence>/tools/node_modules/.bin/npm install --ignore-scripts --allow-remote=root --legacy-peer-deps --no-audit --no-fund --package-lock=true --lockfile-version=3 --include=prod --omit=dev --global=false --workspaces=false
+npm error code EALLOWREMOTE
+npm error Fetching non-root packages of type "remote" have been disabled
+npm error Refusing to fetch "paseo-nested-url-child@http://127.0.0.1:65343/child.tgz"
+npm error A complete log of this run can be found in: /tmp/paseo-7794-nested-7CppLL/cache/_logs/2026-11-02T05_09_08_252Z-debug-0.log
+
+PASS: real acquireNpm fetched the reviewed root URL and refused its nested URL before fetching it
+requests with --allow-remote=root: [ '/parent.tgz' ]
+allow-all control stdout: 
+added 2 packages in 2s
+
+allow-all control stderr: 
+PASS: the identical nested URL installs with allow-remote=all; no fixture code was loaded

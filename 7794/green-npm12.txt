@@ -1,0 +1,11 @@
+npm notice run paseo@0.15.0-beta.1 npx
+npm notice run 'vitest' run packages/server/src/server/plugins/managed-source.posix.test.ts -t installs and updates only the npm artifacts pinned by the plugin registry --bail=1
+
+ RUN  v4.1.7 <worktree>
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 10 skipped (11)
+   Start at  14:14:45
+   Duration  1.78s (transform 175ms, setup 0ms, import 300ms, tests 1.42s, environment 0ms)
+
