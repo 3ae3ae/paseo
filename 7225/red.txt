@@ -1,0 +1,175 @@
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/mapping.test.ts (1 test | 1 failed) 5ms
+   × normalizes v2 model capabilities, variants, and visible primary modes 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/opencode/v2/mapping.test.ts > normalizes v2 model capabilities, variants, and visible primary modes
+AssertionError: expected [ { provider: 'opencode', …(5) } ] to deeply equal [ { provider: 'opencode', …(6) } ]
+
+- Expected
++ Received
+
+@@ -1,9 +1,8 @@
+  [
+    {
+      "contextWindowMaxTokens": 200000,
+-     "defaultThinkingOptionId": "default",
+      "id": "provider/model",
+      "label": "Model",
+      "metadata": {
+        "contextWindowMaxTokens": 200000,
+        "modelId": "model",
+@@ -11,15 +10,10 @@
+        "supportsAttachments": true,
+        "supportsToolCall": true,
+      },
+      "provider": "opencode",
+      "thinkingOptions": [
+-       {
+-         "id": "default",
+-         "isDefault": true,
+-         "label": "Default",
+-       },
+        {
+          "id": "high",
+          "label": "high",
+        },
+      ],
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/mapping.test.ts:19:79
+     17|     limit: { context: 200000, output: 10000 },
+     18|   };
+     19|   expect(modelsFromV2([model, { ...model, id: "disabled", enabled: fal…
+       |                                                                               ^
+     20|     {
+     21|       provider: "opencode",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  14:17:14
+   Duration  118ms (transform 16ms, setup 0ms, import 22ms, tests 5ms, environment 0ms)
+
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/agent.test.ts (36 tests | 1 failed | 34 skipped) 8ms
+     × creates a session with Default without sending a variant 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/opencode/v2/agent.test.ts > OpenCode v2 session lifecycle > creates a session with Default without sending a variant
+AssertionError: expected { providerID: 'test', …(2) } to deeply equal { providerID: 'test', id: 'model' }
+
+- Expected
++ Received
+
+  {
+    "id": "model",
+    "providerID": "test",
++   "variant": "default",
+  }
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/agent.test.ts:486:41
+    484|     });
+    485|     try {
+    486|       expect(harness.creates[0]?.model).toEqual({ providerID: "test", …
+       |                                         ^
+    487|     } finally {
+    488|       await session.close();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 34 skipped (36)
+   Start at  14:18:43
+   Duration  342ms (transform 164ms, setup 0ms, import 275ms, tests 8ms, environment 0ms)
+
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/agent.test.ts (36 tests | 1 failed | 35 skipped) 8ms
+     × Default clears a selected variant from the wire, runtime, and persistence 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/opencode/v2/agent.test.ts > OpenCode v2 session lifecycle > Default clears a selected variant from the wire, runtime, and persistence
+AssertionError: expected [ { sessionID: 'session', …(1) } ] to deeply equal [ { sessionID: 'session', …(1) } ]
+
+- Expected
++ Received
+
+  [
+    {
+      "model": {
+        "id": "model",
+        "providerID": "test",
++       "variant": "default",
+      },
+      "sessionID": "session",
+    },
+  ]
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/agent.test.ts:508:24
+    506|     try {
+    507|       await session.setThinkingOption!("default");
+    508|       expect(switches).toEqual([{ sessionID: "session", model: { provi…
+       |                        ^
+    509|       expect((await session.getRuntimeInfo()).thinkingOptionId).toBeNu…
+    510|       expect(session.describePersistence().metadata?.thinkingOptionId)…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 35 skipped (36)
+   Start at  14:18:56
+   Duration  317ms (transform 163ms, setup 0ms, import 251ms, tests 8ms, environment 0ms)
+
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/configuration.test.ts (7 tests | 1 failed) 6ms
+     × Default clears the previous variant when resuming with model undefined 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/opencode/v2/configuration.test.ts > OpenCode v2 resume variants > Default clears the previous variant when resuming with model undefined
+AssertionError: expected [ { sessionID: 'session', …(1) } ] to deeply equal [ { sessionID: 'session', …(1) } ]
+
+- Expected
++ Received
+
+  [
+    {
+      "model": {
+        "id": "model",
+        "providerID": "test",
++       "variant": "default",
+      },
+      "sessionID": "session",
+    },
+  ]
+
+ ❯ packages/server/src/server/agent/providers/opencode/v2/configuration.test.ts:78:22
+     76|     await applyResumeOverrides(harness.api, harness.info, { model, thi…
+     77|     const expected = { providerID: "test", id: model ? "other" : "mode…
+     78|     expect(switches).toEqual([{ sessionID: "session", model: expected …
+       |                      ^
+     79|     expect(harness.info.model).toEqual(expected);
+     80|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (7)
+   Start at  14:19:46
+   Duration  115ms (transform 27ms, setup 0ms, import 49ms, tests 6ms, environment 0ms)
+

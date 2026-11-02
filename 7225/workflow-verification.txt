@@ -1,0 +1,1 @@
+PASS: CLI options, medium→Default requests, native variant omission, Default creation, and resume.

@@ -1,0 +1,40 @@
+{
+  "model": "qa/qa-model",
+  "providers": {
+    "qa": {
+      "name": "QA local stub",
+      "package": "@ai-sdk/openai-compatible",
+      "settings": {
+        "baseURL": "http://127.0.0.1:54926/v1"
+      },
+      "models": {
+        "qa-model": {
+          "name": "QA model",
+          "capabilities": {
+            "tools": true,
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "variants": [
+            {
+              "id": "low",
+              "body": {
+                "reasoning_effort": "low"
+              }
+            },
+            {
+              "id": "medium",
+              "body": {
+                "reasoning_effort": "medium"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "before": [
+    {
+      "path": "/v1/chat/completions",
+      "model": "qa-model",
+      "reasoning_effort": "medium",
+      "reasoningFieldPresent": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "qa-model",
+      "reasoning_effort": null,
+      "reasoningFieldPresent": false
+    }
+  ],
+  "after": [
+    {
+      "path": "/v1/chat/completions",
+      "model": "qa-model",
+      "reasoning_effort": "medium",
+      "reasoningFieldPresent": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "qa-model",
+      "reasoning_effort": null,
+      "reasoningFieldPresent": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "qa-model",
+      "reasoning_effort": null,
+      "reasoningFieldPresent": false
+    }
+  ],
+  "resume": [
+    {
+      "path": "/v1/chat/completions",
+      "model": "qa-model",
+      "reasoning_effort": null,
+      "reasoningFieldPresent": false
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "model": "Flint 40B Free",
+    "id": "opencode/flint-40b-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "default",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "defaultThinkingOptionId": "default",
+    "thinkingOptions": "default, low, medium, high, xhigh, max"
+  },
+  {
+    "model": "Nemotron 3.5 Super VL Free",
+    "id": "opencode/nemotron-3.5-super-vl-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "default",
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "defaultThinkingOptionId": "default",
+    "thinkingOptions": "default, none, minimal, low, medium, high, xhigh"
+  },
+  {
+    "model": "Beam Free",
+    "id": "opencode/beam-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "default",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "defaultThinkingOptionId": "default",
+    "thinkingOptions": "default, low, medium, high, xhigh, max"
+  },
+  {
+    "model": "MiMo-V2.6-Flash Free",
+    "id": "opencode/mimo-v2.6-flash-free",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "DeepSeek V4.1 Flash Free",
+    "id": "opencode/deepseek-v4.1-flash-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "default",
+      "low",
+      "high",
+      "max"
+    ],
+    "defaultThinkingOptionId": "default",
+    "thinkingOptions": "default, low, high, max"
+  },
+  {
+    "model": "GLM-5.3-Flash Free",
+    "id": "opencode/glm-5.3-flash-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "default",
+      "low",
+      "high",
+      "max"
+    ],
+    "defaultThinkingOptionId": "default",
+    "thinkingOptions": "default, low, high, max"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "id": "opencode/nemotron-3.5-lightning-free",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "Big Pickle",
+    "id": "opencode/big-pickle",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "QA model",
+    "id": "qa/qa-model",
+    "description": "",
+    "thinkingOptionIds": [
+      "default",
+      "low",
+      "medium"
+    ],
+    "defaultThinkingOptionId": "default",
+    "thinkingOptions": "default, low, medium"
+  }
+]

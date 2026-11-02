@@ -1,0 +1,24 @@
+packages/server/src/server/agent/providers/opencode/v2/agent.test.ts: git merge-file exit 0 (clean)
+packages/server/src/server/agent/providers/opencode/v2/configuration.test.ts: git merge-file exit 1 (conflict)
+import { describe, expect, test } from "vitest";
+
+<<<<<<< <worktree>/packages/server/src/server/agent/providers/opencode/v2/configuration.test.ts
+import { V2Harness } from "../test-utils/v2-harness.js";
+
+import {
+  permissionRules,
+  requiresDedicatedV2Server,
+} from "./configuration.js";
+=======
+import { controls, permissionRules, requiresDedicatedV2Server } from "./configuration.js";
+>>>>>>> <evidence>/tools/head-configuration.test.ts
+
+} from "./configuration.js";
+=======
+import { controls, permissionRules, requiresDedicatedV2Server } from "./configuration.js";
+>>>>>>> <evidence>/tools/head-configuration.test.ts
+
+describe("OpenCode v2 permission rules", () => {
+  test("maps authored native permissions and exact injected MCP grants", () => {
+packages/server/src/server/agent/providers/opencode/v2/configuration.ts: git merge-file exit 0 (clean)
+packages/server/src/server/agent/providers/opencode/v2/session.ts: git merge-file exit 0 (clean)

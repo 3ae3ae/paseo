@@ -1,0 +1,148 @@
+[
+  {
+    "model": "LL Alpha Free",
+    "id": "opencode/ll-alpha-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "low, medium, high, xhigh, max"
+  },
+  {
+    "model": "Nemotron 3.5 Super VL Free",
+    "id": "opencode/nemotron-3.5-super-vl-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none, minimal, low, medium, high, xhigh"
+  },
+  {
+    "model": "Cat Jam Free",
+    "id": "opencode/cat-jam-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "low, medium, high, xhigh, max"
+  },
+  {
+    "model": "LongCat 2.5 Preview Free",
+    "id": "opencode/longcat-2.5-preview-free",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "Space Bunny Free",
+    "id": "opencode/space-bunny-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "low, medium, high, xhigh, max"
+  },
+  {
+    "model": "MiMo-V2.6-Flash Free",
+    "id": "opencode/mimo-v2.6-flash-free",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "DeepSeek V4.1 Flash Free",
+    "id": "opencode/deepseek-v4.1-flash-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "low",
+      "high",
+      "max"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "low, high, max"
+  },
+  {
+    "model": "Muse Spark 1.3 Free",
+    "id": "opencode/muse-spark-1.3-contributor-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "minimal, low, medium, high, xhigh"
+  },
+  {
+    "model": "GLM-5.3-Flash Free",
+    "id": "opencode/glm-5.3-flash-free",
+    "description": "",
+    "thinkingOptionIds": [
+      "low",
+      "high",
+      "max"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "low, high, max"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "id": "opencode/nemotron-3.5-lightning-free",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "Nemotron 3 Ultra Free",
+    "id": "opencode/nemotron-3-ultra-free",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "Big Pickle",
+    "id": "opencode/big-pickle",
+    "description": "",
+    "thinkingOptionIds": [],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "none"
+  },
+  {
+    "model": "QA model",
+    "id": "qa/qa-model",
+    "description": "",
+    "thinkingOptionIds": [
+      "low",
+      "medium"
+    ],
+    "defaultThinkingOptionId": null,
+    "thinkingOptions": "low, medium"
+  }
+]
