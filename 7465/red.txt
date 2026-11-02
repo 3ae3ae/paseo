@@ -1,0 +1,306 @@
+[metro] Skipping web setup: EXPO_NO_WEB_SETUP is enabled.
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Waiting on http://localhost:52292
+[metro] Logs for your project will appear below.
+[metro] | (node:92976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[metro] | (Use `node --trace-warnings ...` to show where the warning was created)
+[metro] Web Bundled 1548ms packages/app/index.ts (5735 modules)
+[e2e] Metro warmed on port 52292
+
+Running 1 test using 1 worker
+
+(node:93848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 52330, home: <worktree>/.dev/qa-7465/paseo-home/worker-0
+[metro] Web Bundled 208ms packages/app/index.ts (1 module)
+[metro] Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[metro] Web  LOG  Running application "main" with appParams:
+[metro]  {"hydrate": undefined, "rootTag": "#root"} 
+[metro] Development-level warnings: ON.
+[metro] Performance optimizations: OFF.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/actions.ts -> src/plugins/workspace-panels/locations.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/navigation-active-workspace-store/index.ts -> src/workspace-tabs/navigation.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/navigation-active-workspace-store/index.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/react-native/ui.ts -> src/plugins/react-native/markdown.tsx -> src/components/markdown/renderer.tsx -> src/agent-commands/index.tsx -> src/agent-commands/use-query.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/themes/index.ts -> src/plugins/registry.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/runtime/directory-sync/index.ts -> src/runtime/directory-sync/agent-replica.ts -> src/hooks/use-archive-agent.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/components/sidebar-workspace-list.tsx -> src/components/sidebar/sidebar-status-list.tsx -> src/components/sidebar/sidebar-workspace-row-content.tsx -> src/components/workspace-hover-card.tsx -> src/components/sidebar-workspace-list.tsx
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+[metro] Web Bundled 61ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+[metro] Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+[metro] Web Bundled 202ms packages/app/index.ts (1 module)
+[metro] TypeError: Invalid URL
+[metro]     at new URL (node:internal/url:819:25)
+[metro]     at <worktree>/node_modules/@expo/cli/build/src/start/server/middleware/CorsMiddleware.js:56:40
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at <worktree>/node_modules/@expo/cli/build/src/start/server/middleware/ContextModuleSourceMapsMiddleware.js:27:13
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at middleware (<worktree>/node_modules/@expo/cli/build/src/start/server/middleware/ExpoMiddleware.js:106:24)
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at app.handle (<worktree>/node_modules/connect/index.js:186:3)
+[metro]     at Server.app (<worktree>/node_modules/connect/index.js:51:37)
+[metro]     at Server.emit (node:events:507:28)
+[metro]     at parserOnIncoming (node:_http_server:1155:12)
+[metro]     at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+[metro] Web  LOG  Running application "main" with appParams:
+[metro]  {"hydrate": undefined, "rootTag": "#root"} 
+[metro] Development-level warnings: ON.
+[metro] Performance optimizations: OFF.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/actions.ts -> src/plugins/workspace-panels/locations.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/navigation-active-workspace-store/index.ts -> src/workspace-tabs/navigation.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/navigation-active-workspace-store/index.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/react-native/ui.ts -> src/plugins/react-native/markdown.tsx -> src/components/markdown/renderer.tsx -> src/agent-commands/index.tsx -> src/agent-commands/use-query.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/themes/index.ts -> src/plugins/registry.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/runtime/directory-sync/index.ts -> src/runtime/directory-sync/agent-replica.ts -> src/hooks/use-archive-agent.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/components/sidebar-workspace-list.tsx -> src/components/sidebar/sidebar-status-list.tsx -> src/components/sidebar/sidebar-workspace-row-content.tsx -> src/components/workspace-hover-card.tsx -> src/components/sidebar-workspace-list.tsx
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+[metro] Web  WARN  [DraftStore] Failed to persist draft checkpoint [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.]
+[metro] Web  WARN  [DraftStore] Attachment garbage collection failed [TypeError: Failed to fetch]
+[metro] TypeError: Invalid URL
+[metro]     at new URL (node:internal/url:819:25)
+[metro]     at <worktree>/node_modules/@expo/cli/build/src/start/server/middleware/CorsMiddleware.js:56:40
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at <worktree>/node_modules/@expo/cli/build/src/start/server/middleware/ContextModuleSourceMapsMiddleware.js:16:24
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at middleware (<worktree>/node_modules/@expo/cli/build/src/start/server/middleware/ExpoMiddleware.js:106:24)
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at app.handle (<worktree>/node_modules/connect/index.js:186:3)
+[metro]     at Server.app (<worktree>/node_modules/connect/index.js:51:37)
+[metro]     at Server.emit (node:events:507:28)
+[metro]     at parserOnIncoming (node:_http_server:1155:12)
+[metro]     at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+[metro] TypeError: Invalid URL
+[metro]     at new URL (node:internal/url:819:25)
+[metro]     at <worktree>/node_modules/@expo/cli/build/src/start/server/middleware/CorsMiddleware.js:56:40
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at <worktree>/node_modules/@expo/cli/build/src/start/server/middleware/ContextModuleSourceMapsMiddleware.js:16:24
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at middleware (<worktree>/node_modules/@expo/cli/build/src/start/server/middleware/ExpoMiddleware.js:106:24)
+[metro]     at call (<worktree>/node_modules/connect/index.js:239:7)
+[metro]     at next (<worktree>/node_modules/connect/index.js:183:5)
+[metro]     at app.handle (<worktree>/node_modules/connect/index.js:186:3)
+[metro]     at Server.app (<worktree>/node_modules/connect/index.js:51:37)
+[metro]     at Server.emit (node:events:507:28)
+[metro]     at parserOnIncoming (node:_http_server:1155:12)
+[metro]     at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+[metro] Web  ERROR  [AppSettings] Failed to load settings: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: storage.ts
+[metro] [0m [90m 594 |[39m   key[33m:[39m string[33m,[39m
+[metro]  [90m 595 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mStoredAppSettings[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 596 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m     |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 597 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) {
+[metro]  [90m 598 |[39m     [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 599 |[39m   }[0m
+[metro] Call Stack
+[metro]   readSettingsObject (packages/app/src/hooks/use-settings/storage.ts:596:29)
+[metro]   readAppSettings (packages/app/src/hooks/use-settings/storage.ts:405:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/storage.ts:386:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/index.ts:272:40)
+[metro]   useQuery$argument_0.queryFn (packages/app/src/hooks/use-settings/index.ts:153:20)
+[metro] Web  ERROR  [SidebarCallouts] Failed to load dismissed callouts [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: validated-storage.ts
+[metro] [0m [90m 32 |[39m   schema[33m:[39m z[33m.[39m[33mZodType[39m[33m<[39m[33mValue[39m[33m>[39m[33m,[39m
+[metro]  [90m 33 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mValue[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 34 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m    |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 35 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 36 |[39m   [36mlet[39m decoded[33m:[39m unknown[33m;[39m
+[metro]  [90m 37 |[39m   [36mtry[39m {[0m
+[metro] Call Stack
+[metro]   readValidatedJson (packages/app/src/storage/validated-storage.ts:34:29)
+[metro]   loadDismissedKeys (packages/app/src/contexts/sidebar-callout-context.tsx:66:46)
+[metro]   useEffect$argument_0 (packages/app/src/contexts/sidebar-callout-context.tsx:82:10)
+[metro] Web  ERROR  [HostRuntime] Failed to load host registry from storage [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: validated-storage.ts
+[metro] [0m [90m 32 |[39m   schema[33m:[39m z[33m.[39m[33mZodType[39m[33m<[39m[33mValue[39m[33m>[39m[33m,[39m
+[metro]  [90m 33 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mValue[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 34 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m    |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 35 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 36 |[39m   [36mlet[39m decoded[33m:[39m unknown[33m;[39m
+[metro]  [90m 37 |[39m   [36mtry[39m {[0m
+[metro] Call Stack
+[metro]   readValidatedJson (packages/app/src/storage/validated-storage.ts:34:29)
+[metro]   HostRuntimeStore#loadFromStorage (packages/app/src/runtime/host-runtime.ts:1736:45)
+[metro]   HostRuntimeStore#loadRegistry (packages/app/src/runtime/host-runtime.ts:1727:32)
+[metro]   HostRuntimeStore#runBoot (packages/app/src/runtime/host-runtime.ts:1692:16)
+[metro]   HostRuntimeStore#boot (packages/app/src/runtime/host-runtime.ts:1685:31)
+[metro]   startHostRuntimeBootstrap (packages/app/src/navigation/host-runtime-bootstrap.ts:30:37)
+[metro]   useEffect$argument_0 (packages/app/src/app/_layout.tsx:266:30)
+[metro] Web  ERROR  [AppSettings] Failed to load settings: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: storage.ts
+[metro] [0m [90m 594 |[39m   key[33m:[39m string[33m,[39m
+[metro]  [90m 595 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mStoredAppSettings[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 596 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m     |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 597 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) {
+[metro]  [90m 598 |[39m     [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 599 |[39m   }[0m
+[metro] Call Stack
+[metro]   readSettingsObject (packages/app/src/hooks/use-settings/storage.ts:596:29)
+[metro]   readAppSettings (packages/app/src/hooks/use-settings/storage.ts:405:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/storage.ts:386:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/index.ts:272:40)
+[metro]   useQuery$argument_0.queryFn (packages/app/src/hooks/use-settings/index.ts:153:20)
+[metro] Web  ERROR  [AppSettings] Failed to load settings: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: storage.ts
+[metro] [0m [90m 594 |[39m   key[33m:[39m string[33m,[39m
+[metro]  [90m 595 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mStoredAppSettings[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 596 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m     |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 597 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) {
+[metro]  [90m 598 |[39m     [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 599 |[39m   }[0m
+[metro] Call Stack
+[metro]   readSettingsObject (packages/app/src/hooks/use-settings/storage.ts:596:29)
+[metro]   readAppSettings (packages/app/src/hooks/use-settings/storage.ts:405:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/storage.ts:386:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/index.ts:272:40)
+[metro]   useQuery$argument_0.queryFn (packages/app/src/hooks/use-settings/index.ts:153:20)
+[metro] Web  ERROR  [AppSettings] Failed to load settings: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: storage.ts
+[metro] [0m [90m 594 |[39m   key[33m:[39m string[33m,[39m
+[metro]  [90m 595 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mStoredAppSettings[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 596 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m     |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 597 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) {
+[metro]  [90m 598 |[39m     [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 599 |[39m   }[0m
+[metro] Call Stack
+[metro]   readSettingsObject (packages/app/src/hooks/use-settings/storage.ts:596:29)
+[metro]   readAppSettings (packages/app/src/hooks/use-settings/storage.ts:405:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/storage.ts:386:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/index.ts:272:40)
+[metro]   useQuery$argument_0.queryFn (packages/app/src/hooks/use-settings/index.ts:153:20)
+[metro] Web  ERROR  [KeyboardShortcutOverrides] Failed to load overrides: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: validated-storage.ts
+[metro] [0m [90m 32 |[39m   schema[33m:[39m z[33m.[39m[33mZodType[39m[33m<[39m[33mValue[39m[33m>[39m[33m,[39m
+[metro]  [90m 33 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mValue[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 34 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m    |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 35 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 36 |[39m   [36mlet[39m decoded[33m:[39m unknown[33m;[39m
+[metro]  [90m 37 |[39m   [36mtry[39m {[0m
+[metro] Call Stack
+[metro]   readValidatedJson (packages/app/src/storage/validated-storage.ts:34:29)
+[metro]   loadOverridesFromStorage (packages/app/src/hooks/use-keyboard-shortcut-overrides.ts:83:31)
+[metro] Web  ERROR  [AppSettings] Failed to load settings: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: storage.ts
+[metro] [0m [90m 594 |[39m   key[33m:[39m string[33m,[39m
+[metro]  [90m 595 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mStoredAppSettings[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 596 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m     |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 597 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) {
+[metro]  [90m 598 |[39m     [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 599 |[39m   }[0m
+[metro] Call Stack
+[metro]   readSettingsObject (packages/app/src/hooks/use-settings/storage.ts:596:29)
+[metro]   readAppSettings (packages/app/src/hooks/use-settings/storage.ts:405:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/storage.ts:386:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/index.ts:272:40)
+[metro]   useQuery$argument_0.queryFn (packages/app/src/hooks/use-settings/index.ts:153:20)
+[metro] Web  ERROR  [AppSettings] Failed to load settings: [SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.] 
+[metro] Code: storage.ts
+[metro] [0m [90m 594 |[39m   key[33m:[39m string[33m,[39m
+[metro]  [90m 595 |[39m )[33m:[39m [33mPromise[39m[33m<[39m[33mStoredAppSettings[39m [33m|[39m [36mnull[39m[33m>[39m {
+[metro] [31m[1m>[22m[39m[90m 596 |[39m   [36mconst[39m raw [33m=[39m [36mawait[39m storage[33m.[39mgetItem(key)[33m;[39m
+[metro]  [90m     |[39m                             [31m[1m^[22m[39m
+[metro]  [90m 597 |[39m   [36mif[39m (raw [33m===[39m [36mnull[39m) {
+[metro]  [90m 598 |[39m     [36mreturn[39m [36mnull[39m[33m;[39m
+[metro]  [90m 599 |[39m   }[0m
+[metro] Call Stack
+[metro]   readSettingsObject (packages/app/src/hooks/use-settings/storage.ts:596:29)
+[metro]   readAppSettings (packages/app/src/hooks/use-settings/storage.ts:405:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/storage.ts:386:24)
+[metro]   loadAppSettingsFromStorage (packages/app/src/hooks/use-settings/index.ts:272:40)
+[metro]   useQuery$argument_0.queryFn (packages/app/src/hooks/use-settings/index.ts:153:20)
+[e2e] Worker 0 daemon stopped
+  ✘  1 [browser] › e2e/browser/file-editing.spec.ts:829:7 › CodeMirror workspace file editing › keeps HTML fragment links in the preview and scrolls to the target (13.7s)
+[e2e] Metro stopped
+
+
+  1) [browser] › e2e/browser/file-editing.spec.ts:829:7 › CodeMirror workspace file editing › keeps HTML fragment links in the preview and scrolls to the target 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeInViewport[2m([22m[2m)[22m failed
+
+    Locator: locator('[data-testid="file-html-preview"]').contentFrame().getByRole('heading', { name: 'Target section' })
+    Expected: in viewport
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeInViewport" with timeout 10000ms[22m
+    [2m  - waiting for locator('[data-testid="file-html-preview"]').contentFrame().getByRole('heading', { name: 'Target section' })[22m
+
+
+      849 |     await preview.document.getByRole("link", { name: "Jump to section" }).click();
+      850 |
+    > 851 |     await expect(preview.document.getByRole("heading", { name: "Target section" })).toBeInViewport();
+          |                                                                                     ^
+      852 |     expect(await preview.document.locator("body").evaluate(() => location.href)).toBe(
+      853 |       "about:srcdoc#section",
+      854 |     );
+        at <worktree>/packages/app/e2e/browser/file-editing.spec.ts:851:85
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../paseo-qa/7465/before/file-editing-CodeMirror-wo-07102-w-and-scrolls-to-the-target-browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: browser-console (text/plain) ────────────────────────────────────────────────────
+    [console:info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    [console:log] Running application "main" with appParams:
+     {rootTag: #root, hydrate: undefined} 
+    Development-level warnings: ON.
+    Performance optimizations: OFF.
+    [co...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../../paseo-qa/7465/before/file-editing-CodeMirror-wo-07102-w-and-scrolls-to-the-target-browser/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../paseo-qa/7465/before/file-editing-CodeMirror-wo-07102-w-and-scrolls-to-the-target-browser/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../paseo-qa/7465/before/file-editing-CodeMirror-wo-07102-w-and-scrolls-to-the-target-browser/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../paseo-qa/7465/before/file-editing-CodeMirror-wo-07102-w-and-scrolls-to-the-target-browser/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [browser] › e2e/browser/file-editing.spec.ts:829:7 › CodeMirror workspace file editing › keeps HTML fragment links in the preview and scrolls to the target 

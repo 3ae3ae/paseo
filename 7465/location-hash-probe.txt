@@ -1,0 +1,14 @@
+Chromium 145.0.7632.6
+before {
+  url: 'about:srcdoc',
+  base: 'http://127.0.0.1:51950/preview',
+  href: 'http://127.0.0.1:51950/preview#section'
+}
+after {
+  url: 'about:srcdoc#section',
+  hashchange: '#section',
+  scrollY: 1246,
+  top: -0.09375,
+  color: 'rgb(255, 0, 0)'
+}
+PASS: location.hash preserves srcdoc, scrolling, :target and hashchange

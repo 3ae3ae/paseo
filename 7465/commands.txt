@@ -1,0 +1,30 @@
+Working directory: <worktree>
+
+Final real daemon + web app workflow (only bundled chromium-headless-shell, Metro without --web):
+node .dev/qa-7465/run-playwright.mjs --project=browser e2e/browser/file-editing.spec.ts -g 'HTML fragment|HTML page prevent|HTML plan|inline scripts|app origin and storage' --output=<evidence>/final-chromium > <evidence>/final-chromium.txt 2>&1
+
+Repeated-click regression before the supplemental fix (same headless-only setup):
+node .dev/qa-7465/run-playwright.mjs --project=browser e2e/browser/file-editing.spec.ts -g 'handles HTML fragment targets' --output=<evidence>/repeat-before > <evidence>/repeat-red.txt 2>&1
+
+Video capture using the real isolated daemon and file pane:
+node .dev/qa-7465/run-playwright.mjs --config=../../.dev/qa-7465/video.config.ts --project=browser --output=<evidence>/recording > <evidence>/recording.txt 2>&1
+
+Supplemental real HTTP + headless-shell browser checks:
+DEBUG=pw:browser node --import tsx <evidence>/navigation-probe.mjs > <evidence>/navigation-probe.txt 2>&1
+
+Neighbouring unit tests (working directory packages/app):
+npx vitest run src/file-panels/html-preview-csp.test.ts src/file-panels/html-preview-navigation.test.ts --bail=1
+
+Static checks (raw output in checks.txt):
+npm run format:files -- packages/app/src/file-panels/html-preview-csp.ts packages/app/e2e/browser/file-editing.spec.ts
+npm run typecheck
+npm run lint
+npm run format:check
+
+Historical original-code reproduction command:
+node .dev/qa-7465/run-playwright.mjs --project=browser e2e/browser/file-editing.spec.ts -g 'keeps HTML fragment links' --output=<evidence>/before > <evidence>/red.txt 2>&1
+At that time run-playwright.mjs used the stock Playwright global setup, which spawned Expo with --web and BROWSER=none. The wrapper has since been changed to use headless-setup.ts, CI=1, and no --web.
+An optional headless WebKit run also happened before the screen restriction. WebKit MiniBrowser.app and Expo --web could have opened a window or affected focus despite headless/BROWSER=none. Both were stopped. No Firefox, headed mode, Electron, desktop control, osascript, or open command was used.
+
+Isolation:
+The wrapper removes inherited PASEO_* and E2E_* environment variables. Daemon state is under .dev/qa-7465/paseo-home; the harness selects a separate free port and tears down daemon and Metro after each run.
