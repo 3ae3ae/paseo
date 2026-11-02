@@ -1,0 +1,10 @@
+[User] Run exactly these two separate shell tool calls, sequentially, with no retries and no file changes. First: rg -n 'a_string_not_present' existing.txt . Second: invoke the shell tool with command pwd and its workdir argument set to <worktree>/.dev/qa-8210-fixture/missing-directory-8210 . That directory intentionally does not exist; do not create it, and do not replace the workdir argument with cd. Briefly report both results.
+I’ll run the two shell calls in order, without retries or file changes, then report their results.
+[Shell] rg -n 'a_string_not_present' existing.txt .
+[Shell] pwd
+---
+
+1. `rg` exited with code 1 and no output: no matches found.
+2. `pwd` could not start because the specified workdir does not exist (`os error 2`).
+
+No retries or file changes. No additional checks performed.

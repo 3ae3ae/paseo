@@ -1,0 +1,43 @@
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/codex/tool-call-mapper.test.ts (52 tests | 1 failed) 10ms
+     × reports command exit code 1 without changing failed status 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/codex/tool-call-mapper.test.ts > codex tool-call mapper > reports command exit code 1 without changing failed status
+AssertionError: expected { type: 'tool_call', …(5) } to match object { status: 'failed', …(2) }
+(3 matching properties omitted from actual)
+
+- Expected
++ Received
+
+@@ -4,9 +4,9 @@
+      "exitCode": 1,
+      "output": "diagnostic output",
+      "type": "shell",
+    },
+    "error": {
+-     "message": "Command exited with code 1",
++     "message": "Tool call failed",
+    },
+    "status": "failed",
+  }
+
+ ❯ packages/server/src/server/agent/providers/codex/tool-call-mapper.test.ts:167:20
+    165|       );
+    166|
+    167|       expect(item).toMatchObject({
+       |                    ^
+    168|         status: "failed",
+    169|         error: { message: `Command exited with code ${exitCode}` },
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 8 passed (52)
+   Start at  14:19:56
+   Duration  167ms (transform 57ms, setup 0ms, import 92ms, tests 10ms, environment 0ms)
+

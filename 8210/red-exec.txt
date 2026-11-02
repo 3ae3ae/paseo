@@ -1,0 +1,45 @@
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/codex-app-server-agent.test.ts (202 tests | 1 failed | 199 skipped) 12ms
+     × reports exec notification failure: 'Command exited with code 1' 11ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/codex-app-server-agent.test.ts > Codex app-server provider > reports exec notification failure: 'Command exited with code 1'
+AssertionError: expected { type: 'timeline', …(3) } to match object { type: 'timeline', item: { …(4) } }
+(4 matching properties omitted from actual)
+
+- Expected
++ Received
+
+@@ -5,11 +5,11 @@
+        "command": "rg missing existing.txt",
+        "output": "diagnostic output",
+        "type": "shell",
+      },
+      "error": {
+-       "message": "Command exited with code 1",
++       "message": "Command failed",
+      },
+      "status": "failed",
+    },
+    "type": "timeline",
+  }
+
+ ❯ packages/server/src/server/agent/providers/codex-app-server-agent.test.ts:4544:27
+    4542|     });
+    4543|
+    4544|     expect(events.at(-1)).toMatchObject({
+       |                           ^
+    4545|       type: "timeline",
+    4546|       item: {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 199 skipped (202)
+   Start at  14:19:57
+   Duration  1.17s (transform 757ms, setup 0ms, import 1.10s, tests 12ms, environment 0ms)
+

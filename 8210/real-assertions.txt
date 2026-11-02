@@ -1,0 +1,5 @@
+PASS: one final-build Codex prompt produced exactly two command rows.
+PASS: search returned exitCode 1 with Command exited with code 1.
+PASS: missing-workdir command returned exitCode -1 with Tool call failed; output confirms process creation failure.
+PASS: reload preserved both full command rows, including callIds, messages, outputs, exit codes and failed statuses.
+PASS: failed command count remains 2 before and after reload.

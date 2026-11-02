@@ -1,0 +1,36 @@
+{
+  "agentId": "2b2b3e0c-3376-4359-8f84-f3c6aa9689c3",
+  "workspaceId": "wks_d5c3a58d50d65e35",
+  "timeline": [
+    {
+      "type": "user_message",
+      "text": "Run exactly one shell command: rg -n 'a_string_not_present' existing.txt . Do not change files or retry. Then reply briefly with the exit code.",
+      "messageId": "01a19aa7-05f8-7a61-8722-e29db725c6b4"
+    },
+    {
+      "type": "assistant_message",
+      "text": "I’ll run the command once and report its exit code.",
+      "messageId": "msg_0a608fe2eded5da3016ae81a61b82881919f81b95c5b3b8079"
+    },
+    {
+      "type": "tool_call",
+      "callId": "exec-e74f9831-0e6b-490c-85ed-a46625bd0e06",
+      "name": "shell",
+      "status": "failed",
+      "error": {
+        "message": "Tool call failed"
+      },
+      "detail": {
+        "type": "shell",
+        "command": "rg -n 'a_string_not_present' existing.txt .",
+        "cwd": "<worktree>/.dev/qa-8210-fixture",
+        "exitCode": 1
+      }
+    },
+    {
+      "type": "assistant_message",
+      "text": "\n\n---\n\nExit code: 1. No files changed; no retry.",
+      "messageId": "msg_0a608fe2eded5da3016ae81a64624081918fe642b45357855f"
+    }
+  ]
+}

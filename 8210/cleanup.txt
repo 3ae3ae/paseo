@@ -1,0 +1,2 @@
+stopped: <worktree>/.dev/qa-8210-home
+Stopped isolated Metro process group 79394.

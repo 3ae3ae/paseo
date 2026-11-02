@@ -1,0 +1,6 @@
+[User] Run exactly one shell command: rg -n 'a_string_not_present' existing.txt . Do not change files or retry. Then reply briefly with the exit code.
+I’ll run the command once and report its exit code.
+[Shell] rg -n 'a_string_not_present' existing.txt .
+---
+
+Exit code: 1. No files changed; no retry.

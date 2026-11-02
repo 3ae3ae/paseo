@@ -1,0 +1,45 @@
+
+ RUN  v4.1.7 <worktree>
+
+ ❯ packages/server/src/server/agent/providers/codex-app-server-agent.test.ts (202 tests | 1 failed | 201 skipped) 12ms
+     × replays failed command exit codes and invocation errors from Codex history 11ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/server/src/server/agent/providers/codex-app-server-agent.test.ts > Codex app-server provider > replays failed command exit codes and invocation errors from Codex history
+AssertionError: expected [ { type: 'tool_call', …(5) }, …(1) ] to match object [ …(2) ]
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+@@ -4,11 +4,11 @@
+      "detail": {
+        "exitCode": 1,
+        "type": "shell",
+      },
+      "error": {
+-       "message": "Command exited with code 1",
++       "message": "Tool call failed",
+      },
+      "status": "failed",
+    },
+    {
+      "callId": "history-invocation",
+
+ ❯ packages/server/src/server/agent/providers/codex-app-server-agent.test.ts:5148:21
+    5146|     }
+    5147|
+    5148|     expect(history).toMatchObject([
+       |                     ^
+    5149|       {
+    5150|         callId: "history-exit",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 201 skipped (202)
+   Start at  14:19:59
+   Duration  1.11s (transform 723ms, setup 0ms, import 1.03s, tests 12ms, environment 0ms)
+
