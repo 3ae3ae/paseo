@@ -1,0 +1,12 @@
+{
+  "OS": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123",
+  "architecture": "arm64",
+  "Node": "v24.2.0",
+  "npm": "11.21.1",
+  "Bun": "1.4.4",
+  "OMP": "omp/18.3.0",
+  "Vitest": "4.1.6 (server regression runner; see green.txt)",
+  "Playwright": "1.58.2",
+  "browser": "Chromium 145.0.7632.6 (Playwright headless)",
+  "Paseo": "0.15.0-beta.1"
+}

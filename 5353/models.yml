@@ -1,0 +1,12 @@
+providers:
+  local-qa:
+    baseUrl: http://127.0.0.1:50854/v1
+    api: openai-completions
+    auth: none
+    models:
+      - id: qa-shell
+        name: Local scripted shell model
+        reasoning: false
+        input: [text]
+        contextWindow: 32768
+        maxTokens: 1024

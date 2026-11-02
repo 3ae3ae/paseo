@@ -1,0 +1,7 @@
+{
+  "action": "stopped",
+  "pid": 40967,
+  "forced": false,
+  "usedLifecycleRpc": false,
+  "home": "<worktree>/.dev/qa5353/paseo-home"
+}

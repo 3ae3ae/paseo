@@ -1,0 +1,16 @@
+Browser launch settings in every QA script: chromium.launch({headless:true}), no channel and no executablePath override.
+
+Installed Playwright executable selection:
+317:   getExecutableName(options) {
+318:     if (options.channel && import_registry.registry.isChromiumAlias(options.channel))
+319:       return "chromium";
+320:     if (options.channel === "chromium-tip-of-tree")
+321:       return options.headless ? "chromium-tip-of-tree-headless-shell" : "chromium-tip-of-tree";
+322:     if (options.channel)
+323:       return options.channel;
+324:     return options.headless ? "chromium-headless-shell" : "chromium";
+325:   }
+
+Web build command: npm run build:daemon-web-ui -> npm run build:web -> expo export --platform web. No expo start or --web flag.
+No computer-use, osascript, open, Electron, system Chrome, Firefox, WebKit, or application bundle was launched for QA. Browser page mouse movement was confined to the headless browser; no desktop input control was used.
+All QA browser instances closed in finally blocks. Expo export ended. Isolated daemon and model stub stopped. No QA browser or Metro process remains.

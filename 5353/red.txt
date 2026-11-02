@@ -1,0 +1,86 @@
+
+ RUN  v4.1.6 <worktree>/packages/server
+
+stdout | src/server/agent/providers/omp/agent.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+
+ ❯ src/server/agent/providers/omp/agent.test.ts (91 tests | 1 failed) 95ms
+     × classifies live 'bash' result [ { type: 'text', …(1) } ] with isError=true as 'canceled' 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/server/agent/providers/omp/agent.test.ts > OMP agent client and session > classifies live 'bash' result [ { type: 'text', …(1) } ] with isError=true as 'canceled'
+AssertionError: expected { type: 'tool_call', …(5) } to match object { type: 'tool_call', …(2) }
+(7 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   "error": null,
+-   "status": "canceled",
++   "error": "Command aborted",
++   "status": "failed",
+    "type": "tool_call",
+  }
+
+ ❯ src/server/agent/providers/omp/agent.test.ts:858:35
+    856|       isError,
+    857|     });
+    858|     expect(omp.timeline().at(-1)).toMatchObject({ type: "tool_call", s…
+       |                                   ^
+    859|   });
+    860|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (2)
+      Tests  1 failed | 34 passed (91)
+   Start at  14:16:52
+   Duration  490ms (transform 180ms, setup 17ms, import 313ms, tests 95ms, environment 0ms)
+
+
+ RUN  v4.1.6 <worktree>/packages/server
+
+stdout | src/server/agent/providers/omp/history-mapper.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+
+ ❯ src/server/agent/providers/omp/history-mapper.test.ts (27 tests | 1 failed) 6ms
+     × replays 'bash' result [ { type: 'text', …(1) } ] with isError=true as 'canceled' 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/server/agent/providers/omp/history-mapper.test.ts > OMP history mapper > replays 'bash' result [ { type: 'text', …(1) } ] with isError=true as 'canceled'
+AssertionError: expected { type: 'tool_call', …(5) } to match object { type: 'tool_call', …(2) }
+(7 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   "error": null,
+-   "status": "canceled",
++   "error": "Command aborted",
++   "status": "failed",
+    "type": "tool_call",
+  }
+
+ ❯ src/server/agent/providers/omp/history-mapper.test.ts:94:33
+     92|       },
+     93|     ]);
+     94|     expect(events.at(-1)?.item).toMatchObject({ type: "tool_call", sta…
+       |                                 ^
+     95|   });
+     96|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (27)
+   Start at  14:17:10
+   Duration  169ms (transform 70ms, setup 16ms, import 92ms, tests 6ms, environment 0ms)
+

@@ -1,0 +1,9 @@
+
+ RUN  v4.1.6 <worktree>/packages/server
+
+
+ Test Files  3 passed (3)
+      Tests  24 passed (24)
+   Start at  14:18:27
+   Duration  591ms (transform 208ms, setup 29ms, import 365ms, tests 14ms, environment 0ms)
+

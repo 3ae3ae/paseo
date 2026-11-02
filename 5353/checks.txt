@@ -1,0 +1,26 @@
+base: da8d58bfee5279369c1a733cf5cf4ddc3bd56bb8
+head: d04bb757cb10f7fb45ffb96a63116b32f6c4dbfc
+$ npm run typecheck
+> tsgo --noEmit -p tsconfig.json
+
+
+> @getpaseo/cli@0.15.0-beta.1 typecheck
+> tsgo --noEmit
+
+exit: 0
+$ npm run lint
+
+> paseo@0.15.0-beta.1 lint
+> oxlint
+
+Found 0 warnings and 0 errors.
+Finished in 1.3s on 5119 files with 177 rules using 12 threads.
+exit: 0
+$ npm run format:check
+> oxfmt --check .
+
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 1364ms on 5586 files using 12 threads.
+exit: 0

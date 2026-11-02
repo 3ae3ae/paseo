@@ -1,0 +1,44 @@
+[
+  {
+    "role": "toolResult",
+    "toolCallId": "call_sleep_90",
+    "toolName": "bash",
+    "content": [
+      {
+        "type": "text",
+        "text": "Command aborted"
+      }
+    ],
+    "details": {},
+    "isError": true,
+    "timestamp": 1793597085321
+  },
+  {
+    "role": "toolResult",
+    "toolCallId": "call_sleep_90",
+    "toolName": "bash",
+    "content": [
+      {
+        "type": "text",
+        "text": "Command aborted"
+      }
+    ],
+    "details": {},
+    "isError": true,
+    "timestamp": 1793597036047
+  },
+  {
+    "role": "toolResult",
+    "toolCallId": "call_sleep_90",
+    "toolName": "bash",
+    "content": [
+      {
+        "type": "text",
+        "text": "Command aborted"
+      }
+    ],
+    "details": {},
+    "isError": true,
+    "timestamp": 1793596801758
+  }
+]
